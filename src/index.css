@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@theme {
+  --color-frame: #fff9f9;
+  --color-main: #fe0101;
+  --color-secondary: #2b2b2b;
+  --color-inverted: #ffffff;
+  --color-light: #808080;
+  --color-muted: #e7e7e7;
+  --color-para-light: #6b6b6b;
+  --color-sold: rgba(255, 255, 255, 0.8);
+  --breakpoint-3xl: 1700px;
+  --color-soldbtn: rgba(253, 253, 253, 0.15);
+}
+
+.soldbg {
+  background: linear-gradient(318deg, #fd0000 26.88%, #bb5151 105.85%);
+}
+
+.background-grad {
+  border-radius: 8px;
+  background: linear-gradient(318deg, #fd0000 26.88%, #ff9292 105.85%);
+}
+
+.menuOpen-grad {
+  background: linear-gradient(318deg, #fd0000 26.88%, #fd00ff 105.85%);
+}
+
+.border-grd {
+  border-radius: 8px;
+  border: 1.8px solid var(--color-main, #fd0000);
+}
+
+.footer-bg {
+  border-radius: 20px;
+  background: linear-gradient(276deg, #fd0000 -0.05%, #ff9292 201.36%);
+}
+
+.footer-border {
+  border-radius: 15px;
+  border: 1px solid var(--color-main, #fd0000);
+}
+
+.faq-border {
+  border-radius: 20px;
+}
+
+#slider-boxes {
+  display: flex !important;
+  background-color: #fd00ff;
+}
+
+.slick-slide div {
+  margin: 10px;
+}
