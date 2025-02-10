@@ -15,7 +15,7 @@ const Header = () => {
 
                 <div className="flex flex-col gap-0 relative py-10  xl:py-34 ">
                     <div className="text-center flex flex-col gap-3">
-                        <h1 className="line-height-l font-normal text-secondary text-center">discover, create & <br /> sell artworks.</h1>
+                        <h1 className=" font-normal text-secondary text-center">discover, create & <br /> sell artworks.</h1>
                         <h6 className="text-light text-center font-secondary">Discover and trade unique digital art pieces on our NFT website, <br /> where creativity meets blockchain technology.</h6>
                     </div>
                     <div className="flex justify-center relative py-40 sm:py-60">

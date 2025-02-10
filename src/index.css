@@ -12,6 +12,12 @@
   --color-soldbtn: rgba(253, 253, 253, 0.15);
 }
 
+@font-face {
+  font-family: "Apex Mk2", sans-serif;
+  src: local("ApexMk2-Regular"),
+  url('./assets/fonts/ApexMk2-Regular.otf') format(truetype)
+}
+
 .soldbg {
   background: linear-gradient(318deg, #fd0000 26.88%, #bb5151 105.85%);
 }
