@@ -5,7 +5,7 @@ import ButtonSecondary from "../shared/ButtonSecondary";
 import ButtonMain from "../shared/ButtonMain";
 
 import topGridLeft from "../assets/Header/images/topGridLeft.webp"
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
     const [menuOpen, setmenuOpen] = useState(false);
 
@@ -25,14 +25,15 @@ const Navbar = () => {
                         </div>
                         <div className="hidden lg:flex sm:gap-4 lg:gap-8">
                             <h6>
-                                <a href="#" className="underline underline-offset-4 text-main font-bold">
+                                <Link to="/" className="underline underline-offset-4 text-main font-bold">
                                     Home
-                                </a>
+                                </Link>
                             </h6>
                             <h6>
-                                <a href="#" className="text-secondary">
+
+                                <Link to="/notfound" className="text-secondary">
                                     AI NFT GENERATION
-                                </a>
+                                </Link>
                             </h6>
                         </div>
                         <div className="hidden lg:flex gap-4">
