@@ -1,12 +1,13 @@
-import subtract from "../assets/Featurecollection/images/subtract.webp";
+// import subtract from "../../src/assets/FeatureCollection/images/subtract.webp";
+import { subtract } from '@/assets/FeatureCollection/images/subtract.webp';
 
 
 //  Feature Collection
-import cato from "../assets/Featurecollection/images/cato.webp";
-import dog from "../assets/Featurecollection/images/dog.webp";
-import eagle from "../assets/Featurecollection/images/eagle.webp";
-import rgbCat from "../assets/Featurecollection/images/rgbCat.webp";
-import person from "../assets/Featurecollection/images/person.webp";
+import cato from "../assets/FeatureCollection/images/cato.webp";
+import dog from "../assets/FeatureCollection/images/dog.webp";
+import eagle from "../assets/FeatureCollection/images/eagle.webp";
+import rgbCat from "../assets/FeatureCollection/images/rgbCat.webp";
+import person from "../assets/FeatureCollection/images/person.webp";
 
 
 
