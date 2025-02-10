@@ -23,7 +23,7 @@ const RecentSold = () => {
                   </div>
                   <img src={item.url} alt="" className="w-fit" />
 
-                  <div className="navbtn-size text-small  navbtn-border font-medium soldbg text-inverted px-4 py-2 shrink-0 cursor-pointer z-50 absolute top-54 left-28">
+                  <div className="navbtn-size text-small  navbtn-border font-medium soldbg text-inverted px-4 py-2 shrink-0 z-50 absolute top-54 left-28">
                     SOLD
                   </div>
                 </div>

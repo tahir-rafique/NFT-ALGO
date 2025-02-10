@@ -13,22 +13,18 @@ import elipBoostLeft from "../assets/BoostNFT/images/boostElicpLeft.webp"
 const BootNFT = () => {
     return (
         <div className="flex justify-center relative">
-            <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10">
+            <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10 relative z-20">
                 <div className="flex max-lg:flex-col gap-10">
-                    <div className="flex flex-col justify-center gap-24 ">
+                    <div className="flex flex-col justify-center gap-24  w-[50%]">
                         <div className="flex flex-col gap-4">
                             <h2 className="line-height-l">Boost Your NFTs: <br />
                                 Enhance Visibility <br /> and Value</h2>
                             <h6 className="font-secondary leading-tight tracking-tight text-para-light">The Boost feature is a premium service that allows NFT creators and <br /> collectors to elevate their listings on our marketplace. By boosting an <br /> NFT, you can ensure it appears prominently in search results, <br /> featured sections, and on the homepage, maximizing exposure to <br /> potential buyers.</h6>
                         </div>
-                        <div>
-                            <button className="navbtn-size  navbtn-border font-medium background-grad text-inverted px-8 py-3 cursor-pointer flex gap-2">
-                                <span>
-                                    Boost
-                                </span>
-                                <img src={boostIcon} alt="" />
-                            </button>
-                        </div>
+                        <a href="#" className="w-fit navbtn-size text-small navbtn-border font-medium background-grad text-inverted px-4 py-2 shrink-0 cursor-pointer flex gap-1">
+                            <span>Generate</span>
+                            <img src={boostIcon} alt="no img" />
+                        </a>
                     </div>
 
                     <div className="w-[50%] max-md:py-0 py-74 max-lg:py-60 relative">

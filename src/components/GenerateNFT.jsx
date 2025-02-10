@@ -27,46 +27,46 @@ const GenerateNFT = () => {
 
                         <div className="rounded-xl flex justify-between items-center gap-4 sm:gap-10 lg:gap-50 2xl:gap-70 3xl:gap-80 px-2 lg:px-4  py-3 bg-inverted drop-shadow-xl relative z-50">
                             <input className="font-secondary text-light" placeholder="Fantasy Creature holding......" />
-                            <span className="navbtn-size text-small navbtn-border font-medium background-grad text-inverted px-4 py-2 shrink-0 cursor-pointer flex gap-1">
+                            <a href="#" className="navbtn-size text-small navbtn-border font-medium background-grad text-inverted px-4 py-2 shrink-0 cursor-pointer flex gap-1">
                                 <span>Generate</span>
                                 <img src={IconGenerate} alt="no img" />
-                            </span>
+                            </a>
                         </div>
 
                         {/* elicp */}
                         <img src={ellipce} alt="" className="absolute top-30 left-10 z-1 size-120 max-lg:hidden" />
                     </div>
-                    
-                        {/* moneky skatboard */}
-                        <img src={g1} alt="" className="max-lg:hidden absolute top-40 left-10" />
-                        {/* eagale orange */}
 
-                        <img src={g2} alt="" className="max-lg:hidden  absolute top-145  left-10" />
-                        {/* Gril */}
+                    {/* moneky skatboard */}
+                    <img src={g1} alt="" className="max-lg:hidden absolute top-40 left-10" />
+                    {/* eagale orange */}
 
-                        <img src={g3} alt="" className="max-lg:hidden absolute top-170  left-85" />
+                    <img src={g2} alt="" className="max-lg:hidden  absolute top-145  left-10" />
+                    {/* Gril */}
 
-                        {/* rbg Cat */}
+                    <img src={g3} alt="" className="max-lg:hidden absolute top-170  left-85" />
 
-                        <img src={g4} alt="" className="max-lg:hidden absolute bottom-145  right-10" />
+                    {/* rbg Cat */}
 
-                        {/* Big monk with banana */}
+                    <img src={g4} alt="" className="max-lg:hidden absolute bottom-145  right-10" />
 
-                        <img src={g5} alt="" className="max-lg:hidden absolute bottom-70  right-20" />
+                    {/* Big monk with banana */}
 
-
-                        {/*  dog */}
-
-                        <img src={g6} alt="" className="max-lg:hidden absolute top-35  right-85" />
+                    <img src={g5} alt="" className="max-lg:hidden absolute bottom-70  right-20" />
 
 
-                        {/*  eagel purple */}
+                    {/*  dog */}
 
-                        <img src={g7} alt="" className="max-lg:hidden absolute bottom-25  right-95" />
+                    <img src={g6} alt="" className="max-lg:hidden absolute top-35  right-85" />
 
-                        {/*  cartoon */}
 
-                        <img src={g8} alt="" className="max-lg:hidden absolute top-90  left-30" />
+                    {/*  eagel purple */}
+
+                    <img src={g7} alt="" className="max-lg:hidden absolute bottom-25  right-95" />
+
+                    {/*  cartoon */}
+
+                    <img src={g8} alt="" className="max-lg:hidden absolute top-90  left-30" />
 
 
                 </div>

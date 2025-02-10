@@ -1,5 +1,6 @@
 import subtract from "../assets/Featurecollection/images/subtract.webp";
 
+
 //  Feature Collection
 import cato from "../assets/Featurecollection/images/cato.webp";
 import dog from "../assets/Featurecollection/images/dog.webp";
