@@ -5,12 +5,11 @@ import arrowDown from "../assets/FeatureCollection/icons/arrowDown.svg";
 import { FeatureCollectionData } from "../constant/data.jsx";
 import arrowFram from "../assets/FeatureCollection/images/arrowFrame.webp";
 import { useRef } from "react";
-import ButtonMain from './../shared/ButtonMain';
 import gridLef from "../assets/FeatureCollection/images/featuresLeftElicp.webp"
 const FeatureCollection = () => {
 
   const sliderRef = useRef(null);
-  
+
   const scrollLeft = () => {
     if (sliderRef.current) {
       sliderRef.current.scrollLeft -= 300;
@@ -45,7 +44,7 @@ const FeatureCollection = () => {
               >
                 <img src={arrowDown} alt="" />
               </span>
-              
+
               <span
                 className="p-5 cursor-pointer"
                 style={{ backgroundImage: `url(${reactangle})`, backgroundRepeat: "no-repeat" }}
@@ -77,12 +76,14 @@ const FeatureCollection = () => {
                   <div className="">
                     <img src={item.url} alt="" className="" />
                   </div>
-                  <div className="absolute bottom-8 left-4">
-                    <ButtonMain text="Buy" />
-                  </div>
 
+                  {/* buy */}
+                  <button className="background-grad text-inverted px-4 py-2 cursor-pointer flex items-center font-secondary font-medium bg-inverted  shrink-0   gap-1 text-l absolute bottom-8 left-4">
+                    Buy
+                  </button>
+                  {/* price */}
                   <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-8 left-41">
-                    <p className="text-l">Price:</p>
+                    <p className="text-l ">Price:</p>
                     <span className="bg-black rounded-full">
                       <img src={logoprice} alt="" />
                     </span>

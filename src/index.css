@@ -58,11 +58,6 @@
   border-radius: 20px;
 }
 
-#slider-boxes {
-  display: flex !important;
-  background-color: #fd00ff;
-}
-
 .slick-slide div {
   margin: 10px;
 }

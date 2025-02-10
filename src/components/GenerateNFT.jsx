@@ -15,36 +15,39 @@ import leftGrid from "../assets/GenerateNFT/images/leftGridgenerate.webp"
 const GenerateNFT = () => {
     return (
         <div className="flex justify-center">
-
             <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10">
-
                 <div className="flex flex-col justify-center items-center gap-2 relative">
                     {/* main content */}
-                    <h2 className="text-center line-height-l">Turn your imagination <br /> into digital Asset </h2>
+                    <h2 className="text-center">Turn your imagination <br /> into digital Asset </h2>
 
-                    <div className="max-lg:py-10 py-64 lg:py-84 relative ">
+                    <div className="max-lg:py-10 py-64 lg:py-84 relative w-full flex justify-center">
 
 
-                        <div className="rounded-xl flex justify-between items-center gap-4 sm:gap-10 lg:gap-50 2xl:gap-70 3xl:gap-80 px-2 lg:px-4  py-3 bg-inverted drop-shadow-xl relative z-50">
-                            <input className="font-secondary text-light" placeholder="Fantasy Creature holding......" />
-                            <a href="#" className="navbtn-size text-small navbtn-border font-medium background-grad text-inverted px-4 py-2 shrink-0 cursor-pointer flex gap-1">
+
+                        <div className="mx-auto rounded-xl flex justify-between items-center gap-4 px-4  py-5 bg-inverted drop-shadow-xl relative z-50 w-full max-w-[800px]">
+
+                            <input className="font-secondary text-light w-full outline-none " placeholder="Fantasy Creature holding......" />
+                            <a href="#" className="absolute navbtn-size text-small navbtn-border font-medium background-grad text-inverted px-4 py-2 shrink-0 cursor-pointer flex gap-1 right-4 ">
                                 <span>Generate</span>
                                 <img src={IconGenerate} alt="no img" />
                             </a>
+
                         </div>
+
+
 
                         {/* elicp */}
                         <img src={ellipce} alt="" className="absolute top-30 left-10 z-1 size-120 max-lg:hidden" />
                     </div>
 
                     {/* moneky skatboard */}
-                    <img src={g1} alt="" className="max-lg:hidden absolute top-40 left-10" />
+                    <img src={g1} alt="" className="max-lg:hidden absolute top-40 left-30" />
                     {/* eagale orange */}
 
-                    <img src={g2} alt="" className="max-lg:hidden  absolute top-145  left-10" />
+                    <img src={g2} alt="" className="max-lg:hidden  absolute top-145  left-0" />
                     {/* Gril */}
 
-                    <img src={g3} alt="" className="max-lg:hidden absolute top-170  left-85" />
+                    <img src={g3} alt="" className="max-lg:hidden absolute top-170  left-120" />
 
                     {/* rbg Cat */}
 
@@ -52,7 +55,7 @@ const GenerateNFT = () => {
 
                     {/* Big monk with banana */}
 
-                    <img src={g5} alt="" className="max-lg:hidden absolute bottom-70  right-20" />
+                    <img src={g5} alt="" className="max-lg:hidden absolute bottom-70  right-0" />
 
 
                     {/*  dog */}
@@ -66,7 +69,7 @@ const GenerateNFT = () => {
 
                     {/*  cartoon */}
 
-                    <img src={g8} alt="" className="max-lg:hidden absolute top-90  left-30" />
+                    <img src={g8} alt="" className="max-lg:hidden absolute top-90  left-10" />
 
 
                 </div>

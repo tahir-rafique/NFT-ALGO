@@ -2,7 +2,6 @@ import { timeLeft, TrendingNFTData } from "../constant/data.jsx";
 import { useState, } from "react";
 import logoprice from "../assets/FeatureCollection/images/logoprice.webp";
 import downArrow from "../assets/TrendingNFT/icons/downArrow.svg";
-import ButtonMain from "./../shared/ButtonMain";
 
 const TrendingNFT = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +9,7 @@ const TrendingNFT = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-  
+
   return (
     <div className="flex justify-center relative z-50">
       <div className="container mx-auto flex flex-col gap-4 lg:gap-10 max-sm:px-5 sm:px-12 lg:px-20 py-10">
@@ -63,11 +62,14 @@ const TrendingNFT = () => {
                   </div>
                 </div>
                 <img src={item.url} alt="" className="w-fit rounded-xl" />
-                <div className="absolute bottom-2 left-2">
-                  <ButtonMain text="Buy" />
-                </div>
-                <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-2 left-41 xl:py-3">
-                  <p className="text-l">Price:</p>
+
+                {/* buy */}
+                <button className="background-grad text-inverted px-4 py-2 cursor-pointer flex items-center font-secondary font-medium bg-inverted  shrink-0   gap-1 text-l absolute bottom-4 left-4">
+                  Buy
+                </button>
+                {/* price */}
+                <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-4 left-41">
+                  <p className="text-l ">Price:</p>
                   <span className="bg-black rounded-full">
                     <img src={logoprice} alt="" />
                   </span>
