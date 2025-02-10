@@ -1,0 +1,108 @@
+@media (min-width: 780px) {
+  .updown-animation {
+    animation-name: updown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all 0.3s;
+  }
+
+  @keyframes updown {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-16px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .right-left-animation1 {
+    animation-name: rla;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all 0.3s;
+  }
+
+  @keyframes rla {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(-20px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+
+  .right-left-animation2 {
+    animation-name: rla;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all 0.3s;
+  }
+
+  @keyframes rla {
+    0% {
+      transform: translateX(5px);
+    }
+    50% {
+      transform: translateX(-60px);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
+
+
+/*  */
+
+  .right-left-animation5 {
+    animation-name: rla;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all 0.3s;
+  }
+
+  @keyframes rla {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(-20px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+
+  .right-left-animation4 {
+    animation-name: rla;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all 0.3s;
+  }
+
+  @keyframes rla {
+    0% {
+      transform: translateX(5px);
+    }
+    50% {
+      transform: translateX(-60px);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
+
+
+}
