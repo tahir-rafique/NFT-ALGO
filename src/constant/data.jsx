@@ -1,5 +1,5 @@
-// import subtract from "../../src/assets/FeatureCollection/images/subtract.webp";
-import { subtract } from '@/assets/FeatureCollection/images/subtract.webp';
+import subtract from "../../src/assets/FeatureCollection/images/subtract.webp";
+// import { subtract } from '@/assets/FeatureCollection/images/subtract.webp';
 
 
 //  Feature Collection
