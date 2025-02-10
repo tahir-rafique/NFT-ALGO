@@ -13,9 +13,17 @@
 }
 
 @font-face {
-  font-family: "Apex Mk2", sans-serif;
-  font-weight: 600;
-  src: url("./assets/fonts/ApexMk2-Regular.otf") format("opentype"); 
+  font-family: "ApexMk2-Regular";
+  src: url("./assets/fonts/ApexMk2-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ApexMk2-BoldExtended";
+  src: url("./assets/fonts/ApexMk2-BoldExtended.otf") format("opentype");
+}
+@font-face {
+  font-family: "ApexMk2-LightCondensed";
+  src: url("./assets/fonts/ApexMk2-LightCondensed.otf") format("opentyp");
 }
 
 .soldbg {

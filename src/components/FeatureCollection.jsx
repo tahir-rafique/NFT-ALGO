@@ -81,7 +81,7 @@ const FeatureCollection = () => {
                     <ButtonMain text="Buy" />
                   </div>
 
-                  <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-8 left-41 xl:py-3">
+                  <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-8 left-41">
                     <p className="text-l">Price:</p>
                     <span className="bg-black rounded-full">
                       <img src={logoprice} alt="" />
