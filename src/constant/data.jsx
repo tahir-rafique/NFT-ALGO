@@ -1,5 +1,4 @@
 import subtract from "../../src/assets/FeatureCollection/images/subtract.webp";
-// import { subtract } from '@/assets/FeatureCollection/images/subtract.webp';
 
 
 //  Feature Collection
@@ -211,7 +210,7 @@ export const faqData = [
             "To sell an NFT, you need to mint it on a platform, list it on a marketplace, and set your price or accept bids from buyers.",
     },
     {
-        question: "What cryptocurrencies you accept?",
+        question: "What cryptocurrencies do you accept?",
         answer:
             "We accept various cryptocurrencies, including Ethereum (ETH), Bitcoin (BTC), and other popular tokens depending on the platform.",
     },
