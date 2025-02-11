@@ -11,7 +11,7 @@ const TopCollection = () => {
         <div className="container mx-auto px-5 sm:px-12 lg:px-20 py-10 flex flex-col gap-4 lg:gap-10 ">
           <div className="flex max-lg:flex-col flex-row lg:justify-between gap-2 lg:items-center">
             <h2>Top Collection</h2>
-            <h4 className="pr-4">
+            <h4 className="">
               <a href="#" className="cursor-pointer text-main font-secondary">View More Collection</a>
             </h4>
           </div>

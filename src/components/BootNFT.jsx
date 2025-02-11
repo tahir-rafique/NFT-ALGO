@@ -63,7 +63,7 @@ const BootNFT = () => {
                         <img src={boostThree} alt="" className="absolute bottom-10 left-36 h-44 max-xl:hidden" />
 
 
-                        <img src={boostTwo} alt="" className="absolute right-8 bottom-0 h-58 max-lg:h-34 max-md:hidden" />
+                        <img src={boostTwo} alt="" className="absolute right-2 bottom-0 h-68 max-lg:h-34 max-md:hidden" />
 
 
                     </div>
