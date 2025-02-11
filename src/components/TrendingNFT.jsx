@@ -3,8 +3,18 @@ import { useState, } from "react";
 import logoprice from "../assets/FeatureCollection/images/logoprice.webp";
 import downArrow from "../assets/TrendingNFT/icons/downArrow.svg";
 
+import { useEffect } from "react";
+
 const TrendingNFT = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    let hideHandler = ()=>{
+      setIsOpen(false);
+    }
+    document.addEventListener("mousedown", hideHandler)
+  })
+
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
