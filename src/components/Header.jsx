@@ -4,8 +4,8 @@ import Himg3 from "../assets/Header/images/Himg3.webp";
 import Himg4 from "../assets/Header/images/Himg4.webp";
 import Himg5 from "../assets/Header/images/Himg5.webp";
 import elicpBg from "../assets/Header/images/HeaderEllicpBG.webp"
-import leftHand from "../assets/Header/images/left.webp"
-import rightHand from "../assets/Header/images/right.webp"
+import leftHand from "../assets/Header/images/leftHand.png"
+import rightHand from "../assets/Header/images/rightHand.png"
 import "../styles/animations.css"
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
         <div className="flex justify-center relative">
             <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 3xl:py-10 ">
 
-                <div className="flex flex-col gap-0 relative py-10  xl:py-34  ">
+                <div className="flex flex-col gap-0 relative py-64 ">
                     <div className="text-center flex flex-col gap-3">
                         <h1 className=" font-normal text-secondary text-center uppercase line-height-l">discover, create & <br /> sell artworks.</h1>
                         <h6 className="text-light text-center font-secondary">Discover and trade unique digital art pieces on our NFT website, <br /> where creativity meets blockchain technology.</h6>
@@ -34,12 +34,12 @@ const Header = () => {
 
             </div>
 
-            <img src={leftHand} alt="" className="absolute left-0 top-[40%]
+            <img src={leftHand} alt="" className="absolute left-[-30px] top-[50%]
             max-3xl:size-94 
             max-lg:size-74
             max-sm:size-44
             " />
-            <img src={rightHand} alt="" className="absolute right-0 top-[40%]
+            <img src={rightHand} alt="" className="absolute right-[-30px] top-[50%]
              max-3xl:size-94 
              max-lg:size-74
              max-sm:size-44 

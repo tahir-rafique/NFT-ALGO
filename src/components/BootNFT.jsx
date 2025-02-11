@@ -17,7 +17,7 @@ const BootNFT = () => {
                 <div className="flex max-lg:flex-col gap-10">
                     <div className="flex flex-col justify-center gap-24  w-[50%]">
                         <div className="flex flex-col gap-4">
-                            <h2 className="">Boost Your NFTs: <br />
+                            <h2 className="line-height-l">Boost Your NFTs: <br />
                                 Enhance Visibility <br /> and Value</h2>
                             <h6 className="font-secondary leading-tight tracking-tight text-para-light">The Boost feature is a premium service that allows NFT creators and <br /> collectors to elevate their listings on our marketplace. By boosting an <br /> NFT, you can ensure it appears prominently in search results, <br /> featured sections, and on the homepage, maximizing exposure to <br /> potential buyers.</h6>
                         </div>

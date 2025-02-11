@@ -25,7 +25,7 @@ const Footer = () => {
         <img src={gr} alt="" className="absolute right-0 bottom-0" />
         <div className="container mx-auto flex flex-col gap-4 max-sm:px-5 sm:px-12 lg:px-20 py-5">
           <div className="flex flex-col justify-center items-center gap-4 xl:gap-10">
-            <h2 className="text-center">Ready for Next NFT Drop?</h2>
+            <h2 className="text-center font-bold">Ready for Next NFT Drop?</h2>
            
             <div className="mx-auto rounded-xl flex justify-between items-center gap-4 px-10  py-6 footer-border drop-shadow-xl relative z-50 w-full max-w-[650px]">
               <input className="font-secondary  text-main w-full max-w-[480px] outline-none " placeholder="info@gmail.com" />

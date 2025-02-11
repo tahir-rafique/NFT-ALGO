@@ -1,7 +1,7 @@
 @media (min-width: 780px) {
   .updown-animation {
     animation-name: updown;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
     transition: all 0.4s;
@@ -21,9 +21,9 @@
 
   .right-left-animation1 {
     animation-name: rla;
-    animation-duration: 3.5s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
+    animation-timing-function: linear;
     transition: all 0.3s;
   }
 
@@ -44,19 +44,19 @@
     animation-name: rla;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
+    animation-timing-function: linear;
     transition: all 0.3s;
   }
 
   @keyframes rla {
     0% {
-      transform: translateX(5px);
+      transform: translateX(0px);
     }
     50% {
-      transform: translateX(-60px);
+      transform: translateX(-20px);
     }
     100% {
-      transform: translateX(5px);
+      transform: translateX(0px);
     }
   }
 
@@ -67,7 +67,7 @@
     animation-name: rla;
     animation-duration: 3.5s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
+    animation-timing-function: linear;
     transition: all 0.3s;
   }
 
@@ -88,19 +88,19 @@
     animation-name: rla;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
+    animation-timing-function: linear;
     transition: all 0.3s;
   }
 
   @keyframes rla {
     0% {
-      transform: translateX(5px);
+      transform: translateX(0px);
     }
     50% {
-      transform: translateX(-60px);
+      transform: translateX(-20px);
     }
     100% {
-      transform: translateX(5px);
+      transform: translateX(0px);
     }
   }
 
