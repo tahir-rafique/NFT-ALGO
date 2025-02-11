@@ -12,12 +12,12 @@ const Header = () => {
     return (
         <div className="flex justify-center relative">
             <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 3xl:py-10 ">
-                <div className="flex flex-col gap-0 max-lg:pt-0 max-lg:pb-0  py-60 relative z-50">
+                <div className="flex flex-col gap-0 max-lg:pt-0 max-lg:pb-0 pt-10  py-60 relative z-50">
                     <div className="text-center flex flex-col gap-3 relative z-50">
                         <h1 className=" font-normal text-secondary text-center uppercase">discover, create & <br /> sell artworks.</h1>
                         <h6 className="text-light text-center font-secondary">Discover and trade unique digital art pieces on our NFT website, <br /> where creativity meets blockchain technology.</h6>
                     </div>
-                    <div className="flex justify-center relative py-40 sm:py-60">
+                    <div className="flex justify-center relative py-40 sm:py-80">
                         <img src={Himg1} alt="" className="absolute left-[20%] top-4 max-lg:left-[10%] max-sm:left-[13%] max-sm:h-64 z-10 cardOneFive-animation" />
                         <img src={Himg2} alt="" className="absolute left-[26%] top-4 max-lg:left-[20%] max-sm:left-[18%] max-sm:h-64 z-20 cardTwoFour-animation" />
                         <img src={Himg3} alt="" className="updownCard-animation absolute left-[38%] top-2 z-50 max-lg:left-[30%] max-sm:left-[26%] max-sm:h-66" />
