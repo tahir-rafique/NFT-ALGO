@@ -33,7 +33,7 @@ const RecentSold = () => {
                         ))
                     }
                 </div>
-                <div className="flex justify-center">
+                <div className="flex md:justify-center">
                     <ButtonMain text={"Explore"} expIcon={exploreArrow}/>
                 </div>
             </div>
