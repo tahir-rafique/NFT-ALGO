@@ -15,10 +15,10 @@ const BootNFT = () => {
         <div className="flex justify-center relative">
             <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10 relative z-20">
                 <div className="flex max-lg:flex-col max-lg:items-center gap-10">
-
-                    <div className="flex flex-col justify-center gap-10 md:gap-24  w-[50%] px-5 ">
+                    {/* Text Section */}
+                    <div className="flex flex-col justify-center gap-10 md:gap-24  w-[50%]  ">
                         <div className="flex flex-col gap-4">
-                            <h2 className="line-height-l">Boost Your NFTs: <br />
+                            <h2 className="line-height-l uppercase">Boost Your NFTs: <br />
                                 Enhance Visibility <br /> and Value</h2>
                             <h6 className="font-secondary leading-tight tracking-tight text-para-light">The Boost feature is a premium service that allows NFT creators and <br /> collectors to elevate their listings on our marketplace. By boosting an <br /> NFT, you can ensure it appears prominently in search results, <br /> featured sections, and on the homepage, maximizing exposure to <br /> potential buyers.</h6>
                         </div>
@@ -27,9 +27,9 @@ const BootNFT = () => {
                             <img src={boostIcon} alt="no img" />
                         </a>
                     </div>
-
+                    {/* Image Section */}
                     <div className="w-[50%] max-md:py-0 py-74 max-lg:py-60 relative">
-                        <div className="absolute top-0 max-lg:left-10 left-22 z-50 max-md:hidden">
+                        <div className="absolute top-0 max-lg:left-12 left-24 z-50 max-md:hidden">
                             <div className="px-4 py-8 relative" style={{ backgroundImage: `url(${subtract})`, backgroundRepeat: "no-repeat", backgroundSize: "" }}>
                                 <div className="flex flex-col gap-1">
                                     <div className="flex items-center gap-2">
@@ -60,10 +60,10 @@ const BootNFT = () => {
 
                         <img src={elipBoost} alt="" className="absolute top-0 size-120 z-1 max-md:hidden" />
 
-                        <img src={boostThree} alt="" className="absolute bottom-10 left-30 h-38 max-xl:hidden" />
+                        <img src={boostThree} alt="" className="absolute bottom-10 left-36 h-44 max-xl:hidden" />
 
 
-                        <img src={boostTwo} alt="" className="absolute right-22 bottom-0 h-54 max-lg:h-34 max-md:hidden" />
+                        <img src={boostTwo} alt="" className="absolute right-8 bottom-0 h-58 max-lg:h-34 max-md:hidden" />
 
 
                     </div>

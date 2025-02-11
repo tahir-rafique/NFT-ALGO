@@ -17,14 +17,14 @@ const FAQ = () => {
     <div className="flex justify-center relative">
 
       <div className="container mx-auto flex flex-col gap-4 max-sm:px-5 sm:px-12 lg:px-20 py-10 relative z-50">
-        <h2 className=" text-center font-bold">
+        <h2 className=" text-center font-bold uppercase">
           FREQUENTLY ASKED QUESTIONS
         </h2>
         <div className="px-[20%] flex flex-col gap-4">
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="border-2 faq-border border-muted  py-5 px-2  cursor-pointer"
+              className="border-2 faq-border border-muted py-5 px-2  cursor-pointer"
               onClick={() => handleFAQ(index)
               }
             >
