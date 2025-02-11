@@ -22,8 +22,6 @@ const GenerateNFT = () => {
 
                     <div className="max-lg:py-10 py-64 lg:py-84 relative w-full flex justify-center">
 
-
-
                         <div className="mx-auto rounded-xl flex justify-between items-center gap-4 px-4  py-5 bg-inverted drop-shadow-xl relative z-40 w-full max-w-[800px]">
 
                             <input className="font-secondary text-light w-full max-w-[600px] outline-none " placeholder="Fantasy Creature holding......" />

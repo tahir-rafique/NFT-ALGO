@@ -14,8 +14,9 @@ const BootNFT = () => {
     return (
         <div className="flex justify-center relative">
             <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10 relative z-20">
-                <div className="flex max-lg:flex-col gap-10">
-                    <div className="flex flex-col justify-center gap-24  w-[50%]">
+                <div className="flex max-lg:flex-col max-lg:items-center gap-10">
+
+                    <div className="flex flex-col justify-center gap-24  w-[50%] ">
                         <div className="flex flex-col gap-4">
                             <h2 className="line-height-l">Boost Your NFTs: <br />
                                 Enhance Visibility <br /> and Value</h2>
