@@ -5,7 +5,7 @@ const RecentSold = () => {
     <div className="flex justify-center">
       <div className="container mx-auto px-5 sm:px-12 lg:px-20 py-10 flex flex-col gap-4 lg:gap-10 relative z-30">
         <h2>Recently Sold </h2>
-        <div className="grid max-md:grid-cols-1 max-xl:grid-cols-2 max-2xl:grid-cols-3 grid-cols-4 w-fit gap-14">
+        <div className="grid max-md:grid-cols-1 max-xl:grid-cols-2 max-2xl:grid-cols-3 grid-cols-4 w-fit gap-10">
           {
             RecentSoldData.map((item, index) => (
               <div className="px-2 py-6 drop-shadow-xl w-fit" key={index} style={{

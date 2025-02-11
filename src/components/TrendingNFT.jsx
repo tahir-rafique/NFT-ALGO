@@ -16,7 +16,7 @@ const TrendingNFT = () => {
         {/* 1st main*/}
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
           <h2>Trending nft’s</h2>
-          <div className="inline-block lg:pr-50 xl:pr-22 2xl:pr-0" >
+          <div className="inline-block lg:pr-53 xl:pr-30 2xl:pr-5" >
             <button
               onClick={toggleDropdown}
               className="navbtn-size border border-grd text-main navbtn-border  px-4 py-1 3xl:px-6 3xl:py-2 cursor-pointer font-medium flex items-center gap-1">
@@ -39,7 +39,7 @@ const TrendingNFT = () => {
 
 
         {/* 2nd main */}
-        <div className="grid max-md:grid-cols-1 max-xl:grid-cols-2 max-2xl:grid-cols-3 grid-cols-4 gap-14 relative ">
+        <div className="grid max-md:grid-cols-1 max-xl:grid-cols-2 max-2xl:grid-cols-3 grid-cols-4 gap-10 relative w-fit">
           {TrendingNFTData.map((item, index) => (
             <div
               className="px-2 py-6 drop-shadow-xl"
