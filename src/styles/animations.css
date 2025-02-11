@@ -1,12 +1,12 @@
 @media (min-width: 780px) {
-  .updown-animation {
-    animation-name: updown;
+  .updownCard-animation {
+    animation-name: updowncard;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
     transition: all 0.4s;
   }
-  @keyframes updown {
+  @keyframes updowncard {
     0% {
       transform: translateY(0px);
     }
@@ -18,14 +18,14 @@
     }
   }
 
-  .right-left-animation1 {
-    animation-name: rla;
+  .cardOneFive-animation {
+    animation-name: cardOneFiveAnime;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     transition: all 0.3s;
   }
-  @keyframes rla {
+  @keyframes cardOneFiveAnime {
     0% {
       transform: translateX(0px);
     }
@@ -36,14 +36,15 @@
       transform: translateX(0px);
     }
   }
-  .right-left-animation2 {
-    animation-name: rla;
-    animation-duration: 4s;
+
+  .cardTwoFour-animation {
+    animation-name: cardTwoFourAnime;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     transition: all 0.3s;
   }
-  @keyframes rla {
+  @keyframes cardTwoFourAnime {
     0% {
       transform: translateX(0px);
     }
@@ -55,45 +56,7 @@
     }
   }
 
-  .right-left-animation5 {
-    animation-name: rla;
-    animation-duration: 3.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transition: all 0.3s;
-  }
-  @keyframes rla {
-    0% {
-      transform: translateX(0px);
-    }
-    50% {
-      transform: translateX(-20px);
-    }
-    100% {
-      transform: translateX(0px);
-    }
-  }
-
-  .right-left-animation4 {
-    animation-name: rla;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transition: all 0.3s;
-  }
-
-  @keyframes rla {
-    0% {
-      transform: translateX(0px);
-    }
-    50% {
-      transform: translateX(-20px);
-    }
-    100% {
-      transform: translateX(0px);
-    }
-  }
-
+  /* Hand Animation */
   .leftHand-anime {
     animation-name: leftHandAnimation;
     animation-duration: 4s;
@@ -117,7 +80,7 @@
   }
   @keyframes leftRightAnimation {
     0% {
-      right: -10%;
+      right: -20%;
     }
     100% {
       right: 0%;

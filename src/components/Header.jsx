@@ -18,16 +18,16 @@ const Header = () => {
                         <h6 className="text-light text-center font-secondary">Discover and trade unique digital art pieces on our NFT website, <br /> where creativity meets blockchain technology.</h6>
                     </div>
                     <div className="flex justify-center relative py-40 sm:py-60">
-                        <img src={Himg1} alt="" className="absolute left-[20%] top-4 max-lg:left-[10%] max-sm:left-[13%] max-sm:h-64 z-10 right-left-animation1" />
-                        <img src={Himg2} alt="" className="absolute left-[26%] top-4 max-lg:left-[20%] max-sm:left-[18%] max-sm:h-64 z-20 right-left-animation2" />
-                        <img src={Himg3} alt="" className="updown-animation absolute left-[38%] top-2 z-50 max-lg:left-[30%] max-sm:left-[26%] max-sm:h-66" />
-                        <img src={Himg4} alt="" className="absolute left-[50%] top-4 z-10 max-lg:left-[42%] max-sm:left-[38%] max-sm:h-64 right-left-animation4" />
+                        <img src={Himg1} alt="" className="absolute left-[20%] top-4 max-lg:left-[10%] max-sm:left-[13%] max-sm:h-64 z-10 cardOneFive-animation" />
+                        <img src={Himg2} alt="" className="absolute left-[26%] top-4 max-lg:left-[20%] max-sm:left-[18%] max-sm:h-64 z-20 cardTwoFour-animation" />
+                        <img src={Himg3} alt="" className="updownCard-animation absolute left-[38%] top-2 z-50 max-lg:left-[30%] max-sm:left-[26%] max-sm:h-66" />
+                        <img src={Himg4} alt="" className="absolute left-[50%] top-4 z-10 max-lg:left-[42%] max-sm:left-[38%] max-sm:h-64 cardTwoFour-animation" />
                         <img src={Himg5} alt="" className="absolute left-[60%] top-4 max-lg:left-[56%]
-                        max-sm:left-[46%]  max-sm:h-64 z-8 right-left-animation5" />
+                        max-sm:left-[46%]  max-sm:h-64 z-8 cardOneFive-animation" />
 
                         {/* BG elicp */}
                     </div>
-                    <img src={elicpBg} alt="" className="absolute z-1 top-58 left-24 lg:left-44 2xl:left-94 2xl:top-74 h-120 max-lg:hidden"  />
+                    <img src={elicpBg} alt="" className="absolute z-1 top-58 left-24 lg:left-44 2xl:left-94 2xl:top-74 h-120 max-lg:hidden" />
                 </div>
 
             </div>
@@ -36,11 +36,13 @@ const Header = () => {
             max-3xl:size-94 
             max-lg:size-74
             max-sm:size-44
+            left-0
             " />
             <img src={rightHand} alt="" className="leftRight-anime absolute top-[50%] max-lg:hidden
              max-3xl:size-94 
              max-lg:size-74
              max-sm:size-44 
+             right-0
 
             " />
 
