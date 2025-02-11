@@ -39,10 +39,10 @@ const TrendingNFT = () => {
 
 
         {/* 2nd main */}
-        <div className="grid max-md:grid-cols-1 max-xl:grid-cols-2 max-2xl:grid-cols-3 grid-cols-4 gap-14 relative w-fit">
+        <div className="grid max-md:grid-cols-1 max-xl:grid-cols-2 max-2xl:grid-cols-3 grid-cols-4 gap-14 relative ">
           {TrendingNFTData.map((item, index) => (
             <div
-              className="px-2 py-6 drop-shadow-xl w-fit"
+              className="px-2 py-6 drop-shadow-xl"
               key={index}
               style={{
                 backgroundImage: `url(${item.frame})`,
