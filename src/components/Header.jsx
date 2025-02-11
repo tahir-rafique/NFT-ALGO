@@ -12,9 +12,8 @@ const Header = () => {
     return (
         <div className="flex justify-center relative">
             <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 3xl:py-10 ">
-
-                <div className="flex flex-col gap-0 relative py-64 ">
-                    <div className="text-center flex flex-col gap-3">
+                <div className="flex flex-col gap-0 pt-0  py-64  relative z-50">
+                    <div className="text-center flex flex-col gap-3 relative z-50">
                         <h1 className=" font-normal text-secondary text-center uppercase line-height-l">discover, create & <br /> sell artworks.</h1>
                         <h6 className="text-light text-center font-secondary">Discover and trade unique digital art pieces on our NFT website, <br /> where creativity meets blockchain technology.</h6>
                     </div>
@@ -28,18 +27,17 @@ const Header = () => {
 
                         {/* BG elicp */}
                     </div>
-                    <img src={elicpBg} alt="" className="absolute z-3 top-54 left-24 lg:left-44 
-                     2xl:left-94 2xl:top-74 h-120 max-lg:hidden"  />
+                    <img src={elicpBg} alt="" className="absolute z-1 top-58 left-24 lg:left-44 2xl:left-94 2xl:top-74 h-120 max-lg:hidden"  />
                 </div>
 
             </div>
 
-            <img src={leftHand} alt="" className="absolute left-[-30px] top-[50%]
+            <img src={leftHand} alt="" className="absolute left-[-30px] top-[50%] max-lg:hidden 
             max-3xl:size-94 
             max-lg:size-74
             max-sm:size-44
             " />
-            <img src={rightHand} alt="" className="absolute right-[-30px] top-[50%]
+            <img src={rightHand} alt="" className="absolute right-[-30px] top-[50%] max-lg:hidden
              max-3xl:size-94 
              max-lg:size-74
              max-sm:size-44 
