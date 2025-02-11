@@ -47,7 +47,7 @@ const Navbar = () => {
                     </div>
 
                     {menuOpen && (
-                        <div className="lg:hidden absolute bg-inverted  py-5 px-10 flex flex-col gap-8 z-80 navMobile-anime  h-[100vh] top-0 w-[70vw] left-0">
+                        <div className="lg:hidden absolute bg-inverted  py-5 px-10 flex flex-col gap-8 z-80 navMobile-anime  h-screen top-0 w-[70%] left-0">
                             <div className="flex gap-1 items-center">
                                 <img src={Navlogo} alt="logo" className="max-lg:size-16" />
                             </div>
