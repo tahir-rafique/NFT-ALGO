@@ -1,5 +1,5 @@
 import { timeLeft, TrendingNFTData } from "../constant/data.jsx";
-import { useState, } from "react";
+import {  useState, } from "react";
 import logoprice from "../assets/FeatureCollection/images/logoprice.webp";
 import downArrow from "../assets/TrendingNFT/icons/downArrow.svg";
 
@@ -8,17 +8,16 @@ import { useEffect } from "react";
 const TrendingNFT = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    let hideHandler = ()=>{
-      setIsOpen(false);
-    }
-    document.addEventListener("mousedown", hideHandler)
-  })
-
-
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    let hideDropdown = () => {
+      setIsOpen(false);
+    };
+    document.addEventListener("mousedown", hideDropdown)
+  })
 
   return (
     <div className="flex justify-center relative z-50">

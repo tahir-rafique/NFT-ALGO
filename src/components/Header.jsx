@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <div className="flex justify-center relative">
             <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 3xl:py-10 ">
-                <div className="flex flex-col gap-0 max-md:py-10  py-64  relative z-50">
+                <div className="flex flex-col gap-0 max-lg:pt-0 max-lg:pb-0  py-60 relative z-50">
                     <div className="text-center flex flex-col gap-3 relative z-50">
                         <h1 className=" font-normal text-secondary text-center uppercase">discover, create & <br /> sell artworks.</h1>
                         <h6 className="text-light text-center font-secondary">Discover and trade unique digital art pieces on our NFT website, <br /> where creativity meets blockchain technology.</h6>
