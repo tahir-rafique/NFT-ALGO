@@ -16,7 +16,7 @@ const BootNFT = () => {
             <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10 relative z-20">
                 <div className="flex max-lg:flex-col max-lg:items-center gap-10">
                     {/* Text Section */}
-                    <div className="flex flex-col justify-center gap-10 md:gap-24  w-[50%]  ">
+                    <div className="flex flex-col justify-center gap-10 md:gap-24  w-[50%] max-lg:w-full py-10 ">
                         <div className="flex flex-col gap-4">
                             <h2 className="line-height-l uppercase">Boost Your NFTs: <br />
                                 Enhance Visibility <br /> and Value</h2>
@@ -28,7 +28,7 @@ const BootNFT = () => {
                         </a>
                     </div>
                     {/* Image Section */}
-                    <div className="w-[50%] max-md:py-0 py-74 max-lg:py-60 relative">
+                    <div className="max-lg:w-full  w-[50%] max-md:py-0 py-74 max-lg:py-60 relative max-lg:pb-34">
                         <div className="absolute top-0 max-lg:left-12 left-24 z-50 max-md:hidden">
                             <div className="px-4 py-8 relative" style={{ backgroundImage: `url(${subtract})`, backgroundRepeat: "no-repeat", backgroundSize: "" }}>
                                 <div className="flex flex-col gap-1">
@@ -58,12 +58,12 @@ const BootNFT = () => {
                         <img src={upArr} alt="" className="absolute top-2 left-78 z-50 max-lg:hidden" />
                         <img src={sArr} alt="" className="absolute top-64 left-8 z-50 max-md:hidden" />
 
-                        <img src={elipBoost} alt="" className="absolute top-0 size-120 z-1 max-md:hidden" />
+                        <img src={elipBoost} alt="" className="absolute top-0 size-120 z-1 max-lg:hidden" />
 
-                        <img src={boostThree} alt="" className="absolute bottom-10 left-36 h-44 max-xl:hidden" />
+                        <img src={boostThree} alt="" className="absolute bottom-10 left-36 h-44 max-lg:hidden" />
 
 
-                        <img src={boostTwo} alt="" className="absolute right-2 bottom-0 h-68 max-lg:h-34 max-md:hidden" />
+                        <img src={boostTwo} alt="" className="absolute right-2 bottom-0 h-68 max-lg:h-34 max-lg:hidden" />
 
 
                     </div>

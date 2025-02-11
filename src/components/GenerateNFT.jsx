@@ -15,7 +15,7 @@ import leftGrid from "../assets/GenerateNFT/images/leftGridgenerate.webp"
 const GenerateNFT = () => {
     return (
         <div className="flex justify-center">
-            <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10">
+            <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10 relative z-10">
                 <div className="flex flex-col justify-center items-center gap-2 relative">
                     {/* main content */}
                     <h2 className="text-center uppercase">Turn your imagination <br /> into digital Asset </h2>
@@ -28,9 +28,6 @@ const GenerateNFT = () => {
                                 <img src={IconGenerate} alt="no img" />
                             </a>
                         </div>
-
-
-
                         {/* elicp */}
                         <img src={ellipce} alt="" className="absolute top-30 left-32 z-1 size-120 max-lg:hidden" />
                     </div>
@@ -70,7 +67,7 @@ const GenerateNFT = () => {
                 </div>
             </div>
 
-            <img src={leftGrid} alt="" className="left-0 absolute" />
+            <img src={leftGrid} alt="" className="left-0 absolute z-1" />
         </div>
 
 

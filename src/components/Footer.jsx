@@ -38,8 +38,8 @@ const Footer = () => {
           </div>
           {/* footer end */}
           <div className="footer-bg px-10 lg:px-20 py-10 relative">
-            <img src={logofooter} alt="" className="absolute top-8 left-30 max-2xl:top-30 max-md:hidden max-lg:left-20 z-10" />
-            <img src={tracked} alt="" className="absolute bottom-0 left-0 max-xl:bottom-1 max-md:hidden 2xl:size-74 size-[450px] z-20" />
+            <img src={logofooter} alt="" className="absolute top-8 left-30 max-2xl:top-30 max-md:hidden max-xl:left-20 z-10 max-lg:size-38 max-lg:top-8 max-lg:left-[30px]" />
+            <img src={tracked} alt="" className="absolute bottom-0 left-0 max-xl:bottom-1 max-lg:hidden 2xl:size-74 size-[450px] z-20" />
 
             {/* main footer text */}
             <div className="2xl:flex-row 2xl:justify-end 2xl:items-center 2xl:gap-32 max-md:items-start flex flex-col gap-4 items-end">

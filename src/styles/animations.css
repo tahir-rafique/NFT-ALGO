@@ -1,4 +1,5 @@
-@media (min-width: 800px) {
+@media (min-width: 650px) {
+  /* Card 3 UpDwon Animation */
   .updownCard-animation {
     animation-name: updowncard;
     animation-duration: 4s;
@@ -18,43 +19,88 @@
     }
   }
 
-  .cardOneFive-animation {
-    animation-name: cardOneFiveAnime;
-    animation-duration: 3s;
+
+  /* Cards left right animation */
+  /* Card 1 */
+
+  .cardOne-animation {
+    animation-name: cardOneAnime;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transition: all 0.3s;
-  }
-  @keyframes cardOneFiveAnime {
-    0% {
-      transform: translateX(0px);
-    }
-    50% {
-      transform: translateX(-20px);
-    }
-    100% {
-      transform: translateX(0px);
-    }
+    animation-timing-function: ease-in-out;
   }
 
-  .cardTwoFour-animation {
-    animation-name: cardTwoFourAnime;
-    animation-duration: 3.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transition: all 0.3s;
-  }
-  @keyframes cardTwoFourAnime {
+  @keyframes cardOneAnime {
     0% {
-      transform: translateX(0px);
+      transform: translateX(-150px);
     }
     50% {
-      transform: translateX(-20px);
+      transform: translateX(-230px);
+    }100%{
+      transform: translateX(-150px);
     }
-    100% {
-      transform: translateX(0px);
-    }
+
   }
+
+  /* Card 2*/
+  .cardTwo-animation {
+    animation-name: cardTwoAnime;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes cardTwoAnime {
+    0% {
+      transform: translateX(-80px);
+    }
+    50% {
+      transform: translateX(-130px);
+    }100%{
+      transform: translateX(-80px);
+    }
+
+  }
+
+  /* Card 4 */
+  .cardFour-animation {
+    animation-name: cardFourAnime;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes cardFourAnime {
+    0% {
+      transform: translateX(80px);
+    }
+    50% {
+      transform: translateX(130px);
+    }100%{
+      transform: translateX(80px);
+    }
+
+  }
+
+  /* Card 5 */
+
+  .cardFive-animation {
+    animation-name: cardFiveAnime;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes cardFiveAnime {
+    0% {
+      transform: translateX(150px);
+    }
+    50% {
+      transform: translateX(230px);
+    }100%{
+      transform: translateX(150px);
+    }
+
+  }
+
 
   /* Hand Animation */
   .leftHand-anime {

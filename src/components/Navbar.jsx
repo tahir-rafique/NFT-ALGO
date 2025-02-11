@@ -47,14 +47,14 @@ const Navbar = () => {
                     </div>
 
                     {menuOpen && (
-                        <div className="lg:hidden absolute bg-inverted  py-5 px-10 flex flex-col gap-8 z-80 navMobile-anime  h-screen top-0 w-[70%] left-0">
+                        <div className="lg:hidden absolute bg-inverted  py-5 px-10 flex flex-col gap-8 z-80 navMobile-anime  h-screen top-0 w-[300px] left-0">
                             <div className="flex gap-1 items-center">
                                 <img src={Navlogo} alt="logo" className="max-lg:size-16" />
                             </div>
                             <div className="flex flex-col gap-3">
                                 <div className="flex flex-col gap-3">
                                     <h6>
-                                        <a href="#" className=" text-secondary">
+                                        <a href="#" className=" text-main underline underline-offset-2">
                                             Home
                                         </a>
                                     </h6>
@@ -65,16 +65,16 @@ const Navbar = () => {
                                     </h6>
                                 </div>
                                 <div className="flex flex-col gap-3">
-                                    <div>
-                                        <button className="navbtn-size  navbtn-border font-medium background-grad text-inverted px-4 py-1">
-                                            Connect Wallet
-                                        </button>
-                                    </div>
-                                    <div>
-                                        <button className="navbtn-size border border-main text-main px-6 py-1 navbtn-border font-medium">
-                                            Create NFT
-                                        </button>
-                                    </div>
+
+                                    <button className="navbtn-size  navbtn-border font-medium background-grad text-inverted  py-1  w-fit px-4">
+                                        Connect Wallet
+                                    </button>
+
+
+                                    <button className="w-fit navbtn-size border border-main text-main  py-1 navbtn-border font-medium px-6.5">
+                                        Create NFT
+                                    </button>
+
                                 </div>
                             </div>
 

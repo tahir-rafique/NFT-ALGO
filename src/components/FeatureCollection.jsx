@@ -31,7 +31,7 @@ const FeatureCollection = () => {
           </div>
 
           {/* 2nd */}
-          <div className="max-lg:flex-col flex flex-row justify-between lg:items-center gap-2">
+          <div className="max-md:flex-col flex flex-row justify-between lg:items-center gap-2">
             <h6 className="text-para-light font-secondary font-light">
               Explore our exclusive featured collection, showcasing innovative campaigns and creative <br /> storytelling from top brands around the world.
             </h6>

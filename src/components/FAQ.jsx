@@ -24,24 +24,23 @@ const FAQ = () => {
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="border-2 faq-border border-muted py-5 px-2  cursor-pointer"
+              className="border-2 faq-border border-muted py-3 cursor-pointer"
               onClick={() => handleFAQ(index)
               }
             >
               <div className="flex gap-3 items-center  rounded-md px-2">
                 <div className="text-2xl flex items-center gap-2 w-full ">
                   {openAccord === index ?
-
-                    <div className=" bg-[#FFD9D9] gap-4  flex items-center w-full rounded-md py-2 px-2 opacity-90">
+                    <div className=" bg-[#FFD9D9] gap-4  flex items-center w-full rounded-md py-5 px-2 opacity-90">
                       <RiSubtractLine />
                       <h4 className="font-secondary w-full rounded-md font-semibold text-secondary">{item.question}</h4>
                     </div>
-
                     :
-                    <div className="flex gap-4 px-2">
+                    <div className=" bg-[#FFD9D9] gap-4  flex items-center w-full rounded-md py-5 px-2 opacity-90">
                       <IoMdAdd />
-                      <h4 className="font-secondary font-semibold text-secondary">{item.question}</h4>
+                      <h4 className="font-secondary w-full rounded-md font-semibold text-secondary">{item.question}</h4>
                     </div>
+
                   }
                 </div>
 

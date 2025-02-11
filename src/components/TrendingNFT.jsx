@@ -23,9 +23,9 @@ const TrendingNFT = () => {
     <div className="flex justify-center relative z-50">
       <div className="container mx-auto flex flex-col gap-4 lg:gap-10 max-sm:px-5 sm:px-12 lg:px-20 py-10">
         {/* 1st main*/}
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
           <h2>Trending nft’s</h2>
-          <div className="inline-block lg:pr-53 xl:pr-30 2xl:pr-5" >
+          <div className="inline-block lg:pr-53 xl:pr-30 2xl:pr-5 md:pr-3" >
             <button
               onClick={toggleDropdown}
               className="navbtn-size border border-grd text-main navbtn-border  px-4 py-1 3xl:px-6 3xl:py-2 cursor-pointer font-medium flex items-center gap-1">
