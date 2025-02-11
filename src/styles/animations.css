@@ -87,3 +87,17 @@
     }
   }
 }
+
+.navMobile-anime {
+  animation-name: navMobile;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes navMobile {
+  0% {
+    left: -40%;
+  }
+  100% {
+    left: 0%;
+  }
+}

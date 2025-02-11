@@ -30,7 +30,6 @@ const Navbar = () => {
                                 </Link>
                             </h6>
                             <h6>
-
                                 <Link to="/notfound" className="text-secondary">
                                     AI NFT GENERATION
                                 </Link>
@@ -48,29 +47,34 @@ const Navbar = () => {
                     </div>
 
                     {menuOpen && (
-                        <div className="lg:hidden fixed menuOpen-grad w-full p-12 flex flex-col gap-4 z-54 left-0 animate-pulse">
-                            <div className="flex flex-col gap-4">
-                                <h6>
-                                    <a href="#" className="underline underline-offset-8 text-inverted">
-                                        Home
-                                    </a>
-                                </h6>
-                                <h6>
-                                    <a href="#" className=" text-secondary">
-                                        AI NFT GENERATION
-                                    </a>
-                                </h6>
+                        <div className="lg:hidden absolute bg-inverted  py-5 px-10 flex flex-col gap-8 z-80 navMobile-anime  h-[100vh] top-0 w-[70vw] left-0">
+                            <div className="flex gap-1 items-center">
+                                <img src={Navlogo} alt="logo" className="max-lg:size-16" />
                             </div>
-                            <div className="flex flex-col gap-4">
-                                <div>
-                                    <button className="navbtn-size  navbtn-border font-medium background-grad text-inverted px-4 py-1">
-                                        Connect Wallet
-                                    </button>
+                            <div className="flex flex-col gap-3">
+                                <div className="flex flex-col gap-3">
+                                    <h6>
+                                        <a href="#" className=" text-main">
+                                            Home
+                                        </a>
+                                    </h6>
+                                    <h6>
+                                        <a href="#" className=" text-secondary">
+                                            AI NFT GENERATION
+                                        </a>
+                                    </h6>
                                 </div>
-                                <div>
-                                    <button className="navbtn-size border border-inverted text-inverted px-6 py-1 navbtn-border font-medium">
-                                        Create NFT
-                                    </button>
+                                <div className="flex flex-col gap-3">
+                                    <div>
+                                        <button className="navbtn-size  navbtn-border font-medium background-grad text-inverted px-4 py-1">
+                                            Connect Wallet
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button className="navbtn-size border border-main text-main px-6 py-1 navbtn-border font-medium">
+                                            Create NFT
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
 
