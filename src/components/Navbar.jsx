@@ -54,7 +54,7 @@ const Navbar = () => {
                             <div className="flex flex-col gap-3">
                                 <div className="flex flex-col gap-3">
                                     <h6>
-                                        <a href="#" className=" text-main">
+                                        <a href="#" className=" text-secondary">
                                             Home
                                         </a>
                                     </h6>
