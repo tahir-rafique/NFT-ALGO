@@ -16,8 +16,8 @@ const TopSeller = () => {
                     {
                         TopSellerData.map((item, index) => (
                             <div key={index} className="flex items-center gap-2  relative">
-                                <div className="relative py-4 px-2">
-                                    <img src={item.icon} alt="" className="absolute right-1 top-3" />
+                                <div className="relative py-2 px-2">
+                                    <img src={item.icon} alt="" className="absolute right-1 top-1 size-6" />
                                     <img src={item.url} alt="" />
                                 </div>
                                 
