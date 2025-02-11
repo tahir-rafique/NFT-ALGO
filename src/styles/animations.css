@@ -6,7 +6,6 @@
     animation-timing-function: ease;
     transition: all 0.4s;
   }
-
   @keyframes updown {
     0% {
       transform: translateY(0px);
@@ -26,7 +25,6 @@
     animation-timing-function: linear;
     transition: all 0.3s;
   }
-
   @keyframes rla {
     0% {
       transform: translateX(0px);
@@ -38,8 +36,6 @@
       transform: translateX(0px);
     }
   }
-
-
   .right-left-animation2 {
     animation-name: rla;
     animation-duration: 4s;
@@ -47,7 +43,6 @@
     animation-timing-function: linear;
     transition: all 0.3s;
   }
-
   @keyframes rla {
     0% {
       transform: translateX(0px);
@@ -59,9 +54,6 @@
       transform: translateX(0px);
     }
   }
-
-
-/*  */
 
   .right-left-animation5 {
     animation-name: rla;
@@ -70,7 +62,6 @@
     animation-timing-function: linear;
     transition: all 0.3s;
   }
-
   @keyframes rla {
     0% {
       transform: translateX(0px);
@@ -82,7 +73,6 @@
       transform: translateX(0px);
     }
   }
-
 
   .right-left-animation4 {
     animation-name: rla;
@@ -104,25 +94,33 @@
     }
   }
 
-  /* Hand Animation */
-
-  /* .lefthandAnime{
-    animation-name: handleft;
-    animation-duration: 3 s;
-    animation-iteration-count: 1;
+  .leftHand-anime {
+    animation-name: leftHandAnimation;
+    animation-duration: 4s;
     animation-delay: 1s;
-    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes leftHandAnimation {
+    0% {
+      left: -20%;
+    }
+    100% {
+      left: 0%;
+    }
   }
 
-  @keyframes handleft {
-    0%{
-      left: -10%;
+  .leftRight-anime {
+    animation-name: leftRightAnimation;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes leftRightAnimation {
+    0% {
+      right: -10%;
     }
-    100%{
-      left: 0;
+    100% {
+      right: 0%;
     }
-    
-  } */
-
-
+  }
 }
