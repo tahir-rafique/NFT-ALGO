@@ -32,14 +32,8 @@ const Header = () => {
 
             </div>
 
-            <img src={leftHand} alt="" className="leftHand-anime absolute  top-[50%] max-lg:hidden 
-            size-[600px]
-            -left-20
-            " />
-            <img src={rightHand} alt="" className="leftRight-anime absolute top-[50%] max-lg:hidden
-             size-[600px]
-             -right-20
-            " />
+            <img src={leftHand} alt="" className="leftHand-anime absolute z-1  top-[50%] max-lg:hidden size-[550px] -left-20" />
+            <img src={rightHand} alt="" className="leftRight-anime absolute z-1 top-[50%] max-lg:hidden size-[550px] -right-20" />
 
         </div>
     )
