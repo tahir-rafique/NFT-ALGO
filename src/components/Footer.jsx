@@ -25,7 +25,7 @@ const Footer = () => {
 
       {/* footer */}
       <div className="flex justify-center  relative z-50">
-        <div className="container mx-auto  max-sm:px-5 sm:px-12 lg:px-20 py-10 pt-30 flex flex-col gap-8 bg-green-300">
+        <div className="container mx-auto  max-sm:px-5 sm:px-12 lg:px-20 lg:py-5 pt-30 flex flex-col gap-8">
 
           {/* footer top */}
           <div className="flex flex-col justify-center items-center gap-4 xl:gap-10">
@@ -40,33 +40,55 @@ const Footer = () => {
 
           </div>
 
-
           {/* footer end */}
-          <div className="footer-bg px-10 lg:px-20 relative py-20">
-
-            {/* logoooo */}
-            {/* <img src={logofooter} alt="" className="absolute top-8 left-30 max-2xl:top-30 max-xl:left-20 z-10 max-lg:size-36 max-lg:top-8 max-lg:left-[30px]" /> */}
-
-
+          <div className="footer-bg px-10 lg:px-20 relative py-18 overflow-y-hidden">
             {/* tehra icon */}
-            {/* <img src={tracked} alt="" className="absolute top-0 left-0 max-lg:hidden z-20 xl:size-94  size-90" /> */}
-
+            <img src={tracked} alt="" className="absolute top-0 left-0 max-lg:hidden  z-1 size-99" />
 
             {/* main footer text taqreeban-360 */}
-            <div className="py-20 flex bg-green-300">
-              <div className="h-32 w-[30%] bg-green-600"></div>
-              <div className="h-32 w-[70%] bg-rose-600">
-
-                <div>
-
-                </div>
-                <div>
-                  
-                </div>
+            <div className="py-2 flex flex-col max-lg:items-center lg:flex-row relative z-50">
+              <div className="w-[40%] max-lg:w-full flex justify-center ">
+                <img src={logofooter} alt="" className="size-33" />
               </div>
 
+              <div className="w-[60%] flex gap-20 max-lg:flex-col max-lg:w-full items-center">
 
+                {/* Social links*/}
+                <div className="Social-links w-[70%] max-lg:w-full flex flex-col gap-10">
+                  <div>
+                    <h5 className="max-lg:text-center font-secondary text-inverted">NFT ALGO is the world’s leading NFTs marketplace where you can discover, sell and bid NFTs and get rich </h5>
+                  </div>
+                  <div className="flex gap-2 max-lg:justify-center">
+                    <img src={fb} alt="fb" className="cursor-pointer" />
+                    <img src={telegram} alt="telegram" className="cursor-pointer" />
+                    <img src={linkden} alt="linkden" className="cursor-pointer" />
+                    <img src={discord} alt="discord" className="cursor-pointer" />
+                    <img src={insta} alt="insta" className="cursor-pointer" />
+                    <img src={tiktok} alt="tiktok" className="cursor-pointer" />
+                    <img src={redit} alt="redit" className="cursor-pointer" />
+                    <img src={github} alt="github" className="cursor-pointer" />
+                  </div>
+                </div>
 
+                {/* WEbsite LInks */}
+                <div className="font-secondary text-inverted  w-[30%] max-lg:w-full max-lg:flex-row max-lg:justify-center max-lg:items-center max-lg:gap-4 flex flex-col lg:gap-5 ">
+                  <div className="flex flex-col gap-4">
+
+                    {/*  */}
+                    <div className="max-lg:flex-row flex max-lg:gap-4 lg:flex-col lg:gap-4">
+                      <h3 className="cursor-pointer font-bold">About</h3>
+                      <h5 className="cursor-pointer">About NFT</h5>
+                      <h5 className="cursor-pointer">Live Auctions</h5>
+                    </div>
+
+                    {/*  */}
+                    <div className="max-lg:flex-row flex flex-col max-lg:gap-4 max-lg:justify-center lg:gap-4">
+                      <h5 className="cursor-pointer">Collection</h5>
+                      <h5 className="cursor-pointer">Activity</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             </div>
           </div>
@@ -84,16 +106,6 @@ export default Footer;
 
 
 
-{/* <div className="flex gap-2 max-lg:justify-center">
-<img src={fb} alt="fb" className="cursor-pointer" />
-<img src={telegram} alt="telegram" className="cursor-pointer" />
-<img src={linkden} alt="linkden" className="cursor-pointer" />
-<img src={discord} alt="discord" className="cursor-pointer" />
-<img src={insta} alt="insta" className="cursor-pointer" />
-<img src={tiktok} alt="tiktok" className="cursor-pointer" />
-<img src={redit} alt="redit" className="cursor-pointer" />
-<img src={github} alt="github" className="cursor-pointer" />
-</div> */}
 
 
 
@@ -102,10 +114,4 @@ export default Footer;
 
 
 
-{/* <div className="font-secondary text-inverted  bg-rose-400 max-lg:flex gap-4 max-lg:justify-center max-lg:items-center">
-  <h3 className="cursor-pointer font-bold">About</h3>
-  <h5 className="cursor-pointer">About NFT</h5>
-  <h5 className="cursor-pointer">Live Auctions</h5>
-  <h5 className="cursor-pointer">Collection</h5>
-  <h5 className="cursor-pointer">Activity</h5>
-</div> */}
+
