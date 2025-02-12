@@ -1,4 +1,4 @@
-const ButtonMain = ({ text, expIcon, toggleDropdown, }) => {
+const ButtonMain = ({ text, expIcon, toggleDropdown }) => {
     return (
         <div>
             <button

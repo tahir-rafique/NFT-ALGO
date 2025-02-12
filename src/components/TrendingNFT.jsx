@@ -1,23 +1,27 @@
 import { timeLeft, TrendingNFTData } from "../constant/data.jsx";
-import {  useState, } from "react";
 import logoprice from "../assets/FeatureCollection/images/logoprice.webp";
 import downArrow from "../assets/TrendingNFT/icons/downArrow.svg";
-
-import { useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const TrendingNFT = () => {
+
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((isOpen) => !isOpen)
   };
 
   useEffect(() => {
-    let hideDropdown = () => {
-      setIsOpen(false);
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) { setIsOpen(false) }
     };
-    document.addEventListener("mousedown", hideDropdown)
-  })
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    };
+  });
+
 
   return (
     <div className="flex justify-center relative z-50">
@@ -25,7 +29,7 @@ const TrendingNFT = () => {
         {/* 1st main*/}
         <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
           <h2>Trending nft’s</h2>
-          <div className="inline-block lg:pr-53 xl:pr-30 2xl:pr-5 md:pr-3" >
+          <div ref={dropdownRef} className="inline-block lg:pr-53 xl:pr-30 2xl:pr-5 md:pr-3" >
             <button
               onClick={toggleDropdown}
               className="navbtn-size border border-grd text-main navbtn-border  px-4 py-1 3xl:px-6 3xl:py-2 cursor-pointer font-medium flex items-center gap-1">

@@ -1,9 +1,13 @@
-import { AuctionData } from "../constant/data"
+import { AuctionData } from "../constant/data";
 import ButtonMain from './../shared/ButtonMain';
-import exploreArrow from "../assets/Auction/icons/explorArrow.svg"
+import exploreArrow from "../assets/Auction/icons/explorArrow.svg";
+import { Link, useNavigate } from "react-router-dom";
+
 
 
 const RecentSold = () => {
+
+    const navigate = useNavigate();
     return (
         <div className="flex justify-center">
             <div className="container mx-auto px-5 sm:px-12 lg:px-20 py-10 flex flex-col gap-4 lg:gap-10">
@@ -34,7 +38,8 @@ const RecentSold = () => {
                     }
                 </div>
                 <div className="flex md:justify-center">
-                    <ButtonMain text={"Explore"} expIcon={exploreArrow}/>
+                    {/* <ButtonMain text={"Explore"} expIcon={exploreArrow} navigate={navigate} /> */}
+                    <a onClick={navigate} className="cursor-pointer" href="/auction" >Hello</a>
                 </div>
             </div>
         </div>
