@@ -18,9 +18,9 @@ const BootNFT = () => {
                     {/* Text Section */}
                     <div className="flex flex-col justify-center gap-10 md:gap-24  w-[50%] max-lg:w-full py-10 ">
                         <div className="flex flex-col gap-4">
-                            <h2 className="line-height-l uppercase">Boost Your NFTs: <br />
-                                Enhance Visibility <br /> and Value</h2>
-                            <h6 className="font-secondary leading-tight tracking-tight text-para-light">The Boost feature is a premium service that allows NFT creators and <br /> collectors to elevate their listings on our marketplace. By boosting an <br /> NFT, you can ensure it appears prominently in search results, <br /> featured sections, and on the homepage, maximizing exposure to <br /> potential buyers.</h6>
+                            <h2 className="line-height-l uppercase text-secondary w-full max-w-[80%]">Boost Your NFTs:
+                                Enhance Visibility  and Value</h2>
+                            <h6 className="font-secondary leading-tight tracking-tight text-para-light font-light w-full max-w-[75%]">The Boost feature is a premium service that allows NFT creators and  collectors to elevate their listings on our marketplace. By boosting an  NFT, you can ensure it appears prominently in search results,  featured sections, and on the homepage, maximizing exposure to  potential buyers.</h6>
                         </div>
                         <a href="#" className="w-fit navbtn-size text-small navbtn-border font-medium background-grad text-inverted px-4 py-2 shrink-0 cursor-pointer flex gap-1">
                             <span>Generate</span>
@@ -62,9 +62,7 @@ const BootNFT = () => {
 
                         <img src={boostThree} alt="" className="absolute bottom-10 left-36 h-44 max-lg:hidden" />
 
-
                         <img src={boostTwo} alt="" className="absolute right-2 bottom-0 h-68 max-lg:h-34 max-lg:hidden" />
-
 
                     </div>
 

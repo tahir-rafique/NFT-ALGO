@@ -42,17 +42,16 @@ const Footer = () => {
 
           {/* footer end */}
           <div className="footer-bg px-10 lg:px-20 relative py-18 overflow-y-hidden">
-            {/* tehra icon */}
+            
             <img src={tracked} alt="" className="absolute top-0 left-0 max-lg:hidden  z-1 size-99" />
 
-            {/* main footer text taqreeban-360 */}
+            {/* main footer text taqreebn-360 */}
             <div className="py-2 flex flex-col max-lg:items-center lg:flex-row relative z-50">
               <div className="w-[40%] max-lg:w-full flex justify-center ">
-                <img src={logofooter} alt="" className="size-33" />
+                <img src={logofooter} alt="" className="size-43" />
               </div>
 
               <div className="w-[60%] flex gap-20 max-lg:flex-col max-lg:w-full items-center">
-
                 {/* Social links*/}
                 <div className="Social-links w-[70%] max-lg:w-full flex flex-col gap-10">
                   <div>
@@ -76,7 +75,7 @@ const Footer = () => {
 
                     {/*  */}
                     <div className="max-lg:flex-row flex max-lg:gap-4 lg:flex-col lg:gap-4">
-                      <h3 className="cursor-pointer font-bold">About</h3>
+                      <h3 className="cursor-pointer font-bold font-secondary">About</h3>
                       <h5 className="cursor-pointer">About NFT</h5>
                       <h5 className="cursor-pointer">Live Auctions</h5>
                     </div>

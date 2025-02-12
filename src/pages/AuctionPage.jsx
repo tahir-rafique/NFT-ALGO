@@ -24,7 +24,7 @@ const AuctionPage = () => {
       <div className='AuctionPage flex justify-center relative'>
         <div className='container mx-auto  max-sm:px-5 sm:px-12 lg:px-20  py-10 '>
 
-          {/* Auction images-Wraper */}
+
           <div className='Auction topWraper flex flex-col items-center py-10 max-sm:py-5 relative z-50'>
 
             {/* text */}
@@ -46,13 +46,11 @@ const AuctionPage = () => {
             </div>
           </div>
 
-          {/* Top Listed */}
+
           <div className='py-20 max-sm:flex max-sm:flex-col max-sm:items-center relative z-50'>
             <div className='sm:flex-row flex flex-col items-center gap-4 sm:justify-between px-1 pb-10'>
 
               <h2 className='uppercase'>Top Listed</h2>
-
-              {/* reFresh */}
               <div className='flex flex-col  gap-2'>
                 <div className='flex items-center gap-2'>
                   <img src={refresh} alt="" />
@@ -61,6 +59,7 @@ const AuctionPage = () => {
               </div>
 
             </div>
+
             <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5 '>
               {
                 AuctionPageData.map((item, index) => (
@@ -81,16 +80,13 @@ const AuctionPage = () => {
                           </div>
                         </div>
 
-                        {/*auction image */}
                         <div className='px-2 pb-3 max-lg:pb-4 2xl:pb-7 relative'>
                           <img src={item.url} alt="" className='max-md:w-full max-md:h-fit' />
 
-                          {/* timer */}
                           <div className="absolute  max-sm:left-24 max-sm:top-36 sm:top-25 sm:left-18 md:left-24 md:top-34 lg:top-26 2xl:top-34 lg:left-21  font-medium bg- py-1 px-4 shrink-0 cursor-pointer text-para-light font-secondary rounded-md bg-sold ">
                             3:06:59:18
                           </div>
 
-                          {/* price */}
                           <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-5 2xl:bottom-8 right-4">
                             <p className="text-l ">Price:</p>
                             <span className="bg-black rounded-full">
@@ -99,7 +95,6 @@ const AuctionPage = () => {
                             <p className="text-l text-para-light">142.02</p>
                           </div>
 
-                          {/* Stock */}
                           <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-2 shrink-0 cursor-pointer text-secondary flex items-center gap-4 text-small absolute bottom-5 2xl:bottom-8 left-4 ">
                             <span className='text-l font-medium capitalize '>In Stock</span>
                             <span className='text-l text-para-light'>{StockCount}</span>

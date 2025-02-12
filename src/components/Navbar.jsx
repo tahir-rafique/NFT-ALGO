@@ -18,14 +18,14 @@ const Navbar = () => {
                 <div className="absolute left-0 top-0 ">
                     <img src={topGridLeft} alt="" />
                 </div>
-                <div className="container mx-auto">
+                <div className="">
                     <div className="flex justify-between items-center">
                         <div className="flex gap-1 items-center">
                             <img src={Navlogo} alt="logo" className="max-lg:size-16" />
                         </div>
                         <div className="hidden lg:flex sm:gap-4 lg:gap-8">
                             <h6>
-                                <Link to="/" className="underline underline-offset-4 text-main font-bold">
+                                <Link to="/" className="underline underline-offset-6 text-main font-bold">
                                     Home
                                 </Link>
                             </h6>
@@ -54,7 +54,7 @@ const Navbar = () => {
                             <div className="flex flex-col gap-3">
                                 <div className="flex flex-col gap-3">
                                     <h6>
-                                        <a href="#" className=" text-main underline underline-offset-2">
+                                        <a href="#" className=" text-main underline underline-offset-8">
                                             Home
                                         </a>
                                     </h6>
