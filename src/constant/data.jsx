@@ -86,6 +86,12 @@ import tcimg17 from "../assets/TopCollection/images/tcimg17.webp"
 import tcimg18 from "../assets/TopCollection/images/tcimg18.webp"
 
 
+// Auction-Page Data
+
+import APMimg1 from "../assets/AuctionPage/images/main1.webp"
+import APMimg2 from "../assets/AuctionPage/images/main2.webp"
+import APMimg3 from "../assets/AuctionPage/images/main3.webp"
+import APMimg4 from "../assets/AuctionPage/images/main4.webp"
 
 
 
@@ -221,3 +227,23 @@ export const faqData = [
 export const timeLeft = ["Last 30 Minutes", "Last 1 Hour", "Last 1 Week", "Last 1 Month"];
 
 
+
+export const AuctionPageData = [
+
+    { frame: subtract, url: img5, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: img6, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: img7, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: img8, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+
+    //
+    { frame: subtract, url: img1, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: img2, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: img3, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: img4, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    // 
+    { frame: subtract, url: img7, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: img5, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: img8, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: img6, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+
+]

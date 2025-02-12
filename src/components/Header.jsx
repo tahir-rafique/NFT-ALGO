@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <div className="flex justify-center relative">
             <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 3xl:py-10 ">
-                <div className="flex flex-col gap-0 max-lg:pt-0 max-lg:pb-0 pt-10  py-60 relative z-50">
+                <div className="flex flex-col gap-0 max-lg:pt-6 max-lg:pb-0 pt-10  py-60 relative z-50">
                     <div className="text-center flex flex-col gap-3 relative z-50">
                         <h1 className=" font-normal text-secondary text-center uppercase line-height-l">discover, create & <br /> sell artworks.</h1>
                         <h6 className="text-light text-center font-secondary">Discover and trade unique digital art pieces on our NFT website, <br /> where creativity meets blockchain technology.</h6>
@@ -25,19 +25,16 @@ const Header = () => {
                         <img src={Himg5} alt="" className="absolute top-4 max-sm:h-64 z-8 cardFive-animation  " />
                         {/* BG elicp */}
                     </div>
-
-                    <div className="onmobile md:hidden flex flex-wrap justify-center py-20 relative ">
-                        <img src={Himg1} alt="" className="h-34 absolute z-10 top-0 left-24  cardsNotDisplay" />
-                        <img src={Himg2} alt="" className="h-36 absolute z-12 top-0 left-36 cardsNotDisplay" />
-                        <img src={Himg3} alt="" className="h-40 absolute z-50 top-0 " />
-                        <img src={Himg4} alt="" className="h-36  absolute z-12 top-0 right-36 cardsNotDisplay" />
-                        <img src={Himg5} alt="" className="h-34 absolute z-10 top-0 right-24 cardsNotDisplay" />
+                    <div className="onmobile md:hidden flex flex-wrap justify-center py-60 relative ">
+                        {/* <img src={Himg1} alt="" className="h-34 absolute z-10 top-0 left-24  cardsNotDisplay" /> */}
+                        {/* <img src={Himg2} alt="" className="h-36 absolute z-12 top-0 left-36 cardsNotDisplay" /> */}
+                        <img src={Himg3} alt="" className=" absolute z-50 top-4 " />
+                        {/* <img src={Himg4} alt="" className="h-36  absolute z-12 top-0 right-36 cardsNotDisplay" /> */}
+                        {/* <img src={Himg5} alt="" className="h-34 absolute z-10 top-0 right-24 cardsNotDisplay" /> */}
                     </div>
                     <img src={elicpBg} alt="" className="absolute z-1 top-58 left-24 lg:left-44 2xl:left-94 2xl:top-74 h-120 max-lg:hidden" />
                 </div>
-
             </div>
-
             <img src={leftHand} alt="" className="leftHand-anime absolute z-1  top-[35%] max-lg:hidden size-[550px] -left-20" />
             <img src={rightHand} alt="" className="leftRight-anime absolute z-1 top-[35%] max-lg:hidden size-[550px] -right-20" />
 

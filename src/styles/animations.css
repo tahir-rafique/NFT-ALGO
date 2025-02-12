@@ -1,4 +1,4 @@
-@media (min-width: 650px) {
+@media (max-width: 3000px) {
   /* Card 3 UpDwon Animation */
   .updownCard-animation {
     animation-name: updowncard;
@@ -133,7 +133,7 @@
 
 .navMobile-anime {
   animation-name: navMobile;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 @keyframes navMobile {

@@ -76,6 +76,7 @@ const TrendingNFT = () => {
                 <button className="background-grad text-inverted px-4 py-2 cursor-pointer flex items-center font-secondary font-medium bg-inverted  shrink-0   gap-1 text-l absolute bottom-4 left-4">
                   Buy
                 </button>
+
                 {/* price */}
                 <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-4 left-41">
                   <p className="text-l ">Price:</p>
@@ -84,6 +85,8 @@ const TrendingNFT = () => {
                   </span>
                   <p className="text-l text-para-light">142.02</p>
                 </div>
+
+                
               </div>
             </div>
           ))}

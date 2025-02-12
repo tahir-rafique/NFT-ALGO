@@ -58,10 +58,13 @@ p {
 }
 
 .line-height-l {
-  line-height: 105%;
+  line-height: 115%;
 }
 .line-height-s {
   line-height: 90%;
+}
+.acutionLargerfont {
+  font-size: 150px;
 }
 
 @media (max-width: 1570px) {
@@ -89,6 +92,10 @@ p {
   p {
     font-size: 12px;
     font-family: "Roboto", sans-serif;
+  }
+
+  .acutionLargerfont {
+    font-size: 110px;
   }
 }
 
@@ -173,5 +180,9 @@ p {
   p {
     font-size: 9px;
     font-family: "Roboto", sans-serif;
+  }
+
+  .acutionLargerfont {
+    font-size: 60px;
   }
 }
