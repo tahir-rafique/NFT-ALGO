@@ -55,7 +55,7 @@ const FAQ = () => {
         </div>
       </div>
 
-      <img src={faqElicp} alt="" className="absolute right-0 top-0 size-120 max-lg:size-94 max-sm:hidden" />
+      <img src={faqElicp} alt="" className="absolute right-0 top-0 size-120 max-lg:size-94 max-lg:hidden" />
     </div>
   );
 };
