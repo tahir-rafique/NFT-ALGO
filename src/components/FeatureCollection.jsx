@@ -36,7 +36,7 @@ const FeatureCollection = () => {
               Explore our exclusive featured collection, showcasing innovative campaigns and creative <br /> storytelling from top brands around the world.
             </h6>
 
-            <div className="flex gap-2">
+            <div className="flex gap-2 justify-end">
               <span
                 className="p-5 cursor-pointer"
                 style={{ backgroundImage: `url(${reactangle})`, backgroundRepeat: "no-repeat" }}
