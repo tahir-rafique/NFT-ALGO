@@ -32,8 +32,8 @@ const Header = () => {
                     <img src={elicpBg} alt="" className="absolute z-1 top-58 left-24 lg:left-44 2xl:left-94 2xl:top-74 h-120 max-lg:hidden" />
                 </div>
             </div>
-            <img src={leftHand} alt="" className="leftHand-anime absolute z-1  top-[33%] max-lg:hidden size-[480px] -left-20" />
-            <img src={rightHand} alt="" className="leftRight-anime absolute z-1 top-[33%] max-lg:hidden size-[480px] -right-20" />
+            <img src={leftHand} alt="" className="leftHand-anime absolute z-1  top-[33%] max-lg:hidden size-[480px] 2xl:size-[520px] -left-20" />
+            <img src={rightHand} alt="" className="leftRight-anime absolute z-1 top-[33%] max-lg:hidden size-[480px] 2xl:size-[520px] -right-20" />
 
         </div>
     )
