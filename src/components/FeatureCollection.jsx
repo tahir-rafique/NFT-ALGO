@@ -56,7 +56,7 @@ const FeatureCollection = () => {
           </div>
 
           <div className="">
-            <div className="flex gap-10 scroll-smooth" ref={sliderRef}>
+            <div className="flex gap-5 scroll-smooth" ref={sliderRef}>
               {FeatureCollectionData.map((item, index) => (
                 <div
                   key={index}

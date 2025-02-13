@@ -41,18 +41,18 @@ const Footer = () => {
           </div>
 
           {/* footer end */}
-          <div className="footer-bg px-10 lg:px-20 relative py-18 overflow-y-hidden">
+          <div className="footer-bg px-10 lg:px-20 relative py-5 sm:py-18 overflow-y-hidden">
             
             <img src={tracked} alt="" className="absolute top-0 left-0 max-lg:hidden  z-1 size-99" />
 
             {/* main footer text taqreebn-360 */}
             <div className="py-2 flex flex-col max-lg:items-center lg:flex-row relative z-50">
               <div className="w-[40%] max-lg:w-full flex justify-center ">
-                <img src={logofooter} alt="" className="size-43" />
+                <img src={logofooter} alt="" className="size-43 max-lg:size-34" />
               </div>
 
-              <div className="w-[60%] flex gap-20 max-lg:flex-col max-lg:w-full items-center">
-                {/* Social links*/}
+              <div className="w-[60%] flex gap-10 max-lg:flex-col max-lg:w-full items-center">
+                
                 <div className="Social-links w-[70%] max-lg:w-full flex flex-col gap-10">
                   <div>
                     <h5 className="max-lg:text-center font-secondary text-inverted">NFT ALGO is the world’s leading NFTs marketplace where you can discover, sell and bid NFTs and get rich </h5>
@@ -69,22 +69,21 @@ const Footer = () => {
                   </div>
                 </div>
 
-                {/* WEbsite LInks */}
+            
                 <div className="font-secondary text-inverted  w-[30%] max-lg:w-full max-lg:flex-row max-lg:justify-center max-lg:items-center max-lg:gap-4 flex flex-col lg:gap-5 ">
-                  <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-2">
 
-                    {/*  */}
                     <div className="max-lg:flex-row flex max-lg:gap-4 lg:flex-col lg:gap-4">
                       <h3 className="cursor-pointer font-bold font-secondary">About</h3>
                       <h5 className="cursor-pointer">About NFT</h5>
                       <h5 className="cursor-pointer">Live Auctions</h5>
                     </div>
 
-                    {/*  */}
                     <div className="max-lg:flex-row flex flex-col max-lg:gap-4 max-lg:justify-center lg:gap-4">
                       <h5 className="cursor-pointer">Collection</h5>
                       <h5 className="cursor-pointer">Activity</h5>
                     </div>
+
                   </div>
                 </div>
               </div>

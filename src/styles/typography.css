@@ -63,6 +63,7 @@ p {
 .line-height-s {
   line-height: 90%;
 }
+
 .acutionLargerfont {
   font-size: 150px;
 }
@@ -104,7 +105,7 @@ p {
     font-size: 46px;
   }
   h2 {
-    font-size: 38px;
+    font-size: 33px;
   }
   h3 {
     font-size: 18px;
@@ -138,7 +139,7 @@ p {
     font-size: 14px;
   }
   h4 {
-    font-size: 13px;
+    font-size: 12px;
   }
   h5 {
     font-size: 12px;
@@ -150,7 +151,7 @@ p {
     font-size: 14px;
   }
   p {
-    font-size: 10px;
+    font-size: 12px;
     font-family: "Roboto", sans-serif;
   }
 

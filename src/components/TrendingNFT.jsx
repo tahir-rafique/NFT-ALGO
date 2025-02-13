@@ -32,7 +32,7 @@ const TrendingNFT = () => {
           {/* 1st main*/}
           <div className="flex justify-between items-center gap-10">
             <h2>Trending nft’s</h2>
-            <div ref={dropdownRef} className="inline-block" >
+            <div ref={dropdownRef} className="inline-block " >
               <button
                 onClick={toggleDropdown}
                 className="navbtn-size border border-grd text-main navbtn-border  px-4 py-1 3xl:px-6 3xl:py-2 cursor-pointer font-medium flex items-center gap-1">
@@ -43,12 +43,12 @@ const TrendingNFT = () => {
               </button>
 
               {isOpen && (
-                <div className="absolute z-50 w-54 bg-inverted border-2 border-muted rounded-lg shadow-lg">
+                <div className="absolute z-50 max-sm:w-33 w-45 bg-inverted border-2 border-muted rounded-lg shadow-lg ">
                   <ul className="py-2">
                     {timeLeft.map((item) => (
-                      <li key={item} className="font-secondary px-4 py-2 hover:bg-gray-100 cursor-pointer" >
+                      <p key={item} className="font-secondary px-4 py-2 hover:bg-gray-100 cursor-pointer" >
                         {item}
-                      </li>
+                      </p>
                     ))}
                   </ul>
                 </div>
@@ -62,13 +62,13 @@ const TrendingNFT = () => {
             {
               TrendingNFTData.map((item, index) => (
                 <div key={index} className='p-1 h-full pb-8'>
-                  <div className="pt-6 px-3 drop-shadow-md max-sm:w-84 max-sm:pb-4"
+                  <div className="pt-6 px-3 drop-shadow-md max-sm:w-84 max-sm:pb-5 max-md:pb-1 max-lg:pb-4 max-xl:pb-2 xl:pb-1  2xl:pb-4"
                     style={{
                       backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat",
                       backgroundSize: "cover"
                     }}
                   >
-                    <div className='flex flex-col gap-3'>
+                    <div className='flex flex-col gap-3 relative'>
                       {/* person wraper */}
                       <div className="flex gap-2 items-center w-full">
                         <img src={item.personImg} alt="" />
@@ -78,23 +78,20 @@ const TrendingNFT = () => {
                         </div>
                       </div>
 
-                      <div className='relative'>
-                        <img src={item.url} alt="" className='max-md:w-full max-md:h-fit rounded-2xl' />
+                      <div className=''>
+                        <img src={item.url} alt="" className='w-full h-fit rounded-2xl' />
 
-                        <a className="text-l font-medium font-secondary navbtn-border background-grad text-inverted cursor-pointer  w-fit absolute  bottom-14 left-2 px-4 py-2">
+                        <a className="text-l font-medium font-secondary navbtn-border background-grad text-inverted cursor-pointer  w-fit absolute  bottom-4 left-2 px-4 py-2">
                           Buy
                         </a>
 
-                        <div className="  font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center navbtn-border gap-1 text-l absolute bottom-14 right-5">
+                        <div className="  font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center navbtn-border gap-1 text-l absolute bottom-4 right-3">
                           <p className="text-l ">Price:</p>
                           <span className="bg-black rounded-full">
                             <img src={logoprice} alt="" />
                           </span>
                           <p className="text-l text-para-light">142.02</p>
                         </div>
-
-
-
                       </div>
                     </div>
 

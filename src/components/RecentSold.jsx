@@ -7,17 +7,18 @@ const RecentSold = () => {
 
         <div className="flex flex-col max-sm:items-center gap-4 lg:gap-10 ">
           <h2>Recently Sold </h2>
-          <div className=' grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-4'>
+          <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-4'>
             {
               RecentSoldData.map((item, index) => (
-                <div key={index} className='p-1 h-full'>
-                  <div className="pt-6 px-2 sm:px-5 md:px-4.2 drop-shadow-md max-sm:w-84 max-sm:pb-4 sm:pb-4.5 overflow-visible " key={index}
+                <div key={index} className=' h-full'>
+                  <div className="drop-shadow-md" key={index}
                     style={{
                       backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover"
+                      backgroundSize: "cover",
+                      width: "318px", 
                     }}
                   >
-                    <div className='flex flex-col gap-3 relative'>
+                    <div className='flex flex-col gap-2 relative'>
 
                       <div className="flex gap-2 items-center w-full">
                         <img src={item.personImg} alt="" />

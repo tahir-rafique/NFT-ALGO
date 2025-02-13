@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <div className="flex justify-center relative">
             <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 3xl:py-10 ">
-                <div className="flex flex-col gap-0 max-lg:pt-6 max-lg:pb-0 pt-10 max-2xl:py-33  2xl:py-35 relative z-50">
+                <div className="flex flex-col gap-0 max-lg:pt-6 max-lg:pb-0 pt-4  py-25 relative z-50">
 
                     <div className="text-center flex flex-col gap-3 relative z-50">
                         <h1 className=" font-normal text-secondary text-center uppercase line-height-l">discover, create & <br /> sell artworks.</h1>
@@ -32,11 +32,14 @@ const Header = () => {
                     <img src={elicpBg} alt="" className="absolute z-1 top-58 left-24 lg:left-44 2xl:left-94 2xl:top-74 h-120 max-lg:hidden" />
                 </div>
             </div>
-            <img src={leftHand} alt="" className="leftHand-anime absolute z-1  top-[35%] max-lg:hidden size-[550px] -left-20" />
-            <img src={rightHand} alt="" className="leftRight-anime absolute z-1 top-[35%] max-lg:hidden size-[550px] -right-20" />
+            <img src={leftHand} alt="" className="leftHand-anime absolute z-1  top-[33%] max-lg:hidden size-[480px] -left-20" />
+            <img src={rightHand} alt="" className="leftRight-anime absolute z-1 top-[33%] max-lg:hidden size-[480px] -right-20" />
 
         </div>
     )
 }
 
 export default Header;
+
+
+

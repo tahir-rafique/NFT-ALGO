@@ -9,7 +9,9 @@ const TopCollection = () => {
 
       <div className="flex justify-center relative z-50">
         <div className="container mx-auto px-5 sm:px-12 lg:px-20 py-10 flex flex-col gap-4 lg:gap-10 ">
-          <div className="flex max-lg:flex-col flex-row lg:justify-between gap-2 lg:items-center">
+          
+          <div className="flex justify-between gap-3 items-center">
+            
             <h2>Top Collection</h2>
             <h4 className="">
               <a href="#" className="cursor-pointer text-main font-secondary">
@@ -18,8 +20,9 @@ const TopCollection = () => {
                 </h4>
               </a>
             </h4>
+
           </div>
-          <div>
+          <div className="flex max-sm:justify-center">
             <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 w-fit">
               {TopCollectionData.map((item, index) => (
                 <div key={index} className="border-muted border-3 rounded-2xl shadow-lg p-4">
