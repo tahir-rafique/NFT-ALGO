@@ -16,7 +16,7 @@ const BootNFT = () => {
             <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10 relative z-20">
                 <div className="flex max-lg:flex-col max-lg:items-center gap-10">
                     {/* Text Section */}
-                    <div className="flex flex-col justify-center gap-10 md:gap-24  w-[50%] max-lg:w-full py-10 ">
+                    <div className="flex flex-col justify-center gap-10 md:gap-24  w-[50%] max-lg:w-full md:py-10 ">
                         <div className="flex flex-col gap-4">
                             <h2 className="line-height-l uppercase text-secondary w-full max-w-[80%]">Boost Your NFTs:
                                 Enhance Visibility  and Value</h2>
@@ -60,7 +60,7 @@ const BootNFT = () => {
 
                         <img src={elipBoost} alt="" className="absolute top-0 size-120 z-1 max-lg:hidden" />
 
-                        <img src={boostThree} alt="" className="absolute bottom-10 left-36 h-44 max-lg:hidden" />
+                        <img src={boostThree} alt="" className="absolute bottom-10 max-lg:right-36 h-44 " />
 
                         <img src={boostTwo} alt="" className="absolute right-2 bottom-0 h-68 max-lg:h-34 max-lg:hidden" />
 
@@ -69,7 +69,7 @@ const BootNFT = () => {
 
                 </div>
             </div>
-            <img src={elipBoostLeft} alt="" className="absolute top-0 size-160 z-1 left-0 max-md:size-94" />
+            <img src={elipBoostLeft} alt="" className="absolute top-0 size-160 z-1 left-0 max-lg:hidden" />
         </div>
     )
 }

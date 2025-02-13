@@ -64,7 +64,7 @@ const AuctionPage = () => {
               {
                 AuctionPageData.map((item, index) => (
                   <div key={index} className='p-1'>
-                    <div className="pt-6 px-2 drop-shadow-md max-sm:w-84 max-sm:pb-4"
+                    <div className="pt-6 px-2 drop-shadow-md max-sm:w-84 max-sm:pb-4 max-md:pb-0 max-lg:pb-4"
                       style={{
                         backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat",
                         backgroundSize: "cover"
@@ -115,14 +115,14 @@ const AuctionPage = () => {
             <div className=' grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5 '>
               {
                 AuctionPageData.map((item, index) => (
-                  <div key={index} className='p-1'>
-                    <div className="pt-6 px-2 drop-shadow-md max-sm:w-84 max-sm:pb-4"
+                  <div key={index} className='p-1 h-full pb-8'>
+                    <div className="pt-6 px-3 drop-shadow-md max-sm:w-84 max-sm:pb-5 max-md:pb-1 max-lg:pb-4 max-xl:pb-2 xl:pb-1  2xl:pb-4"
                       style={{
                         backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat",
                         backgroundSize: "cover"
                       }}
                     >
-                      <div className='flex flex-col gap-3'>
+                      <div className='flex flex-col gap-3 relative'>
                         {/* person wraper */}
                         <div className="flex gap-2 items-center w-full">
                           <img src={item.personImg} alt="" />
@@ -133,16 +133,16 @@ const AuctionPage = () => {
                         </div>
 
                         {/*auction image */}
-                        <div className='px-2 pb-3 max-lg:pb-4 2xl:pb-7 relative'>
-                          <img src={item.url} alt="" className='max-md:w-full max-md:h-fit' />
+                        <div className=' '>
+                          <img src={item.url} alt="" className='w-full h-fit rounded-2xl' />
 
                           {/* timer */}
-                          <div className="absolute  max-sm:left-24 max-sm:top-36 sm:top-25 sm:left-18 md:left-24 md:top-34 lg:top-26 2xl:top-34 lg:left-21  font-medium bg- py-1 px-4 shrink-0 cursor-pointer text-para-light font-secondary rounded-md bg-sold ">
+                          <div className="absolute max-sm:top-50 max-sm:left-22 max-md:top-41 max-lg:top-50 lg:top-40 2xl:top-50 left-18 font-medium  py-1 px-4 shrink-0 cursor-pointer text-secondary font-secondary rounded-md bg-sold ">
                             3:06:59:18
                           </div>
 
                           {/* price */}
-                          <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-5 2xl:bottom-8 right-4">
+                          <div className=" navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-l absolute bottom-3 right-2">
                             <p className="text-l ">Price:</p>
                             <span className="bg-black rounded-full">
                               <img src={logoprice} alt="" />
@@ -151,7 +151,7 @@ const AuctionPage = () => {
                           </div>
 
                           {/* Stock */}
-                          <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-2 shrink-0 cursor-pointer text-secondary flex items-center gap-4 text-small absolute bottom-5 2xl:bottom-8 left-4 ">
+                          <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-2 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-3 left-2 ">
                             <span className='text-l font-medium capitalize '>In Stock</span>
                             <span className='text-l text-para-light'>{StockCount}</span>
                           </div>

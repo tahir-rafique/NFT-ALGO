@@ -6,7 +6,7 @@ const TopSeller = () => {
     return (
         <div className="flex justify-center relative">
             <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10 flex flex-col gap-4 lg:gap-10 relative z-50">
-                <div className="flex max-md:flex-col md:justify-between md:items-center gap-2">
+                <div className="flex justify-between items-center gap-2">
                     <h2>TOP SELLER</h2>
                     <a href="#" className="cursor-pointer">
                         <h4 className="font-secondary text-main font-medium">View all</h4>
@@ -31,7 +31,7 @@ const TopSeller = () => {
                 </div>
             </div>
 
-            <img src={elicpRight} alt="" className="size-120 max-sm:size-44 max-sm:top-20 absolute right-0 top-2" />
+            <img src={elicpRight} alt="" className="size-120  absolute right-0 top-2 max-lg:hidden" />
             <img src={gridLeft} alt="" className="size-90 max-sm:hidden absolute left-0 top-30" />
 
         </div>
