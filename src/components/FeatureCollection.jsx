@@ -55,7 +55,6 @@ const FeatureCollection = () => {
             </div>
           </div>
 
-
           <div className="">
             <div className="flex gap-10 scroll-smooth" ref={sliderRef}>
               {FeatureCollectionData.map((item, index) => (
@@ -64,25 +63,20 @@ const FeatureCollection = () => {
                   className="px-2 py-6 relative drop-shadow-md flex flex-col gap-2 shrink-0 "
                   style={{ backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", width: "318px", }}
                 >
-                  {/* person section */}
                   <div className="flex gap-2 items-center">
                     <img src={item.personImg} alt="" />
                     <div>
-                      <h6 className="font-light">{item.name}</h6>
-                      <p className="text-xs text-para-light">{item.username}</p>
+                      <h6 className="font-light font-secondary">{item.name}</h6>
+                      <p className="text-xs text-para-light font-light">{item.username}</p>
                     </div>
                   </div>
-                  {/* Image */}
                   <div className="">
                     <img src={item.url} alt="" className="" />
                   </div>
-
-                  {/* buy */}
                   <button className="background-grad text-inverted px-4 py-2 cursor-pointer flex items-center font-secondary font-medium bg-inverted  shrink-0   gap-1 text-l absolute bottom-8 left-4">
                     Buy
                   </button>
-                  {/* price */}
-                  <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-8 left-41">
+                  <div className="  font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center navbtn-border gap-1 text-l absolute bottom-8 left-41">
                     <p className="text-l ">Price:</p>
                     <span className="bg-black rounded-full">
                       <img src={logoprice} alt="" />
@@ -96,7 +90,8 @@ const FeatureCollection = () => {
         </div>
       </div>
 
-      <img src={arrowFram} alt="" className="absolute right-0 xl:top-480 lg:top-390 max-md:hidden " />
+      {/* Arrow Fram */}
+      <img src={arrowFram} alt="" className="absolute right-0 xl:top-480 lg:top-390 max-lg:hidden size-110" />
 
       <img src={gridLef} alt="" className="absolute left-0 top-350  max-md:hidden z-1 " />
 

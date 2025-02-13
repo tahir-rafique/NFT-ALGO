@@ -99,7 +99,7 @@ p {
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1070px) {
   h1 {
     font-size: 46px;
   }
@@ -127,35 +127,7 @@ p {
   }
 }
 
-@media (max-width: 767px) {
-  h1 {
-    font-size: 52px;
-  }
-  h2 {
-    font-size: 34px;
-  }
-  h3 {
-    font-size: 16px;
-  }
-  h4 {
-    font-size: 14px;
-  }
-  h5 {
-    font-size: 14px;
-  }
-  h6 {
-    font-size: 12px;
-  }
-  .navbtn-size {
-    font-size: 16px;
-  }
-  p {
-    font-size: 10px;
-    font-family: "Roboto", sans-serif;
-  }
-}
-
-@media (max-width: 639px) {
+@media (max-width: 770px) {
   h1 {
     font-size: 34px;
   }
@@ -178,7 +150,7 @@ p {
     font-size: 14px;
   }
   p {
-    font-size: 9px;
+    font-size: 10px;
     font-family: "Roboto", sans-serif;
   }
 

@@ -24,12 +24,12 @@ const Navbar = () => {
                             <img src={Navlogo} alt="logo" className="max-lg:size-16" />
                         </div>
                         <div className="hidden lg:flex sm:gap-4 lg:gap-8">
-                            <h6>
-                                <Link to="/" className="underline underline-offset-6 text-main font-bold">
+                            <h6 className="">
+                                <Link to="/" className="underline underline-offset-[6px] font-bold  text-main">
                                     Home
                                 </Link>
                             </h6>
-                            <h6>
+                            <h6 className="">
                                 <Link to="/notfound" className="text-secondary">
                                     AI NFT GENERATION
                                 </Link>

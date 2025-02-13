@@ -27,9 +27,7 @@ const TrendingNFT = () => {
     <div className="flex justify-center relative z-50">
       <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10">
 
-
         <div className=" flex flex-col max-sm:items-center gap-4 lg:gap-10">
-
 
           {/* 1st main*/}
           <div className="flex justify-between items-center gap-10">
@@ -38,7 +36,10 @@ const TrendingNFT = () => {
               <button
                 onClick={toggleDropdown}
                 className="navbtn-size border border-grd text-main navbtn-border  px-4 py-1 3xl:px-6 3xl:py-2 cursor-pointer font-medium flex items-center gap-1">
-                <span>Last 30 Minutes</span><span><img src={downArrow} alt="" /></span>
+                <span><h6>
+                  Last 30 Minutes
+                </h6>
+                </span><span><img src={downArrow} alt="" /></span>
               </button>
 
               {isOpen && (

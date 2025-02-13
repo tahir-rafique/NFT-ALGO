@@ -24,7 +24,7 @@ const GenerateNFT = () => {
                         <div className="mx-auto rounded-xl flex justify-between items-center gap-4 px-4  py-5 bg-inverted drop-shadow-xl relative z-40 w-full max-w-[800px]">
                             <input className="font-secondary text-light w-full max-w-[600px] outline-none " placeholder="Fantasy Creature holding......" />
                             <a href="#" className="absolute navbtn-size text-small navbtn-border font-medium background-grad text-inverted px-4 py-2 shrink-0 cursor-pointer flex gap-1 right-4 z-50 ">
-                                <span>Generate</span>
+                                <h6>Generate</h6>
                                 <img src={IconGenerate} alt="no img" />
                             </a>
                         </div>

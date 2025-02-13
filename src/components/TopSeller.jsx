@@ -9,7 +9,7 @@ const TopSeller = () => {
                 <div className="flex max-md:flex-col md:justify-between md:items-center gap-2">
                     <h2>TOP SELLER</h2>
                     <a href="#" className="cursor-pointer">
-                        <h4 className="font-secondary text-main">View all</h4>
+                        <h4 className="font-secondary text-main font-medium">View all</h4>
                     </a>
                 </div>
                 <div className="grid max-lg:grid-cols-2 max-sm:grid-cols-1 grid-cols-4 gap-10 py-10">
@@ -20,7 +20,7 @@ const TopSeller = () => {
                                     <img src={item.icon} alt="" className="absolute right-1 top-1 size-6" />
                                     <img src={item.url} alt="" />
                                 </div>
-                                
+
                                 <div>
                                     <h4 className="font-secondary font-bold">{item.name}</h4>
                                     <p className="text-para-light font-bold">{item.price}</p>

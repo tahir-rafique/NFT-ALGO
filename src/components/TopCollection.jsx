@@ -12,7 +12,11 @@ const TopCollection = () => {
           <div className="flex max-lg:flex-col flex-row lg:justify-between gap-2 lg:items-center">
             <h2>Top Collection</h2>
             <h4 className="">
-              <a href="#" className="cursor-pointer text-main font-secondary">View More Collection</a>
+              <a href="#" className="cursor-pointer text-main font-secondary">
+                <h4 className="font-medium">
+                  View More Collection
+                </h4>
+              </a>
             </h4>
           </div>
           <div>
@@ -42,8 +46,8 @@ const TopCollection = () => {
                       <img src={item.person} alt="" />
                     </div>
                     <div>
-                      <h6>{item.name}</h6>
-                      <p>{item.owner}</p>
+                      <h6 className="font-secondary font-bold">{item.name}</h6>
+                      <p className="text-para-light">{item.owner}</p>
                     </div>
                   </div>
                 </div>
