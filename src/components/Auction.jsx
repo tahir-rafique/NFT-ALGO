@@ -29,15 +29,14 @@ const RecentSold = () => {
                                             <div className="flex gap-2 items-center w-full">
                                                 <img src={item.personImg} alt="" />
                                                 <div>
-                                                    <h6>{item.name}</h6>
-                                                    <p className='text-secondary'>{item.username}</p>
+                                                    <h6 className="font-light">{item.name}</h6>
+                                                    <p className='text-xs text-para-light font-light'>{item.username}</p>
                                                 </div>
                                             </div>
 
-
                                             <div className='px-2 pb-3 max-lg:pb-4 2xl:pb-7 relative'>
                                                 <img src={item.url} alt="" className='max-md:w-full max-md:h-fit' />
-                                                <div className="absolute  max-sm:left-24 max-sm:top-36 sm:top-25 sm:left-18 md:left-24 md:top-34 lg:top-26 2xl:top-34 lg:left-21  font-medium bg- py-1 px-4 shrink-0 cursor-pointer text-para-light font-secondary rounded-md bg-sold ">
+                                                <div className="absolute text-s max-sm:left-24 max-sm:top-36 sm:top-25 sm:left-18 md:left-24 md:top-34 lg:top-26 2xl:top-34 lg:left-21  font-medium bg- py-1 px-4 shrink-0 cursor-pointer text-secondary font-secondary rounded-md bg-sold ">
                                                     3:06:59:18
                                                 </div>
                                             </div>

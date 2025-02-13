@@ -73,19 +73,19 @@ const TrendingNFT = () => {
                       <div className="flex gap-2 items-center w-full">
                         <img src={item.personImg} alt="" />
                         <div>
-                          <h6>{item.name}</h6>
-                          <p className='text-secondary'>{item.username}</p>
+                          <h6 className="font-light">{item.name}</h6>
+                          <p className='text-para-light font-light text-xs'>{item.username}</p>
                         </div>
                       </div>
 
                       <div className='relative'>
                         <img src={item.url} alt="" className='max-md:w-full max-md:h-fit rounded-2xl' />
 
-                        <a className="text-l font-secondary navbtn-border background-grad text-inverted cursor-pointer  w-fit absolute  bottom-14 left-2 px-4 py-2">
+                        <a className="text-l font-medium font-secondary navbtn-border background-grad text-inverted cursor-pointer  w-fit absolute  bottom-14 left-2 px-4 py-2">
                           Buy
                         </a>
 
-                        <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-14 right-5">
+                        <div className="  font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center navbtn-border gap-1 text-l absolute bottom-14 right-5">
                           <p className="text-l ">Price:</p>
                           <span className="bg-black rounded-full">
                             <img src={logoprice} alt="" />

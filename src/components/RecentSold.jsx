@@ -17,20 +17,20 @@ const RecentSold = () => {
                       backgroundSize: "cover"
                     }}
                   >
-                    <div className='flex flex-col gap-3'>
+                    <div className='flex flex-col gap-3 relative'>
 
                       <div className="flex gap-2 items-center w-full">
                         <img src={item.personImg} alt="" />
                         <div>
-                          <h6>{item.name}</h6>
-                          <p className='text-secondary'>{item.username}</p>
+                          <h6 className="font-light">{item.name}</h6>
+                          <p className='text-xs text-para-light font-light'>{item.username}</p>
                         </div>
                       </div>
 
-                      <div className='px-2 pb-3 max-lg:pb-4 2xl:pb-7 relative'>
+                      <div className=''>
                         <img src={item.url} alt="" className='max-md:w-full max-md:h-fit' />
 
-                        <div className="navbtn-size text-small  navbtn-border font-medium soldbg text-inverted px-4 py-2 shrink-0 z-50 absolute top-34 left-28">
+                        <div className="font-secondary navbtn-border font-semibold soldbg text-inverted px-6 py-2 shrink-0 z-50 absolute top-50 left-22 text-l ">
                           SOLD
                         </div>
 

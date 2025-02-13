@@ -66,7 +66,7 @@ const FeatureCollection = () => {
                   <div className="flex gap-2 items-center">
                     <img src={item.personImg} alt="" />
                     <div>
-                      <h6 className="font-light font-secondary">{item.name}</h6>
+                      <h6 className="font-light">{item.name}</h6>
                       <p className="text-xs text-para-light font-light">{item.username}</p>
                     </div>
                   </div>
