@@ -69,7 +69,7 @@ const TrendingNFT = () => {
                     }}
                   >
                     <div className='flex flex-col gap-3 relative'>
-                      {/* person wraper */}
+                    
                       <div className="flex gap-2 items-center w-full">
                         <img src={item.personImg} alt="" />
                         <div>
