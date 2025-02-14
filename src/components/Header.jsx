@@ -26,8 +26,8 @@ const Header = () => {
                         <img src={Himg5} alt="" className="absolute top-4 max-sm:h-64 z-8 cardFive-animation  " />
                         {/* BG elicp */}
                     </div>
-                    <div className="md:hidden flex flex-wrap justify-center py-60 relative mobileOneImage">
-                        <img src={Himg3} alt="" className=" absolute z-50 top-4 " />
+                    <div className="md:hidden flex flex-wrap justify-center py-50 md:py-60 relative mobileOneImage">
+                        <img src={Himg3} alt="" className=" absolute z-50 top-4 h-90 " />
                     </div>
                     <img src={elicpBg} alt="" className="absolute z-1 top-58 left-24 lg:left-44 2xl:left-94 2xl:top-74 h-120 max-lg:hidden" />
                 </div>

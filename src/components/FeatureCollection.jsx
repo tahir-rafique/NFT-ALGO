@@ -14,12 +14,12 @@ const FeatureCollection = () => {
 
   const scrollLeft = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollLeft -= 100;
+      sliderRef.current.scrollLeft -= 360;
     }
   };
   const scrollRight = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollLeft += 100;
+      sliderRef.current.scrollLeft += 370;
     }
   };
 
@@ -33,36 +33,36 @@ const FeatureCollection = () => {
           </div>
 
           {/* 2nd */}
-          <div className="max-md:flex-col flex flex-row justify-between lg:items-center gap-2">
-            <h6 className="text-para-light font-secondary font-light">
+          <div className="flex flex-row justify-between lg:items-center gap-2">
+            <h6 className="text-para-light font-secondary font-light max-w-[60%]">
               Explore our exclusive featured collection, showcasing innovative campaigns and creative <br /> storytelling from top brands around the world.
             </h6>
 
-            <div className="flex gap-2 justify-end">
+            <div className="flex gap-2 justify-end ">
               <span
-                className="p-5 cursor-pointer"
+                className="cursor-pointer size-16 relative"
                 style={{ backgroundImage: `url(${reactangle})`, backgroundRepeat: "no-repeat" }}
                 onClick={scrollLeft}
               >
-                <img src={arrowDown} alt="" />
+                <img src={arrowDown} alt="" className="absolute left-[50%] top-[50%]  translate-[-50%]" />
               </span>
 
               <span
-                className="p-5 cursor-pointer"
+                className="cursor-pointer size-16 relative"
                 style={{ backgroundImage: `url(${reactangle})`, backgroundRepeat: "no-repeat" }}
                 onClick={scrollRight}
               >
-                <img src={arrowUp} alt="" />
+                <img src={arrowUp} alt="" className="absolute top-[50%] translate-[-50%] left-[50%]" />
               </span>
             </div>
           </div>
 
-          <div className="">
-            <div className="flex gap-5 scroll-smooth" ref={sliderRef}>
+          <div className="p-1">
+            <div className="flex px-3 gap-15 scroll-smooth" ref={sliderRef}>
               {FeatureCollectionData.map((item, index) => (
                 <div
                   key={index}
-                  className="px-2 py-6 relative drop-shadow-md flex flex-col gap-2 shrink-0 max-lg:w-[330px] h-full"
+                  className="px-3 py-6 relative drop-shadow-md flex flex-col gap-2 shrink-0 max-lg:max-w-[310x] h-full"
                   style={{ backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", }}
                 >
                   <div className="flex gap-2 items-center">

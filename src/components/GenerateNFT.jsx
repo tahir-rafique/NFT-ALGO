@@ -18,7 +18,7 @@ const GenerateNFT = () => {
             <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10 relative z-10">
                 <div className="flex flex-col justify-center items-center gap-2 relative">
                     {/* main content */}
-                    <h2 className="text-center uppercase">Turn your imagination <br /> into digital Asset </h2>
+                    <h2 className="text-center uppercase max-lg:leading-none">Turn your imagination <br /> into digital Asset </h2>
 
                     <div className="max-lg:py-10 py-64 lg:py-84 relative w-full flex justify-center">
                         <div className="mx-auto rounded-xl flex justify-between items-center gap-4 px-4  py-5 bg-inverted drop-shadow-xl relative z-40 w-full max-w-[800px]">
