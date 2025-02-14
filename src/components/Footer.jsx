@@ -25,7 +25,7 @@ const Footer = () => {
 
       {/* footer */}
       <div className="flex justify-center  relative z-50">
-        <div className="container mx-auto  max-sm:px-5 sm:px-12 lg:px-20 lg:py-5 pt-30 flex flex-col gap-8">
+        <div className="container mx-auto  max-sm:px-5 sm:px-12 lg:px-20 lg:py-5 pb-4 pt-20 flex flex-col gap-8">
 
           {/* footer top */}
           <div className="flex flex-col justify-center items-center gap-4 xl:gap-10">
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
 
           {/* footer end */}
-          <div className="footer-bg px-10 lg:px-20 relative py-5 sm:py-18 overflow-y-hidden">
+          <div className="footer-bg px-10 lg:px-20 relative  py-5 lg:py-18 overflow-y-hidden">
             
             <img src={tracked} alt="" className="absolute top-0 left-0 max-lg:hidden  z-1 size-99" />
 

@@ -14,7 +14,7 @@ const TopCollection = () => {
             
             <h2>Top Collection</h2>
             <h4 className="">
-              <a href="#" className="cursor-pointer text-main font-secondary">
+              <a href="top-collection" className="cursor-pointer text-main font-secondary">
                 <h4 className="font-medium">
                   View More Collection
                 </h4>

@@ -86,13 +86,22 @@ import tcimg17 from "../assets/TopCollection/images/tcimg17.webp"
 import tcimg18 from "../assets/TopCollection/images/tcimg18.webp"
 
 
-// Auction-Page Data
+// Pages 
 
-import APMimg1 from "../assets/AuctionPage/images/main1.webp"
-import APMimg2 from "../assets/AuctionPage/images/main2.webp"
-import APMimg3 from "../assets/AuctionPage/images/main3.webp"
-import APMimg4 from "../assets/AuctionPage/images/main4.webp"
+// TopCollection Page
+import p1 from '../assets/TopCollectionPage/p1.webp'
+import p2 from '../assets/TopCollectionPage/p2.webp'
+import p3 from '../assets/TopCollectionPage/p3.webp'
+import p4 from '../assets/TopCollectionPage/p4.webp'
+import p5 from '../assets/TopCollectionPage/p5.webp'
+import p6 from '../assets/TopCollectionPage/p6.webp'
 
+import imgTCP1 from '../assets/TopCollectionPage/sub1.webp'
+import imgTCP2 from '../assets/TopCollectionPage/sub2.webp'
+import imgTCP3 from '../assets/TopCollectionPage/sub3.webp'
+import imgTCP4 from '../assets/TopCollectionPage/sub4.webp'
+import imgTCP5 from '../assets/TopCollectionPage/sub5.webp'
+import imgTCP6 from '../assets/TopCollectionPage/sub6.webp'
 
 
 export const FeatureCollectionData = [
@@ -228,6 +237,8 @@ export const timeLeft = ["Last 30 Minutes", "Last 1 Hour", "Last 1 Week", "Last 
 
 
 
+// Pages Data
+
 export const AuctionPageData = [
 
     { frame: subtract, url: img5, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
@@ -245,5 +256,64 @@ export const AuctionPageData = [
     { frame: subtract, url: img5, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
     { frame: subtract, url: img8, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
     { frame: subtract, url: img6, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+
+]
+
+
+export const TopCollectionPageData = [
+
+
+    {
+        frame: imgTCP1,
+        person: p1, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+    },
+
+    {
+        frame: imgTCP2,
+        person: p2, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+    },
+
+    {
+        frame: imgTCP3,
+        person: p3, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+    },
+
+    {
+        frame: imgTCP4,
+        person: p4, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+    },
+
+    {
+        frame: imgTCP5,
+        person: p5, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+    },
+    {
+        frame: imgTCP6,
+        person: p6, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+    },
+    {
+        frame: imgTCP2,
+        person: p3, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+    },
+    {
+        frame: imgTCP3,
+        person: p2, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+    },
+    {
+        frame: imgTCP5,
+        person: p5, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+    },
+    {
+        frame: imgTCP6,
+        person: p6, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+    },
+
+    {
+        frame: imgTCP1,
+        person: p6, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+    },
+
+
+
 
 ]
