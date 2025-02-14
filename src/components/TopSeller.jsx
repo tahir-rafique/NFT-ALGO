@@ -12,10 +12,11 @@ const TopSeller = () => {
                         <h4 className="font-secondary text-main font-medium">View all</h4>
                     </a>
                 </div>
-                <div className="grid max-lg:grid-cols-2 max-sm:grid-cols-1 grid-cols-4 gap-10 py-10">
+                <div className="grid max-lg:grid-cols-2 max-sm:grid-cols-1 grid-cols-4 gap-10 lg:py-10 ">
                     {
                         TopSellerData.map((item, index) => (
-                            <div key={index} className="flex items-center gap-2  relative">
+                            
+                            <div key={index} className="flex max-md:justify-center items-center gap-2 relative">
                                 <div className="relative py-2 px-2">
                                     <img src={item.icon} alt="" className="absolute right-1 top-1 size-6" />
                                     <img src={item.url} alt="" />

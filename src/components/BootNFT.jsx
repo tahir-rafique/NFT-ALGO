@@ -13,14 +13,14 @@ import elipBoostLeft from "../assets/BoostNFT/images/boostElicpLeft.webp"
 const BootNFT = () => {
     return (
         <div className="flex justify-center relative">
-            <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10 relative z-20">
+            <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 lg:py-10 relative z-20">
                 <div className="flex max-lg:flex-col max-lg:items-center gap-10">
                     {/* Text Section */}
-                    <div className="flex flex-col justify-center gap-10 md:gap-24  w-[50%] max-lg:w-full md:py-10 ">
-                        <div className="flex flex-col gap-4">
-                            <h2 className="line-height-l uppercase text-secondary w-full max-w-[80%]">Boost Your NFTs:
+                    <div className="flex flex-col max-lg:items-center gap-10 md:gap-24  w-[50%] max-lg:w-full md:py-10 ">
+                        <div className="flex flex-col max-lg:items-center gap-4">
+                            <h2 className="line-height-l uppercase text-secondary max-lg:w-full max-w-[80%] ">Boost Your NFTs:
                                 Enhance Visibility  and Value</h2>
-                            <h6 className="font-secondary leading-tight tracking-tight text-para-light font-light w-full max-w-[75%]">The Boost feature is a premium service that allows NFT creators and  collectors to elevate their listings on our marketplace. By boosting an  NFT, you can ensure it appears prominently in search results,  featured sections, and on the homepage, maximizing exposure to  potential buyers.</h6>
+                            <h6 className="font-secondary leading-tight tracking-tight text-para-light font-light w-full max-w-[80%] ">The Boost feature is a premium service that allows NFT creators and  collectors to elevate their listings on our marketplace. By boosting an  NFT, you can ensure it appears prominently in search results,  featured sections, and on the homepage, maximizing exposure to  potential buyers.</h6>
                         </div>
                         <a href="#" className="w-fit navbtn-size text-small navbtn-border font-medium background-grad text-inverted px-4 py-2 shrink-0 cursor-pointer flex gap-1">
                             <span>Generate</span>

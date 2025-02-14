@@ -16,7 +16,7 @@ const FAQ = () => {
   return (
     <div className="flex justify-center relative">
 
-      <div className="container mx-auto flex flex-col gap-4 max-sm:px-5 sm:px-12 lg:px-20 py-10 relative z-50">
+      <div className="container mx-auto flex flex-col gap-4 max-sm:px-5 sm:px-12 lg:px-20 md:py-10 relative z-50">
         <h2 className=" text-center font-bold uppercase">
           FREQUENTLY ASKED QUESTIONS
         </h2>

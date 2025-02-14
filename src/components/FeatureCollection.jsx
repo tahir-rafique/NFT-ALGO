@@ -6,18 +6,20 @@ import { FeatureCollectionData } from "../constant/data.jsx";
 import arrowFram from "../assets/FeatureCollection/images/arrowFrame.webp";
 import { useRef } from "react";
 import gridLef from "../assets/FeatureCollection/images/featuresLeftElicp.webp"
+
+
 const FeatureCollection = () => {
 
   const sliderRef = useRef(null);
 
   const scrollLeft = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollLeft -= 300;
+      sliderRef.current.scrollLeft -= 100;
     }
   };
   const scrollRight = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollLeft += 300;
+      sliderRef.current.scrollLeft += 100;
     }
   };
 
@@ -60,8 +62,8 @@ const FeatureCollection = () => {
               {FeatureCollectionData.map((item, index) => (
                 <div
                   key={index}
-                  className="px-2 py-6 relative drop-shadow-md flex flex-col gap-2 shrink-0 "
-                  style={{ backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", width: "318px", }}
+                  className="px-2 py-6 relative drop-shadow-md flex flex-col gap-2 shrink-0 max-lg:w-[330px] h-full"
+                  style={{ backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", }}
                 >
                   <div className="flex gap-2 items-center">
                     <img src={item.personImg} alt="" />

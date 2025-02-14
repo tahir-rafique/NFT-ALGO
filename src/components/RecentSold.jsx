@@ -10,11 +10,12 @@ const RecentSold = () => {
           <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-4'>
             {
               RecentSoldData.map((item, index) => (
-                <div key={index} className='p-1 h-full pb-8'>
-                  <div className="pt-6 px-3 drop-shadow-md max-sm:w-84 max-sm:pb-6 max-md:pb-2 max-lg:pb-5 max-xl:pb-2 xl:pb-3  2xl:pb-4"
+                <div key={index} className='p-1  h-full'>
+                  <div className="pt-6 px-3 max-sm:w-[300px] h-full drop-shadow-md  max-sm:pb-5 max-md:pb-1 max-lg:pb-4 max-xl:pb-2 xl:pb-1  2xl:pb-4"
                     style={{
                       backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",
+          
                       
                     }}
                   >
@@ -31,7 +32,7 @@ const RecentSold = () => {
                       <div className=''>
                         <img src={item.url} alt="" className='w-full h-fit rounded-2xl' />
 
-                        <div className="font-secondary navbtn-border font-semibold soldbg text-inverted px-6 py-2 shrink-0 z-50 absolute top-50 left-22 text-l ">
+                        <div className="font-secondary navbtn-border font-semibold soldbg text-inverted px-6 py-2 shrink-0 z-50 absolute top-50 left-[50%] translate-[-50%] text-l ">
                           SOLD
                         </div>
 
