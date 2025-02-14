@@ -54,12 +54,12 @@ const Navbar = () => {
                             <div className="flex flex-col gap-3">
                                 <div className="flex flex-col gap-3">
                                     <h6>
-                                        <a href="#" className=" text-main underline underline-offset-8">
+                                        <a href="/" className=" text-main underline underline-offset-8 text-xl">
                                             Home
                                         </a>
                                     </h6>
                                     <h6>
-                                        <a href="#" className=" text-secondary">
+                                        <a href="/not-found" className=" text-secondary text-xl">
                                             AI NFT GENERATION
                                         </a>
                                     </h6>

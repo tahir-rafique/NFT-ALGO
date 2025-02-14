@@ -25,51 +25,50 @@ const TrendingNFT = () => {
 
   return (
     <div className="flex justify-center relative z-50">
-      <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10">
+      <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10 flex flex-col gap-5">
 
-        <div className=" flex flex-col max-sm:items-center gap-4 lg:gap-10">
+        {/* 1st Section */}
+        <div className="flex justify-between items-center gap-10">
+          <h2 className="leading-none">Trending nft’s</h2>
+          <div ref={dropdownRef} className="inline-block " >
+            <button
+              onClick={toggleDropdown}
+              className="navbtn-size border border-grd text-main navbtn-border  px-4 py-1 3xl:px-6 3xl:py-2 cursor-pointer font-medium flex items-center gap-1">
+              <span><h6>
+                Last 30 Minutes
+              </h6>
+              </span><span><img src={downArrow} alt="" /></span>
+            </button>
 
-          {/* 1st main*/}
-          <div className="flex justify-between items-center gap-10">
-            <h2>Trending nft’s</h2>
-            <div ref={dropdownRef} className="inline-block " >
-              <button
-                onClick={toggleDropdown}
-                className="navbtn-size border border-grd text-main navbtn-border  px-4 py-1 3xl:px-6 3xl:py-2 cursor-pointer font-medium flex items-center gap-1">
-                <span><h6>
-                  Last 30 Minutes
-                </h6>
-                </span><span><img src={downArrow} alt="" /></span>
-              </button>
-
-              {isOpen && (
-                <div className="absolute z-50 max-sm:w-33 w-45 bg-inverted border-2 border-muted rounded-lg shadow-lg ">
-                  <ul className="py-2">
-                    {timeLeft.map((item) => (
-                      <p key={item} className="font-secondary px-4 py-2 hover:bg-gray-100 cursor-pointer" >
-                        {item}
-                      </p>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
+            {isOpen && (
+              <div className="absolute z-50 max-sm:w-33 w-45 bg-inverted border-2 border-muted rounded-lg shadow-lg ">
+                <ul className="py-2">
+                  {timeLeft.map((item) => (
+                    <p key={item} className="font-secondary px-4 py-2 hover:bg-gray-100 cursor-pointer" >
+                      {item}
+                    </p>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
+        </div>
 
-
-          {/* 2nd main */}
-          <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5 '>
+        {/* 2nd Section */}
+        <div className=" flex flex-col max-sm:items-center  gap-4 lg:gap-10">
+          <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5'>
             {
               TrendingNFTData.map((item, index) => (
-                <div key={index} className='p-1 h-full pb-8'>
-                  <div className="pt-6 px-3 drop-shadow-md max-sm:w-84 max-sm:pb-5 max-md:pb-1 max-lg:pb-4 max-xl:pb-2 xl:pb-1  2xl:pb-4"
+                <div key={index} className='p-1 h-full'>
+                  <div className="pt-6 px-3 max-sm:w-[300px] h-full drop-shadow-md  max-sm:pb-5 max-md:pb-1 max-lg:pb-4 max-xl:pb-2 xl:pb-1  2xl:pb-4"
                     style={{
                       backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover"
+                      backgroundSize: "cover",
+                      
                     }}
                   >
                     <div className='flex flex-col gap-3 relative'>
-                    
+
                       <div className="flex gap-2 items-center w-full">
                         <img src={item.personImg} alt="" />
                         <div>

@@ -83,16 +83,16 @@ p {
     font-size: 48px;
   }
   h3 {
-    font-size: 20px;
+    font-size: 22px;
   }
   h4 {
-    font-size: 18px;
+    font-size: 20px;
   }
   h5 {
-    font-size: 16px;
+    font-size: 18px;
   }
   h6 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .navbtn-size {
     font-size: 18px;
@@ -132,7 +132,7 @@ p {
     font-size: 15px;
   }
   h6 {
-    font-size: 13px;
+    font-size: 14px;
   }
   .navbtn-size {
     font-size: 17px;
@@ -159,16 +159,16 @@ p {
     font-size: 28px;
   }
   h3 {
-    font-size: 14px;
+    font-size: 18px;
   }
   h4 {
-    font-size: 13px;
+    font-size: 16px;
   }
   h5 {
-    font-size: 12px;
+    font-size: 15px;
   }
   h6 {
-    font-size: 10px;
+    font-size: 14px;
   }
   .navbtn-size {
     font-size: 14px;
@@ -191,33 +191,3 @@ p {
   }
 }
 
-
-
-@media (max-width: 480px) {
-  .itemsss {
-    left: 170px;
-    font-size: 14px;
-  }
-} 
-
-@media (max-width: 440px) {
-  .itemsss {
-    left: 150px;
-    font-size: 14px;
-  }
-} 
-
-@media (max-width: 400px) {
-  .itemsss {
-    left: 135px;
-    font-size: 14px;
-  }
-} 
-
-
-@media (max-width: 380px) {
-  .itemsss {
-    left: 123px;
-    font-size: 14px;
-  }
-} 
