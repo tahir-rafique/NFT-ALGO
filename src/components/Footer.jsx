@@ -33,7 +33,7 @@ const Footer = () => {
 
             <div className="mx-auto rounded-xl flex justify-between items-center gap-4 px-10  py-6 footer-border drop-shadow-xl relative z-50 w-full max-w-[650px]">
               <input className="font-secondary  text-main w-full max-w-[480px] outline-none " placeholder="info@gmail.com" />
-              <a href="#" className="absolute navbtn-size text-small navbtn-border font-medium background-grad text-inverted px-4 py-2 shrink-0 cursor-pointer flex gap-1 right-10">
+              <a href="#" className="absolute navbtn-size text-small navbtn-border font-medium background-grad text-inverted px-4 py-2 shrink-0 cursor-pointer flex gap-1 max-md:right-4 right-8">
                 <img src={message} alt="no img" />
               </a>
             </div>
