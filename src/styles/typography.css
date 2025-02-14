@@ -68,10 +68,10 @@ p {
   font-size: 150px;
 }
 
-.nftTextLarger{
+.nftTextLarger {
   font-size: 220px;
 }
-.collectionTextLarger{
+.collectionTextLarger {
   font-size: 90px;
 }
 
@@ -106,11 +106,11 @@ p {
     font-size: 110px;
   }
 
-  .nftTextLarger{
+  .nftTextLarger {
     font-size: 180px;
   }
 
-  .collectionTextLarger{
+  .collectionTextLarger {
     font-size: 60px;
   }
 }
@@ -142,11 +142,11 @@ p {
     font-family: "Roboto", sans-serif;
   }
 
-  .nftTextLarger{
+  .nftTextLarger {
     font-size: 110px;
   }
 
-  .collectionTextLarger{
+  .collectionTextLarger {
     font-size: 60px;
   }
 }
@@ -182,11 +182,42 @@ p {
     font-size: 60px;
   }
 
-  .nftTextLarger{
+  .nftTextLarger {
     font-size: 90px;
   }
-  
-  .collectionTextLarger{
+
+  .collectionTextLarger {
     font-size: 40px;
   }
 }
+
+
+
+@media (max-width: 480px) {
+  .itemsss {
+    left: 170px;
+    font-size: 14px;
+  }
+} 
+
+@media (max-width: 440px) {
+  .itemsss {
+    left: 150px;
+    font-size: 14px;
+  }
+} 
+
+@media (max-width: 400px) {
+  .itemsss {
+    left: 135px;
+    font-size: 14px;
+  }
+} 
+
+
+@media (max-width: 380px) {
+  .itemsss {
+    left: 123px;
+    font-size: 14px;
+  }
+} 

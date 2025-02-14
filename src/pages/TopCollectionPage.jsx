@@ -59,15 +59,12 @@ const TopCollectionPage = () => {
                                         </div>
 
                                         {/* card  */}
-                                        <div className=" rounded-xl py-2">
-                                            <div className=''>
-                                                <img src={item.frame} alt="" />
-
-                                                <h5 className='absolute left-40 bottom-4 md:left-44 md:top-64 px-2 font-secondary bg-muted rounded-md py-1 max-sm:text-xs max-sm:px-1'>{item.itemText} 1.5k </h5>
-
-                                            </div>
-
+                                        <div className="rounded-xl py-2 relative">
+                                            <img src={item.frame} alt="" />
                                         </div>
+
+                                        <div className='absolute font-secondary bg-muted rounded-md px-2 py-1 
+                                        bottom-3 max-md: max-lg:left-43 max-xl:left-41  max-2xl:left-32.5 2xl:left-42 itemsss'>{item.itemText} 1.5k</div>
                                     </div>
                                 ))}
                             </div>
