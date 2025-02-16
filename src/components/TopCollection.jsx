@@ -1,6 +1,7 @@
 import { TopCollectionData } from "../constant/data"
 
 import elicpLeft from "../assets/TopCollection/images/topCollectionElicpLeft.webp"
+import { Link } from "react-router-dom"
 
 const TopCollection = () => {
   return (
@@ -14,11 +15,11 @@ const TopCollection = () => {
             
             <h2>Top Collection</h2>
             <h4 className="">
-              <a href="top-collection" className="cursor-pointer text-main font-secondary">
+              <Link to="top-collection" className="cursor-pointer text-main font-secondary">
                 <h4 className="font-medium">
                   View More Collection
                 </h4>
-              </a>
+              </Link>
             </h4>
 
           </div>
