@@ -30,7 +30,7 @@ const Navbar = () => {
                                 </Link>
                             </h6>
                             <h6 className="">
-                                <Link to="/notfound" className="text-secondary">
+                                <Link to="/not-found" className="text-secondary">
                                     AI NFT GENERATION
                                 </Link>
                             </h6>
