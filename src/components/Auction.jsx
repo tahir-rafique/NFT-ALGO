@@ -1,12 +1,12 @@
 import { AuctionData } from "../constant/data";
 import exploreArrow from "../assets/Auction/icons/explorArrow.svg";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
 const RecentSold = () => {
 
-    const navigate = useNavigate();
+   
     return (
         <div className="flex justify-center">
             <div className="container mx-auto px-5 sm:px-12 lg:px-20 py-10 ">
@@ -49,7 +49,7 @@ const RecentSold = () => {
 
                     {/* Auction Page  Link */}
                     <div className="flex justify-center">
-                        <Link onClick={navigate} className="cursor-pointer navbtn-size  navbtn-border background-grad text-inverted px-5 py-2 font-medium flex gap-2 items-cente" to="/auction" >Explore More <img src={exploreArrow} alt="" /></Link>
+                        <Link  className="cursor-pointer navbtn-size  navbtn-border background-grad text-inverted px-5 py-2 font-medium flex gap-2 items-cente" to="/auction" >Explore More <img src={exploreArrow} alt="" /></Link>
                     </div>
 
                 </div>
