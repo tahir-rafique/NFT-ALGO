@@ -135,6 +135,7 @@
   animation-name: navMobile;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  animation-timing-function: linear;
 }
 @keyframes navMobile {
   0% {
