@@ -66,8 +66,9 @@ const AuctionPage = () => {
                   <div key={index} className='p-1'>
                     <div className="pt-6 px-2 drop-shadow-md max-sm:w-84 max-sm:pb-4 max-md:pb-0 max-lg:pb-4"
                       style={{
-                        backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover"
+                        backgroundImage: `url(${item.frame})`, 
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
                       }}
                     >
                       <div className='flex flex-col gap-3'>

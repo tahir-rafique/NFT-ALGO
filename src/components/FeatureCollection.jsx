@@ -3,31 +3,15 @@ import reactangle from "../assets/FeatureCollection/images/reactangle.webp";
 import arrowUp from "../assets/FeatureCollection/icons/arrowUp.svg";
 import arrowDown from "../assets/FeatureCollection/icons/arrowDown.svg";
 import { FeatureCollectionData } from "../constant/data.jsx";
-// import arrowFram from "../assets/FeatureCollection/images/arrowFrame.webp";
-// import gridLef from "../assets/FeatureCollection/images/featuresLeftElicp.webp";
-// import { useRef, useState, useEffect } from "react";
-
-
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-
-// import reactangle from "../assets/reactangle.webp";
-// import arrowDown from "../assets/arrowDown.svg"
-// import arrowUp from "../assets/arrowUp.svg"
-
-// import { FeatureCollectionData } from "./Data.jsx";
 import Slider from "react-slick";
 
 
 
 
 const PrevArrow = ({ onClick }) => (
-  <button
-    onClick={onClick}
-    className=""
-    style={{ backgroundImage: `url(${reactangle})`, backgroundRepeat: "no-repeat" }}>
+  <button onClick={onClick} style={{ backgroundImage: `url(${reactangle})`, backgroundRepeat: "no-repeat" }}>
 
     <img src={arrowDown} alt="" className="w-fit h-5 overflow-hidden absolute left-50% translate-[-50%]" />
 
@@ -35,14 +19,8 @@ const PrevArrow = ({ onClick }) => (
 );
 
 const NextArrow = ({ onClick }) => (
-  <button
-    onClick={onClick}
-    className=""
-    style={{ backgroundImage: `url(${reactangle})`, backgroundRepeat: "no-repeat" }} >
-
-    <img src={arrowUp} alt="" className="w-fit h-5 overflow-hidden absolute left-50% translate-[-50%]
-" />
-
+  <button onClick={onClick} style={{ backgroundImage: `url(${reactangle})`, backgroundRepeat: "no-repeat" }} >
+    <img src={arrowUp} alt="" className="w-fit h-5 overflow-hidden absolute left-50% translate-[-50%]" />
   </button>
 );
 
@@ -51,9 +29,6 @@ const NextArrow = ({ onClick }) => (
 
 
 const FeatureCollection = () => {
-
-
-
   var settings = {
     // infinite: true,
     speed: 400,
@@ -67,17 +42,17 @@ const FeatureCollection = () => {
       {
         breakpoint: 1530,
         settings: {
-          slidesToShow: 3.3,
+          slidesToShow: 3.5,
           slidesToScroll: 1,
           initialSlide: 1,
 
-        
+
+
         }
       },
-   
 
       {
-        breakpoint: 1290,
+        breakpoint: 1285,
         settings: {
           slidesToShow: 2.8,
           slidesToScroll: 1,
@@ -86,24 +61,15 @@ const FeatureCollection = () => {
       },
 
       {
-        breakpoint: 1020,
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-
-        }
-      },
-
-      {
-        breakpoint: 950,
-        settings: {
-          slidesToShow: 2,
+          slidesToShow: 2.1,
           slidesToScroll: 1,
 
         }
       },
       {
-        breakpoint: 780,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1.7,
           slidesToScroll: 1,
@@ -123,39 +89,30 @@ const FeatureCollection = () => {
     ]
   };
 
-
   return (
-    <div className="">
+    <div className="SliderWraper">
 
       <div className="flex justify-center relative z-50">
         <div className="container mx-auto flex flex-col gap-3 max-sm:px-5 sm:px-12 lg:px-20 py-10 relative">
-          {/* 1st */}
+          {/* Slider-Section-text */}
           <div>
             <h2>Featured Collection</h2>
           </div>
 
-
-
-
-
-          {/* 3rd  Slider*/}
-
-          <div className="">
-
+          {/* Slider-Sliding-Section*/}
+          <div className="SliderWraper">
             <h6 className="text-para-light font-secondary font-light max-sm:max-w-[57%] sm:max-w-[60%] absolute top-22 sm:top-30">
               Explore our exclusive featured collection, showcasing innovative campaigns and creative <br /> storytelling from top brands around the world.
             </h6>
             <Slider {...settings}>
               {FeatureCollectionData.map((item, index) => (
                 <div className="pt-5" key={index} >
-
                   <div className="flex max-md:justify-center gap-10 Sliderwaper drop-shadow-md  flex-wrap">
                     <div style={{
                       backgroundImage: `url(${item.frame})`,
                       backgroundRepeat: 'no-repeat',
                       backgroundSize: 'cover',
                       width: '290px'
-
                     }}>
 
                       <div className="flex flex-col gap-2 px-3 py-4 pb-5 w-fit drop-shadow-md">

@@ -261,59 +261,53 @@ export const AuctionPageData = [
 
 
 export const TopCollectionPageData = [
-
-
     {
         frame: imgTCP1,
-        person: p1, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+        person: p1, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items 1.5k'
     },
 
     {
         frame: imgTCP2,
-        person: p2, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+        person: p2, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items 1.5k'
     },
 
     {
         frame: imgTCP3,
-        person: p3, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+        person: p3, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items 1.5k'
     },
 
     {
         frame: imgTCP4,
-        person: p4, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+        person: p4, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items 1.5k'
     },
 
     {
         frame: imgTCP5,
-        person: p5, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+        person: p5, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items 1.5k'
     },
     {
         frame: imgTCP6,
-        person: p6, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+        person: p6, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items 1.5k'
     },
     {
         frame: imgTCP2,
-        person: p3, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+        person: p3, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items 1.5k'
     },
     {
         frame: imgTCP3,
-        person: p2, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+        person: p2, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items 1.5k'
     },
     {
         frame: imgTCP5,
-        person: p5, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+        person: p5, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items 1.5k'
     },
     {
         frame: imgTCP6,
-        person: p6, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+        person: p6, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items 1.5k'
     },
 
     {
         frame: imgTCP1,
-        person: p6, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items'
+        person: p6, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items 1.5k'
     },
-
-
-
-
 ]

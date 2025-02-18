@@ -1,5 +1,5 @@
 @media (max-width: 3000px) {
-  /* Card 3 UpDwon Animation */
+  /* Card-3 UpDwon Animation */
   .updownCard-animation {
     animation-name: updowncard;
     animation-duration: 4s;
@@ -18,9 +18,10 @@
       transform: translateY(0px);
     }
   }
-  /* Cards left right animation */
-  /* Card 1 */
 
+  /* Cards left right animation */
+
+  /* Card 1 */
   .cardOne-animation {
     animation-name: cardOneAnime;
     animation-duration: 4s;
@@ -80,7 +81,6 @@
   }
 
   /* Card 5 */
-
   .cardFive-animation {
     animation-name: cardFiveAnime;
     animation-duration: 4s;
@@ -131,11 +131,12 @@
   }
 }
 
+/* NavbarAnimation */
+
 .navMobile-anime {
   animation-name: navMobile;
   animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
 }
 @keyframes navMobile {
   0% {
@@ -146,7 +147,7 @@
   }
 }
 
-/* 4 sides card not to display on very small screen */
+/* Cards Hide */
 @media (max-width: 390px) {
   .cardsNotDisplay {
     display: none;

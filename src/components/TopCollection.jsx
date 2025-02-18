@@ -7,22 +7,20 @@ const TopCollection = () => {
   return (
 
     <div className="relative">
-
       <div className="flex justify-center relative z-50">
-        <div className="container mx-auto px-5 sm:px-12 lg:px-20 py-10 flex flex-col gap-4 lg:gap-10 ">
-          
-          <div className="flex justify-between gap-3 items-center">
-            
-            <h2>Top Collection</h2>
-            <h4 className="">
-              <Link to="top-collection" className="cursor-pointer text-main font-secondary">
-                <h4 className="font-medium">
-                  View More Collection
-                </h4>
-              </Link>
-            </h4>
+        <div className="container mx-auto px-5 sm:px-12 lg:px-20 py-10 flex flex-col gap-4 lg:gap-1">
+          <div className="flex justify-between gap-4 items-center">
+
+            <h2 className="leading-none">Top Collection</h2>
+
+            <Link to="top-collection" className="cursor-pointer text-main font-secondary font-medium">
+              <h4>
+                View More Collection
+              </h4>
+            </Link>
 
           </div>
+
           <div className="flex max-sm:justify-center">
             <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 w-fit">
               {TopCollectionData.map((item, index) => (
@@ -57,8 +55,6 @@ const TopCollection = () => {
                 </div>
               ))}
             </div>
-
-
           </div>
         </div>
 
