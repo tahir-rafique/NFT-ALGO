@@ -24,15 +24,14 @@ const AuctionPage = () => {
       <div className='AuctionPage flex justify-center relative'>
         <div className='container mx-auto  max-sm:px-5 sm:px-12 lg:px-20  py-10 '>
 
-
+          {/* heroSectionWraper */}
           <div className='Auction topWraper flex flex-col items-center py-10 max-sm:py-5 relative z-50'>
-
-            {/* text */}
+            {/* hero-text */}
             <div>
               <h1 className='text-[150px] text-main font-bold tracking-widest acutionLargerfont'>Auction</h1>
             </div>
 
-            {/* images */}
+            {/* Hero-images */}
             <div className='flex flex-wrap justify-center gap-6 py-10 '>
               <div className='bg-inverted h-fit w-fit p-2 rounded-2xl drop-shadow-md '><img src={APMimg1} alt="" /></div>
               <div className=' flex max-md:pt-0 pt-27'>
@@ -42,14 +41,12 @@ const AuctionPage = () => {
                 <div className='bg-inverted w-fit h-fit p-2 rounded-2xl drop-shadow-md'><img src={APMimg3} alt="" /></div>
               </div>
               <div className='bg-inverted h-fit w-fit p-2 rounded-2xl drop-shadow-md'><img src={APMimg4} alt="" /></div>
-
             </div>
           </div>
 
-
+          {/* topListed-cardsWraper */}
           <div className='py-20 max-sm:flex max-sm:flex-col max-sm:items-center relative z-50'>
             <div className='sm:flex-row flex flex-col items-center gap-4 sm:justify-between px-1 pb-10'>
-
               <h2 className='uppercase'>Top Listed</h2>
               <div className='flex flex-col  gap-2'>
                 <div className='flex items-center gap-2'>
@@ -57,16 +54,16 @@ const AuctionPage = () => {
                   <p className=' capitalize text-l text-para-light'>Refresh A While Ago</p>
                 </div>
               </div>
-
             </div>
 
+            {/* Cards */}
             <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5 '>
               {
                 AuctionPageData.map((item, index) => (
                   <div key={index} className='p-1'>
                     <div className="pt-6 px-2 drop-shadow-md max-sm:w-84 max-sm:pb-4 max-md:pb-0 max-lg:pb-4"
                       style={{
-                        backgroundImage: `url(${item.frame})`, 
+                        backgroundImage: `url(${item.frame})`,
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                       }}
