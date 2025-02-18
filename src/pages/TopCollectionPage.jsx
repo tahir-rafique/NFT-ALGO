@@ -25,9 +25,9 @@ const TopCollectionPage = () => {
                     {/* Explore Collection   */}
                     <div className='explore-collection-wraper  flex flex-col gap-4 '>
                         {/* Explore menu */}
-                        <div className='flex flex-col gap-4 '>
-                            <h2>Explore collections</h2>
-                            <div className='sm:flex lg:gap-12 items-center font-secondary pt-2 pb-6 text-secondary '>
+                        <div className='explore-menu flex flex-col gap-4 '>
+                            <h2 className='max-md:text-center'>Explore collections</h2>
+                            <div className='flex gap-4 max-md:justify-center flex-wrap lg:gap-12 items-center font-secondary pt-2 pb-6 text-secondary'>
                                 <h6 className='text-main border-2 px-4 py-2 rounded-md w-fit'>Popular</h6>
                                 <h6>Trending</h6>
                                 <h6>Sport </h6>
@@ -39,7 +39,7 @@ const TopCollectionPage = () => {
                         </div>
 
                         {/* Explores Cards */}
-                        <div className="flex max-sm:justify-center">
+                        <div className="flex max-md:justify-center">
                             <div className="grid max-sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 w-fit">
                                 {TopCollectionPageData.map((item, index) => (
                                     <div key={index} className="border-muted border-3 rounded-2xl shadow-lg p-4 relative">
@@ -52,12 +52,9 @@ const TopCollectionPage = () => {
                                                 <h6 className="font-secondary font-bold">{item.name}</h6>
 
                                                 <div className='relative pr-5'>
-
                                                     <p className="text-para-light font-semibold">{item.owner}</p>
-
                                                     <img src={item.icon} alt="" className="absolute size-4 top-0 right-0" />
                                                 </div>
-
                                             </div>
                                         </div>
 

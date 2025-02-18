@@ -45,67 +45,65 @@ const AuctionPage = () => {
           </div>
 
           {/* topListed-cardsWraper */}
-          <div className='py-20 max-sm:flex max-sm:flex-col max-sm:items-center relative z-50'>
-            <div className='sm:flex-row flex flex-col items-center gap-4 sm:justify-between px-1 pb-10'>
-              <h2 className='uppercase'>Top Listed</h2>
-              <div className='flex flex-col  gap-2'>
-                <div className='flex items-center gap-2'>
-                  <img src={refresh} alt="" />
-                  <p className=' capitalize text-l text-para-light'>Refresh A While Ago</p>
-                </div>
+          <div className='flex justify-between gap-4 pb-10'>
+            <h2 className='uppercase'>Top Listed</h2>
+            <div className='flex flex-col  gap-2'>
+              <div className='flex items-center gap-2'>
+                <img src={refresh} alt="" />
+                <p className=' capitalize text-l text-para-light'>Refresh A While Ago</p>
               </div>
-            </div>
-
-            {/* Cards */}
-            <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5 '>
-              {
-                AuctionPageData.map((item, index) => (
-                  <div key={index} className='p-1'>
-                    <div className="pt-6 px-2 drop-shadow-md max-sm:w-84 max-sm:pb-4 max-md:pb-0 max-lg:pb-4"
-                      style={{
-                        backgroundImage: `url(${item.frame})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                      }}
-                    >
-                      <div className='flex flex-col gap-3'>
-                        {/* person wraper */}
-                        <div className="flex gap-2 items-center w-full">
-                          <img src={item.personImg} alt="" />
-                          <div>
-                            <h6>{item.name}</h6>
-                            <p className='text-secondary'>{item.username}</p>
-                          </div>
-                        </div>
-
-                        <div className='px-2 pb-3 max-lg:pb-4 2xl:pb-7 relative'>
-                          <img src={item.url} alt="" className='max-md:w-full max-md:h-fit' />
-
-                          <div className="absolute  max-sm:left-24 max-sm:top-36 sm:top-25 sm:left-18 md:left-24 md:top-34 lg:top-26 2xl:top-34 lg:left-21  font-medium bg- py-1 px-4 shrink-0 cursor-pointer text-para-light font-secondary rounded-md bg-sold ">
-                            3:06:59:18
-                          </div>
-
-                          <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-5 2xl:bottom-8 right-4">
-                            <p className="text-l ">Price:</p>
-                            <span className="bg-black rounded-full">
-                              <img src={logoprice} alt="" />
-                            </span>
-                            <p className="text-l text-para-light">142.02</p>
-                          </div>
-
-                          <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-2 shrink-0 cursor-pointer text-secondary flex items-center gap-4 text-small absolute bottom-5 2xl:bottom-8 left-4 ">
-                            <span className='text-l font-medium capitalize '>In Stock</span>
-                            <span className='text-l text-para-light'>{StockCount}</span>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                ))}
             </div>
           </div>
 
+          {/* Cards-topListed*/}
+          <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5 '>
+            {
+              AuctionPageData.map((item, index) => (
+                <div key={index} className='p-1'>
+                  <div className="pt-6 px-2 drop-shadow-md max-sm:w-84 max-sm:pb-4 max-md:pb-0 max-lg:pb-4 "
+                    style={{
+                      backgroundImage: `url(${item.frame})`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundSize: "cover",
+
+                    }}
+                  >
+                    <div className='flex flex-col gap-3'>
+                      {/* person wraper */}
+                      <div className="flex gap-2 items-center w-full">
+                        <img src={item.personImg} alt="" />
+                        <div>
+                          <h6>{item.name}</h6>
+                          <p className='text-secondary'>{item.username}</p>
+                        </div>
+                      </div>
+
+                      <div className='px-2 pb-3 max-lg:pb-4 2xl:pb-7 relative'>
+                        <img src={item.url} alt="" className='max-md:w-full max-md:h-fit' />
+
+                        <div className="absolute  max-sm:left-24 max-sm:top-36 sm:top-25 sm:left-18 md:left-24 md:top-34 lg:top-26 2xl:top-34 lg:left-21  font-medium bg- py-1 px-4 shrink-0 cursor-pointer text-para-light font-secondary rounded-md bg-sold ">
+                          3:06:59:18
+                        </div>
+
+                        <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-5 2xl:bottom-8 right-4">
+                          <p className="text-l ">Price:</p>
+                          <span className="bg-black rounded-full">
+                            <img src={logoprice} alt="" />
+                          </span>
+                          <p className="text-l text-para-light">142.02</p>
+                        </div>
+
+                        <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-2 shrink-0 cursor-pointer text-secondary flex items-center gap-4 text-small absolute bottom-5 2xl:bottom-8 left-4 ">
+                          <span className='text-l font-medium capitalize '>In Stock</span>
+                          <span className='text-l text-para-light'>{StockCount}</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              ))}
+          </div>
 
           {/* Live Auction Wraper */}
           <div className='py-20 max-sm:flex max-sm:flex-col max-sm:items-center relative z-50'>
