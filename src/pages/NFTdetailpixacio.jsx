@@ -4,7 +4,7 @@ import Footer from './../components/Footer';
 import heroImgNFT from './../assets/NFTdetail/images/heroImageNFT.webp';
 import watchIco from "../assets/NFTdetail/icons/watch.webp";
 import { useState } from "react";
-import { NFTdetailData, NFTdetailsDescprtion, NFTdetailsListing, NFTitemActivityData, NFTtraitsData } from "../constant/data";
+import { NFTdetailData, NFTdetailsDescprtion, NFTdetailsListing, NFTitemActivityData, NFToffterData, NFTtraitsData } from "../constant/data";
 import lineDown from '../assets/NFTdetail/icons/down_line.webp'
 
 const NFTdetailpixacio = () => {
@@ -12,9 +12,7 @@ const NFTdetailpixacio = () => {
     const [openDesc, setOpenDesc] = useState(null);
 
 
-
     // listing  butoton handeler
-
     const handleListing = (index) => {
         if (open === index) {
             setOpen(null);
@@ -22,7 +20,6 @@ const NFTdetailpixacio = () => {
             setOpen(index);
         }
     };
-
 
 
     // Descriotn butoton handeler
@@ -65,13 +62,13 @@ const NFTdetailpixacio = () => {
                                                     <div className=" gap-4  flex items-center w-full rounded-md py-4 px-2 opacity-90">
                                                         <img src={item.url} alt="" />
 
-                                                        <h4 className="font-secondary w-full rounded-md font-semibold text-secondary ">{item.title}</h4>
+                                                        <h4 className="font-secondary w-full rounded-md text-excp  text-para-light ">{item.title}</h4>
                                                         <img src={lineDown} alt="" />
                                                     </div>
                                                     :
                                                     <div className="  gap-4  flex items-center w-full rounded-md py-4 px-2 opacity-90">
                                                         <img src={item.url} alt="" />
-                                                        <h4 className="font-secondary w-full rounded-md font-semibold text-secondary">{item.title}</h4>
+                                                        <h4 className="font-secondary w-full rounded-md text-excp text-para-light">{item.title}</h4>
                                                         <img src={lineDown} alt="" className=' -rotate-90' />
                                                     </div>
                                                 }
@@ -80,10 +77,10 @@ const NFTdetailpixacio = () => {
                                         </div>
                                         {openDesc === index && (
                                             <div className='border-t-2 border-boorder py-2 px-4'>
-                                                <div className='max-w-[420px]'>
+                                                <div className='max-w-[420px] flex flex-col gap-1'>
 
-                                                    <p>By <b>Stell Noav</b></p>
-                                                    <p className='w-full'>
+                                                    <p className='text-excp text-para-light'>By <b className='text-secondary'>Stell Noav</b></p>
+                                                    <p className='w-full text-para-light'>
                                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu feugiat felis, in maximus neque. Morbi rutrum est interdum, suscipit erat et, mattis ante. Donec at diam pulvinar, pulvinar orci vitae, luctus mauris.
                                                     </p>
                                                 </div>
@@ -293,7 +290,7 @@ const NFTdetailpixacio = () => {
 
                             {/* Offers */}
                             <div className="w-full">
-                                {NFTdetailsListing.map((item, index) => (
+                                {NFToffterData.map((item, index) => (
                                     <div
                                         key={index}
                                         className=" drop-shadow-md rounded-2xl bg-inverted  py-1.5 px-1 cursor-pointer w-full"
@@ -306,13 +303,13 @@ const NFTdetailpixacio = () => {
                                                     <div className=" gap-4  flex items-center w-full rounded-md py-4 px-2 opacity-90">
                                                         <img src={item.url} alt="" />
 
-                                                        <h4 className="font-secondary w-full rounded-md font-semibold text-secondary ">{item.title}</h4>
+                                                        <h4 className="font-secondary w-full rounded-md text-para-light text-excp ">{item.title}</h4>
                                                         <img src={lineDown} alt="" />
                                                     </div>
                                                     :
                                                     <div className="  gap-4  flex items-center w-full rounded-md py-4 px-2 opacity-90">
                                                         <img src={item.url} alt="" />
-                                                        <h4 className="font-secondary w-full rounded-md font-semibold text-secondary">{item.title}</h4>
+                                                        <h4 className="font-secondary w-full rounded-md text-para-light text-excp">{item.title}</h4>
                                                         <img src={lineDown} alt="" className=' -rotate-90' />
                                                     </div>
                                                 }
@@ -321,21 +318,43 @@ const NFTdetailpixacio = () => {
                                         </div>
                                         {open === index && (
                                             <div className='border-t-2 w-full border-boorder py-2 px-4'>
-                                                <div className='border-b-2 w-full border-boorder flex gap-20  items-center py-2'>
-                                                    <p>{item.priceTag}</p>
-                                                    <p>{item.usdpriceTag}</p>
-                                                    <p>{item.quantityTag}</p>
-                                                    <p>{item.fromTag}</p>
-                                                    <p></p>
-                                                </div>
-                                                <div className='border-b-2 w-full border-boorder flex gap-20  items-center py-2'>
-                                                    <p>{item.price}</p>
-                                                    <p>{item.usdpirce}</p>
-                                                    <p>{item.quantity}</p>
-                                                    <p>{item.from}</p>
-                                                    <p>buy</p>
-                                                </div>
+                                                <div className="grid grid-cols-5 w-full gap-2">
+                                                    <p className='text-secondary font-black'> <b>{item.price}</b></p>
+                                                    <p className='text-secondary font-black'> <b>{item.usdprice}</b></p>
+                                                    <p className='text-secondary font-black'> <b>{item.quantity}</b></p>
+                                                    <p className='text-secondary font-black'> <b>{item.fooldif}</b></p>
+                                                    <p className='text-secondary font-black'> <b>{item.from}</b></p>
+                                                    <hr className='col-span-5 border-boorder border-b-1' />
 
+
+                                                    {/*  */}
+                                                    <p className='text-secondary'> <b> {item.p1}</b></p>
+                                                    <p className='text-para-light'> {item.usdp1}</p>
+                                                    <p className='text-para-light'>{item.q1}</p>
+                                                    <p className='text-para-light'>{item.fd1}</p>
+                                                    <p className='text-para-light'>{item.f1}</p>
+                                                    <hr className='col-span-5 border-boorder border-b-1' />
+
+
+                                                    {/*  */}
+                                                    <p className='text-secondary'> <b> {item.p1}</b></p>
+                                                    <p className='text-para-light'> {item.usdp1}</p>
+                                                    <p className='text-para-light'>{item.q1}</p>
+                                                    <p className='text-para-light'>{item.fd1}</p>
+                                                    <p className='text-para-light'>{item.f1}</p>
+                                                    <hr className='col-span-5 border-boorder border-b-1' />
+                                                    
+                                                    {/*  */}
+                                                    <p className='text-secondary'> <b> {item.p1}</b></p>
+                                                    <p className='text-para-light'> {item.usdp1}</p>
+                                                    <p className='text-para-light'>{item.q1}</p>
+                                                    <p className='text-para-light'>{item.fd1}</p>
+                                                    <p className='text-para-light'>{item.f1}</p>
+                                                    <hr className='col-span-5 border-boorder border-b-1' />
+
+                                                
+
+                                                </div>
 
 
                                             </div>

@@ -119,7 +119,7 @@ import desIcon from '../assets/NFTdetail/icons/descrption.webp'
 import itemActivity from '../assets/NFTdetail/icons/itemActivityIcon.webp'
 import detailIcon from '../assets/NFTdetail/icons/detail.webp'
 import traitIco from '../assets/NFTdetail/icons/traits.webp'
-
+import offerIco from '../assets/NFTdetail/icons/offerIco.webp'
 
 
 
@@ -364,12 +364,6 @@ export const PixcaioPageData = [
 
 
 
-
-
-
-
-
-
 // NFT details page Data
 
 export const NFTdetailsListing = [
@@ -458,12 +452,27 @@ export const NFTtraitsData = [
         title: 'Traits',
 
         // 
-
         editon: 'EDITION',
         founEdt: 'Founders edition 52%',
         floor: 'Floor: 12.75 ALGO',
 
     },
-
-
 ]
+
+export const NFToffterData = [
+
+    {
+        url: offerIco, title:'Offer', price: "Price", usdprice: 'USD Price', quantity: 'Quantity', fooldif: 'Floor Difference',
+        from: "From",
+
+        p1: "0.008 FRY", usdp1: '$4.25', q1: '2', fd1: '44% below ', f1: "16DD55",
+
+        p2: "0.008 FRY", usdp2: '$4.25', q2: '2', fd2: '44% below ', f2: "16DD55",
+
+        p3: "0.008 FRY", usdp3: '$4.25', q3: '2', fd3: '44% below ', f3: "16DD55",
+
+        p4: "0.008 FRY", usdp4: '$4.25', q4: '2', fd4: '44% below ', f4: "16DD55"
+    },
+]
+
+

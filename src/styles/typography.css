@@ -83,7 +83,7 @@ p {
   font-size: 90px;
 }
 
-@media (max-width: 1570px) {
+@media (max-width: 1500px) {
   h1 {
     font-size: 56px;
   }
