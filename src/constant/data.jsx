@@ -117,6 +117,8 @@ import pixoimg14 from '../assets/Pixacio/images/pixoImg14.webp'
 import listingIcon from '../assets/NFTdetail/icons/listing.webp'
 import desIcon from '../assets/NFTdetail/icons/descrption.webp'
 import itemActivity from '../assets/NFTdetail/icons/itemActivityIcon.webp'
+import detailIcon from '../assets/NFTdetail/icons/detail.webp'
+import traitIco from '../assets/NFTdetail/icons/traits.webp'
 
 
 
@@ -370,7 +372,6 @@ export const PixcaioPageData = [
 
 // NFT details page Data
 
-
 export const NFTdetailsListing = [
     {
 
@@ -400,7 +401,7 @@ export const NFTdetailsDescprtion = [
 
 ]
 
-export const itemActivityData = [
+export const NFTitemActivityData = [
     {
         url: itemActivity,
         title: "Item Activity",
@@ -435,10 +436,34 @@ export const itemActivityData = [
         t3: "294693",
 
         //  Date
-        d1: '1 days',   
+        d1: '1 days',
         d2: '2mo ago',
         d3: '2mo ago',
     },
-  
-    
+
+
+]
+
+export const NFTdetailData = [
+    {
+        url: detailIcon,
+        title: 'Details'
+    },
+
+]
+
+export const NFTtraitsData = [
+    {
+        url: traitIco,
+        title: 'Traits',
+
+        // 
+
+        editon: 'EDITION',
+        founEdt: 'Founders edition 52%',
+        floor: 'Floor: 12.75 ALGO',
+
+    },
+
+
 ]
