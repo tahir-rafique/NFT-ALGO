@@ -6,6 +6,7 @@ import watchIco from "../assets/NFTdetail/icons/watch.webp";
 import { useState } from "react";
 import { NFTdetailData, NFTdetailsDescprtion, NFTdetailsListing, NFTitemActivityData, NFToffterData, NFTtraitsData } from "../constant/data";
 import lineDown from '../assets/NFTdetail/icons/down_line.webp'
+import ButtonMain from '../shared/ButtonMain';
 
 const NFTdetailpixacio = () => {
     const [open, setOpen] = useState(null);
@@ -205,7 +206,7 @@ const NFTdetailpixacio = () => {
                             </div>
 
                             {/* tiemr section */}
-                            <div className='bg-inverted rounded-md drop-shadow-md w-full py-2'>
+                            <div className='bg-inverted rounded-md drop-shadow-md w-full py-2 flex flex-col gap-2'>
 
                                 <div className='border-b-2 border-boorder px-4 py-2 flex gap-2 items-center'>
                                     <img src={watchIco} alt="" />
@@ -217,7 +218,7 @@ const NFTdetailpixacio = () => {
                                         <p className='text-para-light'>Current price</p>
                                         <h3 className='font-secondary font-medium'>5.001 FRY</h3>
                                     </div>
-                                    <div className='flex gap-2'>
+                                    <div className='flex gap-2 pb-2'>
                                         <div className='flex justify-center w-full'>
                                             <button className='w-full navbtn-size border-2 border-boorder text-secondary navbtn-border px-4 py-2 cursor-pointer font-medium'>
                                                 Buy now
@@ -250,13 +251,13 @@ const NFTdetailpixacio = () => {
                                                     <div className=" gap-4  flex items-center w-full rounded-md py-4 px-2 opacity-90">
                                                         <img src={item.url} alt="" />
 
-                                                        <h4 className="font-secondary w-full rounded-md font-semibold text-secondary ">{item.title}</h4>
+                                                        <h4 className="font-secondary w-full rounded-md  text-para-light text-excp ">{item.title}</h4>
                                                         <img src={lineDown} alt="" />
                                                     </div>
                                                     :
                                                     <div className="  gap-4  flex items-center w-full rounded-md py-4 px-2 opacity-90">
                                                         <img src={item.url} alt="" />
-                                                        <h4 className="font-secondary w-full rounded-md font-semibold text-secondary">{item.title}</h4>
+                                                        <h4 className="font-secondary w-full rounded-md text-para-light text-excp ">{item.title}</h4>
                                                         <img src={lineDown} alt="" className=' -rotate-90' />
                                                     </div>
                                                 }
@@ -265,22 +266,21 @@ const NFTdetailpixacio = () => {
                                         </div>
                                         {open === index && (
                                             <div className='border-t-2 w-full border-boorder py-2 px-4'>
-                                                <div className='border-b-2 w-full border-boorder flex gap-20  items-center py-2'>
-                                                    <p>{item.priceTag}</p>
-                                                    <p>{item.usdpriceTag}</p>
-                                                    <p>{item.quantityTag}</p>
-                                                    <p>{item.fromTag}</p>
-                                                    <p></p>
-                                                </div>
-                                                <div className='border-b-2 w-full border-boorder flex gap-20  items-center py-2'>
-                                                    <p>{item.price}</p>
-                                                    <p>{item.usdpirce}</p>
-                                                    <p>{item.quantity}</p>
-                                                    <p>{item.from}</p>
-                                                    <p>buy</p>
-                                                </div>
+                                                <div className="grid grid-cols-5 w-full gap-2">
+                                                    <p className='text-secondary '> <b>{item.priceTag}</b></p>
+                                                    <p className='text-secondary '> <b>{item.usdpriceTag}</b></p>
+                                                    <p className='text-secondary '> <b>{item.quantityTag}</b></p>
+                                                    <p className='text-secondary '> <b>{item.fromTag}</b></p>
+                                                    <hr className='col-span-5 border-boorder border-b-1' />
+                                                    {/*  */}
+                                                    <p className='text-para-light'> {item.price}</p>
+                                                    <p className='text-para-light'> {item.usdpirce}</p>
+                                                    <p className='text-para-light'> {item.quantity}</p>
+                                                    <p className='text-para-light'> {item.from}</p>
 
+                                                    <ButtonMain text={'Buy'}/>
 
+                                                </div>
 
                                             </div>
                                         )}
@@ -319,11 +319,11 @@ const NFTdetailpixacio = () => {
                                         {open === index && (
                                             <div className='border-t-2 w-full border-boorder py-2 px-4'>
                                                 <div className="grid grid-cols-5 w-full gap-2">
-                                                    <p className='text-secondary font-black'> <b>{item.price}</b></p>
-                                                    <p className='text-secondary font-black'> <b>{item.usdprice}</b></p>
-                                                    <p className='text-secondary font-black'> <b>{item.quantity}</b></p>
-                                                    <p className='text-secondary font-black'> <b>{item.fooldif}</b></p>
-                                                    <p className='text-secondary font-black'> <b>{item.from}</b></p>
+                                                    <p className='text-secondary  '> <b>{item.price}</b></p>
+                                                    <p className='text-secondary  '> <b>{item.usdprice}</b></p>
+                                                    <p className='text-secondary  '> <b>{item.quantity}</b></p>
+                                                    <p className='text-secondary  '> <b>{item.fooldif}</b></p>
+                                                    <p className='text-secondary    '> <b>{item.from}</b></p>
                                                     <hr className='col-span-5 border-boorder border-b-1' />
 
 
@@ -343,7 +343,7 @@ const NFTdetailpixacio = () => {
                                                     <p className='text-para-light'>{item.fd1}</p>
                                                     <p className='text-para-light'>{item.f1}</p>
                                                     <hr className='col-span-5 border-boorder border-b-1' />
-                                                    
+
                                                     {/*  */}
                                                     <p className='text-secondary'> <b> {item.p1}</b></p>
                                                     <p className='text-para-light'> {item.usdp1}</p>
@@ -352,7 +352,7 @@ const NFTdetailpixacio = () => {
                                                     <p className='text-para-light'>{item.f1}</p>
                                                     <hr className='col-span-5 border-boorder border-b-1' />
 
-                                                
+
 
                                                 </div>
 
