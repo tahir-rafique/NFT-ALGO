@@ -113,6 +113,12 @@ import pixoimg13 from '../assets/Pixacio/images/pixoImg13.webp'
 import pixoimg14 from '../assets/Pixacio/images/pixoImg14.webp'
 
 
+// NFT detial page
+import listingIcon from '../assets/NFTdetail/icons/listing.webp'
+import desIcon from '../assets/NFTdetail/icons/descrption.webp'
+import itemActivity from '../assets/NFTdetail/icons/itemActivityIcon.webp'
+
+
 
 
 export const FeatureCollectionData = [
@@ -349,4 +355,90 @@ export const PixcaioPageData = [
     { frame: subtract, url: pixoimg13, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
     { frame: subtract, url: pixoimg8, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
 
+]
+
+
+
+
+
+
+
+
+
+
+
+
+// NFT details page Data
+
+
+export const NFTdetailsListing = [
+    {
+
+        url: listingIcon,
+        title: "Listings",
+        priceTag: "Price",
+        price: '0.008 FRY',
+        usdpriceTag: 'USD Price',
+        usdpirce: '$4.25',
+        quantityTag: 'Quantity',
+        quantity: '2',
+        fromTag: "From",
+        from: '16DD55',
+
+    },
+
+]
+
+export const NFTdetailsDescprtion = [
+    {
+
+        url: desIcon,
+        title: "Description",
+
+
+    },
+
+]
+
+export const itemActivityData = [
+    {
+        url: itemActivity,
+        title: "Item Activity",
+        // 
+        Event: "Event",
+        Price: 'Price',
+        From: 'From ',
+        To: 'To',
+        Date: 'Date',
+        quantity: '2',
+        fromTag: "From",
+        from: '16DD55',
+
+        // event
+        e1: "List",
+        e2: "List",
+        e3: 'Sale',
+
+        //  Price
+        p1: "0.08 FRY",
+        p2: "",
+        p3: "0.08 FRY",
+
+        // From 
+        f1: '294693',
+        f2: '199016',
+        f3: '294693',
+
+        // To
+        t1: "",
+        t2: "126673",
+        t3: "294693",
+
+        //  Date
+        d1: '1 days',   
+        d2: '2mo ago',
+        d3: '2mo ago',
+    },
+  
+    
 ]

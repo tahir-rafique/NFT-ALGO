@@ -12,6 +12,7 @@
   --breakpoint-3xl: 1700px;
   --color-soldbtn: rgba(253, 253, 253, 0.15);
   --color-refresh: #707070;
+  --color-boorder: #E7E7E7;
 }
 
 @font-face {

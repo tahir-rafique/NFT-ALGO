@@ -4,6 +4,7 @@ import faqElicp from "../assets/FAQ/images/faqRightElipc.webp"
 import { IoMdAdd } from "react-icons/io";
 import { RiSubtractLine } from "react-icons/ri";
 const FAQ = () => {
+  
   const [openAccord, setOpenAccord] = useState(null);
 
   const handleFAQ = (index) => {
