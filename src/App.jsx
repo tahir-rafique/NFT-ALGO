@@ -5,6 +5,8 @@ import './styles/typography.css';
 import './styles/slider.css'
 import AuctionPage from './pages/AuctionPage';
 import TopCollectionPage from './pages/TopCollectionPage';
+import TopCollectionPixacio from './pages/TopCollectionPixacio';
+import NFTdetailpixacio from './pages/NFTdetailpixacio';
 
 const App = () => {
   return (
@@ -14,6 +16,9 @@ const App = () => {
         <Route path="/not-found" element={<NotFound />} />
         <Route path="/auction" element={<AuctionPage />} />
         <Route path="/top-Collection" element={<TopCollectionPage />} />
+        <Route path="/pixacio-page" element={<TopCollectionPixacio />} />
+        <Route path="/NFTdetail" element={<NFTdetailpixacio />} />
+        
       </Routes>
     </>
   )

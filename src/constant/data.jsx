@@ -1,15 +1,11 @@
 import subtract from "../../src/assets/FeatureCollection/images/subtract.webp";
 
-
 //  Feature Collection
 import cato from "../assets/FeatureCollection/images/cato.webp";
 import dog from "../assets/FeatureCollection/images/dog.webp";
 import eagle from "../assets/FeatureCollection/images/eagle.webp";
 import rgbCat from "../assets/FeatureCollection/images/rgbCat.webp";
 import person from "../assets/FeatureCollection/images/person.webp";
-
-
-
 
 // Trending NFT
 import dragon from "../assets/TrendingNFT/images/dragon.webp";
@@ -20,8 +16,6 @@ import princess from "../assets/TrendingNFT/images/princess.webp";
 import cartoon from "../assets/TrendingNFT/images/cartoon.webp";
 import monk from "../assets/TrendingNFT/images/monk.webp";
 import stachu from "../assets/TrendingNFT/images/stachu.webp";
-
-
 
 // Auction
 import img1 from "../assets/Auction/images/img1.webp";
@@ -35,8 +29,6 @@ import img8 from "../assets/Auction/images/img8.webp";
 
 
 //  Recent Sold 
-
-
 import r1 from "../assets/RecentSold/images/r1.webp"
 import r2 from "../assets/RecentSold/images/r2.webp"
 import r3 from "../assets/RecentSold/images/r3.webp"
@@ -102,6 +94,25 @@ import imgTCP3 from '../assets/TopCollectionPage/sub3.webp'
 import imgTCP4 from '../assets/TopCollectionPage/sub4.webp'
 import imgTCP5 from '../assets/TopCollectionPage/sub5.webp'
 import imgTCP6 from '../assets/TopCollectionPage/sub6.webp'
+
+
+//  Pixacio
+import pixoimg1 from '../assets/Pixacio/images/pixoImg1.webp'
+import pixoimg2 from '../assets/Pixacio/images/pixoImg2.webp'
+import pixoimg3 from '../assets/Pixacio/images/pixoImg3.webp'
+import pixoimg4 from '../assets/Pixacio/images/pixoImg4.webp'
+import pixoimg5 from '../assets/Pixacio/images/pixoImg5.webp'
+import pixoimg6 from '../assets/Pixacio/images/pixoImg6.webp'
+import pixoimg7 from '../assets/Pixacio/images/pixoImg7.webp'
+import pixoimg8 from '../assets/Pixacio/images/pixoImg8.webp'
+import pixoimg9 from '../assets/Pixacio/images/pixoImg9.webp'
+import pixoimg10 from '../assets/Pixacio/images/pixoImg10.webp'
+import pixoimg11 from '../assets/Pixacio/images/pixoImg11.webp'
+import pixoimg12 from '../assets/Pixacio/images/pixoImg12.webp'
+import pixoimg13 from '../assets/Pixacio/images/pixoImg13.webp'
+import pixoimg14 from '../assets/Pixacio/images/pixoImg14.webp'
+
+
 
 
 export const FeatureCollectionData = [
@@ -310,4 +321,32 @@ export const TopCollectionPageData = [
         frame: imgTCP1,
         person: p6, icon: tick, name: "Wonderful ARTWORK ", owner: "Created by Jacob Jones", itemText: 'items 1.5k'
     },
+]
+
+
+// Pixacio Page Data
+export const PixcaioPageData = [
+    { frame: subtract, url: pixoimg1, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: pixoimg2, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: pixoimg3, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: pixoimg4, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+
+    // 
+    { frame: subtract, url: pixoimg5, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: pixoimg6, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: pixoimg7, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: pixoimg14, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+
+
+
+    // 
+    { frame: subtract, url: pixoimg9, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: pixoimg10, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: pixoimg11, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: pixoimg12, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+
+    //   // 
+    { frame: subtract, url: pixoimg13, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: pixoimg8, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+
 ]
