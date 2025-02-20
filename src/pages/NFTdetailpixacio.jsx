@@ -3,18 +3,38 @@ import Navbar from './../components/Navbar';
 import Footer from './../components/Footer';
 import heroImgNFT from './../assets/NFTdetail/images/heroImageNFT.webp';
 import watchIco from "../assets/NFTdetail/icons/watch.webp";
-import { useState } from "react";
-import { NFTdetailData, NFTdetailMoreCollectionData, NFTdetailsDescprtion, NFTdetailsListing, NFTitemActivityData, NFToffterData, NFTtraitsData, TrendingNFTData } from "../constant/data";
+import { useState, useRef, useEffect } from "react";
+import { NFTdetailData, NFTdetailMoreCollectionData, NFTdetailsDescprtion, NFTdetailsListing, NFTitemActivityData, NFToffterData, NFTtraitsData, } from "../constant/data";
 import lineDown from '../assets/NFTdetail/icons/down_line.webp'
 import logoprice from "../assets/FeatureCollection/images/logoprice.webp";
 
 
 const NFTdetailpixacio = () => {
+
     const [openItemActivity, setOpenItemActivity] = useState(null);
+    const dropdownRef = useRef(null);
+    const [openListing, setOpenListing] = useState(null);
+
+    const [openOffer, setOpenOffer] = useState(null);
+    const [openDesc, setOpenDesc] = useState(null);
+    const [openTratis, setOpenTratis] = useState(null);
+    const [openDetails, setOpenDetails] = useState(null);
+
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setOpenItemActivity(null);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
 
 
     // listing  Button handeler
-    const [openListing, setOpenListing] = useState(null);
     const handleListing = (index) => {
         if (openListing === index) {
             setOpenListing(null);
@@ -25,7 +45,7 @@ const NFTdetailpixacio = () => {
 
 
     // Offerr Button handeler
-    const [openOffer, setOpenOffer] = useState(null);
+
     const handleOffer = (index) => {
         if (openOffer === index) {
             setOpenOffer(null);
@@ -34,10 +54,7 @@ const NFTdetailpixacio = () => {
         }
     };
 
-
-
-    // Descriotn butoton handeler
-    const [openDesc, setOpenDesc] = useState(null);
+    // Descriotn Button handeler
 
     const handleDescrption = (index) => {
         if (openDesc === index) {
@@ -47,9 +64,7 @@ const NFTdetailpixacio = () => {
         }
     };
 
-
-    // Descriotn butoton handeler
-    const [openTratis, setOpenTratis] = useState(null);
+    // Descriotn Button handeler
 
     const handleTratis = (index) => {
         if (openTratis === index) {
@@ -60,7 +75,6 @@ const NFTdetailpixacio = () => {
     };
 
     // Details Button handeler
-    const [openDetails, setOpenDetails] = useState(null);
 
     const handleDetails = (index) => {
         if (openDetails === index) {
@@ -71,8 +85,6 @@ const NFTdetailpixacio = () => {
     };
 
 
-
-    // Have to Change it.
     // Items Activity Button Handler
     const handleItemsActivity = (index) => {
         if (openItemActivity === index) {
@@ -80,7 +92,8 @@ const NFTdetailpixacio = () => {
         } else {
             setOpenItemActivity(index);
         }
-    }
+    };
+
 
     return (
         <>
@@ -91,15 +104,15 @@ const NFTdetailpixacio = () => {
                     {/* Hero Wraper */}
                     <div className='xl:flex-row flex flex-col  gap-10 justify-between'>
 
-                        {/* hero-Left */}
+                        {/* hero Left Wraper*/}
                         <div className="hero-left p-1 flex-col gap-4  flex justify-center">
-                            <div className='drop-shadow-md p-1'>
+                            <div className='hero-image-wraper drop-shadow-md p-1 flex max-xl:justify-center'>
                                 <img src={heroImgNFT} alt="" className=' bg-[#fff] p-3 rounded-2xl' />
                             </div>
 
 
-                            {/* discrption */}
-                            <div className="w-full drop-shadow-md">
+
+                            <div className="descrption-wraper w-full drop-shadow-md">
                                 {NFTdetailsDescprtion.map((item, index) => (
                                     <div
                                         key={index}
@@ -144,8 +157,8 @@ const NFTdetailpixacio = () => {
                                 ))}
                             </div>
 
-                            {/*  Traits */}
-                            <div className="w-full drop-shadow-md">
+
+                            <div className="tratis-wraper w-full drop-shadow-md">
                                 {NFTtraitsData.map((item, index) => (
                                     <div
                                         key={index}
@@ -244,16 +257,17 @@ const NFTdetailpixacio = () => {
                         </div>
 
 
-                        {/* hero-Right */}
+                        {/* Hero Right Wraper */}
                         <div className="hero-right flex flex-col items-center lg:justify-end 2xl:w-[55%] gap-4">
-                            {/* text-top */}
-                            <div className=' w-full'>
+
+
+                            <div className='text-wraper w-full'>
                                 <h2>Pixacio</h2>
                                 <h5 className='font-secondary text-para-light'>Owned by <b className='text-secondary'>  Stella Nova</b></h5>
                             </div>
 
-                            {/* tiemr section */}
-                            <div className='bg-inverted rounded-md drop-shadow-md w-full py-2 flex flex-col gap-2 p-1'>
+
+                            <div className='timer-wraper bg-inverted rounded-md drop-shadow-md w-full py-2 flex flex-col gap-2 p-1'>
 
                                 <div className='border-b-2 border-boorder px-4 py-2 flex gap-2 items-center'>
                                     <img src={watchIco} alt="" />
@@ -283,8 +297,8 @@ const NFTdetailpixacio = () => {
                             </div>
 
 
-                            {/* listing */}
-                            <div className="w-full drop-shadow-md p-1">
+
+                            <div className="listing-wraper w-full drop-shadow-md p-1">
                                 {NFTdetailsListing.map((item, index) => (
                                     <div
                                         key={index}
@@ -312,7 +326,7 @@ const NFTdetailpixacio = () => {
 
                                         </div>
                                         {openListing === index && (
-                                            <div className='border-t-2 w-full border-boorder py-2 px-4'>
+                                            <div className='border-t-2 w-full border-boorder py-2 px-4' onClick={(e) => e.stopPropagation()}>
                                                 <div className="grid grid-cols-5 w-full gap-2 py-3">
                                                     <p className='text-secondary '> <b>{item.priceTag}</b></p>
                                                     <p className='text-secondary '> <b>{item.usdpriceTag}</b></p>
@@ -337,8 +351,8 @@ const NFTdetailpixacio = () => {
                                 ))}
                             </div>
 
-                            {/* Offers */}
-                            <div className="w-full drop-shadow-md p-1">
+
+                            <div className="offer-wraper w-full drop-shadow-md p-1">
                                 {NFToffterData.map((item, index) => (
                                     <div
                                         key={index}
@@ -412,12 +426,12 @@ const NFTdetailpixacio = () => {
                                 ))}
                             </div>
 
-                            {/*  Details */}
-                            <div className="flex justify-start w-full drop-shadow-md p-1">
+
+                            <div className="details-wraper flex justify-start w-full drop-shadow-md p-1">
                                 {NFTdetailData.map((item, index) => (
                                     <div
                                         key={index}
-                                        className="rounded-2xl bg-inverted  py-1.5 px-1 cursor-pointer w-full sm:min-w-[500px]"
+                                        className="rounded-2xl  py-1.5 px-1 cursor-pointer max-md:min-w-[320px] md:min-w-[530px] bg-inverted"
                                         onClick={() => handleDetails(index)
                                         }
                                     >
@@ -441,7 +455,7 @@ const NFTdetailpixacio = () => {
                                         </div>
                                         {openDetails === index && (
                                             <div className='border-t-2 border-boorder py-2 '>
-                                                <div className='min-w-[420px]'>
+                                                <div className='w-full'>
                                                     <div className='flex flex-col gap-3 w-full px-4'>
 
                                                         <div className='flex justify-between text-para-light'>
@@ -490,9 +504,9 @@ const NFTdetailpixacio = () => {
                     </div>
 
 
-                    {/* Items Activity*/}
+                    {/* Items Activity Wraper*/}
                     <div className='py-10 drop-shadow-md'>
-                        <div className="w-full">
+                        <div className="w-full" ref={dropdownRef}>
                             {NFTitemActivityData.map((item, index) => (
                                 <div
                                     key={index}
@@ -521,7 +535,7 @@ const NFTdetailpixacio = () => {
                                     </div>
 
                                     {openItemActivity === index && (
-                                        <div className='border-t-2 w-full border-boorder py-2 px-4 flex flex-col gap-3'>
+                                        <div className='border-t-2 w-full border-boorder py-2 px-4 flex flex-col gap-3' onClick={(e) => e.stopPropagation()} >
                                             <div className='px-5'>
                                                 <div className='flex justify-between items-center gap-4 border-boorder border rounded-md pr-4'>
                                                     <input type="text" placeholder='Filter' className='w-full px-10 py-2 font-secondary' />
@@ -575,7 +589,7 @@ const NFTdetailpixacio = () => {
                         </div>
                     </div>
 
-                    {/* More From The Collection */}
+                    {/* More From The Collection Wraper */}
                     <div className=" flex flex-col max-sm:items-center  gap-4 lg:gap-10 py-20">
                         <h2>More from this collection</h2>
                         <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5'>

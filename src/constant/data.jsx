@@ -131,6 +131,29 @@ import NFTDimg7 from '../assets/NFTdetail/images/img7.webp'
 import NFTDimg8 from '../assets/NFTdetail/images/img8.webp'
 
 
+// Top seller Page Data
+
+import CLimg1 from '../assets/TopSellerPage/images/1.webp'
+import CLimg2 from '../assets/TopSellerPage/images/2.webp'
+import CLimg3 from '../assets/TopSellerPage/images/3.webp'
+
+import CLimg4 from '../assets/TopSellerPage/images/4.webp'
+import CLimg5 from '../assets/TopSellerPage/images/5.webp'
+import CLimg6 from '../assets/TopSellerPage/images/6.webp'
+import CLimg7 from '../assets/TopSellerPage/images/7.webp'
+import CLimg8 from '../assets/TopSellerPage/images/8.webp'
+import CLimg9 from '../assets/TopSellerPage/images/9.webp'
+import CLimg10 from '../assets/TopSellerPage/images/10.webp'
+import CLimg11 from '../assets/TopSellerPage/images/11.webp'
+import CLimg12 from '../assets/TopSellerPage/images/12.webp'
+import CLimg13 from '../assets/TopSellerPage/images/13.webp'
+import CLimg14 from '../assets/TopSellerPage/images/14.webp'
+import CLimg15 from '../assets/TopSellerPage/images/1.webp'
+
+
+
+
+// Exports.............
 
 
 export const FeatureCollectionData = [
@@ -371,9 +394,6 @@ export const PixcaioPageData = [
 
 
 
-
-
-
 // NFT details page Data
 
 export const NFTdetailsListing = [
@@ -496,4 +516,31 @@ export const NFTdetailMoreCollectionData = [
     { frame: subtract, url: NFTDimg6, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
     { frame: subtract, url: NFTDimg7, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
     { frame: subtract, url: NFTDimg8, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+]
+
+// Top Seller page Data
+export const selectCategory = ["Category 1", "Category 2", "Category 3", "Category 4"];
+
+
+export const categoryListItemsData = [
+    { num: '01', url: CLimg1, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '02', url: CLimg2, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '03', url: CLimg3, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '04', url: CLimg4, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    // 
+
+    { num: '05', url: CLimg5, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '06', url: CLimg6, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '07', url: CLimg7, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '08', url: CLimg8, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    // 
+    { num: '09', url: CLimg9, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '10', url: CLimg10, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '11', url: CLimg11, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '12', url: CLimg12, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    // 
+    { num: '13', url: CLimg13, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '14', url: CLimg14, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '15', url: CLimg15, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+
 ]
