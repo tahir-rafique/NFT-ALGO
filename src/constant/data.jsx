@@ -151,6 +151,18 @@ import CLimg14 from '../assets/TopSellerPage/images/14.webp'
 import CLimg15 from '../assets/TopSellerPage/images/1.webp'
 
 
+// Seller Collection Page Data
+import SPimg1 from '../assets/SellerCollectionPage/images/1.webp';
+import SPimg2 from '../assets/SellerCollectionPage/images/2.webp';
+import SPimg3 from '../assets/SellerCollectionPage/images/3.webp';
+import SPimg4 from '../assets/SellerCollectionPage/images/4.webp';
+import SPimg5 from '../assets/SellerCollectionPage/images/5.webp';
+import SPimg6 from '../assets/SellerCollectionPage/images/6.webp';
+import SPimg7 from '../assets/SellerCollectionPage/images/7.webp';
+import SPimg8 from '../assets/SellerCollectionPage/images/8.webp';
+import SPimg9 from '../assets/SellerCollectionPage/images/9.webp';
+import SPimg10 from '../assets/SellerCollectionPage/images/10.webp';
+
 
 
 // Exports.............
@@ -542,5 +554,48 @@ export const categoryListItemsData = [
     { num: '13', url: CLimg13, name: "Jacob Jones", volume: "154.0", follower: 20, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
     { num: '14', url: CLimg14, name: "Jacob Jones", volume: "154.0", follower: 20, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
     { num: '15', url: CLimg15, name: "Jacob Jones", volume: "154.0", follower: 55, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+
+]
+
+// Seller Collection Page Data
+export const SellerPageData = [
+    {
+        frame: SPimg1, name: "Wonderful ARTWORK ", item: "items 1.5k",
+    },
+    {
+        frame: SPimg2, name: "Wonderful ARTWORK ", item: "items 1.5k",
+    },
+    {
+        frame: SPimg3, name: "Wonderful ARTWORK ", item: "items 1.5k",
+    },
+    {
+        frame: SPimg4, name: "Wonderful ARTWORK ", item: "items 1.5k",
+    },
+
+    {
+        frame: SPimg5, name: "Wonderful ARTWORK ", item: "items 1.5k",
+    },
+
+    {
+        frame: SPimg6, name: "Wonderful ARTWORK ", item: "items 1.5k",
+    },
+
+    {
+        frame: SPimg7, name: "Wonderful ARTWORK ", item: "items 1.5k",
+    },
+    {
+        frame: SPimg8, name: "Wonderful ARTWORK ", item: "items 1.5k",
+    },
+
+    {
+        frame: SPimg9, name: "Wonderful ARTWORK ", item: "items 1.5k",
+    },
+
+    {
+        frame: SPimg10, name: "Wonderful ARTWORK ", item: "items 1.5k",
+    },
+
+
+
 
 ]

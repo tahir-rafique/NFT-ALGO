@@ -8,6 +8,7 @@ import TopCollectionPage from './pages/TopCollectionPage';
 import TopCollectionPixacio from './pages/TopCollectionPixacio';
 import NFTdetailpixacio from './pages/NFTdetailpixacio';
 import TopSellerPage from './pages/TopSellerPage';
+import SellerCollectionPage from './pages/SellerCollectionPage';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/pixacio-page" element={<TopCollectionPixacio />} />
         <Route path="/NFTdetail" element={<NFTdetailpixacio />} />
         <Route path="/top-seller-page" element={<TopSellerPage />} />
+        <Route path="/seller-collection-page" element={<SellerCollectionPage />} />
 
 
 
