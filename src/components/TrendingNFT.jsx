@@ -54,7 +54,7 @@ const TrendingNFT = () => {
           </div>
         </div>
 
-        {/* 2nd Section */}
+        {/* Trending NFT */}
         <div className=" flex flex-col max-sm:items-center  gap-4 lg:gap-10">
           <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5'>
             {
@@ -64,7 +64,7 @@ const TrendingNFT = () => {
                     style={{
                       backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",
-                      
+
                     }}
                   >
                     <div className='flex flex-col gap-3 relative'>

@@ -11,7 +11,7 @@ const NotFound = () => {
                 </div>
                 <h1 className="text-main pb-10">page not found.....!</h1>
 
-                <a href="/" className="text-main text-2xl border-2 px-5 py-3 rounded-2xl hover:bg-main hover:text-inverted ">Go Back...! </a>
+                <a href="/" className="text-main text-2xl border-2 px-5 py-3 rounded-2xl hover:bg-main hover:text-inverted ">Go Back HOME...! </a>
             </section>
         </>
     )

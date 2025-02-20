@@ -120,6 +120,16 @@ import itemActivity from '../assets/NFTdetail/icons/itemActivityIcon.webp'
 import detailIcon from '../assets/NFTdetail/icons/detail.webp'
 import traitIco from '../assets/NFTdetail/icons/traits.webp'
 import offerIco from '../assets/NFTdetail/icons/offerIco.webp'
+// images
+import NFTDimg1 from '../assets/NFTdetail/images/img1.webp'
+import NFTDimg2 from '../assets/NFTdetail/images/img2.webp'
+import NFTDimg3 from '../assets/NFTdetail/images/img3.webp'
+import NFTDimg4 from '../assets/NFTdetail/images/img4.webp'
+import NFTDimg5 from '../assets/NFTdetail/images/img5.webp'
+import NFTDimg6 from '../assets/NFTdetail/images/img6.webp'
+import NFTDimg7 from '../assets/NFTdetail/images/img7.webp'
+import NFTDimg8 from '../assets/NFTdetail/images/img8.webp'
+
 
 
 
@@ -462,7 +472,7 @@ export const NFTtraitsData = [
 export const NFToffterData = [
 
     {
-        url: offerIco, title:'Offer', price: "Price", usdprice: 'USD Price', quantity: 'Quantity', fooldif: 'Floor Difference',
+        url: offerIco, title: 'Offer', price: "Price", usdprice: 'USD Price', quantity: 'Quantity', fooldif: 'Floor Difference',
         from: "From",
 
         p1: "0.008 FRY", usdp1: '$4.25', q1: '2', fd1: '44% below ', f1: "16DD55",
@@ -476,3 +486,14 @@ export const NFToffterData = [
 ]
 
 
+export const NFTdetailMoreCollectionData = [
+    { frame: subtract, url: NFTDimg1, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: NFTDimg2, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: NFTDimg3, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: NFTDimg4, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+
+    { frame: subtract, url: NFTDimg5, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: NFTDimg6, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: NFTDimg7, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: NFTDimg8, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+]

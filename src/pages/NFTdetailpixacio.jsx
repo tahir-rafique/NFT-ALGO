@@ -4,26 +4,41 @@ import Footer from './../components/Footer';
 import heroImgNFT from './../assets/NFTdetail/images/heroImageNFT.webp';
 import watchIco from "../assets/NFTdetail/icons/watch.webp";
 import { useState } from "react";
-import { NFTdetailData, NFTdetailsDescprtion, NFTdetailsListing, NFTitemActivityData, NFToffterData, NFTtraitsData } from "../constant/data";
+import { NFTdetailData, NFTdetailMoreCollectionData, NFTdetailsDescprtion, NFTdetailsListing, NFTitemActivityData, NFToffterData, NFTtraitsData, TrendingNFTData } from "../constant/data";
 import lineDown from '../assets/NFTdetail/icons/down_line.webp'
-import ButtonMain from '../shared/ButtonMain';
+import logoprice from "../assets/FeatureCollection/images/logoprice.webp";
+
 
 const NFTdetailpixacio = () => {
-    const [open, setOpen] = useState(null);
-    const [openDesc, setOpenDesc] = useState(null);
+    const [openItemActivity, setOpenItemActivity] = useState(null);
 
 
-    // listing  butoton handeler
+    // listing  Button handeler
+    const [openListing, setOpenListing] = useState(null);
     const handleListing = (index) => {
-        if (open === index) {
-            setOpen(null);
+        if (openListing === index) {
+            setOpenListing(null);
         } else {
-            setOpen(index);
+            setOpenListing(index);
         }
     };
 
 
+    // Offerr Button handeler
+    const [openOffer, setOpenOffer] = useState(null);
+    const handleOffer = (index) => {
+        if (openOffer === index) {
+            setOpenOffer(null);
+        } else {
+            setOpenOffer(index);
+        }
+    };
+
+
+
     // Descriotn butoton handeler
+    const [openDesc, setOpenDesc] = useState(null);
+
     const handleDescrption = (index) => {
         if (openDesc === index) {
             setOpenDesc(null);
@@ -32,28 +47,63 @@ const NFTdetailpixacio = () => {
         }
     };
 
+
+    // Descriotn butoton handeler
+    const [openTratis, setOpenTratis] = useState(null);
+
+    const handleTratis = (index) => {
+        if (openTratis === index) {
+            setOpenTratis(null);
+        } else {
+            setOpenTratis(index);
+        }
+    };
+
+    // Details Button handeler
+    const [openDetails, setOpenDetails] = useState(null);
+
+    const handleDetails = (index) => {
+        if (openDetails === index) {
+            setOpenDetails(null);
+        } else {
+            setOpenDetails(index);
+        }
+    };
+
+
+
+    // Have to Change it.
+    // Items Activity Button Handler
+    const handleItemsActivity = (index) => {
+        if (openItemActivity === index) {
+            setOpenItemActivity(null);
+        } else {
+            setOpenItemActivity(index);
+        }
+    }
+
     return (
         <>
             <Navbar />
             <div className='flex justify-center'>
 
-                <div className='bg-green-400 container mx-auto  max-sm:px-5 sm:px-12 lg:px-20 pt-20 pb-4'>
-                    {/* hero-Wraper */}
-                    <div className='2xl:flex-row flex flex-col  gap-10 justify-between'>
+                <div className='container mx-auto bg-frame max-sm:px-5 sm:px-12 lg:px-20 pt-20 pb-4'>
+                    {/* Hero Wraper */}
+                    <div className='xl:flex-row flex flex-col  gap-10 justify-between'>
 
                         {/* hero-Left */}
                         <div className="hero-left p-1 flex-col gap-4  flex justify-center">
-                            <div>
-                                <img src={heroImgNFT} alt="" className=' bg-[#fff] shadow-md p-3 rounded-2xl' />
+                            <div className='drop-shadow-md p-1'>
+                                <img src={heroImgNFT} alt="" className=' bg-[#fff] p-3 rounded-2xl' />
                             </div>
 
 
                             {/* discrption */}
-                            <div className="w-full">
+                            <div className="w-full drop-shadow-md">
                                 {NFTdetailsDescprtion.map((item, index) => (
                                     <div
                                         key={index}
-                                        className=" drop-shadow-md rounded-2xl bg-inverted  py-1.5 px-1 cursor-pointer w-full"
+                                        className=" rounded-2xl bg-inverted  py-1.5 px-1 cursor-pointer w-full"
                                         onClick={() => handleDescrption(index)
                                         }
                                     >
@@ -94,20 +144,18 @@ const NFTdetailpixacio = () => {
                                 ))}
                             </div>
 
-
-
                             {/*  Traits */}
-                            <div className="w-full">
+                            <div className="w-full drop-shadow-md">
                                 {NFTtraitsData.map((item, index) => (
                                     <div
                                         key={index}
-                                        className=" drop-shadow-md rounded-2xl bg-inverted  py-1.5 px-1 cursor-pointer w-full"
-                                        onClick={() => handleDescrption(index)
+                                        className="rounded-2xl bg-inverted  py-1.5 px-1 cursor-pointer w-full"
+                                        onClick={() => handleTratis(index)
                                         }
                                     >
                                         <div className="flex gap-3 items-center w-full">
                                             <div className="text-2xl flex items-center gap-2 w-full">
-                                                {openDesc === index ?
+                                                {openTratis === index ?
                                                     <div className=" gap-4  flex items-center w-full rounded-md py-4 px-2 opacity-90">
                                                         <img src={item.url} alt="" />
 
@@ -124,7 +172,7 @@ const NFTdetailpixacio = () => {
                                             </div>
 
                                         </div>
-                                        {openDesc === index && (
+                                        {openTratis === index && (
                                             <div className='border-t-2 border-boorder py-2'>
                                                 <div className=''>
 
@@ -196,7 +244,6 @@ const NFTdetailpixacio = () => {
                         </div>
 
 
-
                         {/* hero-Right */}
                         <div className="hero-right flex flex-col items-center lg:justify-end 2xl:w-[55%] gap-4">
                             {/* text-top */}
@@ -206,7 +253,7 @@ const NFTdetailpixacio = () => {
                             </div>
 
                             {/* tiemr section */}
-                            <div className='bg-inverted rounded-md drop-shadow-md w-full py-2 flex flex-col gap-2'>
+                            <div className='bg-inverted rounded-md drop-shadow-md w-full py-2 flex flex-col gap-2 p-1'>
 
                                 <div className='border-b-2 border-boorder px-4 py-2 flex gap-2 items-center'>
                                     <img src={watchIco} alt="" />
@@ -218,7 +265,7 @@ const NFTdetailpixacio = () => {
                                         <p className='text-para-light'>Current price</p>
                                         <h3 className='font-secondary font-medium'>5.001 FRY</h3>
                                     </div>
-                                    <div className='flex gap-2 pb-2'>
+                                    <div className='flex gap-6 pb-2'>
                                         <div className='flex justify-center w-full'>
                                             <button className='w-full navbtn-size border-2 border-boorder text-secondary navbtn-border px-4 py-2 cursor-pointer font-medium'>
                                                 Buy now
@@ -237,17 +284,17 @@ const NFTdetailpixacio = () => {
 
 
                             {/* listing */}
-                            <div className="w-full">
+                            <div className="w-full drop-shadow-md p-1">
                                 {NFTdetailsListing.map((item, index) => (
                                     <div
                                         key={index}
-                                        className=" drop-shadow-md rounded-2xl bg-inverted  py-1.5 px-1 cursor-pointer w-full"
+                                        className=" rounded-2xl bg-inverted  py-1.5 px-1 cursor-pointer w-full"
                                         onClick={() => handleListing(index)
                                         }
                                     >
                                         <div className="flex gap-3 items-center w-full">
                                             <div className="text-2xl flex items-center gap-2 w-full">
-                                                {open === index ?
+                                                {openListing === index ?
                                                     <div className=" gap-4  flex items-center w-full rounded-md py-4 px-2 opacity-90">
                                                         <img src={item.url} alt="" />
 
@@ -264,9 +311,9 @@ const NFTdetailpixacio = () => {
                                             </div>
 
                                         </div>
-                                        {open === index && (
+                                        {openListing === index && (
                                             <div className='border-t-2 w-full border-boorder py-2 px-4'>
-                                                <div className="grid grid-cols-5 w-full gap-2">
+                                                <div className="grid grid-cols-5 w-full gap-2 py-3">
                                                     <p className='text-secondary '> <b>{item.priceTag}</b></p>
                                                     <p className='text-secondary '> <b>{item.usdpriceTag}</b></p>
                                                     <p className='text-secondary '> <b>{item.quantityTag}</b></p>
@@ -278,7 +325,9 @@ const NFTdetailpixacio = () => {
                                                     <p className='text-para-light'> {item.quantity}</p>
                                                     <p className='text-para-light'> {item.from}</p>
 
-                                                    <ButtonMain text={'Buy'}/>
+                                                    <button className={`background-grad text-inverted  px-2 py-1 w-fit cursor-pointer font-secondary `}>
+                                                        Buy
+                                                    </button>
 
                                                 </div>
 
@@ -289,17 +338,17 @@ const NFTdetailpixacio = () => {
                             </div>
 
                             {/* Offers */}
-                            <div className="w-full">
+                            <div className="w-full drop-shadow-md p-1">
                                 {NFToffterData.map((item, index) => (
                                     <div
                                         key={index}
-                                        className=" drop-shadow-md rounded-2xl bg-inverted  py-1.5 px-1 cursor-pointer w-full"
-                                        onClick={() => handleListing(index)
+                                        className="rounded-2xl bg-inverted  py-1.5 px-1 cursor-pointer w-full"
+                                        onClick={() => handleOffer(index)
                                         }
                                     >
                                         <div className="flex gap-3 items-center w-full">
                                             <div className="text-2xl flex items-center gap-2 w-full">
-                                                {open === index ?
+                                                {openOffer === index ?
                                                     <div className=" gap-4  flex items-center w-full rounded-md py-4 px-2 opacity-90">
                                                         <img src={item.url} alt="" />
 
@@ -316,7 +365,7 @@ const NFTdetailpixacio = () => {
                                             </div>
 
                                         </div>
-                                        {open === index && (
+                                        {openOffer === index && (
                                             <div className='border-t-2 w-full border-boorder py-2 px-4'>
                                                 <div className="grid grid-cols-5 w-full gap-2">
                                                     <p className='text-secondary  '> <b>{item.price}</b></p>
@@ -364,17 +413,17 @@ const NFTdetailpixacio = () => {
                             </div>
 
                             {/*  Details */}
-                            <div className="flex justify-start w-full">
+                            <div className="flex justify-start w-full drop-shadow-md p-1">
                                 {NFTdetailData.map((item, index) => (
                                     <div
                                         key={index}
-                                        className=" drop-shadow-md rounded-2xl bg-inverted  py-1.5 px-1 cursor-pointer min-w-[500px]"
-                                        onClick={() => handleDescrption(index)
+                                        className="rounded-2xl bg-inverted  py-1.5 px-1 cursor-pointer w-full sm:min-w-[500px]"
+                                        onClick={() => handleDetails(index)
                                         }
                                     >
                                         <div className="flex gap-3 items-center m">
                                             <div className="text-2xl flex items-center gap-2 w-full">
-                                                {openDesc === index ?
+                                                {openDetails === index ?
                                                     <div className=" gap-4  flex items-center w-full rounded-md py-4 px-2 opacity-90">
                                                         <img src={item.url} alt="" />
                                                         <h4 className="font-secondary w-full rounded-md text-excp text-para-light ">{item.title}</h4>
@@ -390,7 +439,7 @@ const NFTdetailpixacio = () => {
                                             </div>
 
                                         </div>
-                                        {openDesc === index && (
+                                        {openDetails === index && (
                                             <div className='border-t-2 border-boorder py-2 '>
                                                 <div className='min-w-[420px]'>
                                                     <div className='flex flex-col gap-3 w-full px-4'>
@@ -441,19 +490,19 @@ const NFTdetailpixacio = () => {
                     </div>
 
 
-                    {/* items Activity*/}
-                    <div className='py-10'>
+                    {/* Items Activity*/}
+                    <div className='py-10 drop-shadow-md'>
                         <div className="w-full">
                             {NFTitemActivityData.map((item, index) => (
                                 <div
                                     key={index}
                                     className=" drop-shadow-md rounded-2xl bg-inverted  py-1.5 px-1 cursor-pointer w-full"
-                                    onClick={() => handleListing(index)
+                                    onClick={() => handleItemsActivity(index)
                                     }
                                 >
                                     <div className="flex gap-3 items-center w-full">
                                         <div className="text-2xl flex items-center gap-2 w-full">
-                                            {open === index ?
+                                            {openItemActivity === index ?
                                                 <div className=" gap-4  flex items-center w-full rounded-md py-4 px-2 opacity-90">
                                                     <img src={item.url} alt="" />
 
@@ -471,10 +520,13 @@ const NFTdetailpixacio = () => {
 
                                     </div>
 
-                                    {open === index && (
-                                        <div className='border-t-2 w-full border-boorder py-2 px-4'>
-                                            <div className='flex justify-center w-full '>
-                                                <h2 className='bg-green-500 max-w-[600px]'>Filter</h2>
+                                    {openItemActivity === index && (
+                                        <div className='border-t-2 w-full border-boorder py-2 px-4 flex flex-col gap-3'>
+                                            <div className='px-5'>
+                                                <div className='flex justify-between items-center gap-4 border-boorder border rounded-md pr-4'>
+                                                    <input type="text" placeholder='Filter' className='w-full px-10 py-2 font-secondary' />
+                                                    <img src={lineDown} alt="" className='h-5' />
+                                                </div>
                                             </div>
                                             <div className='border-b-2 w-full border-boorder flex  justify-between py-2'>
                                                 <div className='grid grid-cols-5 w-full'>
@@ -522,6 +574,55 @@ const NFTdetailpixacio = () => {
                             ))}
                         </div>
                     </div>
+
+                    {/* More From The Collection */}
+                    <div className=" flex flex-col max-sm:items-center  gap-4 lg:gap-10 py-20">
+                        <h2>More from this collection</h2>
+                        <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5'>
+                            {
+                                NFTdetailMoreCollectionData.map((item, index) => (
+                                    <div key={index} className='p-1 h-full'>
+                                        <div className="pt-6 px-3 max-sm:w-[300px] h-full drop-shadow-md  max-sm:pb-5 max-md:pb-1 max-lg:pb-4 max-xl:pb-2 xl:pb-1  2xl:pb-4"
+                                            style={{
+                                                backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat",
+                                                backgroundSize: "cover",
+
+                                            }}
+                                        >
+                                            <div className='flex flex-col gap-3 relative'>
+
+                                                <div className="flex gap-2 items-center w-full">
+                                                    <img src={item.personImg} alt="" />
+                                                    <div>
+                                                        <h6 className="font-light">{item.name}</h6>
+                                                        <p className='text-para-light font-light text-xs'>{item.username}</p>
+                                                    </div>
+                                                </div>
+
+                                                <div className=''>
+                                                    <img src={item.url} alt="" className='w-full h-fit rounded-2xl' />
+
+                                                    <a className="text-l font-medium font-secondary navbtn-border background-grad text-inverted cursor-pointer  w-fit absolute  bottom-4 left-2 px-4 py-2">
+                                                        Buy
+                                                    </a>
+
+                                                    <div className="  font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center navbtn-border gap-1 text-l absolute bottom-4 right-3">
+                                                        <p className="text-l ">Price:</p>
+                                                        <span className="bg-black rounded-full">
+                                                            <img src={logoprice} alt="" />
+                                                        </span>
+                                                        <p className="text-l text-para-light">142.02</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                ))}
+                        </div>
+
+                    </div>
+
 
                 </div>
             </div>
