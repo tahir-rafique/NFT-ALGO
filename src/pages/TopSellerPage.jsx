@@ -91,28 +91,28 @@ const TopSellerPage = () => {
                         </div>
 
                         {/* Category List Name */}
-                        <div className="rounded-[8px] border-2 border-boorder mt-5 grid grid-cols-7 py-4">
-                            <div className=" col-span-2 pl-10 font-secondary text-secondary font-semibold">
-                                <h4>Collections</h4>
+                        <div className="rounded-[8px] border-2 border-boorder mt-5 gap-1 grid grid-cols-7 py-4">
+                            <div className=" col-span-2 pl-5  md:pl-10 font-secondary text-secondary font-semibold">
+                                <h4 className="text-sellerpage">Collections</h4>
                             </div>
 
                             <div className=" font-secondary text-secondary font-semibold">
-                                <h4>Volume</h4>
+                                <h4 className="text-sellerpage">Volume</h4>
                             </div>
                             <div className=" font-secondary text-secondary font-semibold">
-                                <h4>Followers</h4>
-                            </div>
-
-                            <div className=" font-secondary text-secondary font-semibold">
-                                <h4>24%</h4>
+                                <h4 className="text-sellerpage">Followers</h4>
                             </div>
 
                             <div className=" font-secondary text-secondary font-semibold">
-                                <h4>Floor price</h4>
+                                <h4 className="text-sellerpage">24%</h4>
                             </div>
 
                             <div className=" font-secondary text-secondary font-semibold">
-                                <h4>Items</h4>
+                                <h4 className="text-sellerpage">Floor price</h4>
+                            </div>
+
+                            <div className=" font-secondary text-secondary font-semibold">
+                                <h4 className="text-sellerpage">Items</h4>
                             </div>
 
 
@@ -121,27 +121,27 @@ const TopSellerPage = () => {
 
                         {/* Category List items  */}
                         {categoryListItemsData.map((item, index) => (
-                            <div className="rounded-[8px] border-2 border-boorder grid-rows-1 mt-5 grid grid-cols-7 py-4 font-secondary" key={index}>
+                            <div className="rounded-[8px] border-2 border-boorder gap-1 md:gap-3 grid-rows-1 mt-5 grid grid-cols-7 py-4 font-secondary" key={index}>
 
-                                <div className="pl-10 flex items-center  col-span-2 gap-3">
-                                    <h5 className="font-semibold">{item.num}</h5>
-                                    <img src={item.url} alt="" className="size-10" />
-                                    <h4 className="font-bold">{item.name}</h4>
+                                <div className="pl-5 md:pl-10 flex items-center  col-span-2 gap-1 md:gap-3">
+                                    <h5 className="font-semibold text-sellerpage">{item.num}</h5>
+                                    <img src={item.url} alt="" className="size-10 max-sm:hidden" />
+                                    <h4 className="font-bold text-sellerpage">{item.name}</h4>
 
                                 </div>
 
                                 {/*  volume*/}
-                                <div className="flex items-center gap-2 ">
+                                <div className="flex items-center gap-1 md:gap-2 ">
                                     <img src={logo} alt="" />
-                                    <p className="font-medium ">
+                                    <p className="font-medium text-sellerpage">
                                         {item.volume}
                                     </p>
 
                                 </div>
 
                                 {/*  Follower*/}
-                                <div className="flex items-center ">
-                                    <p className="font-medium ">
+                                <div className="flex items-center text-sellerpage ">
+                                    <p className="font-medium text-sellerpage">
                                         {item.follower}
                                     </p>
 
@@ -150,7 +150,7 @@ const TopSellerPage = () => {
 
                                 {/* 24% */}
                                 <div className="flex items-center ">
-                                    <p className="font-medium text-[#4CCB9E]">
+                                    <p className="font-medium text-[#4CCB9E] text-sellerpage">
                                         {item.percnet}
                                     </p>
 
@@ -160,7 +160,7 @@ const TopSellerPage = () => {
                                 {/*  Floor price*/}
                                 <div className="flex items-center gap-2 ">
                                     <img src={logo} alt="" />
-                                    <p className="font-medium">
+                                    <p className="font-medium text-sellerpage">
                                         {item.floorprice}
                                     </p>
 
@@ -168,7 +168,7 @@ const TopSellerPage = () => {
 
                                 {/* items */}
                                 <div className="flex items-center ">
-                                    <p className="font-medium">
+                                    <p className="font-medium text-sellerpage">
                                         {item.items}
                                     </p>
 

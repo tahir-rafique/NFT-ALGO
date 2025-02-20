@@ -523,24 +523,24 @@ export const selectCategory = ["Category 1", "Category 2", "Category 3", "Catego
 
 
 export const categoryListItemsData = [
-    { num: '01', url: CLimg1, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
-    { num: '02', url: CLimg2, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
-    { num: '03', url: CLimg3, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
-    { num: '04', url: CLimg4, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '01', url: CLimg1, name: "Jacob Jones", volume: "154.0", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '02', url: CLimg2, name: "Jacob Jones", volume: "154.0", follower: 150, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '03', url: CLimg3, name: "Jacob Jones", volume: "154.0", follower: 75, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '04', url: CLimg4, name: "Jacob Jones", volume: "154.0", follower: 10, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
     // 
 
-    { num: '05', url: CLimg5, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
-    { num: '06', url: CLimg6, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
-    { num: '07', url: CLimg7, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
-    { num: '08', url: CLimg8, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '05', url: CLimg5, name: "Jacob Jones", volume: "154.0", follower: 90, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '06', url: CLimg6, name: "Jacob Jones", volume: "154.0", follower: 70, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '07', url: CLimg7, name: "Jacob Jones", volume: "154.0", follower: 70, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '08', url: CLimg8, name: "Jacob Jones", volume: "154.0", follower: 30, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
     // 
-    { num: '09', url: CLimg9, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
-    { num: '10', url: CLimg10, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
-    { num: '11', url: CLimg11, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
-    { num: '12', url: CLimg12, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '09', url: CLimg9, name: "Jacob Jones", volume: "154.0", follower: 33, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '10', url: CLimg10, name: "Jacob Jones", volume: "154.0", follower: 40, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '11', url: CLimg11, name: "Jacob Jones", volume: "154.0", follower: 80, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '12', url: CLimg12, name: "Jacob Jones", volume: "154.0", follower: 80, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
     // 
-    { num: '13', url: CLimg13, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
-    { num: '14', url: CLimg14, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
-    { num: '15', url: CLimg15, name: "Jacob Jones", volume: "154.00", follower: 100, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '13', url: CLimg13, name: "Jacob Jones", volume: "154.0", follower: 20, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '14', url: CLimg14, name: "Jacob Jones", volume: "154.0", follower: 20, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
+    { num: '15', url: CLimg15, name: "Jacob Jones", volume: "154.0", follower: 55, percnet: "+237.67%", floorprice: 4.901, items: 9.8 + "k" },
 
 ]

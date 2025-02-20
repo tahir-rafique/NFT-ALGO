@@ -208,4 +208,8 @@ p {
   .collectionTextLarger {
     font-size: 40px;
   }
+
+  .text-sellerpage{
+font-size: 10px;
+  }
 }
