@@ -35,18 +35,22 @@ const TopSellerPage = () => {
 
 
                     {/* Hero Wraper */}
-                    <div className="hero-wraper flex justify-between items-center relative py-30 pb-50">
+                    <div className="hero-wraper flex flex-col  justify-between relative max-xl:py-10 py-30 pb-40 ">
                         {/* Hero Left */}
-                        <div className="hero-Left w-[50%]">
+                        <div className="hero-Left ">
                             <h2 className="  capitalize">TOP</h2>
                             <h2 className=" capitalize text-main seller-text">SELLERS</h2>
                         </div>
 
+                        <img src={heroImage1} alt="" className="absolute  size-70 z-100 right-30  moverOne360 max-xl:hidden" />
+                        <img src={heroImage2} alt="" className="absolute  size-78 z-50 right-30 moverTwo360 max-xl:hidden" />
+                        <img src={heroImage3} alt="" className="absolute  size-85 z-30 right-30  moverThree360 max-xl:hidden" />
 
-                        <img src={heroImage1} alt="" className="absolute z-100 right-30" />
-                        <img src={heroImage2} alt="" className="absolute z-50 right-10" />
-                        <img src={heroImage3} alt="" className="absolute right-0 z-10" />
-
+                        <div className="xl:hidden py-10 relative w-full">
+                            <img src={heroImage1} alt="" className="absolute z-3 " />
+                            <img src={heroImage2} alt="" className="absolute z-2" />
+                            <img src={heroImage3} alt="" className=" z-1" />
+                        </div>
                     </div>
 
                     {/* Category Wraper */}
@@ -121,7 +125,7 @@ const TopSellerPage = () => {
 
                                 <div className="pl-10 flex items-center  col-span-2 gap-3">
                                     <h5 className="font-semibold">{item.num}</h5>
-                                    <img src={item.url} alt="" className="size-10"/>
+                                    <img src={item.url} alt="" className="size-10" />
                                     <h4 className="font-bold">{item.name}</h4>
 
                                 </div>

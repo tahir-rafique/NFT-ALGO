@@ -124,6 +124,10 @@ p {
   .collectionTextLarger {
     font-size: 60px;
   }
+
+  .seller-text{
+    font-size: 100px;
+  }
 }
 
 @media (max-width: 1070px) {
@@ -159,6 +163,10 @@ p {
 
   .collectionTextLarger {
     font-size: 60px;
+  }
+
+  .seller-text{
+    font-size: 78px;
   }
 }
 
