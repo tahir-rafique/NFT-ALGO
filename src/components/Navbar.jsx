@@ -47,7 +47,7 @@ const Navbar = () => {
                     <img src={topGridLeft} alt="" />
                 </div>
                 <div className="">
-                    <div className="flex justify-between items-center ">
+                    <div className="flex justify-between items-center relative z-100">
 
                         <a href="/" className="cursor-pointer">
                             <img src={Navlogo} alt="" className="max-lg:size-14 cursor-pointer" />
