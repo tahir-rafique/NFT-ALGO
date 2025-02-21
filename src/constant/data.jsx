@@ -163,6 +163,17 @@ import SPimg8 from '../assets/SellerCollectionPage/images/8.webp';
 import SPimg9 from '../assets/SellerCollectionPage/images/9.webp';
 import SPimg10 from '../assets/SellerCollectionPage/images/10.webp';
 
+//      Create NFT Page Data
+
+
+import pimg1 from '../assets/CreateNFTpage/images/pimg1.webp'
+import pimg2 from '../assets/CreateNFTpage/images/pimg2.webp'
+import pimg3 from '../assets/CreateNFTpage/images/pimg3.webp'
+import pimg4 from '../assets/CreateNFTpage/images/pimg4.webp'
+import pimg5 from '../assets/CreateNFTpage/images/pimg5.webp'
+import pimg6 from '../assets/CreateNFTpage/images/pimg6.webp'
+import pimg7 from '../assets/CreateNFTpage/images/pimg7.webp'
+import pimg8 from '../assets/CreateNFTpage/images/pimg8.webp'
 
 
 // Exports.............
@@ -598,4 +609,26 @@ export const SellerPageData = [
 
 
 
+]
+
+//  Create NFT Page Data
+export const CreateNFTPageData = [
+    { url: pimg1, title: "DRAGON WORLD", descprtion: "Amollis, ultrices augue id, laoreet tellus. Sed vitae fermentum neque. Nunc sed tincidunt enim, sed ultricies nisl. Maecenas ullamcorper nunc metus, sed facilisis dolor cursus eu. Nam sit amet maximus augue.", },
+
+    { url: pimg2, title: "fANTASY ", descprtion: "Amollis, ultrices augue id, laoreet tellus. Sed vitae fermentum neque. Nunc sed tincidunt enim, sed ultricies nisl. Maecenas ullamcorper nunc metus, sed facilisis dolor cursus eu. Nam sit amet maximus augue.", },
+
+
+    { url: pimg4, title: "princess", descprtion: "Amollis, ultrices augue id, laoreet tellus. Sed vitae fermentum neque. Nunc sed tincidunt enim, sed ultricies nisl. Maecenas ullamcorper nunc metus, sed facilisis dolor cursus eu. Nam sit amet maximus augue.", },
+    { url: pimg3, title: "dRAGON HOUSE", descprtion: "Sed vitae orci mollis, ultrices augue id, laoreet tellus. Sed vitae fermentum neque. Nunc sed tincidunt enim, sed ultricies nisl. ", },
+
+    // 
+
+    { url: pimg5, title: "SPACE TEAM", descprtion: "Pmied vitae orci mollis, ultrices augue id, laoreet tellus. Sed vitae fermentum neque. ", },
+
+
+    { url: pimg6, title: "SEA CREATURE", descprtion: "Amollis, ultrices augue id, laoreet tellus. Sed vitae fermentum neque. Nunc sed tincidunt enim, sed ultricies nisl. Maecenas ullamcorper nunc metus, sed facilisis dolor cursus eu. Nam sit amet maximus augue.", },
+
+    { url: pimg8, title: "SHADOW FIGHTER", descprtion: "Sed vitae orci mollis, ultrices augue id, laoreet tellus. Sed vitae fermentum neque. Nunc sed tincidunt enim.", },
+    
+    { url: pimg7, title: "PIXEL GIRL", descprtion: "Amollis, ultrices augue id, laoreet tellus. Sed vitae fermentum neque. Nunc sed tincidunt enim, sed ultricies nisl. Maecenas ullamcorper nunc metus, sed facilisis dolor cursus eu. Nam sit amet maximus augue.", },
 ]

@@ -3,9 +3,14 @@ import Footer from './../components/Footer';
 import IconGenerate from "../assets/GenerateNFT/icons/IconGenerat.svg"
 
 import banner from '../assets/CreateNFTpage/images/createNFTbanner.webp'
+
 import addicon from '../assets/CreateNFTpage/images/addicon.webp'
 
+import copyimg from '../assets/CreateNFTpage/images/copyimg.webp'
+import { CreateNFTPageData } from '../constant/data';
+import Item from 'antd/es/list/Item';
 
+copyimg
 
 const CreateNFTpage = () => {
     return (
@@ -13,7 +18,9 @@ const CreateNFTpage = () => {
             <Navbar />
             <div className='flex justify-center'>
                 <div className='container mx-auto  max-sm:px-5 sm:px-12 lg:px-20 '>
-                    <div className='flex flex-col gap-4'>
+
+                    {/* Hero Section */}
+                    <div className='hero-wraper flex flex-col gap-4'>
 
                         <div className='flex gap-8 justify-center '>
                             <h2>Create your own</h2>
@@ -36,7 +43,6 @@ const CreateNFTpage = () => {
                         </div>
 
                         <div className='w-full max-w-[600px]  mx-auto flex gap-2 justify-between items-center max-sm:flex-col '>
-
                             <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer">
 
                                 <select id='select-create-nft' className='w-full py-2.5 px-4 bg-inverted text-para-light font-secondary outline-none rounded-xl cursor-pointer'>
@@ -48,12 +54,10 @@ const CreateNFTpage = () => {
 
 
                             <div className="flex font-secondary text-para-light items-center gap-2 cursor-pointer">
-
                                 <h6>Supply</h6>
                                 <div className='border-2 border-boorder  rounded-xl py-2 bg-inverted px-8 cursor-pointer'>
                                     <h6> 10</h6>
                                 </div>
-
                             </div>
 
 
@@ -66,6 +70,31 @@ const CreateNFTpage = () => {
 
                             </div>
                         </div>
+
+                    </div>
+
+                    {/* Prompt Section */}
+                    <div className='prompt-wraper py-10 lg:py-24'>
+                        <h2 className=' capitalize pb-5'>Prompt examples</h2>
+                        <div className="grid max-xl:grid-cols-1 grid-cols-2 gap-8 px-[5%]">
+                            {CreateNFTPageData.map((data, index) => (
+                                <div className='border-2 border-boorder rounded-xl p-4 bg-inverted flex max-sm:flex-col items-center gap-4 sm:gap-10 relative' key={index}>
+
+                                    <div className='image-wraper h-fit'>
+                                        <img src={data.url} alt="" className='w-full' />
+                                    </div>
+
+                                    <img src={copyimg} alt="" className='absolute max-sm:hidden  top-[44%] sm:top-[35%] max-md:left-54 left-70 xl:left-54 2xl:left-70 z-100' />
+
+                                    <div className='max-sm:max-w-[80%] sm:max-w-[40%] md:h-full  flex flex-col gap-2  z-10'>
+                                        <h4>{data.title}</h4>
+                                        <p className='text-para-light max-sm:text-xs'>{data.descprtion}</p>
+                                    </div>
+                                </div>
+                            ))}
+
+                        </div>
+
 
                     </div>
                 </div>
