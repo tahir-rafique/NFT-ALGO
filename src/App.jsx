@@ -9,6 +9,7 @@ import TopCollectionPixacio from './pages/TopCollectionPixacio';
 import NFTdetailpixacio from './pages/NFTdetailpixacio';
 import TopSellerPage from './pages/TopSellerPage';
 import SellerCollectionPage from './pages/SellerCollectionPage';
+import CreateNFTpage from './pages/CreateNFTpage';
 
 const App = () => {
   return (
@@ -22,8 +23,7 @@ const App = () => {
         <Route path="/NFTdetail" element={<NFTdetailpixacio />} />
         <Route path="/top-seller-page" element={<TopSellerPage />} />
         <Route path="/seller-collection-page" element={<SellerCollectionPage />} />
-
-
+        <Route path="/create-nft-collection-page" element={<CreateNFTpage />} />
 
 
       </Routes>
