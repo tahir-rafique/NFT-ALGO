@@ -47,19 +47,19 @@ const CreateNFTpage = () => {
                             </div>
 
 
-                            <div className="flex font-secondary text-para-light items-center gap-2">
+                            <div className="flex font-secondary text-para-light items-center gap-2 cursor-pointer">
 
                                 <h6>Supply</h6>
-                                <div className='border-2 border-boorder  rounded-xl py-2 bg-inverted px-8 '>
+                                <div className='border-2 border-boorder  rounded-xl py-2 bg-inverted px-8 cursor-pointer'>
                                     <h6> 10</h6>
                                 </div>
 
                             </div>
 
 
-                            <div className=" border-2 font-secondary border-boorder  rounded-xl gap-2 text-para-light cursoer-pointer">
+                            <div className=" border-2 font-secondary border-boorder  rounded-xl gap-2 text-para-light cursor-pointer">
 
-                                <button className='flex items-center gap-2 py-2 bg-inverted px-4'>
+                                <button className='flex items-center gap-2 py-2 bg-inverted px-4 cursor-pointer'>
                                     <h6>Add Styles</h6>
                                     <img src={addicon} alt="" className='size-5 text-para-light' />
                                 </button>
