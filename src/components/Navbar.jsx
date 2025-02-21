@@ -1,13 +1,19 @@
 import Navlogo from "../assets/Navbar/navlogo.svg"
+import favicon from "/public/favicon.svg"
+import lineVector from "../assets/Modal/icons/line-vector.svg"
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import ButtonSecondary from "../shared/ButtonSecondary";
 import ButtonMain from "../shared/ButtonMain";
+import logo1 from '../assets/Modal/images/logo1.webp'
+import logo2 from '../assets/Modal/images/logo2.webp'
+import logo3 from '../assets/Modal/images/logo3.webp'
+import logo4 from '../assets/Modal/images/logo4.webp'
 
 import topGridLeft from "../assets/Header/images/topGridLeft.webp"
 import { Link } from "react-router-dom";
 
-import { Button, Modal } from 'antd';
+import { Modal } from 'antd';
 const Navbar = () => {
     const [menuOpen, setmenuOpen] = useState(false);
 
@@ -60,11 +66,39 @@ const Navbar = () => {
 
 
                         {/* Ant-Desing Modal */}
-                        <div className="ant-modal-container absolute right-[50%] translate-[-50%] top-[50%] z-100">
-                            <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-                                <p>Some contents...</p>
-                                <p>Some contents...</p>
-                                <p>Some contents...</p>
+                        <div className="ant-modal-main absolute">
+                            <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                                <div className="flex flex-col items-center gap-2 pt-4">
+                                    <div className="modal-top-section flex flex-col items-center gap-1 pb-2">
+                                        <h3 className="ant-main-text">Connect your wallet</h3>
+                                        <img src={favicon} alt="" className="size-30" />
+                                        <img src={lineVector} alt="" />
+                                    </div>
+
+                                    <div className="modal-bottom-section flex flex-col gap-2">
+                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md">
+                                            <img src={logo1} alt="" />
+                                            <input type="text" name="" id="" placeholder="Pera" />
+                                        </div>
+
+                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md">
+                                            <img src={logo2} alt="" />
+                                            <input type="text" name="" id="" placeholder="Defly" />
+                                        </div>
+
+
+                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md">
+                                            <img src={logo3} alt="" />
+                                            <input type="text" name="" id="" placeholder="Daffi" />
+                                        </div>
+
+                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md">
+                                            <img src={logo4} alt="" />
+                                            <input type="text" name="" id="" placeholder="WalletConnect" />
+                                        </div>
+                                    </div>
+
+                                </div>
                             </Modal>
                         </div>
 
@@ -98,7 +132,7 @@ const Navbar = () => {
                                 </div>
                                 <div className="flex flex-col gap-3">
 
-                                    <button className="navbtn-size  navbtn-border font-medium background-grad text-inverted  py-1  w-fit px-4">
+                                    <button className="navbtn-size  navbtn-border font-medium background-grad text-inverted  py-1  w-fit px-4" onClick={showModal}>
                                         Connect Wallet
                                     </button>
 
