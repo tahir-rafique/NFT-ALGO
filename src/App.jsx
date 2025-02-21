@@ -24,7 +24,9 @@ const App = () => {
         <Route path="/NFTdetail" element={<NFTdetailpixacio />} />
         <Route path="/top-seller-page" element={<TopSellerPage />} />
         <Route path="/seller-collection-page" element={<SellerCollectionPage />} />
-        <Route path="/create-nft-collection-page" element={<CreateNFTpage />} />
+
+        {/* Route : Create NFT Page  */}
+        <Route path="/create-nft-page" element={<CreateNFTpage />} />
 
 
       </Routes>

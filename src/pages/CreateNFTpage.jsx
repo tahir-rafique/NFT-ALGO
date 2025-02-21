@@ -3,6 +3,9 @@ import Footer from './../components/Footer';
 import IconGenerate from "../assets/GenerateNFT/icons/IconGenerat.svg"
 
 import banner from '../assets/CreateNFTpage/images/createNFTbanner.webp'
+import addicon from '../assets/CreateNFTpage/images/addicon.webp'
+
+
 
 const CreateNFTpage = () => {
     return (
@@ -11,8 +14,13 @@ const CreateNFTpage = () => {
             <div className='flex justify-center'>
                 <div className='container mx-auto  max-sm:px-5 sm:px-12 lg:px-20 '>
                     <div className='flex flex-col gap-4'>
-                        <img src={banner} alt="" />
 
+                        <div className='flex gap-8 justify-center '>
+                            <h2>Create your own</h2>
+                            <h2 className='text-main'>masterpiece</h2>
+
+                        </div>
+                        <img src={banner} alt="" />
                         <div className='flex justify-center'>
                             <p className=' capitalize'>get onboard and earn money like a pro</p>
                         </div>
@@ -27,10 +35,36 @@ const CreateNFTpage = () => {
                             </div>
                         </div>
 
-                        <div className='w-full max-w-[600px] bg-red-500 mx-auto flex'>
-                            <div className="h-10 w-full bg-blue-300"></div>
-                            <div className="h-10 w-full bg-green-300"></div>
-                            <div className="h-10 w-full bg-orange-300"></div>
+                        <div className='w-full max-w-[600px]  mx-auto flex gap-2 justify-between items-center max-sm:flex-col '>
+
+                            <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer">
+
+                                <select id='select-create-nft' className='w-full py-2.5 px-4 bg-inverted text-para-light font-secondary outline-none rounded-xl cursor-pointer'>
+                                    <option id='opt1' className='bg-inverted ' value='Single NFT'>Single NFT</option>
+                                    <option id='opt2' className='bg-inverted' value='Collection'>Collection</option>
+                                </select>
+
+                            </div>
+
+
+                            <div className="flex font-secondary text-para-light items-center gap-2">
+
+                                <h6>Supply</h6>
+                                <div className='border-2 border-boorder  rounded-xl py-2 bg-inverted px-8 '>
+                                    <h6> 10</h6>
+                                </div>
+
+                            </div>
+
+
+                            <div className=" border-2 font-secondary border-boorder  rounded-xl gap-2 text-para-light cursoer-pointer">
+
+                                <button className='flex items-center gap-2 py-2 bg-inverted px-4'>
+                                    <h6>Add Styles</h6>
+                                    <img src={addicon} alt="" className='size-5 text-para-light' />
+                                </button>
+
+                            </div>
                         </div>
 
                     </div>
