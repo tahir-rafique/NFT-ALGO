@@ -26,27 +26,25 @@ const TopSellerPage = () => {
             document.removeEventListener("mousedown", handleClickOutside)
         };
     });
+
+
     return (
 
         <>
             <Navbar />
             <div className="flex justify-center bg-frame">
-                <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-20">
+                <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 ">
 
 
                     {/* Hero Wraper */}
-                    <div className="hero-wraper flex flex-col  justify-between relative max-xl:py-10 py-30 pb-40 ">
+                    <div className="hero-wraper flex max-lg:flex-col lg:items-center  justify-between relative ">
                         {/* Hero Left */}
-                        <div className="hero-Left ">
-                            <h2 className="  capitalize">TOP</h2>
+                        <div className="hero-Left min-w-[55%]">
+                            <h2 className="capitalize">TOP</h2>
                             <h2 className=" capitalize text-main seller-text">SELLERS</h2>
                         </div>
 
-                        <img src={heroImage1} alt="" className="absolute  size-70 z-100 right-30  moverOne360 max-xl:hidden" />
-                        <img src={heroImage2} alt="" className="absolute  size-78 z-50 right-30 moverTwo360 max-xl:hidden" />
-                        <img src={heroImage3} alt="" className="absolute  size-85 z-30 right-30  moverThree360 max-xl:hidden" />
-
-                        <div className="xl:hidden py-10 relative w-full">
+                        <div className=" py-10 relative max-w-[50%] w-full ">
                             <img src={heroImage1} alt="" className="absolute z-3 " />
                             <img src={heroImage2} alt="" className="absolute z-2" />
                             <img src={heroImage3} alt="" className=" z-1" />

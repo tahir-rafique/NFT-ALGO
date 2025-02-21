@@ -31,6 +31,8 @@ const TrendingNFT = () => {
         {/* 1st Section */}
         <div className="flex justify-between items-center gap-10">
           <h2 className="leading-none">Trending nft’s</h2>
+
+          {/* Dropdown menu */}
           <div ref={dropdownRef} className="inline-block " >
             <button
               onClick={toggleDropdown}
@@ -53,6 +55,7 @@ const TrendingNFT = () => {
               </div>
             )}
           </div>
+          
         </div>
 
         {/* Trending NFT */}
