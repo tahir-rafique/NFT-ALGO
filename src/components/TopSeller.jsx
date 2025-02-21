@@ -1,6 +1,7 @@
 import { TopSellerData } from "../constant/data"
 import elicpRight from '../assets/TopSeller/images/topSellerRightElicp.webp'
 import gridLeft from "../assets/TopSeller/images/topSellerGridLeft.webp"
+import { Link } from "react-router-dom"
 
 const TopSeller = () => {
     return (
@@ -8,14 +9,14 @@ const TopSeller = () => {
             <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10 flex flex-col gap-4 lg:gap-10 relative z-50">
                 <div className="flex justify-between items-center gap-2">
                     <h2>TOP SELLER</h2>
-                    <a href="/top-seller-page" className="cursor-pointer">
+                    <Link to="/top-seller-page" className="cursor-pointer">
                         <h4 className="font-secondary text-main font-medium">View all</h4>
-                    </a>
+                    </Link>
                 </div>
                 <div className="grid max-lg:grid-cols-2 max-sm:grid-cols-1 grid-cols-4 gap-10 lg:py-10 ">
                     {
                         TopSellerData.map((item, index) => (
-                            
+
                             <div key={index} className="flex max-md:justify-center items-center gap-2 relative">
                                 <div className="relative py-2 px-2">
                                     <img src={item.icon} alt="" className="absolute right-1 top-1 size-6" />
