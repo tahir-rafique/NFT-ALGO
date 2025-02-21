@@ -1,4 +1,4 @@
-import Navlogo from "../assets/Navbar/navlogo.svg"
+import Navlogo from "../assets/Navbar/navlogo.webp"
 import favicon from "../assets/Navbar/favicon.svg"
 import lineVector from "../assets/Modal/icons/line-vector.svg"
 import { Menu, X } from "lucide-react";
@@ -11,9 +11,11 @@ import logo3 from '../assets/Modal/images/logo3.webp'
 import logo4 from '../assets/Modal/images/logo4.webp'
 
 import topGridLeft from "../assets/Header/images/topGridLeft.webp"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { Modal } from 'antd';
+import { use } from "react";
+
 const Navbar = () => {
     const [menuOpen, setmenuOpen] = useState(false);
 
@@ -34,6 +36,9 @@ const Navbar = () => {
     const handleCancel = () => {
         setIsModalOpen(false);
     };
+
+    // navigate
+    const navigate = useNavigate();
 
     return (
         <nav className="flex justify-center">
@@ -61,7 +66,7 @@ const Navbar = () => {
                         </div>
                         <div className="hidden lg:flex gap-4">
                             <ButtonMain text="Connect Wallet" onClick={showModal} />
-                            <ButtonSecondary text="Create NFT" />
+                            <ButtonSecondary text="Create NFT" onClick={() => navigate('create-nft-page')} />
                         </div>
 
 
@@ -137,7 +142,7 @@ const Navbar = () => {
                                     </button>
 
 
-                                    <button className="w-fit navbtn-size border border-main text-main  py-1 navbtn-border font-medium px-6.5">
+                                    <button onClick={() => navigate('create-nft-page')} className="w-fit navbtn-size border border-main text-main  py-1 navbtn-border font-medium px-6.5">
                                         Create NFT
                                     </button>
 

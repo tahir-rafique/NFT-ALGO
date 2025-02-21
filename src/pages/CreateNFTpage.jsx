@@ -8,9 +8,8 @@ import addicon from '../assets/CreateNFTpage/images/addicon.webp'
 
 import copyimg from '../assets/CreateNFTpage/images/copyimg.webp'
 import { CreateNFTPageData } from '../constant/data';
-import Item from 'antd/es/list/Item';
 
-copyimg
+
 
 const CreateNFTpage = () => {
     return (
