@@ -1,7 +1,9 @@
 
 const ArtistProfileSetting = () => {
     return (
-        <div>ArtistProfileSetting</div>
+        <div>
+            
+        </div>
     )
 }
 
