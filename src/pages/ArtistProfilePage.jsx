@@ -146,13 +146,12 @@ const ArtistProfilePage = () => {
                     <div className='menu-section flex justify-between items-center py-10'>
                         {/* Menu */}
                         <div className="flex gap-4 max-md:justify-center flex-wrap lg:gap-12 items-center font-secondary  text-secondary">
-                            <h6 className='text-main border-2 px-4 py-2 rounded-md w-fit'>Popular</h6>
-                            <h6>Trending</h6>
-                            <h6>Sport </h6>
-                            <h6>Art</h6>
-                            <h6>Fantasy</h6>
-                            <h6>Photography</h6>
-                            <h6>Space</h6>
+                            <h6 className='text-main border-2 px-4 py-2 rounded-md w-fit'>All</h6>
+                            <h6>Generated</h6>
+                            <h6>Minted </h6>
+                            <h6>On Sale</h6>
+                            <h6>Auction</h6>
+                            <h6>Sold</h6>
 
                         </div>
 
@@ -163,7 +162,7 @@ const ArtistProfilePage = () => {
                                 className="navbtn-size border border-grd text-main navbtn-border  px-4 py-2 3xl:px-6 3xl:py-2 cursor-pointer font-medium flex items-center gap-1">
                                 <span>
                                     <h6>
-                                        Last 30 Minutes
+                                        Newest
                                     </h6>
                                 </span>
                                 <span>
