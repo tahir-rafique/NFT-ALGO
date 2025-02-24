@@ -40,28 +40,41 @@ const ArtistProfilePage = () => {
         <>
             <Navbar />
             <div className="flex justify-center">
-                <div className="container mx-auto max-sm:px-5 sm:px-8 lg:px-20">
-                    {/* Profile Container */}
-                    <div className="profile-container py-10 flex flex-col gap-3 relative">
 
-                        {/* profile banner */}
+                <div className="container mx-auto max-sm:px-5 sm:px-8 lg:px-20">
+                    {/* Profile banner Container */}
+                    <div className="profile-container pt-10 pb-2 flex flex-col gap-3 relative">
+
+                        {/*  banner */}
                         <img src={profilebanner} alt="" className="profile-banner" />
 
-                        <img src={profileImage} alt="" className="profile-image size-30 absolute top-[65%] left-[50%] translate-[-50%]" />
+                        <img src={profileImage} alt="" className="profile-image  absolute
+                         max-sm:top-[58%] max-lg:top-[64%] max-xl:top-[70%] top-[73%] left-[50%] translate-[-50%] max-2xl:size-20" />
 
 
-                        {/* profile main */}
+                        {/* name & followers */}
                         <div className="profile-details flex flex-col items-center pt-10">
                             <h3>William Akarana</h3>
-                            <div className="followers flex gap-2 items-center">
-                                <h5 className="font-secondary font-medium">99</h5>
-                                <p className="text-para-light">Followers</p>
+                            <div className="flex gap-10 max-sm:gap-2">
+                                <div className="followers flex gap-2 items-center">
+                                    <h5 className="font-secondary font-medium">99</h5>
+                                    <p className="text-para-light">Followers</p>
+                                </div>
+
+                                <div className="followers flex gap-2 items-center">
+                                    <h5 className="font-secondary font-medium">26</h5>
+                                    <p className="text-para-light">Following</p>
+                                </div>
+
+                                <div className="followers flex gap-2 items-center">
+                                    <h5 className="font-secondary font-medium">12</h5>
+                                    <p className="text-para-light">items</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-
-                    {/* profile Detials */}
+                    {/* profile Detials wraper*/}
                     <div className='2xl:flex-row flex flex-col  gap-10 justify-between py-10 pb-30'>
 
                         {/* hero-Left */}
@@ -143,7 +156,7 @@ const ArtistProfilePage = () => {
                     </div>
 
                     {/* MEnu Section */}
-                    <div className='menu-section flex justify-between items-center py-10'>
+                    <div className='menu-section max-sm:justify-center flex justify-between items-center py-10 flex-wrap gap-4'>
                         {/* Menu */}
                         <div className="flex gap-4 max-md:justify-center flex-wrap lg:gap-12 items-center font-secondary  text-secondary">
                             <h6 className='text-main border-2 px-4 py-2 rounded-md w-fit'>All</h6>
@@ -186,7 +199,7 @@ const ArtistProfilePage = () => {
                     </div>
 
                     {/* Cards-Wraper */}
-                    <div className="Cards-Wraper flex flex-col max-sm:items-center items-end  gap-4 lg:gap-10 py-10 pb-30">
+                    <div className="Cards-Wraper flex flex-col max-sm:items-center   gap-4 lg:gap-10 py-10 pb-30">
 
                         <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5'>
                             {
@@ -232,10 +245,6 @@ const ArtistProfilePage = () => {
                         </div>
 
                     </div>
-
-
-
-
 
                 </div>
 
