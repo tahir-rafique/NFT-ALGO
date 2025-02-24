@@ -24,7 +24,6 @@ const Navbar = () => {
 
 
     // Ant-Desing Modal
-
     const [isModalOpen, setIsModalOpen] = useState(false);
     const showModal = () => {
         setIsModalOpen(true);
@@ -36,7 +35,7 @@ const Navbar = () => {
         setIsModalOpen(false);
     };
 
-    // navigate
+
     const navigate = useNavigate();
 
     return (

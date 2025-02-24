@@ -1,10 +1,7 @@
 import Navbar from './../components/Navbar';
 import Footer from './../components/Footer';
 
-
-
 // import HeroSubtract from '../assets/SellerCollectionPage/images/subtractHero.webp'
-
 // import topLeft from '../assets/SellerCollectionPage/images/top_left.webp'
 // import topRight from '../assets/SellerCollectionPage/images/top_right.webp'
 // import bottomLeft from '../assets/SellerCollectionPage/images/bottom_left.webp'
