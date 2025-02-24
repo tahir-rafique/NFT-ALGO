@@ -14,7 +14,6 @@ import topGridLeft from "../assets/Header/images/topGridLeft.webp"
 import { Link, useNavigate } from "react-router-dom";
 
 import { Modal } from 'antd';
-import { use } from "react";
 
 const Navbar = () => {
     const [menuOpen, setmenuOpen] = useState(false);
@@ -43,12 +42,11 @@ const Navbar = () => {
     return (
         <nav className="flex justify-center">
             <div className="container mx-auto max-sm:px-5 sm:px-8 lg:px-20 py-4">
-                <div className="absolute left-0 top-0 ">
+                <div className="absolute left-0 top-0 z-0">
                     <img src={topGridLeft} alt="" />
                 </div>
                 <div className="">
                     <div className="flex justify-between items-center relative z-100">
-
                         <a href="/" className="cursor-pointer">
                             <img src={Navlogo} alt="" className="max-lg:size-14 cursor-pointer" />
                         </a>

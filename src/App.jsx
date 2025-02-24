@@ -12,6 +12,7 @@ import TopSellerPage from './pages/TopSellerPage';
 import SellerCollectionPage from './pages/SellerCollectionPage';
 import CreateNFTpage from './pages/CreateNFTpage';
 import ArtistProfilePage from './pages/ArtistProfilePage';
+import ArtistProfileSetting from './pages/ArtistProfileSetting';
 
 const App = () => {
   return (
@@ -31,6 +32,9 @@ const App = () => {
 
         {/* Route: Artist Profile Page */}
         <Route path="/artist-profile-page" element={<ArtistProfilePage />} />
+
+        {/* Route: Artist Profile Page Setting */}
+        <Route path="/artist-profile-page-setting" element={<ArtistProfileSetting />} />
 
 
 

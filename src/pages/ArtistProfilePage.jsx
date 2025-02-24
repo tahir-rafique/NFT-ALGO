@@ -13,6 +13,7 @@ import desIco from '../assets/Pixacio/icons/discord.webp'
 import logoprice from "../assets/FeatureCollection/images/logoprice.webp";
 import { useEffect, useRef, useState } from "react"
 import downArrow from "../assets/TrendingNFT/icons/downArrow.svg";
+import { Link } from "react-router-dom"
 
 
 const ArtistProfilePage = () => {
@@ -41,15 +42,20 @@ const ArtistProfilePage = () => {
             <Navbar />
             <div className="flex justify-center">
                 <div className="container mx-auto max-sm:px-5 sm:px-8 lg:px-20">
+
+                    {/* profile shifting/navigation */}
+                    <div className="flex gap-4 border-2 px-2 py-1 w-fit rounded-lg font-secondary border-boorder mt-10">
+                        <Link to='/artist-profile-page' className="hover:bg-main hover:text-inverted rounded-lg px-3 py-1">Profile</Link>
+                        <Link  to='/artist-profile-page-setting' className="hover:bg-main hover:text-inverted px-3 py-1 rounded-lg">Profile Settings</Link>
+                    </div>
                     {/* Profile banner Container */}
-                    <div className="profile-container pt-10 pb-2 flex flex-col gap-3 relative">
+                    <div className="profile-container py-5 flex flex-col gap-3 relative bg-red-600">
 
                         {/*  banner */}
                         <img src={profilebanner} alt="" className="profile-banner" />
 
                         <img src={profileImage} alt="" className="profile-image  absolute
-                         max-sm:top-[58%] max-lg:top-[64%] max-xl:top-[70%] top-[73%] left-[50%] translate-[-50%] max-2xl:size-20" />
-
+                        max-sm:top-[58%] max-lg:top-[64%] max-xl:top-[70%] top-[70%] left-[50%] translate-[-50%] max-2xl:size-20"/>
 
                         {/* name & followers */}
                         <div className="profile-details flex flex-col items-center pt-10">
