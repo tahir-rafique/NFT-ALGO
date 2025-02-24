@@ -14,6 +14,7 @@ import CreateNFTpage from './pages/CreateNFTpage';
 import ArtistProfilePage from './pages/ArtistProfilePage';
 import ArtistProfileSetting from './pages/ArtistProfileSetting';
 import SellMethodPage from './pages/SellMethodPage';
+import CreateNFT from './pages/CreateNFT';
 
 const App = () => {
   return (
@@ -54,7 +55,7 @@ const App = () => {
 
 
         {/* Route : Create NFT   */}
-        <Route path="/create-nft-page" element={<CreateNFTpage />} />
+        <Route path="/create-nft" element={<CreateNFT />} />
 
 
         {/* Route : Create NFT Page  */}
