@@ -56,14 +56,14 @@ const Navbar = () => {
                                 </Link>
                             </h6>
                             <h6 className="">
-                                <Link to="/not-found" className="text-secondary">
+                                <Link to="/create-nft-page" className="text-secondary">
                                     AI NFT GENERATION
                                 </Link>
                             </h6>
                         </div>
                         <div className="hidden lg:flex gap-4">
                             <ButtonMain text="Connect Wallet" onClick={showModal} />
-                            <ButtonSecondary text="Create NFT" onClick={() => navigate('create-nft-page')} />
+                            <ButtonSecondary text="Create NFT" onClick={()=>{navigate('*')}} />
                         </div>
 
 

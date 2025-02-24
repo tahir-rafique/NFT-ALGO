@@ -26,7 +26,7 @@ const TrendingNFT = () => {
 
   return (
     <div className="flex justify-center relative z-50">
-      <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10 flex flex-col gap-5">
+      <div className="container mx-auto max-sm:px-5 sm:px-12 lg:px-20 py-10 flex flex-col gap-10 lg:gap-20">
 
         {/* 1st Section */}
         <div className="flex justify-between items-center gap-10">

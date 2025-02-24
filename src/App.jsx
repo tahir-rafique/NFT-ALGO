@@ -23,8 +23,8 @@ const App = () => {
         {/* Route: Home Page / Lading Pag */}
         <Route path="/" element={<Home />} />
 
-        {/* Route: Home Page / Lading Pag */}
-        <Route path="/not-found" element={<NotFound />} />
+        {/* Route: Not Found Page*/}
+        <Route path="*" element={<NotFound />} />
 
 
         {/* Route: Home Page / Lading Pag */}
@@ -46,20 +46,30 @@ const App = () => {
         {/* Route: Home Page / Lading Pag */}
         <Route path="/top-seller-page" element={<TopSellerPage />} />
 
+        
+
         {/* Route: Home Page / Lading Pag */}
         <Route path="/seller-collection-page" element={<SellerCollectionPage />} />
 
 
 
+        {/* Route : Create NFT   */}
+        <Route path="/create-nft-page" element={<CreateNFTpage />} />
+
 
         {/* Route : Create NFT Page  */}
         <Route path="/create-nft-page" element={<CreateNFTpage />} />
 
+
+
         {/* Route: Artist Profile Page */}
         <Route path="/artist-profile-page" element={<ArtistProfilePage />} />
 
+
+
         {/* Route: Artist Profile Page Setting */}
         <Route path="/artist-profile-page-setting" element={<ArtistProfileSetting />} />
+
 
         {/* Route: Sell Method Page */}
         <Route path="/sell-method-page" element={<SellMethodPage />} />

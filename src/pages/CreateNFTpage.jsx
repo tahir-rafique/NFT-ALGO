@@ -27,11 +27,11 @@ const CreateNFTpage = () => {
                         </div>
                         <img src={banner} alt="" />
                         <div className='flex justify-center'>
-                            <p className=' capitalize'>get onboard and earn money like a pro</p>
+                            <p className='capitalize text-para-light'>get onboard and earn money like a pro</p>
                         </div>
 
                         <div className='p-0.5'>
-                            <div className="mx-auto rounded-xl flex justify-between items-center gap-4 px-4  py-5 bg-inverted drop-shadow-md relative z-40 w-full max-w-[800px]">
+                            <div className="mx-auto rounded-xl flex justify-between items-center gap-4 px-4 py-3 md:py-5 bg-inverted drop-shadow-md relative z-40 w-full max-w-[800px]">
                                 <input className="font-secondary text-light w-full max-w-[600px] outline-none " placeholder="Fantasy Creature holding......" />
                                 <a href="#" className="absolute navbtn-size text-small navbtn-border font-medium background-grad text-inverted max-md:px-2 px-4 py-2 shrink-0 cursor-pointer flex gap-1 right-4 z-50 ">
                                     <h6>Generate</h6>
@@ -44,7 +44,7 @@ const CreateNFTpage = () => {
                             <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer">
 
                                 <select id='select-create-nft' className='w-full py-2 md:py-2.5 px-4 bg-inverted text-para-light font-secondary outline-none rounded-xl cursor-pointer'>
-                                    <option id='opt1' className='bg-inverted ' value='Single NFT'>Single NFT</option>
+                                    <option id='opt1' className='bg-inverted  ' value='Single NFT'>Single NFT</option>
                                     <option id='opt2' className='bg-inverted' value='Collection'>Collection</option>
                                 </select>
 
@@ -71,9 +71,9 @@ const CreateNFTpage = () => {
 
                     </div>
 
-                    {/* Prompt Section */}
-                    <div className='prompt-wraper py-10 lg:py-24'>
-                        <h2 className=' capitalize pb-5'>Prompt examples</h2>
+                    {/* Prompt Wraper Section */}
+                    <div className='prompt-wraper py-5 lg:py-24'>
+                        <h2 className=' capitalize pb-5 max-md:text-center'>Prompt examples</h2>
                         <div className="grid max-xl:grid-cols-1 grid-cols-2 gap-8 px-[5%]">
                             {CreateNFTPageData.map((data, index) => (
                                 <div className='border-2 border-boorder rounded-xl p-4 bg-inverted flex max-sm:flex-col items-center gap-4 sm:gap-10 relative' key={index}>
