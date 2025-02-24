@@ -1,7 +1,11 @@
 
 const ArtistProfileSetting = () => {
     return (
-        <div>
+
+        <div className="flex justify-center">
+            <div className=" container mx-auto ">
+
+            </div>
             
         </div>
     )

@@ -40,7 +40,6 @@ const ArtistProfilePage = () => {
         <>
             <Navbar />
             <div className="flex justify-center">
-
                 <div className="container mx-auto max-sm:px-5 sm:px-8 lg:px-20">
                     {/* Profile banner Container */}
                     <div className="profile-container pt-10 pb-2 flex flex-col gap-3 relative">
@@ -75,7 +74,7 @@ const ArtistProfilePage = () => {
                     </div>
 
                     {/* profile Detials wraper*/}
-                    <div className='2xl:flex-row flex flex-col  gap-10 justify-between py-10 pb-30'>
+                    <div className='2xl:flex-row flex flex-col  gap-10 justify-between py-10 pb-4 lg:pb-30'>
 
                         {/* hero-Left */}
                         <div className="hero-left p-1  flex justify-center">
@@ -199,7 +198,7 @@ const ArtistProfilePage = () => {
                     </div>
 
                     {/* Cards-Wraper */}
-                    <div className="Cards-Wraper flex flex-col max-sm:items-center   gap-4 lg:gap-10 py-10 pb-30">
+                    <div className="Cards-Wraper flex flex-col max-sm:items-center   gap-4 lg:gap-10 py-5 pb-10 lg:pb-30">
 
                         <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5'>
                             {
