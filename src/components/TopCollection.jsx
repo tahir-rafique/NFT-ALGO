@@ -8,7 +8,7 @@ const TopCollection = () => {
 
     <div className="relative">
       <div className="flex justify-center relative z-50">
-        <div className="container mx-auto px-5 sm:px-12 lg:px-20 py-10 flex flex-col gap-4 lg:gap-1">
+        <div className="container mx-auto px-5 sm:px-12 lg:px-20 py-10 flex flex-col gap-4 lg:gap-10 ">
           <div className="flex justify-between gap-4 items-center">
 
             <h2 className="leading-none">Top Collection</h2>

@@ -63,7 +63,7 @@ const Navbar = () => {
                         </div>
                         <div className="hidden lg:flex gap-4">
                             <ButtonMain text="Connect Wallet" onClick={showModal} />
-                            <ButtonSecondary text="Create NFT" onClick={()=>{navigate('*')}} />
+                            <ButtonSecondary text="Create NFT" onClick={()=>{navigate('create-nft')}} />
                         </div>
 
 
