@@ -323,13 +323,13 @@ export const AuctionPageData = [
 
     //
     { frame: subtract, url: img1, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
-    { frame: subtract, url: img2, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: img7, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
     { frame: subtract, url: img3, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
     { frame: subtract, url: img4, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
     // 
-    { frame: subtract, url: img7, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
-    { frame: subtract, url: img5, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
     { frame: subtract, url: img8, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: img2, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
+    { frame: subtract, url: img5, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
     { frame: subtract, url: img6, personImg: person, name: "Stella Nova", username: "@Stella Nova", },
 
 ]
@@ -629,15 +629,15 @@ export const CreateNFTPageData = [
     { url: pimg6, title: "SEA CREATURE", descprtion: "Amollis, ultrices augue id, laoreet tellus. Sed vitae fermentum neque. Nunc sed tincidunt enim, sed ultricies nisl. Maecenas ullamcorper nunc metus, sed facilisis dolor cursus eu. Nam sit amet maximus augue.", },
 
     { url: pimg8, title: "SHADOW FIGHTER", descprtion: "Sed vitae orci mollis, ultrices augue id, laoreet tellus. Sed vitae fermentum neque. Nunc sed tincidunt enim.", },
-    
+
     { url: pimg7, title: "PIXEL GIRL", descprtion: "Amollis, ultrices augue id, laoreet tellus. Sed vitae fermentum neque. Nunc sed tincidunt enim, sed ultricies nisl. Maecenas ullamcorper nunc metus, sed facilisis dolor cursus eu. Nam sit amet maximus augue.", },
 ]
 
 
-const options = [
-    "tahir",
-    "tahir",
-    "thiar",
-    "tahir",
-    "thiar",
+export const artistProfilePageData = [
+    "Generated",
+    "Minted",
+    "On Sale",
+    "Auction",
+    "Sold",
 ];

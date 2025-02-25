@@ -1,2 +1,2 @@
-# Click HERE...!
-Live Preview: https://nft-algo.vercel.app/
+# Nft-Algo 
+### Click here for Preview: nft-algo.vercel.app

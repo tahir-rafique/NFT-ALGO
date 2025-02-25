@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar"
 import profilebanner from "../assets/ArtistProfilePage/images/profilebanner.webp"
 import profileImage from "../assets/ArtistProfilePage/images/profileImage.webp"
 import mpf from "../assets/ArtistProfilePage/images/mpf.webp"
-import { PixcaioPageData, timeLeft } from "../constant/data"
+import { artistProfilePageData, PixcaioPageData, } from "../constant/data"
 
-//
+
 import websiteIcon from '../assets/Pixacio/icons/internet.webp'
 import twitter from '../assets/Pixacio/icons/twitterIco.webp'
 import binculars from '../assets/Pixacio/icons/bincularsIco.webp'
@@ -165,9 +165,9 @@ const ArtistProfilePage = () => {
                     </div>
 
                     {/* MEnu Section */}
-                    <div className='menu-section  flex justify-between items-center py-10 flex-wrap gap-4'>
+                    <div className='menu-section  flex justify-between items-center pt-10 pb-5 flex-wrap gap-4'>
                         {/* Menu */}
-                        <div className="flex gap-4  flex-wrap lg:gap-12 items-center font-secondary  text-secondary">
+                        <div className="cursor-pointer flex gap-4  flex-wrap lg:gap-12 items-center font-secondary  text-secondary">
                             <h6 className='text-main border-2 px-4 py-2 rounded-md w-fit'>All</h6>
                             <h6>Generated</h6>
                             <h6>Minted </h6>
@@ -193,9 +193,9 @@ const ArtistProfilePage = () => {
                             </button>
 
                             {isOpen && (
-                                <div className="absolute z-50 max-sm:w-33 w-45 bg-inverted border-2 border-muted rounded-lg shadow-lg ">
+                                <div className="absolute z-50 max-lg:w-33 w-45 bg-inverted border-2 border-muted rounded-lg shadow-lg ">
                                     <ul className="py-2">
-                                        {timeLeft.map((item) => (
+                                        {artistProfilePageData.map((item) => (
                                             <p key={item} className="font-secondary px-4 py-2 hover:bg-gray-100 cursor-pointer" >
                                                 {item}
                                             </p>

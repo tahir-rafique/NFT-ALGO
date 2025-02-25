@@ -16,13 +16,13 @@ import elicpLeft from '../assets/AuctionPage/icons/rightElicp.webp'
 import refresh from "../assets/AuctionPage/icons/ReFresh.webp"
 
 const AuctionPage = () => {
-  const [StockCount, setStockCount] = useState(7);
+  const [StockCount] = useState(7);
 
   return (
     <>
       <Navbar />
       <div className='AuctionPage flex justify-center relative'>
-        <div className='container mx-auto  max-sm:px-5 sm:px-12 lg:px-20  py-10 '>
+        <div className='container mx-auto  max-sm:px-5 sm:px-12 lg:px-20  py-5 lg:py-10 '>
 
           {/* heroSectionWraper */}
           <div className='Auction topWraper flex flex-col items-center py-10 max-sm:py-5 relative z-50'>
@@ -47,44 +47,103 @@ const AuctionPage = () => {
           {/* topListed-cardsWraper */}
           <div className='flex justify-between gap-4 pb-10'>
             <h2 className='uppercase'>Top Listed</h2>
-            <div className='flex flex-col  gap-2'>
-              <div className='flex items-center gap-2'>
-                <img src={refresh} alt="" />
-                <p className=' capitalize text-l text-para-light'>Refresh A While Ago</p>
-              </div>
+
+            <div className='flex items-center gap-2'>
+              <img src={refresh} alt="" className=' cursor-pointer' />
+              <p className=' capitalize text-l text-para-light cursor-pointer'>Refresh A While Ago</p>
             </div>
+
           </div>
 
-          {/* Cards-topListed*/}
-          <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5 '>
+          {/*  Tolisted Cards Wraper*/}
+
+          <div className='cards-wraper grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-4 max-md:justify-items-center'>
             {
               AuctionPageData.map((item, index) => (
-                <div key={index} className='p-1'>
-                  <div className="pt-6 px-2 drop-shadow-md max-sm:w-84 max-sm:pb-4 max-md:pb-0 max-lg:pb-4 "
+                <div key={index} className='p-1 h-full'>
+                  <div className="pt-6 px-3 max-sm:w-[300px] h-full drop-shadow-md  max-sm:pb-5 max-md:pb-1 max-lg:pb-4 max-xl:pb-2 xl:pb-1 2xl:pb-4" key={index}
                     style={{
-                      backgroundImage: `url(${item.frame})`,
-                      backgroundRepeat: "no-repeat",
+                      backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",
-
                     }}
                   >
-                    <div className='flex flex-col gap-3'>
+                    <div className='flex flex-col gap-3 relative'>
                       {/* person wraper */}
+
                       <div className="flex gap-2 items-center w-full">
+
                         <img src={item.personImg} alt="" />
                         <div>
-                          <h6>{item.name}</h6>
-                          <p className='text-secondary'>{item.username}</p>
+                          <h6 className="font-light">{item.name}</h6>
+                          <p className='text-xs text-para-light font-light'>{item.username}</p>
                         </div>
                       </div>
 
-                      <div className='px-2 pb-3 max-lg:pb-4 2xl:pb-7 relative'>
-                        <img src={item.url} alt="" className='max-md:w-full max-md:h-fit' />
-
-                        <div className="absolute  max-sm:left-24 max-sm:top-36 sm:top-25 sm:left-18 md:left-24 md:top-34 lg:top-26 2xl:top-34 lg:left-21  font-medium bg- py-1 px-4 shrink-0 cursor-pointer text-para-light font-secondary rounded-md bg-sold ">
+                      {/* Stock timer */}
+                      <div className=''>
+                        <img src={item.url} alt="" className='w-full h-fit rounded-2xl' />
+                        <div className="fixed text-s left-[50%] translate-[-50%] top-[55%] font-medium bg- py-1 px-4 shrink-0 cursor-pointer text-secondary font-secondary rounded-md bg-sold ">
                           3:06:59:18
                         </div>
+                      </div>
 
+                      {/* Stock Price */}
+                      <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-5 2xl:bottom-8 right-4">
+                        <p className="text-l ">Price:</p>
+                        <span className="bg-black rounded-full">
+                          <img src={logoprice} alt="" />
+                        </span>
+                        <p className="text-l text-para-light">142.02</p>
+                      </div>
+
+                      {/* Stock Amount */}
+                      <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-2 shrink-0 cursor-pointer text-secondary flex items-center gap-4 text-small absolute bottom-5 2xl:bottom-8 left-4 ">
+                        <span className='text-l font-medium capitalize '>In Stock</span>
+                        <span className='text-l text-para-light'>{StockCount}</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              ))}
+          </div>
+
+          {/*  Auction Cards Wraper */}
+          <div className='auction-cards-wraper py-20 max-sm:flex max-sm:flex-col max-sm:items-center relative z-50'>
+            <h2 className='pb-10 uppercase'>Live Auction</h2>
+
+            <div className='cards-wraper grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-4 max-md:justify-items-center'>
+              {
+                AuctionPageData.map((item, index) => (
+                  <div key={index} className='p-1 h-full'>
+                    <div className="pt-6 px-3 max-sm:w-[300px] h-full drop-shadow-md  max-sm:pb-5 max-md:pb-1 max-lg:pb-4 max-xl:pb-2 xl:pb-1 2xl:pb-4" key={index}
+                      style={{
+                        backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                      }}
+                    >
+                      <div className='flex flex-col gap-3 relative'>
+                        {/* person wraper */}
+
+                        <div className="flex gap-2 items-center w-full">
+
+                          <img src={item.personImg} alt="" />
+                          <div>
+                            <h6 className="font-light">{item.name}</h6>
+                            <p className='text-xs text-para-light font-light'>{item.username}</p>
+                          </div>
+                        </div>
+
+                        {/* Stock timer */}
+                        <div className=''>
+                          <img src={item.url} alt="" className='w-full h-fit rounded-2xl' />
+                          <div className="fixed text-s left-[50%] translate-[-50%] top-[55%] font-medium bg- py-1 px-4 shrink-0 cursor-pointer text-secondary font-secondary rounded-md bg-sold ">
+                            3:06:59:18
+                          </div>
+                        </div>
+
+                        {/* Stock Price */}
                         <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-5 2xl:bottom-8 right-4">
                           <p className="text-l ">Price:</p>
                           <span className="bg-black rounded-full">
@@ -93,73 +152,19 @@ const AuctionPage = () => {
                           <p className="text-l text-para-light">142.02</p>
                         </div>
 
+                        {/* Stock Amount */}
                         <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-2 shrink-0 cursor-pointer text-secondary flex items-center gap-4 text-small absolute bottom-5 2xl:bottom-8 left-4 ">
                           <span className='text-l font-medium capitalize '>In Stock</span>
                           <span className='text-l text-para-light'>{StockCount}</span>
                         </div>
-                      </div>
-                    </div>
 
-                  </div>
-                </div>
-              ))}
-          </div>
-
-          {/* Live Auction Wraper */}
-          <div className='py-20 max-sm:flex max-sm:flex-col max-sm:items-center relative z-50'>
-            <h2 className='pb-10 uppercase'>Live Auction</h2>
-            <div className=' grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5 '>
-              {
-                AuctionPageData.map((item, index) => (
-                  <div key={index} className='p-1 h-full pb-8'>
-                    <div className="pt-6 px-3 drop-shadow-md max-sm:w-84 max-sm:pb-5 max-md:pb-1 max-lg:pb-4 max-xl:pb-2 xl:pb-1  2xl:pb-4"
-                      style={{
-                        backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover"
-                      }}
-                    >
-                      <div className='flex flex-col gap-3 relative'>
-                        {/* person wraper */}
-                        <div className="flex gap-2 items-center w-full">
-                          <img src={item.personImg} alt="" />
-                          <div>
-                            <h6>{item.name}</h6>
-                            <p className='text-secondary'>{item.username}</p>
-                          </div>
-                        </div>
-
-                        {/*auction image */}
-                        <div className=' '>
-                          <img src={item.url} alt="" className='w-full h-fit rounded-2xl' />
-
-                          {/* timer */}
-                          <div className="absolute max-sm:top-50 max-sm:left-22 max-md:top-41 max-lg:top-50 lg:top-40 2xl:top-50 left-18 font-medium  py-1 px-4 shrink-0 cursor-pointer text-secondary font-secondary rounded-md bg-sold ">
-                            3:06:59:18
-                          </div>
-
-                          {/* price */}
-                          <div className=" navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-l absolute bottom-3 right-2">
-                            <p className="text-l ">Price:</p>
-                            <span className="bg-black rounded-full">
-                              <img src={logoprice} alt="" />
-                            </span>
-                            <p className="text-l text-para-light">142.02</p>
-                          </div>
-
-                          {/* Stock */}
-                          <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-2 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-3 left-2 ">
-                            <span className='text-l font-medium capitalize '>In Stock</span>
-                            <span className='text-l text-para-light'>{StockCount}</span>
-                          </div>
-
-
-                        </div>
                       </div>
 
                     </div>
                   </div>
                 ))}
             </div>
+
           </div>
 
           {/* Elicp Right */}
