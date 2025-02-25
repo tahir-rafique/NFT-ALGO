@@ -23,6 +23,9 @@ import simg5 from '../assets/CreateNFTpage/icons/simg5.webp'
 
 const CreateNFTpage = () => {
 
+
+    const [count, setcount] = useState(1)
+
     // Ant-Desing Modal
     const [isModalOpen, setIsModalOpen] = useState(false);
     const showModal = () => {
@@ -101,7 +104,7 @@ const CreateNFTpage = () => {
                                                 Single NFT
                                             </h6>
                                         </span>
-                                        <img src={downline} alt="" />
+                                        <img src={downline} alt="" className='size-4' />
                                     </button>
 
                                     {isOpen && (
@@ -125,10 +128,10 @@ const CreateNFTpage = () => {
                             <div className="flex font-secondary text-para-light items-center gap-2 cursor-pointer">
                                 <h6>Supply</h6>
                                 <div className='border-2 border-boorder  rounded-xl py-2 bg-inverted px-4 cursor-pointer flex items-center gap-4'>
-                                    <h6> 10</h6>
+                                    <h6> {count}</h6>
                                     <div>
-                                        <img src={downline} alt="" className='rotate-180 size-4' />
-                                        <img src={downline} alt="" className='size-4' />
+                                        <img src={downline} alt="" className='rotate-180 size-4' onClick={() => { if (count < 25) { setcount(count + 1) } }} />
+                                        <img src={downline} alt="" className='size-4' onClick={() => { if (count > 0) { setcount(count - 1) } }} />
                                     </div>
 
                                 </div>
@@ -159,12 +162,12 @@ const CreateNFTpage = () => {
                                         {/* section 2 */}
                                         <div className="modal-bottom-section flex flex-col gap-2 w-full">
                                             <div className='w-full flex gap-4'>
-                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
-                                                    <img src={sicon} alt="" className='size-30' />
-                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col items-center justify-center gap-1 '>
+                                                    <img src={sicon} alt="" className='size-10' />
+                                                    <p>None</p>
                                                 </div>
 
-                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main'>
                                                     <img src={simg1} alt="" />
                                                     <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
                                                 </div>
@@ -175,12 +178,12 @@ const CreateNFTpage = () => {
                                         {/* section 3 */}
                                         <div className="modal-bottom-section flex flex-col gap-2 w-full">
                                             <div className='w-full flex gap-4'>
-                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main'>
                                                     <img src={simg5} alt="" />
                                                     <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
                                                 </div>
 
-                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main'>
                                                     <img src={simg2} alt="" />
                                                     <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
                                                 </div>
@@ -189,14 +192,14 @@ const CreateNFTpage = () => {
 
 
                                         {/* section 4 */}
-                                        <div className="modal-bottom-section flex flex-col gap-2 w-full">
+                                        <div className="modal-bottom-section flex flex-col gap-2 w-full ">
                                             <div className='w-full flex gap-4'>
-                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main '>
                                                     <img src={simg3} alt="" />
                                                     <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
                                                 </div>
 
-                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main '>
                                                     <img src={simg4} alt="" />
                                                     <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
                                                 </div>
