@@ -17,6 +17,8 @@ import SellMethodPage from './pages/SellMethodPage';
 import CreateNFT from './pages/CreateNFT';
 import ChooseCollection from './pages/ChooseCollection';
 import CreatCollectionPage from './pages/CreatCollectionPage';
+import CreateNFTCollectionPage from './pages/CreateNFTCollection';
+import CreateNFTCollection from './pages/CreateNFTCollection';
 
 const App = () => {
   return (
@@ -30,28 +32,28 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
 
 
-        {/* Route: Home Page / Lading Pag */}
+        {/* Route: Auction Page */}
         <Route path="/auction" element={<AuctionPage />} />
 
 
-        {/* Route: Home Page / Lading Pag */}
+        {/* Route: Top Collection Page */}
         <Route path="/top-Collection-page" element={<TopCollectionPage />} />
 
 
-        {/* Route: Home Page / Lading Pag */}
+        {/* Route: Pixacio Page */}
         <Route path="/pixacio-page" element={<TopCollectionPixacio />} />
 
 
-        {/* Route: Home Page / Lading Pag */}
+        {/* Route: NFT Detail Pixacio */}
         <Route path="/NFTdetail" element={<NFTdetailpixacio />} />
 
 
-        {/* Route: Home Page / Lading Pag */}
+        {/* Route: Top Seller Page */}
         <Route path="/top-seller-page" element={<TopSellerPage />} />
 
 
 
-        {/* Route: Home Page / Lading Pag */}
+        {/* Route: Seller Collection Page */}
         <Route path="/seller-collection-page" element={<SellerCollectionPage />} />
 
 
@@ -63,17 +65,19 @@ const App = () => {
         {/* Route : Create NFT Page  */}
         <Route path="/create-nft-page" element={<CreateNFTpage />} />
 
-
         {/* Route : Create Collection Page*/}
         <Route path="/create-collection-page" element={<CreatCollectionPage />} />
 
         {/* Route : Choose Collection */}
         <Route path="/choose-collection" element={<ChooseCollection />} />
 
+        {/* Route : Create NFT Collection */}
+        <Route path="/create-nft-collection" element={<CreateNFTCollection />} />
+
+
 
         {/* Route: Artist Profile Page */}
         <Route path="/artist-profile-page" element={<ArtistProfilePage />} />
-
 
 
         {/* Route: Artist Profile Page Setting */}
