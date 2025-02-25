@@ -81,7 +81,13 @@ const CreateNFT = () => {
                                         <div>
                                             <div className="flex justify-between">
                                                 <h5 className="font-medium">Choose Collection</h5>
-                                                <a href="/" className="underline text-para-light"> <h6>Choose From Existed </h6></a>
+
+                                                <div className="cursor-pointer">
+                                                    <label htmlFor="choosePreviousFile" className="cursor-pointer"><h6 className="underline text-para-light">Choose From Existed </h6></label>
+                                                    <input type="file" name="choosePreviousFile" id="choosePreviousFile" className="absolute opacity-0" />
+                                                    <a href="#" className=""> </a>
+                                                </div>
+
                                             </div>
                                             <p className="text-para-light">(this is the collection where your item will appear)  </p>
                                         </div>
@@ -96,9 +102,11 @@ const CreateNFT = () => {
                                                 </div>
 
                                                 <div>
-                                                    <h6>Create new collection</h6>
-                                                    <p className="text-para-light">Type to create</p>
-                                                </div>
+                                                    <a href="/create-nft">
+                                                        <h6>Create new collection</h6>
+                                                        <p className="text-para-light">Type to create</p>
+                                                    </a>
+                                                </div>  
                                             </div>
 
 
@@ -126,9 +134,9 @@ const CreateNFT = () => {
 
                                         {/* Edit input */}
                                         <div>
-                                            <input type="text" placeholder="hello" />
-
+                                            <input type="text" placeholder="hello" className="bg-red-700 w-full" />
                                         </div>
+
                                         <hr className="my-5 text-boorder" />
 
                                         {/*  Add Traits  button*/}
