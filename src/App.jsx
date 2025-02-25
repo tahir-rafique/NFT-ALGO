@@ -40,7 +40,7 @@ const App = () => {
 
 
         {/* Route: Pixacio Page */}
-        <Route path="/pixacio-page" element={<TopCollectionPixacio />} />
+        <Route path="/top-collection-pixacio" element={<TopCollectionPixacio />} />
 
 
         {/* Route: NFT Detail Pixacio */}
