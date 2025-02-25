@@ -8,9 +8,8 @@
   text-align: center;
 }
 
-
-.ant-modal-wrap{
-    position: relative;
+.ant-modal-wrap {
+  position: relative;
 }
 
 /* .ant-modal-wrap .ant-modal {
@@ -18,17 +17,21 @@
  
 } */
 
-.ant-main-body{
-    padding-bottom: 10px;
-
+.ant-main-body {
+  padding-bottom: 10px;
 }
 
-.ant-modal-footer{
-    display: none;
+.ant-modal-footer {
+  display: none;
 }
 
-.modal-Styles-cnftp{
+.modal-Styles-cnftp {
   position: relative;
-  top:10px;
- 
+  top: 10px;
+}
+
+.ant-modal-content {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
 }
