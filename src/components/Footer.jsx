@@ -20,8 +20,8 @@ const Footer = () => {
       {/* footer Elipc */}
       <img src={EL} alt="" className="absolute left-0 top-[0px] size-130 max-lg:hidden z-1" />
       {/* footer Grid */}
-      <img src={gl} alt="" className="absolute left-0 bottom-0 z-10" />
-      <img src={gr} alt="" className="absolute right-0 bottom-0 z-10" />
+      <img src={gl} alt="" className="absolute left-0 bottom-0 z-10 max-md:hidden" />
+      <img src={gr} alt="" className="absolute right-0 bottom-0 z-10 max-md:hidden" />
 
       {/* footer */}
       <div className="flex justify-center  relative z-50">
