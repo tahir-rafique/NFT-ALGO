@@ -40,22 +40,26 @@ const ArtistProfilePage = () => {
     return (
         <>
             <Navbar />
-            <div className="flex justify-center">
+            <div className="flex justify-center relative z-100">
                 <div className="container mx-auto max-sm:px-5 sm:px-8 lg:px-20">
 
                     {/* profile shifting/navigation */}
                     <div className="flex gap-4 border-2 px-2 py-1 w-fit rounded-lg font-secondary border-boorder mt-10">
                         <Link to='/artist-profile-page' className="hover:bg-main hover:text-inverted rounded-lg px-3 py-1">Profile</Link>
-                        <Link  to='/artist-profile-page-setting' className="hover:bg-main hover:text-inverted px-3 py-1 rounded-lg">Profile Settings</Link>
+                        <Link to='/artist-profile-page-setting' className="hover:bg-main hover:text-inverted px-3 py-1 rounded-lg">Profile Settings</Link>
                     </div>
+
+
                     {/* Profile banner Container */}
-                    <div className="profile-container py-5 flex flex-col gap-3 relative bg-red-600">
+                    <div className="profile-container py-5 flex flex-col gap-3 relative">
 
                         {/*  banner */}
                         <img src={profilebanner} alt="" className="profile-banner" />
 
                         <img src={profileImage} alt="" className="profile-image  absolute
-                        max-sm:top-[58%] max-lg:top-[64%] max-xl:top-[70%] top-[70%] left-[50%] translate-[-50%] max-2xl:size-20"/>
+                         xl:top-[70%] left-[50%] translate-[-50%] 
+                         max-xl:top-[55%]
+                         max-sm:top-[50%] max-sm:size-24"/>
 
                         {/* name & followers */}
                         <div className="profile-details flex flex-col items-center pt-10">
@@ -79,15 +83,15 @@ const ArtistProfilePage = () => {
                         </div>
                     </div>
 
-                    {/* profile Detials wraper*/}
-                    <div className='2xl:flex-row flex flex-col  gap-10 justify-between py-10 pb-4 lg:pb-30'>
+                    {/* profile Detials Section*/}
+                    <div className='2xl:flex-row flex flex-col  gap-10 justify-between py-4 lg:py-10 pb-4 lg:pb-30'>
 
-                        {/* hero-Left */}
+                        {/* details-Left */}
                         <div className="hero-left p-1  flex justify-center">
                             <img src={mpf} alt="" className=' bg-[#fff] shadow-md p-3 rounded-2xl' />
                         </div>
 
-                        {/* hero-Right */}
+                        {/* details-Right */}
                         <div className="hero-right flex flex-col items-center lg:justify-end 2xl:w-[55%]">
 
                             {/* right top */}
@@ -161,9 +165,9 @@ const ArtistProfilePage = () => {
                     </div>
 
                     {/* MEnu Section */}
-                    <div className='menu-section max-sm:justify-center flex justify-between items-center py-10 flex-wrap gap-4'>
+                    <div className='menu-section  flex justify-between items-center py-10 flex-wrap gap-4'>
                         {/* Menu */}
-                        <div className="flex gap-4 max-md:justify-center flex-wrap lg:gap-12 items-center font-secondary  text-secondary">
+                        <div className="flex gap-4  flex-wrap lg:gap-12 items-center font-secondary  text-secondary">
                             <h6 className='text-main border-2 px-4 py-2 rounded-md w-fit'>All</h6>
                             <h6>Generated</h6>
                             <h6>Minted </h6>

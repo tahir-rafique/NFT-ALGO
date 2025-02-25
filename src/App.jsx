@@ -17,7 +17,6 @@ import SellMethodPage from './pages/SellMethodPage';
 import CreateNFT from './pages/CreateNFT';
 import ChooseCollection from './pages/ChooseCollection';
 import CreatCollectionPage from './pages/CreatCollectionPage';
-import CreateNFTCollectionPage from './pages/CreateNFTCollection';
 import CreateNFTCollection from './pages/CreateNFTCollection';
 
 const App = () => {

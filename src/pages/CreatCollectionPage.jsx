@@ -32,8 +32,8 @@ const CreatCollectionPage = () => {
                                 <div>
                                     <p className='text-para-light'>Select NFT's to mint</p>
                                 </div>
-                                <div className=" flex justify-end font-light font-secondary  cursor-pointer ">
-                                    <button className="background-grad text-inverted px-4 py-2 capitalize">
+                                <div className="flex justify-end font-light font-secondary  cursor-pointer ">
+                                    <button className="background-grad text-inverted px-4 py-2 capitalize cursor-pointer">
                                         <p className="font-medium">
                                             Minit NFT
                                         </p>

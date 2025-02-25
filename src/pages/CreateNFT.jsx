@@ -102,11 +102,11 @@ const CreateNFT = () => {
                                                 </div>
 
                                                 <div>
-                                                    <a href="/create-nft">
+                                                    <a href="/create-collection-page">
                                                         <h6>Create new collection</h6>
                                                         <p className="text-para-light">Type to create</p>
                                                     </a>
-                                                </div>  
+                                                </div>
                                             </div>
 
 
@@ -134,7 +134,7 @@ const CreateNFT = () => {
 
                                         {/* Edit input */}
                                         <div>
-                                            <input type="text" placeholder="hello" className="bg-red-700 w-full" />
+                                            {/* <input type="text" placeholder="hello" className="bg-red-700 w-full" /> */}
                                         </div>
 
                                         <hr className="my-5 text-boorder" />
