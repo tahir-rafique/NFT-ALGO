@@ -4,6 +4,7 @@ import personIMG from '../assets/SellMethod/images/personImage.webp'
 import Navbar from "../components/Navbar"
 import addIcon from '../assets/CreateNFT/icons/addicon.webp'
 import artImage from '../assets/CreateNFT/icons/artImage.webp'
+import Switch from "../components/Switch"
 
 
 
@@ -126,7 +127,7 @@ const CreateNFT = () => {
                                         {/* Edit input */}
                                         <div>
                                             <input type="text" placeholder="hello" />
-                                            
+
                                         </div>
                                         <hr className="my-5 text-boorder" />
 
@@ -146,6 +147,7 @@ const CreateNFT = () => {
                                     <div>
                                         <h5 className="font-medium">Royalties</h5>
                                         {/* switch button    */}
+                                        <Switch />
                                     </div>
 
                                     {/* Minit button */}
