@@ -108,14 +108,11 @@ const CreateNFTpage = () => {
                                     </button>
 
                                     {isOpen && (
-                                        <div className="absolute mt-3 z-50  max-sm:w-33 w-45 bg-inverted border-2 border-muted rounded-lg shadow-lg ">
-                                            <ul className="py-2">
-                                                {timeLeft.map((item) => (
-                                                    <p key={item} className="font-secondary px-4 py-2 hover:bg-gray-100 cursor-pointer" >
-                                                        {item}
-                                                    </p>
-                                                ))}
-                                            </ul>
+                                        <div className="absolute mt-3 z-50  w-33 bg-inverted border-2 border-muted rounded-lg shadow-lg ">
+
+                                            <p className='py-2 text-para-light w-full hover:bg-boorder hover:text-secondary px-2'>Single NFT mint</p>
+                                            <p className='py-2 text-para-light w-full hover:bg-boorder hover:text-secondary px-2'>Multi NFT mint</p>
+
                                         </div>
                                     )}
                                 </div>
