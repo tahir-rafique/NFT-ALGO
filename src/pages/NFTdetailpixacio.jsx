@@ -99,8 +99,7 @@ const NFTdetailpixacio = () => {
         <>
             <Navbar />
             <div className='flex justify-center'>
-
-                <div className='container mx-auto bg-frame max-sm:px-5 sm:px-12 lg:px-20 pt-20 pb-4'>
+                <div className='container mx-auto bg-frame max-sm:px-5 sm:px-12 lg:px-20 pt-5 lg:pt-20 pb-4'>
                     {/* Hero Wraper */}
                     <div className='xl:flex-row flex flex-col  gap-10 justify-between'>
 
@@ -590,7 +589,7 @@ const NFTdetailpixacio = () => {
                     </div>
 
                     {/* More From The Collection Wraper */}
-                    <div className=" flex flex-col max-sm:items-center  gap-4 lg:gap-10 py-20">
+                    <div className=" flex flex-col max-sm:items-center  gap-4 lg:gap-10 py-5 lg:py-20">
                         <h2>More from this collection</h2>
                         <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5'>
                             {

@@ -39,7 +39,7 @@ const Navbar = () => {
     const navigate = useNavigate();
 
     return (
-        <nav className="flex justify-center">
+        <nav className="flex justify-center ">
             <div className="container mx-auto max-sm:px-5 sm:px-8 lg:px-20 py-4">
                 <div className="absolute left-0 top-0 z-0">
                     <img src={topGridLeft} alt="" />

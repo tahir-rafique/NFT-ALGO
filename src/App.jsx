@@ -45,7 +45,7 @@ const App = () => {
 
 
         {/* Route: NFT Detail Pixacio */}
-        <Route path="/NFTdetail" element={<NFTdetailpixacio />} />
+        <Route path="/nft-detail-pixacio" element={<NFTdetailpixacio />} />
 
 
         {/* Route: Top Seller Page */}

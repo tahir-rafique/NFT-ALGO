@@ -25,7 +25,7 @@ const Footer = () => {
 
       {/* footer */}
       <div className="flex justify-center  relative z-50">
-        <div className="container mx-auto  max-sm:px-5 sm:px-12 lg:px-20 lg:py-5 pb-4 pt-20 flex flex-col gap-8">
+        <div className="container mx-auto  max-sm:px-5 sm:px-12 lg:px-20 lg:py-5 pb-4 pt-10 lg:pt-20 flex flex-col gap-8">
 
           {/* footer top */}
           <div className="flex flex-col justify-center items-center gap-4 xl:gap-10">
