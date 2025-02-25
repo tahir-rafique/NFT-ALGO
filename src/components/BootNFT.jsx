@@ -23,7 +23,7 @@ const BootNFT = () => {
                             <h6 className="font-secondary leading-tight tracking-tight text-para-light font-light w-full max-w-[80%] ">The Boost feature is a premium service that allows NFT creators and  collectors to elevate their listings on our marketplace. By boosting an  NFT, you can ensure it appears prominently in search results,  featured sections, and on the homepage, maximizing exposure to  potential buyers.</h6>
                         </div>
                         <a href="#" className="w-fit navbtn-size text-small navbtn-border font-medium background-grad text-inverted px-4 py-2 shrink-0 cursor-pointer flex gap-1">
-                            <span>Generate</span>
+                            <span>Boost</span>
                             <img src={boostIcon} alt="no img" />
                         </a>
                     </div>
