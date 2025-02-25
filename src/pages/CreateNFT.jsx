@@ -5,12 +5,32 @@ import Navbar from "../components/Navbar"
 import addIcon from '../assets/CreateNFT/icons/addicon.webp'
 import artImage from '../assets/CreateNFT/icons/artImage.webp'
 import Switch from "../components/Switch"
+import { Modal } from "antd"
 
 
+import lineVector from "../assets/Modal/icons/line-vector.svg"
+
+import sicon from '../assets/CreateNFTpage/icons/sicon.webp'
+import simg1 from '../assets/CreateNFTpage/icons/simg1.webp'
+import simg2 from '../assets/CreateNFTpage/icons/simg2.webp'
+import simg3 from '../assets/CreateNFTpage/icons/simg3.webp'
+import simg4 from '../assets/CreateNFTpage/icons/simg4.webp'
+import simg5 from '../assets/CreateNFTpage/icons/simg5.webp'
+import { useState } from "react"
 
 const CreateNFT = () => {
 
-
+    // Ant-Desing Modal
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const showModal = () => {
+        setIsModalOpen(true);
+    };
+    const handleOk = () => {
+        setIsModalOpen(false);
+    };
+    const handleCancel = () => {
+        setIsModalOpen(false);
+    };
 
     return (
         <>
@@ -65,7 +85,7 @@ const CreateNFT = () => {
                                         <input type="text" required id="token" placeholder="$ CGPT, for example" className="bg-inverted border-3 border-boorder rounded-xl w-full px-3 py-3" />
                                     </div>
 
-                                    {/* desc */}
+                                    {/* descritions */}
                                     <div className="flex flex-col gap-2">
                                         <label htmlFor="description"><h5 className="font-medium capitalize">Description</h5></label>
                                         <div>
@@ -130,7 +150,8 @@ const CreateNFT = () => {
                                     <div className="flex flex-col gap-1">
                                         <h5 className="font-medium">Add Traits</h5>
                                         <h6>Traits describe attributes of your item. They appear as filters inside your collection page and
-                                            are also listed out inside your item page.</h6>
+                                            are also listed out inside your item page.
+                                        </h6>
 
                                         {/* Edit input */}
                                         <div>
@@ -141,14 +162,72 @@ const CreateNFT = () => {
 
                                         {/*  Add Traits  button*/}
                                         <div className="bg-inverted w-fit px-4 rounded-2xl border-3 border-boorder  py-2 items-center" >
-                                            <Link to="/" className="flex items-center gap-2">
+                                            <Link onClick={showModal} className="flex items-center gap-2">
                                                 <h5 className="font-secondary text-para-light"> Add Traits</h5>
                                                 <img src={addIcon} alt="" />
                                             </Link>
 
 
-                                        </div>
+                                            {/* Ant-Desing Modal */}
+                                            <div className="ant-modal-main absolute">
+                                                <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel} className='modal-Styles-cnftp'>
+                                                    <div className="flex flex-col items-center gap-2 pt-4">
+                                                        <div className="modal-top-section flex flex-col items-center gap-1 pb-2">
+                                                            <h3 className="ant-main-text">Select a style</h3>
+                                                            <img src={lineVector} alt="" />
+                                                        </div>
 
+
+                                                        {/* section 2 */}
+                                                        <div className="modal-bottom-section flex flex-col gap-2 w-full">
+                                                            <div className='w-full flex gap-4'>
+                                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                                    <img src={sicon} alt="" />
+                                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
+                                                                </div>
+
+                                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                                    <img src={simg1} alt="" />
+                                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        {/* section 3 */}
+                                                        <div className="modal-bottom-section flex flex-col gap-2 w-full">
+                                                            <div className='w-full flex gap-4'>
+                                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                                    <img src={simg5} alt="" />
+                                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
+                                                                </div>
+
+                                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                                    <img src={simg2} alt="" />
+                                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        {/* section 4 */}
+                                                        <div className="modal-bottom-section flex flex-col gap-2 w-full">
+                                                            <div className='w-full flex gap-4'>
+                                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                                    <img src={simg3} alt="" />
+                                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
+                                                                </div>
+
+                                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                                    <img src={simg4} alt="" />
+                                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </Modal>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     {/* Royalities */}

@@ -5,15 +5,13 @@ import IconGenerate from "../assets/GenerateNFT/icons/IconGenerat.svg"
 import banner from '../assets/CreateNFTpage/images/createNFTbanner.webp'
 
 import addicon from '../assets/CreateNFTpage/images/addicon.webp'
-
+import downline from '../assets/CreateNFTpage/icons/downline.webp'
 import copyimg from '../assets/CreateNFTpage/images/copyimg.webp'
 import { CreateNFTPageData, timeLeft } from '../constant/data';
 import { useEffect, useRef, useState } from 'react';
 
 import { Modal } from 'antd';
-
 import lineVector from "../assets/Modal/icons/line-vector.svg"
-
 import sicon from '../assets/CreateNFTpage/icons/sicon.webp'
 import simg1 from '../assets/CreateNFTpage/icons/simg1.webp'
 import simg2 from '../assets/CreateNFTpage/icons/simg2.webp'
@@ -21,7 +19,6 @@ import simg3 from '../assets/CreateNFTpage/icons/simg3.webp'
 import simg4 from '../assets/CreateNFTpage/icons/simg4.webp'
 import simg5 from '../assets/CreateNFTpage/icons/simg5.webp'
 
-import downArrow from "../assets/TrendingNFT/icons/downArrow.svg";
 
 
 const CreateNFTpage = () => {
@@ -101,15 +98,14 @@ const CreateNFTpage = () => {
                                         className="flex font-secondary text-para-light items-center gap-2 cursor-pointer justify-center">
                                         <span>
                                             <h6 className='pl-2'>
-                                               Single NFT
+                                                Single NFT
                                             </h6>
                                         </span>
-
-                                        {/* <span><img src={downArrow} alt="" /></span> */}
+                                        <img src={downline} alt="" />
                                     </button>
 
                                     {isOpen && (
-                                        <div className="absolute z-50 max-sm:w-33 w-45 bg-inverted border-2 border-muted rounded-lg shadow-lg ">
+                                        <div className="absolute mt-3 z-50  max-sm:w-33 w-45 bg-inverted border-2 border-muted rounded-lg shadow-lg ">
                                             <ul className="py-2">
                                                 {timeLeft.map((item) => (
                                                     <p key={item} className="font-secondary px-4 py-2 hover:bg-gray-100 cursor-pointer" >
@@ -128,8 +124,13 @@ const CreateNFTpage = () => {
 
                             <div className="flex font-secondary text-para-light items-center gap-2 cursor-pointer">
                                 <h6>Supply</h6>
-                                <div className='border-2 border-boorder  rounded-xl py-2 bg-inverted px-8 cursor-pointer'>
+                                <div className='border-2 border-boorder  rounded-xl py-2 bg-inverted px-4 cursor-pointer flex items-center gap-4'>
                                     <h6> 10</h6>
+                                    <div>
+                                        <img src={downline} alt="" className='rotate-180 size-4' />
+                                        <img src={downline} alt="" className='size-4' />
+                                    </div>
+
                                 </div>
                             </div>
 
