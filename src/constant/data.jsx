@@ -632,3 +632,12 @@ export const CreateNFTPageData = [
     
     { url: pimg7, title: "PIXEL GIRL", descprtion: "Amollis, ultrices augue id, laoreet tellus. Sed vitae fermentum neque. Nunc sed tincidunt enim, sed ultricies nisl. Maecenas ullamcorper nunc metus, sed facilisis dolor cursus eu. Nam sit amet maximus augue.", },
 ]
+
+
+const options = [
+    "tahir",
+    "tahir",
+    "thiar",
+    "tahir",
+    "thiar",
+];

@@ -8,14 +8,35 @@ import addicon from '../assets/CreateNFTpage/images/addicon.webp'
 
 import copyimg from '../assets/CreateNFTpage/images/copyimg.webp'
 import { CreateNFTPageData } from '../constant/data';
+import { useState } from 'react';
 
+import { Modal } from 'antd';
+
+import lineVector from "../assets/Modal/icons/line-vector.svg"
+
+import simg1 from '../assets/CreateNFTpage/icons/simg1.webp'
 
 
 const CreateNFTpage = () => {
+
+    // Ant-Desing Modal
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const showModal = () => {
+        setIsModalOpen(true);
+    };
+    const handleOk = () => {
+        setIsModalOpen(false);
+    };
+    const handleCancel = () => {
+        setIsModalOpen(false);
+    };
+
+
+
     return (
         <>
             <Navbar />
-            <div className='flex justify-center'>
+            <div className='flex justify-center relative z-100'>
                 <div className='container mx-auto  max-sm:px-5 sm:px-12 lg:px-20 pt-10'>
 
                     {/* Hero Section */}
@@ -41,15 +62,21 @@ const CreateNFTpage = () => {
                         </div>
 
                         <div className='w-full max-w-[600px]  mx-auto flex max-md:gap-6 gap-2 justify-between items-center max-sm:flex-col '>
-                            <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer">
 
-                                <select id='select-create-nft' className='w-full py-2 md:py-2.5 px-4 bg-inverted text-para-light font-secondary outline-none rounded-xl cursor-pointer'>
-                                    <option id='opt1' className='bg-inverted  ' value='Single NFT'>Single NFT</option>
-                                    <option id='opt2' className='bg-inverted' value='Collection'>Collection</option>
+                            {/* Single NFT */}
+
+                            <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer py-2">
+
+                                <select className='font-secondary text-para-light px-2 select-main h-full'>
+                                    <option className='text-para-light font-secondary relative top-50'>Single NFT</option>
+                                   
+
                                 </select>
 
                             </div>
 
+
+                            {/* Supply */}
 
                             <div className="flex font-secondary text-para-light items-center gap-2 cursor-pointer">
                                 <h6>Supply</h6>
@@ -59,13 +86,75 @@ const CreateNFTpage = () => {
                             </div>
 
 
-                            <div className=" border-2 font-secondary border-boorder  rounded-xl gap-2 text-para-light cursor-pointer">
 
-                                <button className='flex items-center gap-2 py-2 bg-inverted px-4 cursor-pointer'>
+                            {/* Add Styles */}
+
+                            <div className=" border-2 font-secondary border-boorder  rounded-xl gap-2 text-para-light cursor-pointer">
+                                <button className='flex items-center gap-2 py-2 bg-inverted px-4 cursor-pointer' onClick={showModal}>
                                     <h6>Add Styles</h6>
                                     <img src={addicon} alt="" className='size-5.5 text-para-light' />
                                 </button>
+                            </div>
 
+                            {/* Ant-Desing Modal */}
+
+                            <div className="ant-modal-main absolute">
+                                <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel} className='modal-Styles-cnftp'>
+                                    <div className="flex flex-col items-center gap-2 pt-4">
+                                        <div className="modal-top-section flex flex-col items-center gap-1 pb-2">
+                                            <h3 className="ant-main-text">Select a style</h3>
+                                            <img src={lineVector} alt="" />
+                                        </div>
+
+
+                                        {/* section 2 */}
+                                        <div className="modal-bottom-section flex flex-col gap-2 w-full">
+                                            <div className='w-full flex gap-4'>
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                    <img src={simg1} alt="" />
+                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
+                                                </div>
+
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                    <img src={simg1} alt="" />
+                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        {/* section 3 */}
+                                        <div className="modal-bottom-section flex flex-col gap-2 w-full">
+                                            <div className='w-full flex gap-4'>
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                    <img src={simg1} alt="" />
+                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
+                                                </div>
+
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                    <img src={simg1} alt="" />
+                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        {/* section 4 */}
+                                        <div className="modal-bottom-section flex flex-col gap-2 w-full">
+                                            <div className='w-full flex gap-4'>
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                    <img src={simg1} alt="" />
+                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
+                                                </div>
+
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
+                                                    <img src={simg1} alt="" />
+                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Modal>
                             </div>
                         </div>
 

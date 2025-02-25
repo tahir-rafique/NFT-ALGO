@@ -16,6 +16,7 @@ import ArtistProfileSetting from './pages/ArtistProfileSetting';
 import SellMethodPage from './pages/SellMethodPage';
 import CreateNFT from './pages/CreateNFT';
 import ChooseCollection from './pages/ChooseCollection';
+import CreatCollectionPage from './pages/CreatCollectionPage';
 
 const App = () => {
   return (
@@ -63,7 +64,8 @@ const App = () => {
         <Route path="/create-nft-page" element={<CreateNFTpage />} />
 
 
-
+        {/* Route : Create Collection Page*/}
+        <Route path="/create-collection-page" element={<CreatCollectionPage />} />
 
         {/* Route : Choose Collection */}
         <Route path="/choose-collection" element={<ChooseCollection />} />
