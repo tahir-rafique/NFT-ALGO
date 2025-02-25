@@ -12,7 +12,7 @@
   --breakpoint-3xl: 1700px;
   --color-soldbtn: rgba(253, 253, 253, 0.15);
   --color-refresh: #707070;
-  --color-boorder: #E7E7E7;
+  --color-boorder: #e7e7e7;
 }
 
 @font-face {
@@ -64,4 +64,7 @@
 
 .faq-border {
   border-radius: 20px;
+}
+input {
+  outline: none;
 }

@@ -74,6 +74,7 @@ const Navbar = () => {
                                     <div className="modal-top-section flex flex-col items-center gap-1 pb-2">
                                         <h3 className="ant-main-text">Connect your wallet</h3>
                                         <img src={favicon} alt="" className="size-30" />
+                                        <h4 className="font-bold text-main">Fry Network</h4>
                                         <img src={lineVector} alt="" />
                                     </div>
 
