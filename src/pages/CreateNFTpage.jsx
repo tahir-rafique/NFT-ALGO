@@ -7,14 +7,21 @@ import banner from '../assets/CreateNFTpage/images/createNFTbanner.webp'
 import addicon from '../assets/CreateNFTpage/images/addicon.webp'
 
 import copyimg from '../assets/CreateNFTpage/images/copyimg.webp'
-import { CreateNFTPageData } from '../constant/data';
-import { useState } from 'react';
+import { CreateNFTPageData, timeLeft } from '../constant/data';
+import { useEffect, useRef, useState } from 'react';
 
 import { Modal } from 'antd';
 
 import lineVector from "../assets/Modal/icons/line-vector.svg"
 
+import sicon from '../assets/CreateNFTpage/icons/sicon.webp'
 import simg1 from '../assets/CreateNFTpage/icons/simg1.webp'
+import simg2 from '../assets/CreateNFTpage/icons/simg2.webp'
+import simg3 from '../assets/CreateNFTpage/icons/simg3.webp'
+import simg4 from '../assets/CreateNFTpage/icons/simg4.webp'
+import simg5 from '../assets/CreateNFTpage/icons/simg5.webp'
+
+import downArrow from "../assets/TrendingNFT/icons/downArrow.svg";
 
 
 const CreateNFTpage = () => {
@@ -30,6 +37,27 @@ const CreateNFTpage = () => {
     const handleCancel = () => {
         setIsModalOpen(false);
     };
+
+
+    // Single NFT dropdown
+
+    const [isOpen, setIsOpen] = useState(false);
+    const dropdownRef = useRef(null);
+
+    const toggleDropdown = () => {
+        setIsOpen((isOpen) => !isOpen)
+    };
+
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) { setIsOpen(false) }
+        };
+        document.addEventListener("mousedown", handleClickOutside)
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside)
+        };
+    });
 
 
 
@@ -65,13 +93,33 @@ const CreateNFTpage = () => {
 
                             {/* Single NFT */}
 
-                            <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer py-2">
+                            <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex justify-center items-center py-2">
+                                {/* Dropdown menu */}
+                                <div ref={dropdownRef} className="inline-block " >
+                                    <button
+                                        onClick={toggleDropdown}
+                                        className="flex font-secondary text-para-light items-center gap-2 cursor-pointer justify-center">
+                                        <span>
+                                            <h6 className='pl-2'>
+                                               Single NFT
+                                            </h6>
+                                        </span>
 
-                                <select className='font-secondary text-para-light px-2 select-main h-full'>
-                                    <option className='text-para-light font-secondary relative top-50'>Single NFT</option>
-                                   
+                                        {/* <span><img src={downArrow} alt="" /></span> */}
+                                    </button>
 
-                                </select>
+                                    {isOpen && (
+                                        <div className="absolute z-50 max-sm:w-33 w-45 bg-inverted border-2 border-muted rounded-lg shadow-lg ">
+                                            <ul className="py-2">
+                                                {timeLeft.map((item) => (
+                                                    <p key={item} className="font-secondary px-4 py-2 hover:bg-gray-100 cursor-pointer" >
+                                                        {item}
+                                                    </p>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+                                </div>
 
                             </div>
 
@@ -111,7 +159,7 @@ const CreateNFTpage = () => {
                                         <div className="modal-bottom-section flex flex-col gap-2 w-full">
                                             <div className='w-full flex gap-4'>
                                                 <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
-                                                    <img src={simg1} alt="" />
+                                                    <img src={sicon} alt="" />
                                                     <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
                                                 </div>
 
@@ -127,12 +175,12 @@ const CreateNFTpage = () => {
                                         <div className="modal-bottom-section flex flex-col gap-2 w-full">
                                             <div className='w-full flex gap-4'>
                                                 <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
-                                                    <img src={simg1} alt="" />
+                                                    <img src={simg5} alt="" />
                                                     <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
                                                 </div>
 
                                                 <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
-                                                    <img src={simg1} alt="" />
+                                                    <img src={simg2} alt="" />
                                                     <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
                                                 </div>
                                             </div>
@@ -143,12 +191,12 @@ const CreateNFTpage = () => {
                                         <div className="modal-bottom-section flex flex-col gap-2 w-full">
                                             <div className='w-full flex gap-4'>
                                                 <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
-                                                    <img src={simg1} alt="" />
+                                                    <img src={simg3} alt="" />
                                                     <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
                                                 </div>
 
                                                 <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
-                                                    <img src={simg1} alt="" />
+                                                    <img src={simg4} alt="" />
                                                     <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
                                                 </div>
                                             </div>

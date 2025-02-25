@@ -1,5 +1,5 @@
 .ant-modal-content {
-  width: 340px;
+  width: 350px;
 }
 
 .ant-main-text {
@@ -9,24 +9,26 @@
 }
 
 
-
-.ant-main-body {
-  padding-bottom: 10px;
+.ant-modal-wrap{
+    position: relative;
 }
 
-.ant-modal-footer {
-  display: none;
+/* .ant-modal-wrap .ant-modal {
+    background-color: blue;
+ 
+} */
+
+.ant-main-body{
+    padding-bottom: 10px;
+
 }
 
-/* 2nd modal */
-.ant-modal{
+.ant-modal-footer{
+    display: none;
+}
+
+.modal-Styles-cnftp{
   position: relative;
-}
-
-.modal-Styles-cnftp {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translate(-50%);
-  background-color: rebeccapurple;
+  top:10px;
+ 
 }
