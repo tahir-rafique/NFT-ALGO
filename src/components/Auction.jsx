@@ -11,7 +11,7 @@ const RecentSold = () => {
         <div className="flex justify-center">
             <div className="container mx-auto px-5 sm:px-12 lg:px-20 py-10 ">
 
-                <div className="flex flex-col max-sm:items-center gap-4 lg:gap-10">
+                <div className="flex flex-col max-sm:items-center gap-6 lg:gap-14">
                     <h2 className="">Auction </h2>
 
 

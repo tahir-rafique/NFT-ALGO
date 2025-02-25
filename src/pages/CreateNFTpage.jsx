@@ -160,7 +160,7 @@ const CreateNFTpage = () => {
                                         <div className="modal-bottom-section flex flex-col gap-2 w-full">
                                             <div className='w-full flex gap-4'>
                                                 <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 '>
-                                                    <img src={sicon} alt="" />
+                                                    <img src={sicon} alt="" className='size-30' />
                                                     <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md'>Cartoon</button>
                                                 </div>
 

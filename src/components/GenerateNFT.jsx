@@ -20,8 +20,8 @@ const GenerateNFT = () => {
                     {/* main content */}
                     <h2 className="text-center uppercase max-lg:leading-none">Turn your imagination <br /> into digital Asset </h2>
 
-                    <div className="max-lg:py-10 py-64 lg:py-84 relative w-full flex justify-center">
-                        <div className="mx-auto rounded-xl flex justify-between items-center gap-4 px-4  py-5 bg-inverted drop-shadow-xl relative z-40 w-full max-w-[800px]">
+                    <div className="max-lg:py-10 py-64 lg:py-84 relative w-full flex justify-center p-0.5">
+                        <div className="mx-auto rounded-xl flex justify-between items-center gap-4 px-4  py-5 bg-inverted drop-shadow-md relative z-40 w-full max-w-[800px]">
                             <input className="font-secondary text-light w-full max-w-[600px] outline-none " placeholder="Fantasy Creature holding......" />
                             <a href="#" className="absolute navbtn-size text-small navbtn-border font-medium background-grad text-inverted px-4 py-2 shrink-0 cursor-pointer flex gap-1 right-4 z-50 ">
                                 <h6>Generate</h6>
@@ -29,7 +29,7 @@ const GenerateNFT = () => {
                             </a>
                         </div>
                         {/* elicp */}
-                        <img src={ellipce} alt="" className="absolute top-30 left-32 z-1 size-120 max-lg:hidden" />
+                        <img src={ellipce} alt="" className="absolute  left-[50%] translate-[-50%] top-[50%] z-1 size-120 max-lg:hidden" />
                     </div>
 
                     {/* moneky skatboard */}
@@ -67,7 +67,7 @@ const GenerateNFT = () => {
                 </div>
             </div>
 
-            <img src={leftGrid} alt="" className="left-0 absolute z-1" />
+            <img src={leftGrid} alt="" className="left-0 absolute z-1 max-md:hidden" />
         </div>
 
 
