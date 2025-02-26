@@ -21,10 +21,10 @@ const TopCollection = () => {
 
           </div>
 
-          <div className="flex max-sm:justify-center">
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 w-fit">
+          <div className="flex max-md:justify-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 p-0.5">
               {TopCollectionData.map((item, index) => (
-                <div key={index} className="border-muted border-3 rounded-2xl shadow-lg p-4">
+                <div key={index} className="border-muted border-3 rounded-2xl drop-shadow-md p-4 bg-inverted ">
                   {/* card  */}
                   <div className=" rounded-xl p-2 bg-muted">
                     <div className="grid grid-cols-2 gap-2 p-2">
