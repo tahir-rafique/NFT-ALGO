@@ -2,26 +2,29 @@ import { timeLeft, TrendingNFTData } from "../constant/data.jsx";
 import logoprice from "../assets/FeatureCollection/images/logoprice.webp";
 import downArrow from "../assets/TrendingNFT/icons/downArrow.svg";
 import { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const TrendingNFT = () => {
 
-    const [isOpen, setIsOpen] = useState(false);
-    const dropdownRef = useRef(null);
+  const navigate = useNavigate()
 
-    const toggleDropdown = () => {
-      setIsOpen((isOpen) => !isOpen)
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const toggleDropdown = () => {
+    setIsOpen((isOpen) => !isOpen)
+  };
+
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) { setIsOpen(false) }
     };
-
-    
-    useEffect(() => {
-      const handleClickOutside = (event) => {
-        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) { setIsOpen(false) }
-      };
-      document.addEventListener("mousedown", handleClickOutside)
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside)
-      };
-    });
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    };
+  });
 
 
   return (
@@ -55,7 +58,7 @@ const TrendingNFT = () => {
               </div>
             )}
           </div>
-          
+
         </div>
 
         {/* Trending NFT */}
@@ -63,8 +66,10 @@ const TrendingNFT = () => {
           <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 xl:grid-cols-4 gap-5'>
             {
               TrendingNFTData.map((item, index) => (
-                <div key={index} className='p-1 h-full'>
-                  <div className="pt-6 px-3 max-sm:w-[300px] h-full drop-shadow-md  max-sm:pb-5 max-md:pb-1 max-lg:pb-4 max-xl:pb-2 xl:pb-1  2xl:pb-4"
+                <div key={index} className='p-1 h-full '>
+                  <div
+                    onClick={() => { navigate('top-collection-pixacio') }}
+                    className="pt-6 px-3 max-sm:w-[300px] h-full drop-shadow-md  max-sm:pb-5 max-md:pb-1 max-lg:pb-4 max-xl:pb-2 xl:pb-1  2xl:pb-4 cursor-pointer"
                     style={{
                       backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",

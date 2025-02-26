@@ -100,7 +100,7 @@ export default function TopCollectionPixacio() {
 
 
                     {/* Card-WraperS */}
-                    <div className=" flex flex-col max-sm:items-center items-end  gap-4 lg:gap-10 pt-50">
+                    <div className=" flex flex-col max-sm:items-center items-end  gap-4 lg:gap-10 pt-5 lg:pt-50">
                         <div className="rounded-2xl flex  items-center gap-4 px-8  py-4 border-2 border-muted drop-shadow-xl relative z-50 w-full max-w-[650px]">
 
                             <img src={search} alt="" />

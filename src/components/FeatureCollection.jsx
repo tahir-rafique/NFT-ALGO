@@ -11,7 +11,7 @@ import Slider from "react-slick";
 
 
 const PrevArrow = ({ onClick }) => (
-  <button onClick={onClick} style={{ backgroundImage: `url(${reactangle})`, backgroundRepeat: "no-repeat" }}>
+  <button className="cursor-pointer" onClick={onClick} style={{ backgroundImage: `url(${reactangle})`, backgroundRepeat: "no-repeat" }}>
 
     <img src={arrowDown} alt="" className="w-fit h-5 overflow-hidden absolute left-50% translate-[-50%]" />
 
@@ -19,7 +19,7 @@ const PrevArrow = ({ onClick }) => (
 );
 
 const NextArrow = ({ onClick }) => (
-  <button onClick={onClick} style={{ backgroundImage: `url(${reactangle})`, backgroundRepeat: "no-repeat" }} >
+  <button className="cursor-pointer" onClick={onClick} style={{ backgroundImage: `url(${reactangle})`, backgroundRepeat: "no-repeat" }} >
     <img src={arrowUp} alt="" className="w-fit h-5 overflow-hidden absolute left-50% translate-[-50%]" />
   </button>
 );
@@ -107,8 +107,10 @@ const FeatureCollection = () => {
             <Slider {...settings}>
               {FeatureCollectionData.map((item, index) => (
                 <div className="pt-5" key={index} >
-                  <div className="flex max-md:justify-center gap-10 Sliderwaper drop-shadow-md  flex-wrap">
-                    <div style={{
+                  <div className="flex max-md:justify-center gap-10 Sliderwaper drop-shadow-md  flex-wrap ">
+                    <div 
+                    className="cursor-pointer"
+                    style={{
                       backgroundImage: `url(${item.frame})`,
                       backgroundRepeat: 'no-repeat',
                       backgroundSize: 'cover',
