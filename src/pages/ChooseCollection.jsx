@@ -26,7 +26,7 @@ function ChooseCollection() {
                         <div className="lg:max-w-[600px] min-w-[120px] flex flex-col gap-10 max-lg:items-center max-lg:w-full p-0.5">
 
                             <div className="bg-inverted  px-4 rounded-2xl drop-shadow-md  py-2 items-center" >
-                                <Link to="/" className="flex gap-2">
+                                <Link to="/create-nft" className="flex gap-2">
                                     <img src={backdooricon} alt="" />
                                     <h5 className="font-secondary"> Back</h5>
                                 </Link>

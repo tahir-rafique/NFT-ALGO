@@ -3,9 +3,16 @@ import Navbar from "../components/Navbar"
 import { Link } from "react-router-dom"
 import backdooricon from '../assets/SellMethod/icons/bdicon.webp'
 import personIMG from '../assets/SellMethod/images/personImage.webp'
+import { useState } from "react"
 
 
 const CreateNFTCollection = () => {
+
+    const [file, setFile] = useState(personIMG);
+    function handleImage(e) {
+        setFile(URL.createObjectURL(e.target.files[0]));
+    }
+
     return (
         <>
             <Navbar />
@@ -24,7 +31,14 @@ const CreateNFTCollection = () => {
                                 </Link>
                             </div>
 
-                            <img src={personIMG} alt="" className=" drop-shadow-md border-12 border-inverted rounded-4xl w-[300px] mt-2" />
+                            <img src={file} alt="" className=" drop-shadow-md border-12 border-inverted rounded-4xl h-[250px] w-[320px] mt-2" />
+
+                            <div className="border-2 border-boorder bg-inverted w-fit px-4 rounded-2xl py-2 items-center" >
+
+                                <label htmlFor="choose-img" className="font-secondary" >Choose file </label>
+                                <input type="file" id="choose-img" onChange={handleImage} style={{ display: 'none' }} />
+
+                            </div>
                         </div>
 
                         {/* Right div */}
