@@ -39,7 +39,7 @@ const App = () => {
         <Route path="/top-Collection-page" element={<TopCollectionPage />} />
 
 
-        {/* Route: Pixacio Page */}
+        {/* Route: Top Collection Pixacio  */}
         <Route path="/top-collection-pixacio" element={<TopCollectionPixacio />} />
 
 
@@ -67,8 +67,8 @@ const App = () => {
         {/* Route : Create Collection Page*/}
         <Route path="/create-collection-page" element={<CreatCollectionPage />} />
 
-        {/* Route : Choose Collection */}
-        <Route path="/choose-collection" element={<ChooseCollection />} />
+        {/* Route : Choose Collection / Choose Existing Collection */}
+        <Route path="/choose-existing-collection" element={<ChooseCollection />} />
 
         {/* Route : Create NFT Collection */}
         <Route path="/create-nft-collection" element={<CreateNFTCollection />} />

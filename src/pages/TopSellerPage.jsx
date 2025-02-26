@@ -89,7 +89,7 @@ const TopSellerPage = () => {
                         </div>
 
                         {/* Category List Name */}
-                        <div className="rounded-[8px] border-2 border-boorder mt-5 gap-1 grid grid-cols-7 py-4">
+                        <div className="rounded-[8px] border-2 border-boorder mt-5 gap-1 grid grid-cols-7 py-4 ">
                             <div className=" col-span-2 pl-5  md:pl-10 font-secondary text-secondary font-semibold">
                                 <h4 className="text-sellerpage">Collections</h4>
                             </div>
@@ -138,7 +138,7 @@ const TopSellerPage = () => {
                                 </div>
 
                                 {/*  Follower*/}
-                                <div className="flex items-center text-sellerpage ">
+                                <div className="flex items-center w-fit">
                                     <p className="font-medium text-sellerpage">
                                         {item.follower}
                                     </p>
@@ -156,7 +156,7 @@ const TopSellerPage = () => {
                                 </div>
 
                                 {/*  Floor price*/}
-                                <div className="flex items-center gap-2 ">
+                                <div className="flex items-center gap-1 md:gap-2 ">
                                     <img src={logo} alt="" />
                                     <p className="font-medium text-sellerpage">
                                         {item.floorprice}
@@ -165,7 +165,7 @@ const TopSellerPage = () => {
                                 </div>
 
                                 {/* items */}
-                                <div className="flex items-center ">
+                                <div className="flex items-center">
                                     <p className="font-medium text-sellerpage">
                                         {item.items}
                                     </p>

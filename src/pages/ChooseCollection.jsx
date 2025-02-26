@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar"
 import backdooricon from '../assets/SellMethod/icons/bdicon.webp'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import artImage from '../assets/CreateNFT/icons/artImage.webp'
 import artimg2 from '../assets/CreateNFT/icons/art2.webp'
 import artimg3 from '../assets/CreateNFT/icons/art3.webp'
@@ -10,6 +10,8 @@ import artimg4 from '../assets/CreateNFT/icons/art4.webp'
 
 
 function ChooseCollection() {
+
+    const navigate = useNavigate('/create-nft')
     return (
         <>
             <Navbar />
@@ -117,7 +119,7 @@ function ChooseCollection() {
 
                                     {/* Next button */}
                                     <div className="pt-10 flex justify-end font-light font-secondary pb-10 cursor-pointer ">
-                                        <button className="background-grad text-inverted px-4 py-2 capitalize">
+                                        <button className="background-grad text-inverted px-4 py-2 capitalize cursor-pointer" onClick={()=>navigate('/create-nft')}>
                                             <p className="font-medium">
                                                 Next
                                             </p>

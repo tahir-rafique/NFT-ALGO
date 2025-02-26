@@ -103,9 +103,14 @@ const CreateNFT = () => {
                                                 <h5 className="font-medium">Choose Collection</h5>
 
                                                 <div className="cursor-pointer">
-                                                    <label htmlFor="choosePreviousFile" className="cursor-pointer"><h6 className="underline text-para-light">Choose From Existed </h6></label>
-                                                    <input type="file" name="choosePreviousFile" id="choosePreviousFile" className="absolute opacity-0" />
-                                                    <a href="#" className=""> </a>
+
+
+                                                    <a href="/choose-existing-collection" className="">
+                                                        <h6 className="underline text-para-light">Choose From Existed </h6>
+
+                                                    </a>
+
+
                                                 </div>
 
                                             </div>
@@ -122,7 +127,7 @@ const CreateNFT = () => {
                                                 </div>
 
                                                 <div>
-                                                    <a href="/create-collection-page">
+                                                    <a href="/create-nft-collection">
                                                         <h6>Create new collection</h6>
                                                         <p className="text-para-light">Type to create</p>
                                                     </a>

@@ -12,10 +12,6 @@
   position: relative;
 }
 
-/* .ant-modal-wrap .ant-modal {
-    background-color: blue;
- 
-} */
 
 .ant-main-body {
   padding-bottom: 10px;
@@ -31,6 +27,7 @@
 }
 
 .ant-modal-content {
+  /* background-color: red; */
   position: fixed;
   left: 50%;
   transform: translate(-50%);
