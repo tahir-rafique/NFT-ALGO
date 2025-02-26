@@ -11,7 +11,7 @@ const RecentSold = () => {
             {
               RecentSoldData.map((item, index) => (
                 <div key={index} className='p-1  h-full'>
-                  <div className="pt-6 px-3 max-sm:w-[300px] h-full drop-shadow-md  max-sm:pb-5 max-md:pb-1 max-lg:pb-4 max-xl:pb-2 xl:pb-1  2xl:pb-4"
+                  <div className="pt-6 px-3 max-sm:w-[300px] h-full drop-shadow-md  max-sm:pb-5 max-md:pb-1 max-lg:pb-4 max-xl:pb-2 xl:pb-1  2xl:pb-4 cursor-pointer"
                     style={{
                       backgroundImage: `url(${item.frame})`, backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",
