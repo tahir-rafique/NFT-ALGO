@@ -3,8 +3,22 @@ import profileBanner from '../assets/ArtistProfilePageSetting/images/pb.webp'
 import { Link } from "react-router-dom";
 import profileImage from '../assets/ArtistProfilePageSetting/images/pi.webp'
 import ButtonMain from "../shared/ButtonMain";
+import { useState } from "react";
 
 const ArtistProfileSetting = () => {
+
+    const [imageFile, setImageFile] = useState(profileImage);
+    const [bannerFile, setBannerFile] = useState(profileBanner);
+
+    function handleProfileImage(e) {
+        setImageFile(URL.createObjectURL(e.target.files[0]));
+    }
+    function handleBannerImage(e) {
+        setBannerFile(URL.createObjectURL(e.target.files[0]));
+    }
+
+
+
     return (
         <>
 
@@ -20,20 +34,24 @@ const ArtistProfileSetting = () => {
 
                     {/*  user images*/}
                     <div className="py-5 w-full relative">
-                        <img src={profileBanner} alt="" className="flex justify-center w-full" />
 
                         {/* upload banner  */}
+                        <img src={bannerFile} alt="" className="flex justify-center w-full h-[330px] object-cover rounded-2xl" />
+
                         <div className="py-18 flex justify-center absolute top-[40%] left-[50%] translate-[-50%]">
-                            <input type="file" className=" absolute z-100" style={{ width: '300px', color: 'transparent' }} />
+                            <input type="file" className=" absolute z-100" style={{ width: '300px', color: 'transparent' }}
+                                onChange={handleBannerImage} />
                             <p className="relative z-10 border-2 border-boorder px-4 py-3 rounded-lg bg-inverted">Upload Banner</p>
                         </div>
 
-                        <img src={profileImage} alt="" className="flex justify-center absolute left-[50%]  translate-[-50%]" />
+                        <img src={imageFile} alt="" className="flex justify-center absolute left-[50%]  translate-[-50%] w-[140px] rounded-full" />
 
 
                         {/* upload proifle image    */}
                         <div className="py-18 flex justify-center">
-                            <input type="file" className=" absolute z-100" style={{ width: '300px', color: 'transparent' }} />
+                            <input type="file"
+                                onChange={handleProfileImage}
+                                className=" absolute z-100" style={{ width: '300px', color: 'transparent' }} />
                             <p className="relative z-10 border-2 border-boorder px-4 py-3 rounded-lg bg-inverted">Upload Profile</p>
                         </div>
                     </div>

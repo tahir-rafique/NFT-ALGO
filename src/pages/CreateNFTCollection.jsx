@@ -36,6 +36,7 @@ const CreateNFTCollection = () => {
                             <div className="border-2 border-boorder bg-inverted w-fit px-4 rounded-2xl py-2 items-center" >
 
                                 <label htmlFor="choose-img" className="font-secondary" >Choose file </label>
+                                
                                 <input type="file" id="choose-img" onChange={handleImage} style={{ display: 'none' }} />
 
                             </div>
