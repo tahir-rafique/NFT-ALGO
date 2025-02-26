@@ -46,7 +46,7 @@ const CreateNFTCollection = () => {
 
                             {/*  Single NFT */}
                             <div className="bg-inverted w-fit px-4 rounded-2xl border-3 border-boorder  py-2 items-center" >
-                                <Link to="/">
+                                <Link to="/create-collection-page">
                                     <h5 className="font-secondary text-para-light"> Collection</h5>
                                 </Link>
                             </div>

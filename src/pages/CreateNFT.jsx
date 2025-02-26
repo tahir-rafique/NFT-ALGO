@@ -121,17 +121,17 @@ const CreateNFT = () => {
                                         <div className="flex gap-6">
 
                                             {/* Choose div one  */}
-                                            <div className="bg-inverted w-[50%]  border-3 border-boorder rounded-xl flex py-2 gap-2 items-center pl-2">
-                                                <div className="bg-muted p-4 rounded-xl">
-                                                    <img src={addIcon} alt="" />
-                                                </div>
+                                            <div className="bg-inverted w-[50%]  border-3 border-boorder rounded-xl  py-2 pl-2">
+                                                <a href="/create-nft-collection " className="flex items-center gap-2">
+                                                    <div className="bg-muted p-4 rounded-xl">
+                                                        <img src={addIcon} alt="" />
+                                                    </div>
 
-                                                <div>
-                                                    <a href="/create-nft-collection">
+                                                    <div>
                                                         <h6>Create new collection</h6>
                                                         <p className="text-para-light">Type to create</p>
-                                                    </a>
-                                                </div>
+                                                    </div>
+                                                </a>
                                             </div>
 
 
