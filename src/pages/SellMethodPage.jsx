@@ -17,7 +17,9 @@ const SellMethodPage = () => {
 
 
     const [isOpenDuration, setIsOpenDuration] = useState(false);
+
     const [isOpenListing, setIsOpenListing] = useState(false);
+
     const dropdownRefListing = useRef(null);
     const dropdownRefDuration = useRef(null);
 
@@ -44,6 +46,9 @@ const SellMethodPage = () => {
         };
     }, []);
 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
 
     return (
         <>
@@ -55,7 +60,7 @@ const SellMethodPage = () => {
                     <div className="bg-inverted w-fit px-4 rounded-md drop-shadow-xl py-2 items-center" >
                         <Link to="/" className="flex gap-2">
                             <img src={backdooricon} alt="" />
-                            <h5> Back</h5>
+                            <h5 className="font-secondary"> Back</h5>
                         </Link>
                     </div>
 
@@ -63,12 +68,17 @@ const SellMethodPage = () => {
                     <div className="flex gap-10 py-5 max-lg:flex-col">
 
                         {/* left div*/}
+
                         <div className="lg:max-w-[400px] flex flex-col gap-4 max-lg:items-center max-lg:w-full">
                             <img src={personIMG} alt="" className=" drop-shadow-md border-12 border-inverted rounded-4xl w-[300px]" />
                             <h4 className="font-secondary capitalize font-medium text-secondary">Preview your item</h4>
                         </div>
 
                         {/* Right div */}
+
+                        <form action="" onSubmit={handleSubmit}>
+
+                        </form>
                         <div className="bg-inverted rounded-xl drop-shadow-xl w-full px-6 md:px-24 flex flex-col gap-4">
                             <h2 className="uppercase text-center pt-5">Royal Samurai</h2>
 
@@ -86,7 +96,7 @@ const SellMethodPage = () => {
                                         </div>
 
                                         {/* tiked */}
-                                        <img src={ticked} alt=""  className="absolute top-2 right-2 "/>
+                                        <img src={ticked} alt="" className="absolute top-2 right-2 " />
 
                                     </div>
 
@@ -121,11 +131,12 @@ const SellMethodPage = () => {
                             </div>
 
 
-                            {/* date & time condictional rendring karnii hia */}
-                            <div className="time-and-date-wraper flex flex-col gap-2">
+
+                            {/* duration & listing condictional rendring karnii hia */}
+                            <div className="duration-and-listing-wraper flex flex-col gap-2">
                                 {/* Listing */}
                                 {/* Dropdown menu */}
-                                <h5 className="font-secondary font-medium capitalize">schedule listing</h5>
+                                <h5 className="listing-wraper font-secondary font-medium capitalize">schedule listing</h5>
                                 <div ref={dropdownRefListing} className=" w-full" >
                                     <button
                                         onClick={toggleDropdownListing}
@@ -157,9 +168,7 @@ const SellMethodPage = () => {
 
 
                                 {/* Duration */}
-                                {/* Dropdown menu */}
-
-                                <h5 className="font-secondary font-medium">Duration</h5>
+                                <h5 className="duration-wraper font-secondary font-medium">Duration</h5>
                                 <div ref={dropdownRefDuration} className=" w-full" >
                                     <button
                                         onClick={toggleDropdownDuration}
@@ -170,8 +179,6 @@ const SellMethodPage = () => {
                                         </span>
 
                                         <img src={downline} alt="" />
-
-
 
                                     </button>
 

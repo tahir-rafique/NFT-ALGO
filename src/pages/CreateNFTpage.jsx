@@ -93,7 +93,7 @@ const CreateNFTpage = () => {
 
                             {/* Single NFT */}
 
-                            <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex justify-center items-center py-2">
+                            <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex justify-center items-center py-2 px-2">
                                 {/* Dropdown menu */}
                                 <div ref={dropdownRef} className="inline-block " >
                                     <button
@@ -124,7 +124,7 @@ const CreateNFTpage = () => {
 
                             <div className="flex font-secondary text-para-light items-center gap-2 cursor-pointer">
                                 <h6>Supply</h6>
-                                <div className='border-2 border-boorder  rounded-xl py-2 bg-inverted px-4 cursor-pointer flex items-center gap-4'>
+                                <div className='border-2 border-boorder  rounded-xl py-1 bg-inverted px-4 cursor-pointer flex items-center gap-4'>
                                     <h6> {count}</h6>
                                     <div>
                                         <img src={downline} alt="" className='rotate-180 size-4' onClick={() => { if (count < 25) { setcount(count + 1) } }} />

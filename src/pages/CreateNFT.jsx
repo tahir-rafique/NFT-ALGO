@@ -58,7 +58,7 @@ const CreateNFT = () => {
 
                             {/*  Single NFT */}
                             <div className="bg-inverted w-fit px-4 rounded-2xl border-3 border-boorder  py-2 items-center" >
-                                <Link to="/">
+                                <Link to="/create-single-nft">
                                     <h5 className="font-secondary text-para-light"> Single NFT</h5>
                                 </Link>
                             </div>

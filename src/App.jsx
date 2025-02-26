@@ -18,6 +18,7 @@ import CreateNFT from './pages/CreateNFT';
 import ChooseCollection from './pages/ChooseCollection';
 import CreatCollectionPage from './pages/CreatCollectionPage';
 import CreateNFTCollection from './pages/CreateNFTCollection';
+import SingleNFT from './pages/SingleNFT';
 
 const App = () => {
   return (
@@ -66,6 +67,10 @@ const App = () => {
 
         {/* Route : Create Collection Page*/}
         <Route path="/create-collection-page" element={<CreatCollectionPage />} />
+
+        {/* Route: Single NFT / Create NFT */}
+        <Route path="/create-single-nft" element={<SingleNFT />} />
+
 
         {/* Route : Choose Collection / Choose Existing Collection */}
         <Route path="/choose-existing-collection" element={<ChooseCollection />} />
