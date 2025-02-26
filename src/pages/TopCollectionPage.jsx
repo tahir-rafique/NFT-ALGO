@@ -42,7 +42,7 @@ const TopCollectionPage = () => {
                         <div className="flex max-md:justify-center">
                             <div className="grid max-sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 w-fit">
                                 {TopCollectionPageData.map((item, index) => (
-                                    <div key={index} className="border-muted border-3 rounded-2xl shadow-lg p-4 relative">
+                                    <div key={index} className="border-muted border-3 rounded-2xl bg-inverted p-4 relative">
                                         {/* person */}
                                         <div className="flex gap-2 items-center py-2">
                                             <div className="">

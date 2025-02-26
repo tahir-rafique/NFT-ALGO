@@ -19,6 +19,7 @@ import ChooseCollection from './pages/ChooseCollection';
 import CreatCollectionPage from './pages/CreatCollectionPage';
 import CreateNFTCollection from './pages/CreateNFTCollection';
 import SingleNFT from './pages/SingleNFT';
+import ArtistProfile from './pages/ArtistProfile';
 
 const App = () => {
   return (
@@ -79,6 +80,11 @@ const App = () => {
         <Route path="/create-nft-collection" element={<CreateNFTCollection />} />
 
 
+
+        {/* Artist */}
+
+        {/* Route: Artist Profile  */}
+        <Route path="/artist-profile" element={<ArtistProfile />} />
 
         {/* Route: Artist Profile Page */}
         <Route path="/artist-profile-page" element={<ArtistProfilePage />} />
