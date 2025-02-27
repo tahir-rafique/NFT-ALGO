@@ -79,25 +79,25 @@ const Navbar = () => {
 
                                     {/* Wallets */}
                                     <div className="modal-bottom-section flex flex-col gap-2">
-                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px]">
+                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer ">
                                             <img src={logo1} alt="" />
                                             <p className="text-para-light font-light">Para</p>
                                         </div>
 
-                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px]">
+                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer">
                                             <img src={logo2} alt="" />
                                             <p className="text-para-light font-light ">Defly</p>
 
-                                        </div>
+                                        </div> 
 
 
-                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px]">
+                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer">
                                             <img src={logo3} alt="" />
                                             <p className="text-para-light font-light">Daffi</p>
 
                                         </div>
 
-                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px]">
+                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer">
                                             <img src={logo4} alt="" />
                                             <p className="text-para-light font-light">WalletConnect</p>
 
