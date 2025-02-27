@@ -88,7 +88,7 @@ const Navbar = () => {
                                             <img src={logo2} alt="" />
                                             <p className="text-para-light font-light ">Defly</p>
 
-                                        </div> 
+                                        </div>
 
 
                                         <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer">
@@ -121,7 +121,9 @@ const Navbar = () => {
                     {menuOpen && (
                         <div className="lg:hidden fixed bg-inverted  py-5 px-10 flex flex-col gap-8 z-100 navMobile-anime h-[100%] top-0 w-[270px] left-0 bottom-0 transition-all transition-discrete delay-1000">
                             <div className="flex gap-1 items-center">
-                                <img src={Navlogo} alt="logo" className="max-lg:size-16" />
+                                <a href="/">
+                                    <img src={Navlogo} alt="logo" className="max-lg:size-16" />
+                                </a>
                             </div>
                             <div className="flex flex-col gap-3">
                                 <div className="flex flex-col gap-3">
