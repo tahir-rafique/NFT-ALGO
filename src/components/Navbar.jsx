@@ -119,7 +119,7 @@ const Navbar = () => {
 
                     {/* Navbar Mobile */}
                     {menuOpen && (
-                        <div className="lg:hidden fixed bg-inverted  py-5 px-10 flex flex-col gap-8 z-1000 navMobile-anime h-[100%] top-0 w-[270px] left-0 bottom-0 transition-all transition-discrete delay-1000">
+                        <div className="lg:hidden fixed bg-inverted  py-5 px-10 flex flex-col gap-8 z-100 navMobile-anime h-[100%] top-0 w-[270px] left-0 bottom-0 transition-all transition-discrete delay-1000">
                             <div className="flex gap-1 items-center">
                                 <img src={Navlogo} alt="logo" className="max-lg:size-16" />
                             </div>

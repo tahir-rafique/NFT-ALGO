@@ -9,12 +9,13 @@
 }
 
 .ant-modal-wrap {
+  /* background-color: red; */
   position: relative;
 }
 
-
 .ant-main-body {
   padding-bottom: 10px;
+  background-color: red;
 }
 
 .ant-modal-footer {

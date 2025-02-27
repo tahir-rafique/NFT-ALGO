@@ -64,7 +64,7 @@ const CreateNFTpage = () => {
     return (
         <>
             <Navbar />
-            <div className='flex justify-center relative z-100'>
+            <div className='flex justify-center relative z-50'>
                 <div className='container mx-auto  max-sm:px-5 sm:px-12 lg:px-20 pt-10'>
 
                     {/* Hero Section */}
