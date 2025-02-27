@@ -174,7 +174,6 @@ const CreateNFT = () => {
 
 
                                             {/* Ant-Desing Modal */}
-
                                             <div className="ant-modal-main absolute">
                                                 <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel} className='modal-Styles-cnftp'>
                                                     <div className="flex flex-col items-center gap-2 pt-4">
