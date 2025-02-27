@@ -1,4 +1,4 @@
-import Navlogo from "../assets/Navbar/navlogo.webp"
+import Navlogo from "../assets/Navbar/logo.svg"
 import favicon from "../assets/Navbar/favicon.svg"
 import lineVector from "../assets/Modal/icons/line-vector.svg"
 import { Menu, X } from "lucide-react";
