@@ -11,6 +11,7 @@ import g8 from "../assets/GenerateNFT/images/g8.webp"
 import ellipce from '../assets/GenerateNFT/images/generateCenterEllicpe.webp'
 
 import leftGrid from "../assets/GenerateNFT/images/leftGridgenerate.webp"
+import vector from '../assets/GenerateNFT/icons/vectorimg.webp'
 
 const GenerateNFT = () => {
     return (
@@ -32,14 +33,21 @@ const GenerateNFT = () => {
                         <img src={ellipce} alt="" className="absolute  left-[50%] translate-[-50%] top-[50%] z-1 size-120 max-lg:hidden" />
                     </div>
 
+                    {/* Vectors Image */}
+
+                    <img src={vector} alt="" className="absolute top-60" />
+
                     {/* moneky skatboard */}
                     <img src={g1} alt="" className="max-lg:hidden absolute top-40 left-30 z-10" />
+
                     {/* eagale orange */}
 
                     <img src={g2} alt="" className="max-lg:hidden  absolute top-145  left-0 z-10" />
+
+
                     {/* Gril */}
 
-                    <img src={g3} alt="" className="max-lg:hidden absolute top-170  left-130 z-10" />
+                    <img src={g3} alt="" className="max-lg:hidden absolute top-170  left-70 z-10" />
 
                     {/* rbg Cat */}
 
@@ -54,10 +62,9 @@ const GenerateNFT = () => {
 
                     <img src={g6} alt="" className="max-lg:hidden absolute top-40  right-85 z-10" />
 
-
                     {/*  eagel purple */}
 
-                    <img src={g7} alt="" className="max-lg:hidden absolute bottom-25  right-80 z-9" />
+                    <img src={g7} alt="" className="max-lg:hidden absolute bottom-15  right-60 z-9" />
 
                     {/*  cartoon */}
 

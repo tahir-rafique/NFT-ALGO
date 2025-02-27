@@ -48,7 +48,7 @@ const TopCollection = () => {
                       <img src={item.person} alt="" />
                     </div>
                     <div>
-                      <h6 className="font-secondary font-bold">{item.name}</h6>
+                      <h6 className="font-secondary font-bold uppercase">{item.name}</h6>
                       <p className="text-para-light">{item.owner}</p>
                     </div>
                   </div>
