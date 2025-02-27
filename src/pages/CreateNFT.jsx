@@ -105,10 +105,12 @@ const CreateNFT = () => {
                                                 <div className="cursor-pointer">
 
 
-                                                    <a href="/choose-existing-collection" className="">
+                                               
+                                                    
+                                                    <Link to='/choose-existing-collection'>
                                                         <h6 className="underline text-para-light">Choose From Existed </h6>
-
-                                                    </a>
+                                                    
+                                                    </Link>
 
 
                                                 </div>
@@ -160,7 +162,7 @@ const CreateNFT = () => {
 
                                         {/* Edit input */}
                                         <div>
-                                            {/* <input type="text" placeholder="hello" className="bg-red-700 w-full" /> */}
+                                            
                                         </div>
 
                                         <hr className="my-5 text-boorder" />
