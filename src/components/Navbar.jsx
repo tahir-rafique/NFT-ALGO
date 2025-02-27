@@ -47,6 +47,7 @@ const Navbar = () => {
                     <div className="flex justify-between items-center relative z-100">
                         <a href="/" className="cursor-pointer">
                             <img src={Navlogo} alt="" className="max-lg:size-14 cursor-pointer" />
+                            
                         </a>
                         <div className="hidden lg:flex sm:gap-4 lg:gap-8">
                             <h6 className="">
@@ -73,7 +74,7 @@ const Navbar = () => {
                                     <div className="modal-top-section flex flex-col items-center gap-1 pb-2">
                                         <h3 className="ant-main-text">Connect your wallet</h3>
                                         <img src={favicon} alt="" className="size-30" />
-                                        <h4 className="font-bold text-main">Fry Network</h4>
+                                        <h4 className="font-bold text-main">Fry Networks</h4>
                                         <img src={lineVector} alt="" />
                                     </div>
 
@@ -81,7 +82,7 @@ const Navbar = () => {
                                     <div className="modal-bottom-section flex flex-col gap-2">
                                         <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer ">
                                             <img src={logo1} alt="" />
-                                            <p className="text-para-light font-light">Para</p>
+                                            <p className="text-para-light font-light">Pera</p>
                                         </div>
 
                                         <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer">
