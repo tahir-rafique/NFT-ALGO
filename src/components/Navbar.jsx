@@ -17,7 +17,6 @@ import { Modal } from 'antd';
 
 const Navbar = () => {
     const [menuOpen, setmenuOpen] = useState(false);
-
     const toggleNavbar = () => {
         setmenuOpen(!menuOpen);
     };
@@ -78,26 +77,30 @@ const Navbar = () => {
                                         <img src={lineVector} alt="" />
                                     </div>
 
+                                    {/* Wallets */}
                                     <div className="modal-bottom-section flex flex-col gap-2">
-                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md">
+                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px]">
                                             <img src={logo1} alt="" />
-                                            <input type="text" name="" id="" placeholder="Pera" />
+                                            <p className="text-para-light font-light">Para</p>
                                         </div>
 
-                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md">
+                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px]">
                                             <img src={logo2} alt="" />
-                                            <input type="text" name="" id="" placeholder="Defly" />
+                                            <p className="text-para-light font-light ">Defly</p>
+
                                         </div>
 
 
-                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md">
+                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px]">
                                             <img src={logo3} alt="" />
-                                            <input type="text" name="" id="" placeholder="Daffi" />
+                                            <p className="text-para-light font-light">Daffi</p>
+
                                         </div>
 
-                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md">
+                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px]">
                                             <img src={logo4} alt="" />
-                                            <input type="text" name="" id="" placeholder="WalletConnect" />
+                                            <p className="text-para-light font-light">WalletConnect</p>
+
                                         </div>
                                     </div>
 
@@ -105,7 +108,7 @@ const Navbar = () => {
                             </Modal>
                         </div>
 
-                        {/* Navbar Menu on mobile */}
+                        {/* Navbar-Menu on mobile */}
                         <div className="mobile-menu-navbar lg:hidden md:flex flex-col justify-end">
                             <button onClick={toggleNavbar}>
                                 {menuOpen ? <X className="max-sm:size-10 sm:size-12" /> : <Menu className="max-sm:size-10 sm:size-12" />}

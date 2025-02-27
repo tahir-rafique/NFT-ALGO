@@ -1,4 +1,3 @@
-
 import Navbar from './../components/Navbar';
 import Footer from './../components/Footer';
 import heroImgNFT from './../assets/NFTdetail/images/heroImageNFT.webp';
@@ -98,19 +97,24 @@ const NFTdetailpixacio = () => {
     return (
         <>
             <Navbar />
+
             <div className='flex justify-center'>
                 <div className='container mx-auto bg-frame max-sm:px-5 sm:px-12 lg:px-20 pt-5 lg:pt-20 pb-4'>
+
                     {/* Hero Wraper */}
                     <div className='xl:flex-row flex flex-col  gap-10 justify-between'>
 
                         {/* hero Left Wraper*/}
+
                         <div className="hero-left p-1 flex-col gap-4  flex justify-center">
+
+                            {/* hero image */}
                             <div className='hero-image-wraper drop-shadow-md p-1 flex max-xl:justify-center'>
                                 <img src={heroImgNFT} alt="" className=' bg-[#fff] p-3 rounded-2xl' />
                             </div>
 
 
-
+                            {/* Description */}
                             <div className="descrption-wraper w-full drop-shadow-md">
                                 {NFTdetailsDescprtion.map((item, index) => (
                                     <div
@@ -156,7 +160,7 @@ const NFTdetailpixacio = () => {
                                 ))}
                             </div>
 
-
+                            {/* Traits */}
                             <div className="tratis-wraper w-full drop-shadow-md">
                                 {NFTtraitsData.map((item, index) => (
                                     <div
@@ -257,16 +261,17 @@ const NFTdetailpixacio = () => {
 
 
                         {/* Hero Right Wraper */}
-                        <div className="hero-right flex flex-col items-center lg:justify-end 2xl:w-[55%] gap-4">
 
+                        <div className="hero-right flex flex-col items-center  2xl:w-[55%] gap-4">
 
-                            <div className='text-wraper w-full'>
+                            {/* Owner */}
+                            <div className='owner-wraper w-full'>
                                 <h2>Pixacio</h2>
                                 <h5 className='font-secondary text-para-light'>Owned by <b className='text-secondary'>  Stella Nova</b></h5>
                             </div>
 
-
-                            <div className='timer-wraper bg-inverted rounded-md drop-shadow-md w-full py-2 flex flex-col gap-2 p-1'>
+                            {/* Sales */}
+                            <div className='sales-wraper bg-inverted rounded-md drop-shadow-md w-full py-2 flex flex-col gap-2 p-1'>
 
                                 <div className='border-b-2 border-boorder px-4 py-2 flex gap-2 items-center'>
                                     <img src={watchIco} alt="" />
@@ -295,8 +300,7 @@ const NFTdetailpixacio = () => {
                                 </div>
                             </div>
 
-
-
+                            {/* Listing */}
                             <div className="listing-wraper w-full drop-shadow-md p-1">
                                 {NFTdetailsListing.map((item, index) => (
                                     <div
@@ -350,7 +354,7 @@ const NFTdetailpixacio = () => {
                                 ))}
                             </div>
 
-
+                            {/* Offer */}
                             <div className="offer-wraper w-full drop-shadow-md p-1">
                                 {NFToffterData.map((item, index) => (
                                     <div
@@ -425,12 +429,12 @@ const NFTdetailpixacio = () => {
                                 ))}
                             </div>
 
-
+                            {/* Details */}
                             <div className="details-wraper flex justify-start w-full drop-shadow-md p-1">
                                 {NFTdetailData.map((item, index) => (
                                     <div
                                         key={index}
-                                        className="rounded-2xl  py-1.5 px-1 cursor-pointer max-md:min-w-[320px] md:min-w-[530px] bg-inverted"
+                                        className="rounded-2xl  py-1.5 px-1 cursor-pointer w-full bg-inverted"
                                         onClick={() => handleDetails(index)
                                         }
                                     >
@@ -636,9 +640,9 @@ const NFTdetailpixacio = () => {
 
                     </div>
 
-
                 </div>
             </div>
+
             <Footer />
         </>
     )
