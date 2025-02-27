@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, } from 'react-router-dom';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import './styles/typography.css';
@@ -21,10 +21,30 @@ import CreateNFTCollection from './pages/CreateNFTCollection';
 import SingleNFT from './pages/SingleNFT';
 import ArtistProfile from './pages/ArtistProfile';
 
+
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+
 const App = () => {
+
+  const ScrollToTop = () => {
+    // Extracts pathname property(key) from an object
+    const { pathname } = useLocation();
+    
+    // Automatically scrolls to top whenever pathname changes
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  }
+
   return (
     <>
       <Routes>
+
+
+        {ScrollToTop()}
+
 
         {/* Route: Home Page / Lading Pag */}
         <Route path="/" element={<Home />} />

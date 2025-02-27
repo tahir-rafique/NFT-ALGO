@@ -61,7 +61,7 @@ const TopSellerPage = () => {
                                 <button
                                     onClick={toggleDropdown}
                                     className="bg-inverted px-3  py-2 rounded-md drop-shadow-md flexitems-center ">
-                                    <p className="flex  gap-4 justify-between items-center">
+                                    <p className="flex  gap-4 justify-between items-center cursor-pointer">
                                         Category
                                         <img src={lineDown} alt="" className="size-5" />
                                     </p>
@@ -82,7 +82,7 @@ const TopSellerPage = () => {
                             </div>
 
                             <div className="p-0.5">
-                                <p className="bg-inverted px-3  py-2 rounded-md drop-shadow-md">Last 30 days</p>
+                                <p className="bg-inverted px-3  py-2 rounded-md drop-shadow-md cursor-pointer">Last 30 days</p>
                             </div>
 
 
