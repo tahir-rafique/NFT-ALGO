@@ -287,7 +287,7 @@ export const faqData = [
 
         question: "What is an NFT?",
         answer:
-            "An NFT (New Insights Token) is a unique digital asset that represents ownership or a special relationship of a novel for many types of content, such as digital art, advertising, or retail goods.",
+            "An NFT (Non-Fungible Token) is a unique digital asset that represents ownership or proof of authenticity of a specific item or piece of content, often associated with digital art, collectibles, or virtual goods, and is stored on a blockchain.",
     },
     {
         question: "How do I buy an NFT?",
