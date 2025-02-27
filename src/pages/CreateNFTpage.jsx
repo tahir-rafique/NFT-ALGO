@@ -42,6 +42,7 @@ const CreateNFTpage = () => {
     // Single NFT dropdown
 
     const [isOpen, setIsOpen] = useState(false);
+    
     const dropdownRef = useRef(null);
 
     const toggleDropdown = () => {
