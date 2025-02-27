@@ -1,13 +1,6 @@
 import Navbar from './../components/Navbar';
 import Footer from './../components/Footer';
 
-// import HeroSubtract from '../assets/SellerCollectionPage/images/subtractHero.webp'
-// import topLeft from '../assets/SellerCollectionPage/images/top_left.webp'
-// import topRight from '../assets/SellerCollectionPage/images/top_right.webp'
-// import bottomLeft from '../assets/SellerCollectionPage/images/bottom_left.webp'
-// import bottomCenter from '../assets/SellerCollectionPage/images/bottom_right.webp'
-// import bottomRight from '../assets/SellerCollectionPage/images/bottom_center.webp'
-
 import subtractBanner from '../assets/SellerCollectionPage/images/subtractBanner.webp'
 import { SellerPageData } from '../constant/data';
 
@@ -23,23 +16,8 @@ const SellerCollectionPage = () => {
                         <h1 className='text-center leading-none text-main'>Jacob Jones </h1>
                         <h2 className='text-center leading-none'>collections</h2>
                         <div className=''>
-
-                            {/* <img src={HeroSubtract} alt="" /> */}
-
-                            {/* Images Top
-                            <img src={topLeft} alt="" className='absolute top-50 left-3 ' />
-                            <img src={topRight} alt="" className='absolute top-50 right-4 ' />
-                            {/* Images Bottom */}
-
-                            {/* <img src={bottomLeft} alt="" className='absolute bottom-24 left-4 ' />
-                            <img src={bottomRight} alt="" className='absolute bottom-4 left-90 ' />
-                            <img src={bottomCenter} alt="" className='absolute bottom-10 right-34 ' />  */}
-
                             <img src={subtractBanner} alt="" />
-
-
                         </div>
-
 
                     </div>
 
@@ -53,7 +31,7 @@ const SellerCollectionPage = () => {
                                         {/* person */}
                                         <div className="flex flex-col   py-2">
 
-                                            <h6 className="font-secondary font-bold">{item.name}</h6>
+                                            <h6 className="font-secondary font-bold  uppercase">{item.name}</h6>
                                             <p className="text-para-light font-semibold">{item.item}</p>
 
                                         </div>

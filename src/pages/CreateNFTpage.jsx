@@ -7,7 +7,7 @@ import banner from '../assets/CreateNFTpage/images/createNFTbanner.webp'
 import addicon from '../assets/CreateNFTpage/images/addicon.webp'
 import downline from '../assets/CreateNFTpage/icons/downline.webp'
 import copyimg from '../assets/CreateNFTpage/images/copyimg.webp'
-import { CreateNFTPageData, timeLeft } from '../constant/data';
+import { CreateNFTPageData, } from '../constant/data';
 import { useEffect, useRef, useState } from 'react';
 
 import { Modal } from 'antd';
