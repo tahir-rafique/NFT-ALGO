@@ -49,7 +49,7 @@ const TopCollectionPage = () => {
                                                 <img src={item.person} alt="" className='size-14' />
                                             </div>
                                             <div className=''>
-                                                <h6 className="font-secondary font-bold">{item.name}</h6>
+                                                <h6 className="font-secondary font-bold uppercase">{item.name}</h6>
 
                                                 <div className='relative pr-5'>
                                                     <p className="text-para-light font-semibold">{item.owner}</p>
