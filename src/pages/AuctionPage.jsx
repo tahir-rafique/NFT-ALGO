@@ -385,7 +385,7 @@ const AuctionPage = () => {
                       </div>
 
                       {/* Stock Price */}
-                      <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-5 2xl:bottom-8 right-4">
+                      <div className="navbtn-size navbtn-border font-medium bg-inverted py-2 px-4 shrink-0 cursor-pointer text-secondary flex items-center gap-1 text-small absolute bottom-5 2xl:bottom-8 right-2">
                         <p className="text-l ">Price:</p>
                         <span className="bg-black rounded-full">
                           <img src={logoprice} alt="" />
