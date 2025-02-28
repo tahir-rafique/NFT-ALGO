@@ -47,16 +47,16 @@ const Navbar = () => {
                     <div className="flex justify-between items-center relative z-100">
                         <a href="/" className="cursor-pointer">
                             <img src={Navlogo} alt="" className="max-lg:size-14 cursor-pointer" />
-                            
+
                         </a>
                         <div className="hidden lg:flex sm:gap-4 lg:gap-8">
                             <h6 className="">
-                                <Link to="/" className="underline underline-offset-[6px] font-bold  text-main">
+                                <Link to="/" className="focus:text-main underline-offset-8 focus:underline">
                                     Home
                                 </Link>
                             </h6>
                             <h6 className="">
-                                <Link to="/create-nft-page" className="text-secondary">
+                                <Link to="/create-nft-page" className="underline-offset-8 focus:underline focus:text-main ">
                                     AI NFT GENERATION
                                 </Link>
                             </h6>
