@@ -18,8 +18,6 @@ function ChooseCollection() {
             <div className="flex justify-center relative z-100">
                 <div className="container max-sm:px-5 sm:px-10 lg:px-20  mx-auto pt-5 lg:pt-20">
 
-
-
                     <div className="flex gap-10 py-5 max-lg:flex-col">
 
                         {/* left div*/}
@@ -41,7 +39,7 @@ function ChooseCollection() {
                                 {/* Form */}
                                 <form action="" className="flex flex-col gap-4" onSubmit={e => { e.preventDefault() }}>
 
-                                    <h2 className="uppercase text-center pt-5">Mint your nft</h2>
+                                    <h2 className="uppercase text-center py-5">Choose collection</h2>
 
                                     {/* Choose Collection */}
                                     <div className="flex flex-col items-center gap-5">
