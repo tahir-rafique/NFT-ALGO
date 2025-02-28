@@ -17,29 +17,303 @@ import refresh from "../assets/AuctionPage/icons/ReFresh.webp"
 import filter from "../assets/AuctionPage/icons/filter.svg"
 import downfill from "../assets/AuctionPage/icons/downfill.svg"
 
-
+import { CiSearch } from "react-icons/ci";
 
 
 const AuctionPage = () => {
   const [StockCount] = useState(7);
 
   // filter
+  // Filter dropDown
 
-  // Single NFT dropdown
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [priceOpen, setPriceOpen] = useState(false);
+  const [bgOpen, setbgOpen] = useState(false);
+  const [dropdownOpen, setIsDropdownOpen] = useState(false);
 
   const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
-    setIsOpen((isOpen) => !isOpen)
+    setIsDropdownOpen((isOpen) => !isOpen)
+  };
+
+  const togglePrice = () => {
+    setPriceOpen((isOpen) => !isOpen)
+  };
+
+  const toggleBackground = () => {
+    setbgOpen((isOpen) => !isOpen)
   };
 
 
   return (
-    <>
+    <div>
+
+      {/* Filter 📌 */}
+      <div className='
+          absolute z-100 left-0 max-sm:top-[134%] max-md:top-[138%] max-lg:top-[107%] max-xl:top-[115%] max-[1500px]:top-[115%]  max-[1535px]:top-[123%] 2xl:top-[93%]
+          py-2   bg-inverted rounded-xl max-md:w-[200px] md:w-[250px]  drop-shadow-2xl px-3 flex flex-col gap-y-2 '>
+
+        {/* filter button */}
+        <div className='flex justify-between px-3 items-center' onClick={toggleDropdown}>
+          <img src={filter} alt="" className='size-6' />
+          <img src={downfill} alt="" className='size-6' />
+        </div>
+        <hr />
+
+        {/* Open filter when click on filter buttons */}
+
+        {dropdownOpen && (
+          <div className='flex flex-col gap-y-3'>
+
+            {/* div 1 */}
+            {/* Popular  */}
+            <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex  items-center py-2 px-2">
+              <div className=" w-full" >
+                <button
+                  className="flex font-secondary text-para-light items-center w-full cursor-pointer justify-between">
+
+                  <div className='flex  gap-10'>
+                    <h6 className='pl-2'>
+                      Popular
+                    </h6>
+
+                  </div>
+                  <div className='flex items-center gap-1'>
+                    <h6 className=''>
+                      15
+                    </h6>
+
+                    <img src={downfill} alt="" className='size-6' />
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            {/* div 2 */}
+            {/* Price  */}
+            <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex  items-center py-2 px-2">
+              <div ref={dropdownRef} className="inline-block w-full " >
+
+                <button
+                  onClick={togglePrice}
+                  className="flex font-secondary text-para-light items-center w-full cursor-pointer justify-between gap-10">
+
+                  <h6 className='pl-2'>
+                    Price
+                  </h6>
+
+                  <img src={downfill} alt="" className='size-6' />
+
+                </button>
+
+                {priceOpen && (
+                  <div className=" mt-3 z-50 flex flex-col gap-2 bg-inverted  rounded-lg shadow-lg w-full">
+
+                    <div className='min-max-container flex justify-between px-2 py-4 w-full items-center'>
+                      <div className='border border-main bg-secondary px-4 py-2 rounded-md text-inverted font-light'>
+                        <p>Min</p>
+                      </div>
+
+                      <p>to</p>
+
+                      <div className='border border-main bg-secondary px-4 py-2 rounded-md text-inverted font-light'>
+                        <p>Max</p>
+                      </div>
+
+                    </div>
+                    <div className='px-2 '>
+                      <button className='font-secondary bg-main w-full rounded-md py-2 text-inverted'>Apply</button>
+                    </div>
+
+                  </div>
+                )}
+              </div>
+
+            </div>
+
+
+            {/* div 3 */}
+            {/* Background  */}
+            <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex  items-center py-2 px-2">
+
+              <div ref={dropdownRef} className="inline-block w-full " >
+
+                <button
+                  onClick={toggleBackground}
+                  className="flex font-secondary text-para-light items-center w-full cursor-pointer justify-between gap-10">
+
+                  <h6 className='pl-2'>
+                    Background
+                  </h6>
+
+                  <img src={downfill} alt="" className='size-6' />
+
+                </button>
+
+                {bgOpen && (
+                  <div className=" mt-3 z-50  bg-inverted  rounded-lg shadow-lg w-full py-2">
+
+                    <div className='background-filter w-full flex flex-col gap-y-2'>
+                      {/* Search */}
+                      <div className='search-filter border-2 border-boorder py-2 rounded-md flex justify-center  items-center gap-2 w-full pl-2'>
+                        <div>
+                          <CiSearch />
+                        </div>
+                        <div>
+
+                          <input type="search" name="" id="" placeholder='search' className='font-secondary' />
+                        </div>
+                      </div>
+
+                      {/* Select */}
+                      <div className='select-bg-filter flex flex-col gap-y-2'>
+
+                        <div className="select-bg flex justify-between text-para-light items-center">
+                          <div className='flex gap-2 items-center'>
+                            <div className='py-4 px-4 border-2 border-boorder rounded-md '></div>
+                            <p>White</p>
+                          </div>
+                          <div>
+                            <p>37</p>
+                          </div>
+                        </div>
+
+                        <div className="select-bg flex justify-between text-para-light items-center">
+                          <div className='flex gap-2 items-center'>
+                            <div className='py-4 px-4 border-2 border-boorder rounded-md '></div>
+                            <p>Red</p>
+                          </div>
+                          <div>
+                            <p>5</p>
+                          </div>
+                        </div>
+
+                        <div className="select-bg flex justify-between text-para-light items-center">
+                          <div className='flex gap-2 items-center'>
+                            <div className='py-4 px-4 border-2 border-boorder rounded-md '></div>
+                            <p>Light Blue</p>
+                          </div>
+                          <div>
+                            <p>10</p>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                )}
+              </div>
+
+            </div>
+
+
+            {/* div 4 */}
+            {/* Clothing  */}
+            <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex  items-center py-2 px-2">
+              <div className=" w-full" >
+                <button
+
+                  className="flex font-secondary text-para-light items-center w-full cursor-pointer justify-between">
+
+                  <div className='flex  gap-10'>
+                    <h6 className='pl-2'>
+                      Clothing
+                    </h6>
+
+                  </div>
+                  <div className='flex items-center gap-1'>
+                    <h6 className=''>
+                      110
+                    </h6>
+
+                    <img src={downfill} alt="" className='size-6' />
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            {/* div 5 */}
+            {/* Eye  */}
+            <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex  items-center py-2 px-2">
+              <div className=" w-full" >
+                <button
+
+                  className="flex font-secondary text-para-light items-center w-full cursor-pointer justify-between">
+
+                  <div className='flex  gap-10'>
+                    <h6 className='pl-2'>
+                      Eye
+                    </h6>
+
+                  </div>
+                  <div className='flex items-center gap-1'>
+                    <h6 className=''>
+                      2
+                    </h6>
+
+                    <img src={downfill} alt="" className='size-6' />
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            {/* div 6 */}
+            {/* Body Color  */}
+            <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex  items-center py-2 px-2">
+              <div className=" w-full" >
+                <button
+
+                  className="flex font-secondary text-para-light items-center w-full cursor-pointer justify-between">
+
+                  <div className='flex  gap-10'>
+                    <h6 className='pl-2'>
+                      Body Color
+                    </h6>
+
+                  </div>
+                  <div className='flex items-center gap-1'>
+                    <h6 className=''>
+                      11
+                    </h6>
+
+                    <img src={downfill} alt="" className='size-6' />
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            {/* div 7 */}
+            {/* Head  */}
+            <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex  items-center py-2 px-2">
+              <div className=" w-full" >
+                <button
+
+                  className="flex font-secondary text-para-light items-center w-full cursor-pointer justify-between">
+
+                  <div className='flex  gap-10'>
+                    <h6 className='pl-2'>
+                      Head
+                    </h6>
+
+                  </div>
+                  <div className='flex items-center gap-1'>
+                    <h6 className=''>
+                      33
+                    </h6>
+
+                    <img src={downfill} alt="" className='size-6' />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
       <Navbar />
-      <div className='AuctionPage flex justify-center relative'>
+      <div className='AuctionPage flex justify-center relative '>
         <div className='container mx-auto  max-sm:px-5 sm:px-12 lg:px-20  py-5 lg:py-10 '>
 
           {/* heroSectionWraper */}
@@ -63,7 +337,7 @@ const AuctionPage = () => {
           </div>
 
           {/* topListed-cardsWraper */}
-          <div className='flex justify-between gap-4 pb-10 '>
+          <div className='flex justify-between gap-4 pb-10  '>
             <h2 className='uppercase'>Top Listed</h2>
 
             <div className='flex items-center gap-2'>
@@ -71,212 +345,11 @@ const AuctionPage = () => {
               <p className=' capitalize text-l text-para-light cursor-pointer'>Refresh A While Ago</p>
             </div>
 
-            {/* Filter 📌 */}
-            <div className='absolute left-0 max-[1800px]:hidden py-5 bg-inverted rounded-3xl w-[250px] top-[20%] drop-shadow-2xl px-3 flex flex-col gap-y-4'>
-
-              {/* filter button */}
-              <div className='flex justify-between px-2 py-4 items-center'>
-                <img src={filter} alt="" />
-                <img src={downfill} alt="" />
-              </div>
-
-              <hr />
-
-              {/* div 1 */}
-              {/* Popular  */}
-              <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex  items-center py-2 px-2">
-                <div className=" w-full" >
-                  <button
-                    onClick={toggleDropdown}
-                    className="flex font-secondary text-para-light items-center w-full cursor-pointer justify-between">
-
-                    <div className='flex  gap-10'>
-                      <h6 className='pl-2'>
-                        Popular
-                      </h6>
-
-                    </div>
-                    <div className='flex items-center gap-1'>
-                      <h6 className=''>
-                        15
-                      </h6>
-
-                      <img src={downfill} alt="" className='size-6' />
-                    </div>
-                  </button>
-                </div>
-              </div>
-
-              {/* div 2 */}
-              {/* Price  */}
-              <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex  items-center py-2 px-2">
-                {/* Dropdown menu */}
-                <div ref={dropdownRef} className="inline-block w-full " >
-
-                  <button
-                    onClick={toggleDropdown}
-                    className="flex font-secondary text-para-light items-center w-full cursor-pointer justify-between gap-10">
-
-                    <h6 className='pl-2'>
-                      Price
-                    </h6>
-
-                    <img src={downfill} alt="" className='size-6' />
-
-                  </button>
-
-                  {isOpen && (
-                    <div className=" mt-3 z-50  bg-inverted  rounded-lg shadow-lg w-full">
-
-                      <p className='py-2 text-para-light w-full hover:bg-boorder hover:text-secondary px-2'>Single NFT mint</p>
-                      <p className='py-2 text-para-light w-full hover:bg-boorder hover:text-secondary px-2'>Multi NFT mint</p>
-
-                    </div>
-                  )}
-                </div>
-
-              </div>
 
 
-              {/* div 3 */}
-              {/* Background  */}
-              <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex  items-center py-2 px-2">
-                {/* Dropdown menu */}
-                <div ref={dropdownRef} className="inline-block w-full " >
-                  <button
-                    onClick={toggleDropdown}
-                    className="flex font-secondary text-para-light items-center w-full cursor-pointer justify-between gap-10">
-
-                    <div className='flex  gap-5'>
-                      <h6 className='pl-2'>
-                        Background
-                      </h6>
-                      <h6 className=''>
-                        20
-                      </h6>
-                    </div>
-
-                    <img src={downfill} alt="" className='size-6' />
-
-                  </button>
-
-                  {isOpen && (
-                    <div className=" mt-3 z-50  bg-inverted  rounded-lg shadow-lg w-full">
-
-                      <p className='py-2 text-para-light w-full hover:bg-boorder hover:text-secondary px-2'>Single NFT mint</p>
-                      <p className='py-2 text-para-light w-full hover:bg-boorder hover:text-secondary px-2'>Multi NFT mint</p>
-
-                    </div>
-                  )}
-                </div>
-
-              </div>
-
-              {/* div 4 */}
-              {/* Clothing  */}
-              <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex  items-center py-2 px-2">
-                <div className=" w-full" >
-                  <button
-                    onClick={toggleDropdown}
-                    className="flex font-secondary text-para-light items-center w-full cursor-pointer justify-between">
-
-                    <div className='flex  gap-10'>
-                      <h6 className='pl-2'>
-                        Clothing
-                      </h6>
-
-                    </div>
-                    <div className='flex items-center gap-1'>
-                      <h6 className=''>
-                        110
-                      </h6>
-
-                      <img src={downfill} alt="" className='size-6' />
-                    </div>
-                  </button>
-                </div>
-              </div>
-
-
-
-
-              {/* div 5 */}
-              {/* Eye  */}
-              <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex  items-center py-2 px-2">
-                <div className=" w-full" >
-                  <button
-
-                    className="flex font-secondary text-para-light items-center w-full cursor-pointer justify-between">
-
-                    <div className='flex  gap-10'>
-                      <h6 className='pl-2'>
-                        Eye
-                      </h6>
-
-                    </div>
-                    <div className='flex items-center gap-1'>
-                      <h6 className=''>
-                        2
-                      </h6>
-
-                      <img src={downfill} alt="" className='size-6' />
-                    </div>
-                  </button>
-                </div>
-              </div>
-
-              {/* div 6 */}
-              {/* Body Color  */}
-              <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex  items-center py-2 px-2">
-                <div className=" w-full" >
-                  <button
-
-                    className="flex font-secondary text-para-light items-center w-full cursor-pointer justify-between">
-
-                    <div className='flex  gap-10'>
-                      <h6 className='pl-2'>
-                        Body Color
-                      </h6>
-
-                    </div>
-                    <div className='flex items-center gap-1'>
-                      <h6 className=''>
-                        11
-                      </h6>
-
-                      <img src={downfill} alt="" className='size-6' />
-                    </div>
-                  </button>
-                </div>
-              </div>
-
-              {/* div 7 */}
-              {/* Head  */}
-              <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex  items-center py-2 px-2">
-                <div className=" w-full" >
-                  <button
-
-                    className="flex font-secondary text-para-light items-center w-full cursor-pointer justify-between">
-
-                    <div className='flex  gap-10'>
-                      <h6 className='pl-2'>
-                        Head
-                      </h6>
-
-                    </div>
-                    <div className='flex items-center gap-1'>
-                      <h6 className=''>
-                        33
-                      </h6>
-
-                      <img src={downfill} alt="" className='size-6' />
-                    </div>
-                  </button>
-                </div>
-              </div>
-
-            </div>
           </div>
+
+
 
           {/*  Tolisted Cards Wraper*/}
 
@@ -406,7 +479,7 @@ const AuctionPage = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 
