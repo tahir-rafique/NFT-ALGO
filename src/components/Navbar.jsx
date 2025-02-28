@@ -11,7 +11,7 @@ import logo3 from '../assets/Modal/images/logo3.webp'
 import logo4 from '../assets/Modal/images/logo4.webp'
 
 import topGridLeft from "../assets/Header/images/topGridLeft.webp"
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 import { Modal } from 'antd';
 
@@ -51,14 +51,14 @@ const Navbar = () => {
                         </a>
                         <div className="hidden lg:flex sm:gap-4 lg:gap-8">
                             <h6 className="">
-                                <Link to="/" className="focus:text-main underline-offset-8 focus:underline">
+                                <NavLink to="/" className="focus:text-main underline-offset-8 focus:underline">
                                     Home
-                                </Link>
+                                </NavLink>
                             </h6>
                             <h6 className="">
-                                <Link to="/create-nft-page" className="underline-offset-8 focus:underline focus:text-main ">
+                                <NavLink  to="/create-nft-page" className="">
                                     AI NFT GENERATION
-                                </Link>
+                                </NavLink>
                             </h6>
                         </div>
                         <div className="hidden lg:flex gap-4">

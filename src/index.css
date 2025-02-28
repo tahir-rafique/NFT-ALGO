@@ -68,3 +68,10 @@
 input {
   outline: none;
 }
+
+
+.active{
+  color: var(--color-main);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
