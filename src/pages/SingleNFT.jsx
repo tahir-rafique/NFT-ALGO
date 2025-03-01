@@ -30,7 +30,7 @@ const SingleNFT = () => {
                             <div className='flex  max-sm:flex-col max-sm:gap-2 gap-10 items-center'>
                                 {/* Minit button */}
                                 <div>
-                                    <p className='text-para-light'>Select an NFT's to mint</p>
+                                    <p className='text-para-light'>Select an NFT to mint</p>
                                 </div>
                                 <div className="flex justify-end font-light font-secondary  cursor-pointer ">
                                     <button className="background-grad text-inverted px-4 py-2 capitalize cursor-pointer">
