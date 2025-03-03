@@ -9,13 +9,20 @@ import logo1 from '../assets/Modal/images/logo1.webp'
 import logo2 from '../assets/Modal/images/logo2.webp'
 import logo3 from '../assets/Modal/images/logo3.webp'
 import logo4 from '../assets/Modal/images/logo4.webp'
+import wallet from '../assets/Navbar/wallet.webp'
+import profileimg  from '../assets/Navbar/profileimg.webp'
 
 import topGridLeft from "../assets/Header/images/topGridLeft.webp"
-import {  NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+
 
 import { Modal } from 'antd';
 
 const Navbar = () => {
+
+    const { pathname } = useLocation()
+    console.log(pathname);
+
     const [menuOpen, setmenuOpen] = useState(false);
     const toggleNavbar = () => {
         setmenuOpen(!menuOpen);
@@ -49,22 +56,35 @@ const Navbar = () => {
                             <img src={Navlogo} alt="" className="max-lg:size-14 cursor-pointer" />
 
                         </a>
-                        <div className="hidden lg:flex sm:gap-4 lg:gap-8">
+                        <div className=" lg:flex sm:gap-4 lg:gap-8">
                             <h6 className="">
                                 <NavLink to="/" className="focus:text-main underline-offset-8 focus:underline">
                                     Home
                                 </NavLink>
                             </h6>
                             <h6 className="">
-                                <NavLink  to="/create-nft-page" className="">
+                                <NavLink to="/create-nft-page" className="">
                                     AI NFT GENERATION
                                 </NavLink>
                             </h6>
                         </div>
-                        <div className="hidden lg:flex gap-4">
-                            <ButtonMain text="Connect Wallet" onClick={showModal} />
-                            <ButtonSecondary text="Create NFT" onClick={() => { navigate('/create-nft') }} />
-                        </div>
+
+                        {
+                            pathname === '/create-nft-page' ? (
+
+                                <div className="flex gap-x-3">
+                                    <div><img src={wallet} alt="" /></div>
+                                    <div><img src={profileimg} alt="" /></div>
+                                </div>
+
+                            ) :
+
+                                <div className=" lg:flex gap-4">
+                                    <ButtonMain text="Connect Wallet" onClick={showModal} />
+                                    <ButtonSecondary text="Create NFT" onClick={() => { navigate('/create-nft') }} />
+                                </div>
+
+                        }
 
 
                         {/* Ant-Desing Modal */}

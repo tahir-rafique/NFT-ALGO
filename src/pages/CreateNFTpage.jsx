@@ -42,7 +42,7 @@ const CreateNFTpage = () => {
     // Single NFT dropdown
 
     const [isOpen, setIsOpen] = useState(false);
-    
+
     const dropdownRef = useRef(null);
 
     const toggleDropdown = () => {
@@ -59,6 +59,15 @@ const CreateNFTpage = () => {
             document.removeEventListener("mousedown", handleClickOutside)
         };
     });
+
+
+
+    // selection of modal  📌 Change this
+    const selectedRef = useRef(null)
+
+    const toggleRef = () => {
+        selectedRef.current.value = false
+    }
 
 
 
@@ -92,10 +101,9 @@ const CreateNFTpage = () => {
 
                         <div className='w-full max-w-[600px]  mx-auto flex max-md:gap-6 gap-2 justify-between items-center max-sm:flex-col '>
 
-                            {/* Single NFT */}
-
+                            {/* Single NFT Dropdown */}
                             <div className="border-2 border-boorder  rounded-xl pr-2 bg-inverted cursor-pointer flex justify-center items-center py-2 px-2">
-                                {/* Dropdown menu */}
+
                                 <div ref={dropdownRef} className="inline-block " >
                                     <button
                                         onClick={toggleDropdown}
@@ -140,7 +148,10 @@ const CreateNFTpage = () => {
                             {/* Add Styles */}
 
                             <div className=" border-2 font-secondary border-boorder  rounded-xl gap-2 text-para-light cursor-pointer">
-                                <button className='flex items-center gap-2 py-2 bg-inverted px-4 cursor-pointer' onClick={showModal}>
+                                <button
+                                    className='flex items-center gap-2 py-2 bg-inverted px-4 cursor-pointer'
+                                    onClick={showModal}
+                                >
                                     <h6>Add Styles</h6>
                                     <img src={addicon} alt="" className='size-5.5 text-para-light' />
                                 </button>
@@ -158,13 +169,13 @@ const CreateNFTpage = () => {
 
 
                                         {/* section 2 */}
-                                        <div className="modal-bottom-section flex flex-col gap-2 w-full">
+                                        {/* 📌 have to Change this */}
+                                        <div className="modal-bottom-section flex flex-col gap-2 w-full" ref={selectedRef}>
                                             <div className='w-full flex gap-4'>
                                                 <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col items-center justify-center gap-1 '>
                                                     <img src={sicon} alt="" className='size-10' />
                                                     <p>None</p>
                                                 </div>
-
                                                 <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main'>
                                                     <img src={simg1} alt="" />
                                                     <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md font-medium'> Cartoon</button>
@@ -177,11 +188,24 @@ const CreateNFTpage = () => {
                                         <div className="modal-bottom-section flex flex-col gap-2 w-full">
                                             <div className='w-full flex gap-4'>
 
+                                                {/* 📌 Chagne this */}
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main relative cursor-pointer'
+                                                    ref={selectedRef}
+                                                    onClick={() => { toggleRef }}
+                                                >
 
-                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main'>
-                                                    <img src={simg2} alt="" />
+                                                    {toggleRef && (
+                                                        <p className=' absolute left-[50%] translate-[-50%] top-[40%] px-4 py-1 font-black text-inverted z-50'>Selected</p>
+                                                    )}
+
+
+                                                    <img src={simg2} alt="" className='hover:blur-s' />
                                                     <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md font-medium'>3D Model</button>
+
                                                 </div>
+
+
+
 
                                                 <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main '>
                                                     <img src={simg3} alt="" />
