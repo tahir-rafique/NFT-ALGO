@@ -19,15 +19,15 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Modal } from 'antd';
 
 const Navbar = () => {
-    
+
     const { pathname } = useLocation()
-    
+
     const [menuOpen, setmenuOpen] = useState(false);
     const toggleNavbar = () => {
         setmenuOpen(!menuOpen);
     };
-    
-    
+
+
     // Ant-Desing Modal
     const [isModalOpen, setIsModalOpen] = useState(false);
     const showModal = () => {
@@ -39,9 +39,8 @@ const Navbar = () => {
     const handleCancel = () => {
         setIsModalOpen(false);
     };
-    
-    
-    const navigateprofile = useNavigate()
+
+
     const navigate = useNavigate();
 
     return (
@@ -70,12 +69,13 @@ const Navbar = () => {
                         </div>
 
                         {
-                            pathname === '/create-nft-page' ? (
+                            pathname == '/create-nft-page' | pathname == '/artist-profile-page' ? (
 
                                 <div className="flex gap-x-3">
-                                    <div><img src={wallet} alt="" className="cursor-pointer" /></div>
 
-                                    <div onClick={() => { navigateprofile('/artist-profile-page') }}><img src={profileimg} alt="" className="cursor-pointer" /></div>
+                                    <NavLink onClick={showModal}><img src={wallet} alt="" className="cursor-pointer" /></NavLink>
+
+                                    <NavLink to='/artist-profile-page'><img src={profileimg} alt="" className="cursor-pointer" /></NavLink>
                                 </div>
 
                             ) :

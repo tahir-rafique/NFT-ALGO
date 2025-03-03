@@ -2,15 +2,10 @@ import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import profilebanner from "../assets/ArtistProfilePage/images/profilebanner.webp"
 import profileImage from "../assets/ArtistProfilePage/images/profileImage.webp"
-import mpf from "../assets/ArtistProfilePage/images/mpf.webp"
-import { artistProfilePageData, PixcaioPageData, SellerPageData, } from "../constant/data"
+import { artistProfilePageData,  SellerPageData, } from "../constant/data"
 
 
-import websiteIcon from '../assets/Pixacio/icons/internet.webp'
-import twitter from '../assets/Pixacio/icons/twitterIco.webp'
-import binculars from '../assets/Pixacio/icons/bincularsIco.webp'
-import desIco from '../assets/Pixacio/icons/discord.webp'
-import logoprice from "../assets/FeatureCollection/images/logoprice.webp";
+
 import { useEffect, useRef, useState } from "react"
 import downArrow from "../assets/TrendingNFT/icons/downArrow.svg";
 import { Link } from "react-router-dom"

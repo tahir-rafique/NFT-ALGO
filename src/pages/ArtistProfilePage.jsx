@@ -53,6 +53,8 @@ const ArtistProfilePage = () => {
                     {/* Profile banner Container */}
                     <div className="profile-container py-5 flex flex-col gap-3 relative">
 
+                        <div className="font-secondary bg-main w-fit font-medium absolute right-2 top-8 rounded-xl text-inverted px-4 py-2">Follow</div>
+
                         {/*  banner */}
                         <img src={profilebanner} alt="" className="profile-banner" />
 
