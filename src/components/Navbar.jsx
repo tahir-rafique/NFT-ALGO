@@ -56,7 +56,7 @@ const Navbar = () => {
                             <img src={Navlogo} alt="" className="max-lg:size-14 cursor-pointer" />
 
                         </a>
-                        <div className=" lg:flex sm:gap-4 lg:gap-8">
+                        <div className="max-lg:hidden lg:flex sm:gap-4 lg:gap-8">
                             <h6 className="">
                                 <NavLink to="/" className="focus:text-main underline-offset-8 focus:underline">
                                     Home
@@ -79,7 +79,7 @@ const Navbar = () => {
 
                             ) :
 
-                                <div className=" lg:flex gap-4">
+                                <div className="max-lg:hidden lg:flex gap-4">
                                     <ButtonMain text="Connect Wallet" onClick={showModal} />
                                     <ButtonSecondary text="Create NFT" onClick={() => { navigate('/create-nft') }} />
                                 </div>
