@@ -30,7 +30,7 @@ const TopCollectionPage = () => {
                             <div className='flex gap-4 max-md:justify-center flex-wrap lg:gap-12 items-center font-secondary pt-2 pb-6 text-secondary'>
                                 <h6 className='text-main border-2 px-4 py-2 rounded-md w-fit'>Popular</h6>
                                 <h6>Trending</h6>
-                                <h6>Sport </h6>
+                                <h6>Sports </h6>
                                 <h6>Art</h6>
                                 <h6>Fantasy</h6>
                                 <h6>Photography</h6>
