@@ -21,7 +21,6 @@ import { Modal } from 'antd';
 const Navbar = () => {
 
     const { pathname } = useLocation()
-    console.log(pathname);
 
     const [menuOpen, setmenuOpen] = useState(false);
     const toggleNavbar = () => {
