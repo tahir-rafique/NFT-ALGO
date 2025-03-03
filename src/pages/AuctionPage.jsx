@@ -84,9 +84,8 @@ const AuctionPage = () => {
             </div>
 
             {/* Filter 📌 */}
-            <div className='
-          absolute z-100 left-0 top-[-10px]
-          py-2 bg-inverted rounded-xl max-md:w-[200px] md:w-[250px]  drop-shadow-2xl px-3 flex flex-col gap-y-2 '>
+            <div
+              className='absolute z-100 left-0 top-[-10px]  py-2 bg-inverted rounded-xl max-md:w-[200px] md:w-[250px]  drop-shadow-2xl px-3 flex flex-col gap-y-2 '>
 
               {/* filter button */}
               <div className='flex justify-between px-3 items-center ' onClick={toggleDropdown}>

@@ -11,7 +11,7 @@ import logo3 from '../assets/Modal/images/logo3.webp'
 import logo4 from '../assets/Modal/images/logo4.webp'
 
 import topGridLeft from "../assets/Header/images/topGridLeft.webp"
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import {  NavLink, useNavigate } from "react-router-dom";
 
 import { Modal } from 'antd';
 
