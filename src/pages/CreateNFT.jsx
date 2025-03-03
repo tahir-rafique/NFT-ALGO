@@ -76,7 +76,7 @@ const CreateNFT = () => {
 
                                     <div className="flex flex-col gap-2">
                                         <label htmlFor="name"><h5 className="font-medium">Name your NFT*</h5></label>
-                                        <input type="text" required id="name" placeholder="Enter your Name" className="bg-inverted border-3 border-boorder rounded-xl w-full px-3 py-3" />
+                                        <input type="text" required id="name" placeholder="Name your NFT" className="bg-inverted border-3 border-boorder rounded-xl w-full px-3 py-3" />
                                     </div>
 
 
