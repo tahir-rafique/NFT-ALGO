@@ -31,7 +31,7 @@ const App = () => {
   const ScrollToTop = () => {
     // Extracts pathname property(key) from an object
     const { pathname } = useLocation();
-    
+
     // Automatically scrolls to top whenever pathname changes
     useEffect(() => {
       window.scrollTo(0, 0);
@@ -42,7 +42,7 @@ const App = () => {
     <>
       <Routes>
 
-
+        {/* when ever a new page open, top of page will be shown */}
         {ScrollToTop()}
 
 
