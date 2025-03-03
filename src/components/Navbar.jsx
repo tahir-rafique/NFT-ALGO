@@ -55,7 +55,7 @@ const Navbar = () => {
                             <img src={Navlogo} alt="" className="max-lg:size-14 cursor-pointer" />
 
                         </a>
-                        <div className="max-lg:hidden lg:flex sm:gap-4 lg:gap-8">
+                        <div className="max-lg:hidden lg:flex sm:gap-4 lg:gap-8 navLinks">
                             <h6 className="">
                                 <NavLink to="/" className="focus:text-main underline-offset-8 focus:underline">
                                     Home
@@ -69,13 +69,13 @@ const Navbar = () => {
                         </div>
 
                         {
-                            pathname == '/create-nft-page' | pathname == '/artist-profile-page' ? (
+                            pathname == '/create-nft-page' || pathname == '/artist-profile-page' || pathname == '/artist-profile-page-setting' ? (
 
                                 <div className="flex gap-x-3">
 
-                                    <NavLink onClick={showModal}><img src={wallet} alt="" className="cursor-pointer" /></NavLink>
+                                    <div onClick={showModal}><img src={wallet} alt="" className="cursor-pointer" /></div>
 
-                                    <NavLink to='/artist-profile-page'><img src={profileimg} alt="" className="cursor-pointer" /></NavLink>
+                                    <div onClick={()=>{navigate('/artist-profile-page')}}><img src={profileimg} alt="" className="cursor-pointer" /></div>
                                 </div>
 
                             ) :

@@ -13,9 +13,9 @@ import desIco from '../assets/Pixacio/icons/discord.webp'
 import logoprice from "../assets/FeatureCollection/images/logoprice.webp";
 import { useEffect, useRef, useState } from "react"
 import downArrow from "../assets/TrendingNFT/icons/downArrow.svg";
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
-
+import frylogo from '../assets/ArtistProfilePage/icons/frylogo.webp'
 const ArtistProfilePage = () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -44,16 +44,27 @@ const ArtistProfilePage = () => {
                 <div className="container mx-auto max-sm:px-5 sm:px-8 lg:px-20">
 
                     {/* profile shifting/navigation */}
-                    <div className="flex gap-4 border-2 px-2 py-1 w-fit rounded-lg font-secondary border-boorder mt-10">
-                        <Link to='/artist-profile-page' className="hover:bg-main hover:text-inverted rounded-lg px-3 py-1">Profile</Link>
-                        <Link to='/artist-profile-page-setting' className="hover:bg-main hover:text-inverted px-3 py-1 rounded-lg">Profile Settings</Link>
+                    <div className="artist-profile flex gap-4 border-2 px-2 py-1 w-fit rounded-lg font-secondary border-boorder mt-10">
+
+
+                        <NavLink
+                            to='/artist-profile-page'
+                            className=" hover:bg-main hover:text-inverted rounded-lg px-3 py-1">Profile</NavLink>
+
+
+                        <NavLink
+                            to='/artist-profile-page-setting'
+                            className=" hover:bg-main hover:text-inverted rounded-lg px-3 py-1">Profile Settings</NavLink>
+
+
+
                     </div>
 
 
                     {/* Profile banner Container */}
                     <div className="profile-container py-5 flex flex-col gap-3 relative">
 
-                        <div className="font-secondary bg-main w-fit font-medium absolute right-2 top-8 rounded-xl text-inverted px-4 py-2">Follow</div>
+                        <div className="font-secondary cursor-pointer bg-main w-fit font-medium absolute right-2 top-8 rounded-xl text-inverted px-4 py-2">Follow</div>
 
                         {/*  banner */}
                         <img src={profilebanner} alt="" className="profile-banner" />
@@ -82,6 +93,17 @@ const ArtistProfilePage = () => {
                                     <p className="text-para-light">items</p>
                                 </div>
                             </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div className="flex justify-center">
+
+                        <div className="flex gap-x-2 bg-inverted border-2 border-boorder w-fit px-4 py-2 rounded-xl font-secondary">
+                            <img src={frylogo} alt="" /> 
+                            <h6>10.89FRY </h6>
                         </div>
                     </div>
 
