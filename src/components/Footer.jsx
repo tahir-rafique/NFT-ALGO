@@ -76,7 +76,7 @@ const Footer = () => {
                     <div className="flex max-lg:justify-center">
                       <h3 className="cursor-pointer font-bold font-secondary">About</h3>
                     </div>
-                    <div className="max-lg:flex-row flex flex-col max-lg:gap-4 max-lg:justify-center lg:gap-4">
+                    <div className="max-lg:flex-row flex flex-col max-lg:gap-x-4 max-lg:flex-wrap max-lg:justify-center lg:gap-4">
                       <h5 className="cursor-pointer">About NFT</h5>
                       <h5 className="cursor-pointer">Live Auctions</h5>
                       <h5 className="cursor-pointer">Collection</h5>
