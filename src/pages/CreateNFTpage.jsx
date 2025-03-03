@@ -62,12 +62,6 @@ const CreateNFTpage = () => {
 
 
 
-    // selection of modal  📌 Change this
-    const selectedRef = useRef(null)
-
-    const toggleRef = () => {
-        selectedRef.current.value = false
-    }
 
 
 
@@ -166,19 +160,21 @@ const CreateNFTpage = () => {
                                             <h3 className="ant-main-text">Select a style</h3>
                                             <img src={lineVector} alt="" />
                                         </div>
-
+ 
 
                                         {/* section 2 */}
                                         {/* 📌 have to Change this */}
-                                        <div className="modal-bottom-section flex flex-col gap-2 w-full" ref={selectedRef}>
+                                        <div className="modal-bottom-section flex flex-col gap-2 w-full" >
                                             <div className='w-full flex gap-4'>
                                                 <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col items-center justify-center gap-1 '>
                                                     <img src={sicon} alt="" className='size-10' />
                                                     <p>None</p>
                                                 </div>
-                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main'>
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main relative'>
                                                     <img src={simg1} alt="" />
-                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md font-medium'> Cartoon</button>
+
+                                                    <p className='hover:bg-[#00000060] absolute left-[50%] translate-[-50%] top-[40%] px-10.5 rounded-xl py-13.5 font-black text-inverted z-50 opacity-0 hover:opacity-100'>Selected</p>
+                                                    <button className='bg-inverted mt-1.5 py-2 flex justify-center rounded-xl drop-shadow-md font-medium'> Cartoon</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -190,26 +186,23 @@ const CreateNFTpage = () => {
 
                                                 {/* 📌 Chagne this */}
                                                 <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main relative cursor-pointer'
-                                                    ref={selectedRef}
-                                                    onClick={() => { toggleRef }}
-                                                >
 
-                                                    {toggleRef && (
-                                                        <p className=' absolute left-[50%] translate-[-50%] top-[40%] px-4 py-1 font-black text-inverted z-50'>Selected</p>
-                                                    )}
+                                                >
+                                                    <p className='hover:bg-[#00000060] absolute left-[50%] translate-[-50%] top-[40%] px-10.5 rounded-xl py-13.5 font-black text-inverted z-50 opacity-0 hover:opacity-100'>Selected</p>
 
 
                                                     <img src={simg2} alt="" className='hover:blur-s' />
-                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md font-medium'>3D Model</button>
+                                                    <button className='bg-inverted py-2 mt-1.5 flex justify-center rounded-xl drop-shadow-md font-medium'>3D Model</button>
 
                                                 </div>
 
 
-
-
-                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main '>
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main relative '>
                                                     <img src={simg3} alt="" />
-                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md font-medium'>Anime Style</button>
+
+                                                    <p className='hover:bg-[#00000060] absolute left-[50%] translate-[-50%] top-[40%] px-10.5 rounded-xl py-13.5 font-black text-inverted z-50 opacity-0 hover:opacity-100'>Selected</p>
+
+                                                    <button className='bg-inverted mt-1.5 py-2 flex justify-center rounded-xl drop-shadow-md font-medium'>Anime Style</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -220,14 +213,20 @@ const CreateNFTpage = () => {
                                             <div className='w-full flex gap-4'>
 
 
-                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main '>
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main relative'>
                                                     <img src={simg4} alt="" />
-                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md font-medium'>Fantasy Art</button>
+
+                                                    <p className='hover:bg-[#00000060] absolute left-[50%] translate-[-50%] top-[40%] px-10.5 rounded-xl py-13.5 font-black text-inverted z-50 opacity-0 hover:opacity-100'>Selected</p>
+
+                                                    <button className='bg-inverted mt-1.5 py-2 flex justify-center rounded-xl drop-shadow-md font-medium'>Fantasy Art</button>
                                                 </div>
 
-                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main'>
+                                                <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col gap-1 hover:bg-main relative'>
                                                     <img src={simg5} alt="" />
-                                                    <button className='bg-inverted py-2 flex justify-center rounded-xl drop-shadow-md font-medium'>Realistic</button>
+
+                                                    <p className='hover:bg-[#00000060] absolute left-[50%] translate-[-50%] top-[40%] px-10.5 rounded-xl py-13.5 font-black text-inverted z-50 opacity-0 hover:opacity-100'>Selected</p>
+
+                                                    <button className='bg-inverted mt-1.5 py-2 flex justify-center rounded-xl drop-shadow-md font-medium'>Realistic</button>
                                                 </div>
 
                                             </div>
