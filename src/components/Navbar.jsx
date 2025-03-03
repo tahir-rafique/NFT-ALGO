@@ -10,7 +10,7 @@ import logo2 from '../assets/Modal/images/logo2.webp'
 import logo3 from '../assets/Modal/images/logo3.webp'
 import logo4 from '../assets/Modal/images/logo4.webp'
 import wallet from '../assets/Navbar/wallet.webp'
-import profileimg  from '../assets/Navbar/profileimg.webp'
+import profileimg from '../assets/Navbar/profileimg.webp'
 
 import topGridLeft from "../assets/Header/images/topGridLeft.webp"
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
@@ -19,15 +19,15 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Modal } from 'antd';
 
 const Navbar = () => {
-
+    
     const { pathname } = useLocation()
-
+    
     const [menuOpen, setmenuOpen] = useState(false);
     const toggleNavbar = () => {
         setmenuOpen(!menuOpen);
     };
-
-
+    
+    
     // Ant-Desing Modal
     const [isModalOpen, setIsModalOpen] = useState(false);
     const showModal = () => {
@@ -39,8 +39,9 @@ const Navbar = () => {
     const handleCancel = () => {
         setIsModalOpen(false);
     };
-
-
+    
+    
+    const navigateprofile = useNavigate()
     const navigate = useNavigate();
 
     return (
@@ -72,8 +73,9 @@ const Navbar = () => {
                             pathname === '/create-nft-page' ? (
 
                                 <div className="flex gap-x-3">
-                                    <div><img src={wallet} alt="" /></div>
-                                    <div><img src={profileimg} alt="" /></div>
+                                    <div><img src={wallet} alt="" className="cursor-pointer" /></div>
+
+                                    <div onClick={() => { navigateprofile('/artist-profile-page') }}><img src={profileimg} alt="" className="cursor-pointer" /></div>
                                 </div>
 
                             ) :
