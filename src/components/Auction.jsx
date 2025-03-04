@@ -3,9 +3,7 @@ import exploreArrow from "../assets/Auction/icons/explorArrow.svg";
 import { Link } from "react-router-dom";
 
 
-
 const RecentSold = () => {
-
 
     return (
         <div className="flex justify-center">
