@@ -12,7 +12,7 @@ import TopSellerPage from './pages/TopSellerPage';
 import SellerCollectionPage from './pages/SellerCollectionPage';
 import CreateNFTpage from './pages/CreateNFTpage';
 import ArtistProfilePage from './pages/ArtistProfilePage';
-import ArtistProfileSetting from './pages/ArtistProfileSetting';
+// import ArtistProfileSetting from './pages/ArtistProfileSetting';
 import SellMethodPage from './pages/SellMethodPage';
 import CreateNFT from './pages/CreateNFT';
 import ChooseCollection from './pages/ChooseCollection';
@@ -104,7 +104,7 @@ const App = () => {
         <Route path="/artist-profile-page" element={<ArtistProfilePage />} />
 
         {/* Route: Artist Profile Page Setting */}
-        <Route path="/artist-profile-page-setting" element={<ArtistProfileSetting />} />
+        {/* <Route path="/artist-profile-page-setting" element={<ArtistProfileSetting />} /> */}
 
         {/* Route: Sell Method Page */}
         <Route path="/sell-method-page" element={<SellMethodPage />} />
