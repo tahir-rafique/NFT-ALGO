@@ -69,7 +69,7 @@ const Navbar = () => {
                         </div>
 
                         {
-                            pathname == '/create-nft-page' || pathname == '/artist-profile-page' || pathname == '/artist-profile-page-setting' ? (
+                            pathname == '/create-nft-page' || pathname == '/artist-profile-page' || pathname == '/artist-profile-page-setting' || pathname == '/create-nft' ? (
 
                                 <div className="flex gap-x-3">
 

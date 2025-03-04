@@ -65,7 +65,7 @@ const CreateNFTCollection = () => {
 
                                     <div className="flex flex-col gap-2">
                                         <label htmlFor="name"><h5 className="font-medium">Collection Name*</h5></label>
-                                        <input type="text" required id="name" placeholder="Enter Collection Name" className="bg-inverted border-3 border-boorder rounded-xl w-full px-3 py-3" />
+                                        <input type="text" required id="name" placeholder="Name your Collection" className="bg-inverted border-3 border-boorder rounded-xl w-full px-3 py-3" />
                                     </div>
 
 
