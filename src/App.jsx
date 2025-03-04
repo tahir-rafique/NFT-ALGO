@@ -103,8 +103,6 @@ const App = () => {
         {/* Route: Artist Profile Page */}
         <Route path="/artist-profile-page" element={<ArtistProfilePage />} />
 
-        {/* Route: Artist Profile Page Setting */}
-        {/* <Route path="/artist-profile-page-setting" element={<ArtistProfileSetting />} /> */}
 
         {/* Route: Sell Method Page */}
         <Route path="/sell-method-page" element={<SellMethodPage />} />

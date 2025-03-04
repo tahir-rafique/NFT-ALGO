@@ -54,7 +54,6 @@ const ArtistProfilePage = () => {
 
     const [selectedButton, setSelectedButton] = useState("profile")
 
-
     return (
         <>
             <Navbar />
@@ -68,7 +67,7 @@ const ArtistProfilePage = () => {
 
                         <button onClick={() => setSelectedButton("profile")} className={` px-4 py-2 rounded-xl cursor-pointer ${selectedButton === "profile" ? "bg-main text-inverted" : ""}`}>Profile</button>
 
-                        <button onClick={() => setSelectedButton("other")} className={`cursor-pointer px-4 py-2 rounded-xl ${selectedButton === "other" ? "bg-red-500 text-inverted" : ""}`}>Profile Settings</button>
+                        <button onClick={() => setSelectedButton("profile")} className={`cursor-pointer px-4 py-2 rounded-xl ${selectedButton === "other" ? "bg-red-500 text-inverted" : ""}`}>Profile Settings</button>
 
 
 
