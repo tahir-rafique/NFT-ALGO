@@ -305,7 +305,7 @@ const ArtistProfilePage = () => {
                                 <img src={bannerFile} alt="" className="flex justify-center w-full h-[330px] object-cover rounded-2xl" />
 
                                 <div className="py-18 flex justify-center absolute top-[40%] left-[50%] translate-[-50%]">
-                                    <input type="file" className=" absolute z-100" style={{ width: '300px', color: 'transparent' }}
+                                    <input type="file" className=" absolute z-100 cursor-pointer" style={{ width: '300px', color: 'transparent' }}
                                         onChange={handleBannerImage} />
                                     <p className="relative z-10 border-2 border-boorder px-4 py-3 rounded-lg bg-inverted">Upload Banner</p>
                                 </div>
@@ -317,8 +317,8 @@ const ArtistProfilePage = () => {
                                 <div className="py-18 flex justify-center">
                                     <input type="file"
                                         onChange={handleProfileImage}
-                                        className=" absolute z-100" style={{ width: '300px', color: 'transparent' }} />
-                                    <p className="relative z-10 border-2 border-boorder px-4 py-3 rounded-lg bg-inverted">Upload Profile</p>
+                                        className=" absolute z-100 cursor-pointer" style={{ width: '300px', color: 'transparent' }} />
+                                    <p className="relative z-10 border-2 border-boorder px-4 py-3 rounded-lg bg-inverted cursor-pointer">Upload Profile</p>
                                 </div>
                             </div>
 
