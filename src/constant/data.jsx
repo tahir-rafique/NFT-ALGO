@@ -515,7 +515,7 @@ export const NFTtraitsData = [
 export const NFToffterData = [
 
     {
-        url: offerIco, title: 'Offer', price: "Price", usdprice: 'USD Price', quantity: 'Quantity', fooldif: 'Floor Difference',
+        url: offerIco, title: 'Offers', price: "Price", usdprice: 'USD Price', quantity: 'Quantity', fooldif: 'Floor Difference',
         from: "From",
 
         p1: "0.008 FRY", usdp1: '$4.25', q1: '2', fd1: '44% below ', f1: "16DD55",
