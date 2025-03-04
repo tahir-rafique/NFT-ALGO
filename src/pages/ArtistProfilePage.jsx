@@ -85,9 +85,9 @@ const ArtistProfilePage = () => {
                                 <img src={profilebanner} alt="" className="profile-banner" />
 
                                 <img src={profileImage} alt="" className="profile-image  absolute
-                         xl:top-[70%] left-[50%] translate-[-50%] 
-                         max-xl:top-[55%]
-                         max-sm:top-[50%] max-sm:size-24"/>
+                                    xl:top-[70%] left-[50%] translate-[-50%] 
+                                    max-xl:top-[55%]
+                                    max-sm:top-[50%] max-sm:size-24"/>
 
                                 {/* name & followers */}
                                 <div className="profile-details flex flex-col items-center pt-10">
