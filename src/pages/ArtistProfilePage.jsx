@@ -75,7 +75,7 @@ const ArtistProfilePage = () => {
 
 
                     {selectedButton === "profile" ?
-                        <div>
+                        <div className="artist-profile-page">
                             {/* Profile banner Container */}
                             <div className="profile-container py-5 flex flex-col gap-3 relative">
 
