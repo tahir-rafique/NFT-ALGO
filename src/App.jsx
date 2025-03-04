@@ -4,7 +4,7 @@ import NotFound from './pages/NotFound';
 import './styles/typography.css';
 import './styles/slider.css'
 import './styles/modal.css'
-import './styles/animation.css'
+import './styles/animations.css'
 import AuctionPage from './pages/AuctionPage';
 import TopCollectionPage from './pages/TopCollectionPage';
 import TopCollectionPixacio from './pages/TopCollectionPixacio';
