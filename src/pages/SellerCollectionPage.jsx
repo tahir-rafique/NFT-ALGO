@@ -32,7 +32,7 @@ const SellerCollectionPage = () => {
                                         <div className="flex flex-col   py-2">
 
                                             <h6 className="font-secondary font-bold  uppercase">{item.name}</h6>
-                                            <p className="text-para-light font-semibold">{item.item}</p>
+                                            <p className="text-para-light font-semibold capitalize">{item.item}</p>
 
                                         </div>
 
