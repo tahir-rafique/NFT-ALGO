@@ -195,51 +195,59 @@ const NFTdetailpixacio = () => {
                                                     <div className='grid grid-cols-3 gap-4 px-4'>
                                                         <div className="bg-muted rounded-md  text-center py-4 flex flex-col justify-center items-center gap-1 px-2">
                                                             <p className="text-tarits font-medium text-para-light">{item.editon}</p>
-                                                            <p className="text-tarits text-secondary"> <b> {item.founEdt}</b></p>
+                                                            <p className="text-tarits text-secondary"><b>Founder edition</b> 52%</p>
                                                             <p className="text-tarits text-para-light">{item.floor}</p>
                                                         </div>
 
                                                         <div className="bg-muted rounded-md  text-center py-4 flex flex-col justify-center items-center gap-1 px-2">
                                                             <p className="text-tarits font-medium text-para-light">{item.editon}</p>
-                                                            <p className="text-tarits text-secondary"> <b> {item.founEdt}</b></p>
+                                                            <p className="text-tarits text-secondary"><b>Founder edition</b> 52%</p>
+
                                                             <p className="text-tarits text-para-light">{item.floor}</p>
                                                         </div>
                                                         <div className="bg-muted rounded-md  text-center py-4 flex flex-col justify-center items-center gap-1 px-2">
                                                             <p className="text-tarits font-medium text-para-light">{item.editon}</p>
-                                                            <p className="text-tarits text-secondary"> <b> {item.founEdt}</b></p>
+                                                            <p className="text-tarits text-secondary"><b>Founder edition</b> 52%</p>
+
                                                             <p className="text-tarits text-para-light">{item.floor}</p>
                                                         </div>
                                                         <div className="bg-muted rounded-md  text-center py-4 flex flex-col justify-center items-center gap-1 px-2">
                                                             <p className="text-tarits font-medium text-para-light">{item.editon}</p>
-                                                            <p className="text-tarits text-secondary"> <b> {item.founEdt}</b></p>
+                                                            <p className="text-tarits text-secondary"><b>Founder edition</b> 52%</p>
+
                                                             <p className="text-tarits text-para-light">{item.floor}</p>
                                                         </div>
                                                         <div className="bg-muted rounded-md  text-center py-4 flex flex-col justify-center items-center gap-1 px-2">
                                                             <p className="text-tarits font-medium text-para-light">{item.editon}</p>
-                                                            <p className="text-tarits text-secondary"> <b> {item.founEdt}</b></p>
+                                                            <p className="text-tarits text-secondary"><b>Founder edition</b> 52%</p>
+
                                                             <p className="text-tarits text-para-light">{item.floor}</p>
                                                         </div>
                                                         <div className="bg-muted rounded-md  text-center py-4 flex flex-col justify-center items-center gap-1 px-2">
                                                             <p className="text-tarits font-medium text-para-light">{item.editon}</p>
-                                                            <p className="text-tarits text-secondary"> <b> {item.founEdt}</b></p>
+                                                            <p className="text-tarits text-secondary"><b>Founder edition</b> 52%</p>
+
                                                             <p className="text-tarits text-para-light">{item.floor}</p>
                                                         </div>
 
                                                         <div className="bg-muted rounded-md  text-center py-4 flex flex-col justify-center items-center gap-1 px-2">
                                                             <p className="text-tarits font-medium text-para-light">{item.editon}</p>
-                                                            <p className="text-tarits text-secondary"> <b> {item.founEdt}</b></p>
+                                                            <p className="text-tarits text-secondary"><b>Founder edition</b> 52%</p>
+
                                                             <p className="text-tarits text-para-light">{item.floor}</p>
                                                         </div>
 
                                                         <div className="bg-muted rounded-md  text-center py-4 flex flex-col justify-center items-center gap-1 px-2">
                                                             <p className="text-tarits font-medium text-para-light">{item.editon}</p>
-                                                            <p className="text-tarits text-secondary"> <b> {item.founEdt}</b></p>
+                                                            <p className="text-tarits text-secondary"><b>Founder edition</b> 52%</p>
+
                                                             <p className="text-tarits text-para-light">{item.floor}</p>
                                                         </div>
 
                                                         <div className="bg-muted rounded-md  text-center py-4 flex flex-col justify-center items-center gap-1 px-2">
                                                             <p className="text-tarits font-medium text-para-light">{item.editon}</p>
-                                                            <p className="text-tarits text-secondary"> <b> {item.founEdt}</b></p>
+                                                            <p className="text-tarits text-secondary"><b>Founder edition</b> 52%</p>
+
                                                             <p className="text-tarits text-para-light">{item.floor}</p>
                                                         </div>
 
