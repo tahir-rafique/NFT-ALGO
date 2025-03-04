@@ -15,7 +15,7 @@ import { useEffect, useRef, useState } from "react"
 import downArrow from "../assets/TrendingNFT/icons/downArrow.svg";
 import profileBanner from '../assets/ArtistProfilePage/images/pb.webp'
 import ButtonMain from "../shared/ButtonMain";
- 
+
 import profileSettingImage from '../assets/ArtistProfilePage/icons/pi.webp'
 
 
@@ -67,7 +67,7 @@ const ArtistProfilePage = () => {
 
                         <button onClick={() => setSelectedButton("profile")} className={` px-4 py-2 rounded-xl cursor-pointer ${selectedButton === "profile" ? "bg-main text-inverted" : ""}`}>Profile</button>
 
-                        <button onClick={() => setSelectedButton("profile")} className={`cursor-pointer px-4 py-2 rounded-xl ${selectedButton === "other" ? "bg-red-500 text-inverted" : ""}`}>Profile Settings</button>
+                        <button onClick={() => setSelectedButton("other")} className={`cursor-pointer px-4 py-2 rounded-xl ${selectedButton === "other" ? "bg-red-500 text-inverted" : ""}`}>Profile Settings</button>
 
 
 
@@ -297,7 +297,7 @@ const ArtistProfilePage = () => {
 
                         </div>
                         :
-                        <div>
+                        <div className="artist-profile-page-setting">
                             {/*  user images*/}
                             <div className="py-5 w-full relative">
 
@@ -390,10 +390,8 @@ const ArtistProfilePage = () => {
                                 <ButtonMain text={'Save Changes'} />
 
                             </div>
-                        </div>}
-
-
-
+                        </div>
+                    }
 
                 </div>
 
