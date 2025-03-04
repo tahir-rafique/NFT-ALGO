@@ -6,7 +6,6 @@ import Himg5 from "../assets/Header/images/Himg5.webp";
 import elicpBg from "../assets/Header/images/HeaderEllicpBG.webp"
 import leftHand from "../assets/Header/images/leftHand.png"
 import rightHand from "../assets/Header/images/rightHand.png"
-import "../styles/animations.css"
 
 const Header = () => {
     return (
