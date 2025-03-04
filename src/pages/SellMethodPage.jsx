@@ -50,6 +50,9 @@ const SellMethodPage = () => {
         e.preventDefault()
     }
 
+
+    const [selectedButton, setSelectedButton] = useState()
+
     return (
         <>
             <Navbar />
@@ -68,14 +71,15 @@ const SellMethodPage = () => {
                     <div className="flex gap-10 py-5 max-lg:flex-col">
 
                         {/* left div*/}
-
                         <div className="lg:max-w-[400px] flex flex-col gap-4 max-lg:items-center max-lg:w-full">
                             <img src={personIMG} alt="" className=" drop-shadow-md border-12 border-inverted rounded-4xl w-[300px]" />
                             <h4 className="font-secondary capitalize font-medium text-secondary">Preview your item</h4>
                         </div>
 
-                        {/* Right div */}
 
+
+
+                        {/* Right div */}
                         <form action="" onSubmit={handleSubmit}>
 
                         </form>
@@ -87,7 +91,9 @@ const SellMethodPage = () => {
                                 <h3 className="font-secondary font-semibold max-sm:text-center">Select Your Sell Method</h3>
                                 <div className="flex max-sm:flex-col gap-8 items-center p-1">
 
-                                    <div className="bg-inverted hover:bg-[#F4F3F3] drop-shadow-md rounded-lg h-[200px] w-[200px] flex justify-center items-center relative">
+                                    <div
+                                        onClick={() => { setSelectedButton('fixedprice') }}
+                                        className="bg-inverted hover:bg-[#F4F3F3] drop-shadow-md rounded-lg h-[210px] w-[200px] flex justify-center items-center relative">
 
                                         <div className="bg-[#F4F3F3]  hover:bg-inverted rounded-full h-[150px] w-[150px] p-4 flex justify-center items-center">
                                             <div className="bg-[#45ADEB] rounded-full h-[100px] w-[100px] p-4">
@@ -96,18 +102,25 @@ const SellMethodPage = () => {
                                         </div>
 
                                         {/* tiked */}
-                                        <img src={ticked} alt="" className="absolute top-2 right-2 " />
+                                        {selectedButton === 'fixedprice' ? <img src={ticked} alt="" className="absolute top-2 right-2 " /> : null}
 
+                                        <h6 className="absolute bottom-0 font-secondary">Fixed Price</h6>
                                     </div>
 
 
-                                    <div className="bg-inverted hover:bg-[#F4F3F3] drop-shadow-md rounded-lg h-[200px] w-[200px] flex justify-center items-center">
+                                    <div
+                                        onClick={() => { setSelectedButton('auction') }}
+                                        className="bg-inverted hover:bg-[#F4F3F3] drop-shadow-md rounded-lg h-[210px] w-[200px] flex justify-center items-center">
 
                                         <div className="bg-[#F4F3F3]  hover:bg-inverted rounded-full h-[150px] w-[150px] p-4 flex justify-center items-center">
                                             <div className="bg-[#F7A940] rounded-full h-[100px] w-[100px] p-4">
                                                 <img src={auctionIcon} alt="" className="w-full h-full" />
                                             </div>
                                         </div>
+
+                                        {/* tiked */}
+                                        {selectedButton === 'auction' ? <img src={ticked} alt="" className="absolute top-2 right-2 " /> : null}
+                                        <h6 className="absolute bottom-0 font-secondary">Auction</h6>
 
                                     </div>
 
@@ -131,70 +144,70 @@ const SellMethodPage = () => {
                             </div>
 
 
-
-                            {/* duration & listing condictional rendring karnii hia */}
+                            {/* Condictional rendering */}
                             <div className="duration-and-listing-wraper flex flex-col gap-2">
-                                {/* Listing */}
-                                {/* Dropdown menu */}
-                                <h5 className="listing-wraper font-secondary font-medium capitalize">schedule listing</h5>
-                                <div ref={dropdownRefListing} className=" w-full" >
-                                    <button
-                                        onClick={toggleDropdownListing}
-                                        className="navbtn-size border-3 text-para-light border-boorder navbtn-border  px-4 py-1 3xl:px-6 3xl:py-2 cursor-pointer flex gap-4 w-full">
-                                        <img src={monthIcon} alt="" />
-                                        <span>
-                                            <h6>
-                                                1 month
-                                            </h6>
-                                        </span>
+                                {selectedButton === 'fixedprice' ?
+
+                                    <div className="shedule-listing">
+                                        <h5 className="listing-wraper font-secondary font-medium capitalize mb-2">schedule listing</h5>
+                                        <div ref={dropdownRefListing} className=" w-full" >
+                                            <button
+                                                onClick={toggleDropdownListing}
+                                                className="navbtn-size border-3 text-para-light border-boorder navbtn-border  px-4 py-1 3xl:px-6 3xl:py-2 cursor-pointer flex gap-4 w-full">
+                                                <img src={monthIcon} alt="" />
+                                                <span>
+                                                    <h6>
+                                                        1 month
+                                                    </h6>
+                                                </span>
 
 
-                                    </button>
+                                            </button>
 
-                                    {isOpenListing && (
-                                        <div className="relative z-100 w-full  bg-inverted border-2 border-muted rounded-lg shadow-lg ">
-                                            <ul className="py-2">
-                                                {timeLeft.map((item) => (
-                                                    <p key={item} className="font-secondary px-4 py-2 hover:bg-gray-100 cursor-pointer" >
-                                                        {item}
-                                                    </p>
-                                                ))}
-                                            </ul>
+                                            {isOpenListing && (
+                                                <div className="relative z-100 w-full  bg-inverted border-2 border-muted rounded-lg shadow-lg ">
+                                                    <ul className="py-2">
+                                                        {timeLeft.map((item) => (
+                                                            <p key={item} className="font-secondary px-4 py-2 hover:bg-gray-100 cursor-pointer" >
+                                                                {item}
+                                                            </p>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            )}
                                         </div>
-                                    )}
-                                </div>
 
+                                    </div>
+                                    :
+                                    <div className="duration">
+                                        <h5 className="duration-wraper font-secondary font-medium mb-2">Duration</h5>
+                                        <div ref={dropdownRefDuration} className=" w-full" >
+                                            <button
+                                                onClick={toggleDropdownDuration}
+                                                className="navbtn-size border-3 text-para-light border-boorder navbtn-border  px-4 py-1 3xl:px-6 3xl:py-2 cursor-pointer flex justify-between w-full">
 
+                                                <span>
+                                                    <h6>Select time </h6>
+                                                </span>
 
+                                                <img src={downline} alt="" />
 
-                                {/* Duration */}
-                                <h5 className="duration-wraper font-secondary font-medium">Duration</h5>
-                                <div ref={dropdownRefDuration} className=" w-full" >
-                                    <button
-                                        onClick={toggleDropdownDuration}
-                                        className="navbtn-size border-3 text-para-light border-boorder navbtn-border  px-4 py-1 3xl:px-6 3xl:py-2 cursor-pointer flex justify-between w-full">
+                                            </button>
 
-                                        <span>
-                                            <h6>Select time </h6>
-                                        </span>
-
-                                        <img src={downline} alt="" />
-
-                                    </button>
-
-                                    {isOpenDuration && (
-                                        <div className="relative w-full z-50  bg-inverted border-2 border-muted rounded-lg shadow-lg ">
-                                            <ul className="py-2">
-                                                {timeLeft.map((item) => (
-                                                    <p key={item} className="font-secondary px-4 py-2 hover:bg-gray-100 cursor-pointer" >
-                                                        {item}
-                                                    </p>
-                                                ))}
-                                            </ul>
+                                            {isOpenDuration && (
+                                                <div className="relative w-full z-50  bg-inverted border-2 border-muted rounded-lg shadow-lg ">
+                                                    <ul className="py-2">
+                                                        {timeLeft.map((item) => (
+                                                            <p key={item} className="font-secondary px-4 py-2 hover:bg-gray-100 cursor-pointer" >
+                                                                {item}
+                                                            </p>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            )}
                                         </div>
-                                    )}
-                                </div>
-
+                                    </div>
+                                }
                             </div>
 
                             {/* submit button */}
