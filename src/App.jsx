@@ -4,6 +4,7 @@ import NotFound from './pages/NotFound';
 import './styles/typography.css';
 import './styles/slider.css'
 import './styles/modal.css'
+import './styles/animation.css'
 import AuctionPage from './pages/AuctionPage';
 import TopCollectionPage from './pages/TopCollectionPage';
 import TopCollectionPixacio from './pages/TopCollectionPixacio';
@@ -12,7 +13,6 @@ import TopSellerPage from './pages/TopSellerPage';
 import SellerCollectionPage from './pages/SellerCollectionPage';
 import CreateNFTpage from './pages/CreateNFTpage';
 import ArtistProfilePage from './pages/ArtistProfilePage';
-// import ArtistProfileSetting from './pages/ArtistProfileSetting';
 import SellMethodPage from './pages/SellMethodPage';
 import CreateNFT from './pages/CreateNFT';
 import ChooseCollection from './pages/ChooseCollection';
@@ -45,7 +45,6 @@ const App = () => {
         {/* when ever a new page open, top of page will be shown */}
         {ScrollToTop()}
 
-
         {/* Route: Home Page / Lading Pag */}
         <Route path="/" element={<Home />} />
 
@@ -74,8 +73,6 @@ const App = () => {
         <Route path="/create-nft-page" element={<CreateNFTpage />} />
 
 
-
-
         {/* Collection */}
         {/* Route : Create Collection Page*/}
         <Route path="/create-collection-page" element={<CreatCollectionPage />} />
@@ -93,16 +90,12 @@ const App = () => {
         <Route path="/create-nft-collection" element={<CreateNFTCollection />} />
 
 
-
-
-
         {/* Artist */}
         {/* Route: Artist Profile  */}
         <Route path="/artist-profile" element={<ArtistProfile />} />
 
         {/* Route: Artist Profile Page */}
         <Route path="/artist-profile-page" element={<ArtistProfilePage />} />
-
 
         {/* Route: Sell Method Page */}
         <Route path="/sell-method-page" element={<SellMethodPage />} />
