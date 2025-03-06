@@ -60,11 +60,6 @@ const CreateNFTpage = () => {
         };
     });
 
-
-
-
-
-
     return (
         <>
             <Navbar />
@@ -160,10 +155,10 @@ const CreateNFTpage = () => {
                                             <h3 className="ant-main-text">Select a style</h3>
                                             <img src={lineVector} alt="" />
                                         </div>
- 
+
 
                                         {/* section 2 */}
-                                        {/* 📌 have to Change this */}
+                                        {/* 📌 have to Change this Selection of Styles */}
                                         <div className="modal-bottom-section flex flex-col gap-2 w-full" >
                                             <div className='w-full flex gap-4'>
                                                 <div className=' w-[50%] bg-muted p-1 rounded-xl flex flex-col items-center justify-center gap-1 '>
